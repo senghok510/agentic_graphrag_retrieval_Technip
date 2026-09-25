@@ -1,0 +1,22 @@
+{
+ "ENGINEERING": [
+        "engineering", "design", "technical", "specifications", "drawings",
+        "calculations", "analysis", "systems", "development", "solution","electrical"
+    ],
+     "PROJECT MANAGEMENT": [
+        "management", "project", "planning", "execution",
+        "scheduling", "risk", "budget", "resources", "deliverables",
+        "coordination", "monitoring", "reporting", "governance"
+    ],
+
+    "CONSTRUCTION & COMM. START UP": [
+        "construction", "pcc", "execution", "site", "procedures",
+        "pre-commissioning", "commissioning", "start-up", "handover", "activities",
+        "installation", "fabrication", "assembly", "testing", "completion"
+    ],
+    "CONSTRUCTION AND PCC&SU": [
+        "construction", "pcc", "pcsu", "execution", "site", "procedures",
+        "pre-commissioning", "commissioning", "start-up", "handover", "activities",
+        "completion", "punch-list"
+    ]
+}

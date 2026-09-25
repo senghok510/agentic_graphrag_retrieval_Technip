@@ -1,0 +1,3611 @@
+{
+  "n_questions": 78,
+  "with_errors": 1,
+  "without_errors": 0,
+  "domain_prediction": {
+    "scoped_correct": 54,
+    "scoped_incorrect": 24,
+    "full_scope_no_narrowing": 0,
+    "accuracy_when_scoped": 0.6923
+  },
+  "deltas": {
+    "avg_confidence_delta_with_minus_without": -0.0094,
+    "avg_elapsed_s_delta_with_minus_without": -2.5587,
+    "avg_graph_chunks_delta_with_minus_without": -6.9481,
+    "avg_reference_jaccard": 0.4649,
+    "pct_answers_changed": 1.0
+  },
+  "llm_judge": {
+    "with_domain": {
+      "completeness": 4.688,
+      "relevance": 4.844,
+      "fluency": 4.948,
+      "accuracy": 4.727,
+      "overall": 4.802
+    },
+    "without_domain": {
+      "completeness": 4.818,
+      "relevance": 4.922,
+      "fluency": 4.961,
+      "accuracy": 4.766,
+      "overall": 4.867
+    },
+    "delta_with_minus_without": {
+      "completeness": -0.13,
+      "relevance": -0.078,
+      "fluency": -0.013,
+      "accuracy": -0.039,
+      "overall": -0.065
+    }
+  },
+  "per_question": [
+    {
+      "id": "PROCUREMENT-01",
+      "expected_domain": "PROCUREMENT",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "PROCUREMENT",
+        "SUBCONTRACTING"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 49.95,
+      "without_elapsed_s": 33.79,
+      "elapsed_s_delta": 16.16,
+      "with_graph_chunks": 22,
+      "without_graph_chunks": 25,
+      "graph_chunks_delta": -3,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers vendor selection and material sourcing requirements, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims without inconsistencies."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both vendor selection and material sourcing requirements, referencing specific exhibits and documents. It is directly relevant to the question, well-organized, and professionally written. All claims are supported by cited sources, ensuring accuracy and consistency."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PROCUREMENT-02",
+      "expected_domain": "PROCUREMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROCUREMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 40.55,
+      "without_elapsed_s": 41.36,
+      "elapsed_s_delta": -0.81,
+      "with_graph_chunks": 16,
+      "without_graph_chunks": 22,
+      "graph_chunks_delta": -6,
+      "reference_jaccard": 0.2857142857142857,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the RFQ and bidding processes for procuring long-lead equipment, addressing all key steps and requirements. It is directly relevant to the question, well-structured, and clearly written. The details are consistent with the cited sources, and no unsupported claims are present."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the RFQ and bidding processes for procuring long-lead equipment, addressing all key steps and requirements. It remains focused on the question, is well-structured and professional, and cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PROCESS_HSED-01",
+      "expected_domain": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 38.81,
+      "without_elapsed_s": 39.05,
+      "elapsed_s_delta": -0.24,
+      "with_graph_chunks": 22,
+      "without_graph_chunks": 25,
+      "graph_chunks_delta": -3,
+      "reference_jaccard": 0.14285714285714285,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the required HAZOP and HAZID reviews during the process design phase, directly addressing the question with no gaps. It is well-organized, clearly written, and professional. The information is consistent and properly grounded in the cited sources, with no unsupported claims."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed explanation of the HAZOP and HAZID reviews required during the process design phase, covering key aspects such as workshops, simulations, and interface management. However, it does not explicitly state whether all potential HAZOP and HAZID reviews are included, leaving a slight gap in completeness. The response is highly relevant, well-organized, and professional, but the accuracy score is slightly reduced due to the lack of explicit verification of all claims against the cited sources."
+      },
+      "judge_deltas": {
+        "completeness": 1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 1.0,
+        "overall": 0.5
+      }
+    },
+    {
+      "id": "PROCESS_HSED-02",
+      "expected_domain": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 37.88,
+      "without_elapsed_s": 83.41,
+      "elapsed_s_delta": -45.53,
+      "with_graph_chunks": 15,
+      "without_graph_chunks": 16,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both the process design philosophy and safety-in-design safeguards for the AGRU upgrade, directly aligning with the question. It is well-structured, clearly written, and supported by specific references to source documents, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both the process design philosophy and safety-in-design safeguards for the AGRU upgrade, directly aligning with the question. It is well-structured, clearly written, and supported by specific references to cited sources, ensuring accuracy and relevance."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "LEGAL_CONTRACT-01",
+      "expected_domain": "LEGAL / CONTRACT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "LEGAL / CONTRACT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 42.81,
+      "without_elapsed_s": 41.72,
+      "elapsed_s_delta": 1.09,
+      "with_graph_chunks": 20,
+      "without_graph_chunks": 10,
+      "graph_chunks_delta": 10,
+      "reference_jaccard": 0.25,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers all aspects of the Contractor's obligations regarding dispute resolution, directly addresses the question, is clearly written and well-organized, and cites specific clauses and sources to support its claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the Contractor's obligations regarding dispute resolution, covering all key aspects such as grievance procedures, dispute processes, arbitration details, and additional requirements. It is directly relevant to the question, well-organized, and clearly written. The claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "LEGAL_CONTRACT-02",
+      "expected_domain": "LEGAL / CONTRACT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "LEGAL / CONTRACT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 1.0,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.05,
+      "with_elapsed_s": 38.8,
+      "without_elapsed_s": 41.17,
+      "elapsed_s_delta": -2.37,
+      "with_graph_chunks": 18,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": 0,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively addresses the indemnity and liability provisions applicable to the Contractor, covering all key aspects such as consequential loss, third-party claims, personnel and property, subcontractor indemnities, insurance obligations, and liability for defects and company property. It is directly relevant to the question, well-organized, and clearly written. The claims are properly grounded in the cited sources, with no apparent inconsistencies or unsupported statements."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the indemnity and liability provisions applicable to the Contractor, covering all key aspects such as consequential loss, third-party claims, subcontractor indemnities, and specific liabilities like defects and property damage. It is directly relevant to the question, well-organized, and clearly written. The claims are consistent with the cited source, and no unsupported information is present."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "FINANCE_TAX-01",
+      "expected_domain": "FINANCE / TAX",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "FINANCE / TAX"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.42,
+      "without_elapsed_s": 40.1,
+      "elapsed_s_delta": -3.68,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": -5,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers payment terms and invoicing requirements, directly addressing the question with detailed and specific information. It is well-organized, professional, and consistent with the cited sources, with no apparent gaps or unsupported claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both payment terms and invoicing requirements, covering all necessary details such as timelines, disputed amounts, milestone payments, invoice content, and supporting documents. It is directly relevant to the question, well-organized, and clearly written. The information is consistent with the cited sources, with no unsupported claims."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "FINANCE_TAX-02",
+      "expected_domain": "FINANCE / TAX",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "FINANCE / TAX"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.87,
+      "without_elapsed_s": 35.23,
+      "elapsed_s_delta": -1.36,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 11,
+      "graph_chunks_delta": -3,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both tax compliance and fiscal reporting obligations, covering registration, invoicing, record-keeping, and audit requirements. It is directly relevant to the question, well-structured, and professionally written. The claims are consistent with and supported by the cited sources."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both tax compliance and fiscal reporting obligations, directly aligns with the question, is well-structured and professional, and cites specific sources to substantiate all claims. No gaps or inaccuracies are evident."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INSURANCE-01",
+      "expected_domain": "INSURANCE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "INSURANCE"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 1.0,
+      "confidence_delta": -0.05,
+      "with_elapsed_s": 32.82,
+      "without_elapsed_s": 58.61,
+      "elapsed_s_delta": -25.79,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -6,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively lists all required insurance coverages, additional requirements, and evidence provisions, directly addressing the question. It is well-organized, clearly written, and cites specific sources to support its claims, ensuring accuracy and relevance."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively lists all required insurance coverages, directly addresses the question, and provides detailed conditions for each type of insurance. It is well-structured, professional, and consistent with the cited source, with no unsupported claims."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INSURANCE-02",
+      "expected_domain": "INSURANCE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "INSURANCE"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 1.0,
+      "without_confidence": 1.0,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 17.02,
+      "without_elapsed_s": 20.59,
+      "elapsed_s_delta": -3.57,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 16,
+      "graph_chunks_delta": -2,
+      "reference_jaccard": 0.6,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.75,
+        "reasoning": "The answer fully addresses the question by specifying the minimum third-party liability insurance limit per occurrence. It is relevant, concise, and professionally written. However, the accuracy score is slightly reduced as the cited sources are not explicitly tied to the stated value, leaving room for doubt about whether the $10 million figure is directly supported by the provided references."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer fully addresses the question by specifying the minimum third-party liability insurance limit per occurrence as $10 million combined single limit. It is directly relevant, clearly written, and supported by multiple cited sources, ensuring accuracy and completeness."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -0.25
+      }
+    },
+    {
+      "id": "IP_NDA-01",
+      "expected_domain": "INTELLECTUAL PROPERTY / NDA",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "LEGAL / CONTRACT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 47.14,
+      "without_elapsed_s": 43.68,
+      "elapsed_s_delta": 3.46,
+      "with_graph_chunks": 21,
+      "without_graph_chunks": 22,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.5714285714285714,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the confidentiality obligations under the tender, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy and consistency."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly outlines the confidentiality obligations, directly addressing the question with detailed clauses, restrictions, and conditions. It is well-organized, clearly written, and supported by specific references to the cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "IP_NDA-02",
+      "expected_domain": "INTELLECTUAL PROPERTY / NDA",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "LEGAL / CONTRACT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.59,
+      "without_elapsed_s": 36.05,
+      "elapsed_s_delta": -0.46,
+      "with_graph_chunks": 27,
+      "without_graph_chunks": 23,
+      "graph_chunks_delta": 4,
+      "reference_jaccard": 0.2,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer fully addresses the question by specifying who owns the intellectual property rights, the scope of ownership, and the licensing terms. It is directly relevant, clearly written, and consistent with the cited source, with no unsupported claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer fully addresses the question by specifying the ownership of intellectual property rights, the assignment of rights, the granted license, and the indemnity clause. It is directly relevant, clearly written, and well-organized. The details are consistent with the cited sources, and no unsupported claims are present."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INFO_MGMT-01",
+      "expected_domain": "INFORMATION MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 41.13,
+      "without_elapsed_s": 37.34,
+      "elapsed_s_delta": 3.79,
+      "with_graph_chunks": 15,
+      "without_graph_chunks": 14,
+      "graph_chunks_delta": 1,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers document control and EDMS requirements, directly addressing the question with detailed and relevant information. It is well-organized, professionally written, and consistently supported by cited sources without any apparent gaps or inaccuracies."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the document control and EDMS requirements for project deliverables, covering all key aspects such as plans, procedures, registers, review classes, and cybersecurity. It is directly relevant to the question, well-structured, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INFO_MGMT-02",
+      "expected_domain": "INFORMATION MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 51.59,
+      "without_elapsed_s": 48.23,
+      "elapsed_s_delta": 3.36,
+      "with_graph_chunks": 24,
+      "without_graph_chunks": 25,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.2222222222222222,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the data and information handover requirements, addressing both categories in detail with specific examples. It remains focused on the question, is well-structured and professional, and cites multiple sources to support its claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the data and information handover requirements at contract close-out, covering all key aspects such as engineering data, documentation, and processes. It is directly relevant to the question, well-structured, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "CYBERSECURITY-01",
+      "expected_domain": "CYBERSECURITY",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "CONTROL SYSTEMS",
+        "INFORMATION TECHNOLOGY"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 40.04,
+      "without_elapsed_s": 38.6,
+      "elapsed_s_delta": 1.44,
+      "with_graph_chunks": 13,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": -4,
+      "reference_jaccard": 0.5714285714285714,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the cybersecurity requirements for the Process Control Systems network, covering standards, tools, plans, and incident reporting. It is directly relevant to the question, well-organized, and professionally written. The claims are consistent with the cited sources, and no unsupported information is present."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 3.0,
+        "overall": 4.25,
+        "reasoning": "The answer is comprehensive, covering multiple cybersecurity requirements for PCS networks, but it lacks clarity on whether all cited sources directly support the claims made. It is highly relevant to the question and fluently written, but the accuracy is slightly reduced due to potential over-reliance on generic references without explicit verification of source alignment."
+      },
+      "judge_deltas": {
+        "completeness": 1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 2.0,
+        "overall": 0.75
+      }
+    },
+    {
+      "id": "CYBERSECURITY-02",
+      "expected_domain": "CYBERSECURITY",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "INFORMATION TECHNOLOGY"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 28.75,
+      "without_elapsed_s": 36.32,
+      "elapsed_s_delta": -7.57,
+      "with_graph_chunks": 2,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": -15,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both access control and authentication measures, directly aligns with the question, is clearly written and well-organized, and accurately cites specific sources to support its claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both access control and authentication measures for project IT systems, covering specific requirements such as access cards, boundary fencing, swipe access points, and cybersecurity configurations. It is directly relevant to the question, well-organized, and supported by detailed citations from the provided sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-01",
+      "expected_domain": "ROTATING EQUIPMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ROTATING EQUIPMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 49.99,
+      "without_elapsed_s": 42.95,
+      "elapsed_s_delta": 7.04,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 25,
+      "graph_chunks_delta": -17,
+      "reference_jaccard": 0.125,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the specification requirements for the CO2 compressor, addressing mechanical, operational, safety, and material aspects. It is directly relevant to the question, well-organized, and professionally written. All claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the specification requirements for the CO2 compressor, addressing electrical, mechanical, testing, safety, and documentation aspects. It remains focused on the question, is well-structured and professional, and cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-02",
+      "expected_domain": "ROTATING EQUIPMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ROTATING EQUIPMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 47.86,
+      "without_elapsed_s": 44.94,
+      "elapsed_s_delta": 2.92,
+      "with_graph_chunks": 10,
+      "without_graph_chunks": 24,
+      "graph_chunks_delta": -14,
+      "reference_jaccard": 0.14285714285714285,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both maintenance and supplier qualification strategies for pumps and turbines, covering all key aspects such as preventive maintenance, condition monitoring, approved vendor lists, and documentation requirements. It is directly relevant to the question, well-structured, and supported by specific references to cited sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both maintenance and supplier qualification strategies for pumps and turbines, directly aligns with the question, is well-structured and professional, and cites specific sources to support all claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PRESSURE_VESSELS-01",
+      "expected_domain": "PRESSURE VESSELS",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PACKAGE"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.85,
+      "without_confidence": 0.95,
+      "confidence_delta": -0.1,
+      "with_elapsed_s": 38.87,
+      "without_elapsed_s": 43.88,
+      "elapsed_s_delta": -5.01,
+      "with_graph_chunks": 2,
+      "without_graph_chunks": 21,
+      "graph_chunks_delta": -19,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 3.0,
+        "relevance": 4.0,
+        "fluency": 5.0,
+        "accuracy": 3.0,
+        "overall": 3.75,
+        "reasoning": "The answer identifies ASME code compliance for pressure vessels and references relevant documentation but does not specify the exact ASME code required, leaving a gap in completeness and accuracy. It is well-written and directly addresses the question without straying off-topic."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.75,
+        "reasoning": "The answer thoroughly addresses the ASME code compliance requirements for the pressure vessels, including specific sections and additional standards. It is well-written and directly relevant to the question. However, the accuracy score is slightly reduced as the cited sources do not clearly confirm all the details provided, such as the mention of AS 3920 and U-Stamp/Form X."
+      },
+      "judge_deltas": {
+        "completeness": -2.0,
+        "relevance": -1.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -1.0
+      }
+    },
+    {
+      "id": "PRESSURE_VESSELS-02",
+      "expected_domain": "PRESSURE VESSELS",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "ROTATING EQUIPMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 39.02,
+      "without_elapsed_s": 35.82,
+      "elapsed_s_delta": 3.2,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 24,
+      "graph_chunks_delta": -10,
+      "reference_jaccard": 0.4,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers inspection requirements for both heat exchangers and columns, directly addressing the question without omissions or irrelevant information. It is well-structured, professionally written, and cites specific sources to support all claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the inspection requirements for both heat exchangers and columns, covering all key aspects such as pressure testing, material certification, mechanical inspection, and preservation. It remains focused on the question, is well-structured, and uses professional language. The claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PIPING_INSTALLATION-01",
+      "expected_domain": "PIPING INSTALLATION",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PIPING INSTALLATION"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 43.42,
+      "without_elapsed_s": 32.63,
+      "elapsed_s_delta": 10.79,
+      "with_graph_chunks": 15,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": -2,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides detailed information on welding standards, including general requirements, project-specific details, and industry codes, addressing the question comprehensively. It is well-organized and professional, directly relevant to piping installation. However, the cited sources are not fully verified for alignment with all claims, slightly impacting accuracy."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 3.0,
+        "overall": 4.25,
+        "reasoning": "The answer provides a detailed list of welding standards relevant to piping installation and includes additional requirements, making it comprehensive. It is highly relevant and well-written, directly addressing the question. However, the accuracy is slightly reduced due to unclear alignment between the cited sources and the specific standards mentioned, as some standards (e.g., AS1554SP) seem tangential to piping installation."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 1.0,
+        "overall": 0.25
+      }
+    },
+    {
+      "id": "PIPING_INSTALLATION-02",
+      "expected_domain": "PIPING INSTALLATION",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PIPING INSTALLATION"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.88,
+      "without_elapsed_s": 41.77,
+      "elapsed_s_delta": -7.89,
+      "with_graph_chunks": 2,
+      "without_graph_chunks": 13,
+      "graph_chunks_delta": -11,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 4.0,
+        "fluency": 5.0,
+        "accuracy": 3.0,
+        "overall": 4.0,
+        "reasoning": "The answer provides a detailed breakdown of 'Issued for Construction' requirements for piping isometrics, covering general and specific deliverables. However, it includes some elements, like 3D models, that are not explicitly tied to the core question. The cited sources are referenced but lack sufficient detail to fully verify all claims, slightly impacting accuracy."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the 'Issued for Construction' deliverable requirements for piping isometrics, addressing general and specific requirements, content, testing, and additional considerations. It is directly relevant, well-structured, and supported by detailed citations from credible sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": -1.0,
+        "fluency": 0.0,
+        "accuracy": -2.0,
+        "overall": -1.0
+      }
+    },
+    {
+      "id": "PIPELINES-01",
+      "expected_domain": "PIPELINES",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PIPELINES"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.15,
+      "without_elapsed_s": 33.25,
+      "elapsed_s_delta": 2.9,
+      "with_graph_chunks": 17,
+      "without_graph_chunks": 19,
+      "graph_chunks_delta": -2,
+      "reference_jaccard": 0.42857142857142855,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers integrity management requirements for pipeline systems, addressing stress analysis, cathodic protection, leak detection, safety studies, environmental compliance, and relevant standards. It is directly relevant to the question, well-organized, and supported by specific citations from the provided sources."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively addresses the integrity management requirements for pipeline systems, covering design, construction, regulatory compliance, stakeholder management, safety, and documentation. It is directly relevant to the question, well-structured, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PIPELINES-02",
+      "expected_domain": "PIPELINES",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PIPELINES"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.44,
+      "without_elapsed_s": 33.84,
+      "elapsed_s_delta": 1.6,
+      "with_graph_chunks": 19,
+      "without_graph_chunks": 23,
+      "graph_chunks_delta": -4,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers pigging operation requirements specific to transmission pipelines, including pig traps, bi-directional facilities, pressurization, and compliance with standards. It is directly relevant to the question, well-organized, and supported by cited sources, with no apparent gaps or inaccuracies."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed explanation of pigging operation requirements, including the installation of pig traps and associated design features, which directly addresses the question. It is well-written and professional. However, it does not explicitly mention all potential requirements for pigging operations, such as operational procedures or safety considerations, which slightly impacts completeness. The cited sources appear relevant, but the specific claims could be more explicitly tied to the referenced pages for full accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 1.0,
+        "overall": 0.5
+      }
+    },
+    {
+      "id": "PACKAGE-01",
+      "expected_domain": "PACKAGE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PACKAGE"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 41.46,
+      "without_elapsed_s": 48.85,
+      "elapsed_s_delta": -7.39,
+      "with_graph_chunks": 10,
+      "without_graph_chunks": 20,
+      "graph_chunks_delta": -10,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the requirements for vendor-supplied packaged equipment skids, covering general, technical, documentation, and certification aspects. It is directly relevant to the question, well-structured, and clearly written. All claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the requirements for vendor-supplied packaged equipment skids, covering general, technical, and documentation aspects. It is directly relevant to the question, well-structured, and clearly written. All claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PACKAGE-02",
+      "expected_domain": "PACKAGE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PACKAGE"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.81,
+      "without_elapsed_s": 41.03,
+      "elapsed_s_delta": -7.22,
+      "with_graph_chunks": 5,
+      "without_graph_chunks": 24,
+      "graph_chunks_delta": -19,
+      "reference_jaccard": 0.3333333333333333,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers all required documentation categories for pre-assembled modular equipment packages, directly addresses the question, is well-structured and professional, and cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers all aspects of documentation required for pre-assembled modular equipment packages, including engineering, mechanical, quality assurance, preservation, transport, operational, and regulatory compliance. It is directly relevant to the question, well-organized, and professionally written. The claims are consistent and supported by specific source references, ensuring accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "FIRED_EQUIPMENT-01",
+      "expected_domain": "FIRED EQUIPMENT",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.77,
+      "without_elapsed_s": 32.28,
+      "elapsed_s_delta": 1.49,
+      "with_graph_chunks": 13,
+      "without_graph_chunks": 15,
+      "graph_chunks_delta": -2,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the design requirements for fired heaters, covering process compliance, mechanical design, safety, integration, and documentation. It remains focused on the question, is well-structured, and cites specific sources to support its claims, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 3.0,
+        "relevance": 3.0,
+        "fluency": 4.0,
+        "accuracy": 2.0,
+        "overall": 3.0,
+        "reasoning": "The answer provides a broad overview of design requirements for fired heaters but lacks specific details directly tied to fired heaters in the process package. While it is well-written and organized, some points are generic and not clearly supported by the cited sources, reducing its accuracy and relevance to the specific question."
+      },
+      "judge_deltas": {
+        "completeness": 2.0,
+        "relevance": 2.0,
+        "fluency": 1.0,
+        "accuracy": 3.0,
+        "overall": 2.0
+      }
+    },
+    {
+      "id": "FIRED_EQUIPMENT-02",
+      "expected_domain": "FIRED EQUIPMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.28,
+      "without_elapsed_s": 33.03,
+      "elapsed_s_delta": 0.25,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": -3,
+      "reference_jaccard": 0.2,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides detailed combustion and burner design standards, addressing safety, emissions, and operational scenarios, which are relevant to the question. It is well-organized and professional, but the cited sources could be more explicitly tied to specific claims for full accuracy."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed response, addressing both combustion and burner design standards, and references specific standards and project documentation. However, it lacks explicit mention of specific Australian Standards by name or number, which slightly impacts completeness and accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ONSHORE_BUILDING-01",
+      "expected_domain": "ONSHORE BUILDING/ ARCHITECTURE",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 37.9,
+      "without_elapsed_s": 36.07,
+      "elapsed_s_delta": 1.83,
+      "with_graph_chunks": 16,
+      "without_graph_chunks": 28,
+      "graph_chunks_delta": -12,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the civil foundation requirements for onshore buildings, referencing specific design standards, construction practices, environmental considerations, and relevant documents. It is well-organized, clearly written, and all claims are supported by cited sources, ensuring accuracy and relevance."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the civil foundation requirements for onshore buildings, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims. No gaps or inaccuracies are evident."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ONSHORE_BUILDING-02",
+      "expected_domain": "ONSHORE BUILDING/ ARCHITECTURE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 27.92,
+      "without_elapsed_s": 28.77,
+      "elapsed_s_delta": -0.85,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -10,
+      "reference_jaccard": 0.16666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the architectural design standards for the onshore facility layout, directly addresses the question, is well-organized and professional, and cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the architectural design standards for the onshore facility layout, referencing specific company specifications and standards. It is directly relevant to the question, well-organized, and professionally written. The claims are supported by cited sources, ensuring accuracy and consistency."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "CONTROL_SYSTEMS-01",
+      "expected_domain": "CONTROL SYSTEMS",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "CONTROL SYSTEMS"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.16,
+      "without_elapsed_s": 44.32,
+      "elapsed_s_delta": -8.16,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -6,
+      "reference_jaccard": 0.75,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both DCS and SCADA requirements for the process control system, covering integration, design, testing, compliance, and documentation. It is directly relevant to the question, well-structured, and supported by specific references to cited sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both DCS and SCADA requirements for the process control system, covering integration, standards compliance, design, testing, and cybersecurity. It is directly relevant to the question, well-structured, and professionally written. The claims are consistent with the cited sources, and no unsupported information is present."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "CONTROL_SYSTEMS-02",
+      "expected_domain": "CONTROL SYSTEMS",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "CONTROL SYSTEMS"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.07,
+      "without_elapsed_s": 38.75,
+      "elapsed_s_delta": -5.68,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 9,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.25,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the question by listing specific HMI design standards and requirements, directly referencing the source document. It is well-organized, professional, and consistent with the cited material, with no unsupported claims."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 4.0,
+        "fluency": 4.0,
+        "accuracy": 3.0,
+        "overall": 3.75,
+        "reasoning": "The answer provides a detailed list of HMI design standards and related requirements, addressing the question comprehensively. It is relevant and well-organized, but some claims, such as specific standards and documents, lack clear linkage to the cited sources, reducing accuracy slightly."
+      },
+      "judge_deltas": {
+        "completeness": 1.0,
+        "relevance": 1.0,
+        "fluency": 1.0,
+        "accuracy": 2.0,
+        "overall": 1.25
+      }
+    },
+    {
+      "id": "TELECOM-01",
+      "expected_domain": "TELECOMMUNICATIONS",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "TELECOMMUNICATIONS"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.05,
+      "without_elapsed_s": 48.32,
+      "elapsed_s_delta": -12.27,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 26,
+      "graph_chunks_delta": -18,
+      "reference_jaccard": 0.25,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively lists the required telecommunications infrastructure, including systems, equipment, and standards, directly addressing the question. It is well-organized, clearly written, and cites specific sources to support all claims, ensuring accuracy and relevance."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively lists the required telecommunications infrastructure, equipment, functional requirements, and compliance standards, directly addressing the question. It is well-organized, clearly written, and cites specific sources to support its claims, ensuring accuracy and relevance."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "TELECOM-02",
+      "expected_domain": "TELECOMMUNICATIONS",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "TELECOMMUNICATIONS"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 34.42,
+      "without_elapsed_s": 36.16,
+      "elapsed_s_delta": -1.74,
+      "with_graph_chunks": 4,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -14,
+      "reference_jaccard": 0.3333333333333333,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides detailed requirements for both radio and fiber optic communication systems, addressing the question comprehensively. It is directly relevant and well-organized, with clear citations. However, it could be more exhaustive by specifying additional technical details or standards for the systems, which slightly impacts completeness and accuracy."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively addresses the question by detailing both radio and fiber optic communication systems, including specific requirements and compliance standards. It remains focused on the topic, is well-structured, and cites sources to support all claims, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -0.5
+      }
+    },
+    {
+      "id": "LABORATORY-01",
+      "expected_domain": "LABORATORY",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "QUALITY MANAGEMENT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.47,
+      "without_elapsed_s": 33.43,
+      "elapsed_s_delta": 0.04,
+      "with_graph_chunks": 15,
+      "without_graph_chunks": 16,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the question by detailing the required laboratory testing facilities, including accreditation, personnel qualifications, testing procedures, and reporting standards. It remains focused on the topic, is well-structured, and cites specific sources to support its claims, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the question by detailing the required laboratory testing facilities, including accreditation, technical audits, and specific testing requirements. It remains focused on the topic, is well-structured, and provides clear, professional language. The information is consistent and supported by cited sources, ensuring accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "LABORATORY-02",
+      "expected_domain": "LABORATORY",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PACKAGE"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.7,
+      "without_confidence": 0.95,
+      "confidence_delta": -0.25,
+      "with_elapsed_s": 22.5,
+      "without_elapsed_s": 39.54,
+      "elapsed_s_delta": -17.04,
+      "with_graph_chunks": 3,
+      "without_graph_chunks": 26,
+      "graph_chunks_delta": -23,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 2.0,
+        "relevance": 4.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 3.75,
+        "reasoning": "The answer acknowledges the lack of specific information in the provided documentation but does not attempt to outline general expectations for on-site laboratory equipment, leaving a gap in completeness. It is relevant to the question and clearly written. The accuracy is high as it correctly reflects the absence of details in the cited sources."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively lists all required equipment for the on-site laboratory, directly addresses the question, and is well-organized and professional. All claims are supported by specific references to the cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": -3.0,
+        "relevance": -1.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -1.25
+      }
+    },
+    {
+      "id": "SUBCONTRACTING-01",
+      "expected_domain": "SUBCONTRACTING",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "SUBCONTRACTING"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 47.65,
+      "without_elapsed_s": 43.37,
+      "elapsed_s_delta": 4.28,
+      "with_graph_chunks": 17,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the requirements for managing subcontractors, covering general obligations, approval criteria, compliance standards, and documentation needs. It is directly relevant to the question, well-structured, and supported by specific references to cited sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the requirements for managing subcontractors, covering compliance, performance monitoring, pre-qualification, approval processes, quality management, and other key aspects. It is directly relevant to the question, well-organized, and professionally written. The claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "SUBCONTRACTING-02",
+      "expected_domain": "SUBCONTRACTING",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "SUBCONTRACTING"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 34.24,
+      "without_elapsed_s": 37.24,
+      "elapsed_s_delta": -3.0,
+      "with_graph_chunks": 18,
+      "without_graph_chunks": 15,
+      "graph_chunks_delta": 3,
+      "reference_jaccard": 0.42857142857142855,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers yard management obligations for subcontracted fabrication work, addressing both general and specific requirements. It is directly relevant to the question, well-organized, and professionally written. The claims are consistent with the cited sources, and no unsupported or fabricated information is present."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers yard management obligations for subcontracted fabrication work, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "OFFSHORE_MOBILE-01",
+      "expected_domain": "OFFSHORE MOBILE SYSTEM",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 37.27,
+      "without_elapsed_s": 44.3,
+      "elapsed_s_delta": -7.03,
+      "with_graph_chunks": 13,
+      "without_graph_chunks": 26,
+      "graph_chunks_delta": -13,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers the required design documentation for mobile offshore units, including general and project-specific requirements. It is directly relevant to the question, well-organized, and professionally written. The details are consistent with the cited sources, and no unsupported claims are present."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the required design documentation for mobile offshore units, addressing general and project-specific requirements. It is directly relevant to the question, well-organized, and professionally written. The claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "OFFSHORE_MOBILE-02",
+      "expected_domain": "OFFSHORE MOBILE SYSTEM",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.85,
+      "without_confidence": 0.95,
+      "confidence_delta": -0.1,
+      "with_elapsed_s": 29.91,
+      "without_elapsed_s": 34.98,
+      "elapsed_s_delta": -5.07,
+      "with_graph_chunks": 5,
+      "without_graph_chunks": 20,
+      "graph_chunks_delta": -15,
+      "reference_jaccard": 0.14285714285714285,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 3.0,
+        "relevance": 3.0,
+        "fluency": 4.0,
+        "accuracy": 4.0,
+        "overall": 3.5,
+        "reasoning": "The answer provides some relevant information about general project requirements but does not directly address specific requirements for floating production systems, which are the focus of the question. It is well-written and cites sources, but the lack of explicit details about floating production systems limits its completeness and relevance."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 4.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.25,
+        "reasoning": "The answer provides a detailed overview of the requirements for floating production systems, including integration, compliance, design standards, environmental and safety adherence, and third-party verification. However, it could be more specific about unique requirements for this project beyond general industry practices. The response is well-written and organized, with cited sources supporting most claims, though some details could be more explicitly tied to the sources."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": -1.0,
+        "fluency": -1.0,
+        "accuracy": 0.0,
+        "overall": -0.75
+      }
+    },
+    {
+      "id": "OFFSHORE_BUILDING-01",
+      "expected_domain": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HVAC"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.04,
+      "without_elapsed_s": 36.77,
+      "elapsed_s_delta": -0.73,
+      "with_graph_chunks": 5,
+      "without_graph_chunks": 19,
+      "graph_chunks_delta": -14,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 3.0,
+        "overall": 4.25,
+        "reasoning": "The answer is well-structured and addresses key design requirements for offshore living quarters and accommodation modules, covering structural, utility, safety, and HVAC considerations. However, the cited source is not verifiable, and some details, such as specific compliance standards or additional design considerations, may be missing or overly generalized."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers the design requirements for offshore living quarters and accommodation modules, addressing structural integrity, fire protection, safety, environmental compliance, human factors, and amenities. It is directly relevant to the question, well-organized, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": -2.0,
+        "overall": -0.75
+      }
+    },
+    {
+      "id": "OFFSHORE_BUILDING-02",
+      "expected_domain": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.5,
+      "without_confidence": 0.6,
+      "confidence_delta": -0.1,
+      "with_elapsed_s": 28.98,
+      "without_elapsed_s": 30.77,
+      "elapsed_s_delta": -1.79,
+      "with_graph_chunks": 5,
+      "without_graph_chunks": 20,
+      "graph_chunks_delta": -15,
+      "reference_jaccard": 0.14285714285714285,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 2.0,
+        "relevance": 3.0,
+        "fluency": 4.0,
+        "accuracy": 3.0,
+        "overall": 3.0,
+        "reasoning": "The answer acknowledges the absence of specific helideck layout standards in the provided documentation, but it does not attempt to provide general industry standards or guidelines that might apply. While it is relevant to the question, it lacks depth and completeness. The writing is clear and professional, but the accuracy is limited by the lack of detailed information from the cited sources."
+      },
+      "without_judge": {
+        "completeness": 2.0,
+        "relevance": 3.0,
+        "fluency": 4.0,
+        "accuracy": 3.0,
+        "overall": 3.0,
+        "reasoning": "The answer mentions compliance with project specifications and standards but does not provide specific helideck layout standards, leaving the response incomplete. It is somewhat relevant but lacks direct details. The writing is clear and professional, but the accuracy is limited due to the absence of specific references to helideck standards in the cited sources."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-01",
+      "expected_domain": "CIVIL / STRUCTURAL",
+      "route": null,
+      "domain_scope": null,
+      "predicted_domains": [],
+      "domain_hit": false,
+      "with_ok": false,
+      "without_ok": true
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-02",
+      "expected_domain": "CIVIL / STRUCTURAL",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 27.1,
+      "without_elapsed_s": 35.51,
+      "elapsed_s_delta": -8.41,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 15,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers foundation design requirements, addressing general, specific, construction, and additional considerations. It is directly relevant to the question, clearly written, well-organized, and supported by cited sources without any inconsistencies or unsupported claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers foundation design requirements, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy and consistency."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ELECTRICAL-01",
+      "expected_domain": "ELECTRICAL",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ELECTRICAL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 40.73,
+      "without_elapsed_s": 38.87,
+      "elapsed_s_delta": 1.86,
+      "with_graph_chunks": 20,
+      "without_graph_chunks": 27,
+      "graph_chunks_delta": -7,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the electrical power distribution requirements for the new equipment, covering general, specific, and equipment-specific requirements. It is directly relevant to the question, well-organized, and professionally written. The claims are supported by detailed references to specific sources, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the electrical power distribution requirements for the new equipment, covering general and specific requirements, including standards, voltage levels, hazardous area compliance, and integration. It is well-organized, directly relevant to the question, and supported by detailed references to specific source documents."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ELECTRICAL-02",
+      "expected_domain": "ELECTRICAL",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ELECTRICAL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 40.43,
+      "without_elapsed_s": 46.96,
+      "elapsed_s_delta": -6.53,
+      "with_graph_chunks": 11,
+      "without_graph_chunks": 20,
+      "graph_chunks_delta": -9,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers switchgear and transformer specifications, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the required specifications for both switchgear and transformers, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INSTRUMENTATION-01",
+      "expected_domain": "INSTRUMENTATION",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "INSTRUMENTATION"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.45,
+      "without_elapsed_s": 37.77,
+      "elapsed_s_delta": -2.32,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -6,
+      "reference_jaccard": 0.75,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers field device and transmitter specifications, directly addressing the question with detailed information. It is well-organized, clearly written, and cites specific sources to support its claims, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers field device and transmitter specifications, directly addressing the question with detailed vendor and compliance information. It is well-organized, professional, and supported by specific source references, ensuring accuracy and relevance."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INSTRUMENTATION-02",
+      "expected_domain": "INSTRUMENTATION",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "INSTRUMENTATION"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 34.72,
+      "without_elapsed_s": 41.68,
+      "elapsed_s_delta": -6.96,
+      "with_graph_chunks": 9,
+      "without_graph_chunks": 19,
+      "graph_chunks_delta": -10,
+      "reference_jaccard": 0.4,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 4.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.25,
+        "reasoning": "The answer provides detailed calibration procedures and requirements, covering various aspects such as documentation, personnel competency, and hazardous area compliance. It is well-organized and clearly written, but some details, like specific calibration steps for individual instruments, are not explicitly outlined. The cited sources support most claims, though the connection between some procedures and the question could be more direct."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the calibration procedures for measurement instruments, addressing general requirements, specific cases, documentation, and personnel competency. It is directly relevant to the question, well-organized, and supported by detailed references to cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": -1.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -0.75
+      }
+    },
+    {
+      "id": "HVAC-01",
+      "expected_domain": "HVAC",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "HVAC"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 32.66,
+      "without_elapsed_s": 38.69,
+      "elapsed_s_delta": -6.03,
+      "with_graph_chunks": 5,
+      "without_graph_chunks": 19,
+      "graph_chunks_delta": -14,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed breakdown of HVAC system design requirements for the control room, including design, installation, testing, commissioning, and documentation. It is well-organized and directly addresses the question. However, the cited sources are not fully verifiable, as specific details from the sources are not explicitly quoted, slightly impacting accuracy and completeness."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the HVAC system design requirements for the control room, covering both general and specific criteria. It remains focused on the question, is well-structured and professional, and cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -0.5
+      }
+    },
+    {
+      "id": "HVAC-02",
+      "expected_domain": "HVAC",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "HVAC"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 31.97,
+      "without_elapsed_s": 37.81,
+      "elapsed_s_delta": -5.84,
+      "with_graph_chunks": 3,
+      "without_graph_chunks": 16,
+      "graph_chunks_delta": -13,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides detailed specifications for both ductwork and chillers, addressing the question comprehensively. It is well-organized and directly relevant to the query. However, the level of detail in some areas, such as specific material requirements for ductwork or precise chiller performance metrics, could be expanded. The citations appear valid, but the accuracy of the claims would depend on verifying the cited sources."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers ductwork and chiller specifications, addressing installation, testing, commissioning, and documentation requirements. It is directly relevant to the question, well-organized, and supported by cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": -1.0,
+        "overall": -0.5
+      }
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-01",
+      "expected_domain": "NAVAL ARCHITECTURE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.29,
+      "without_elapsed_s": 42.77,
+      "elapsed_s_delta": -7.48,
+      "with_graph_chunks": 2,
+      "without_graph_chunks": 21,
+      "graph_chunks_delta": -19,
+      "reference_jaccard": 0.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the required stability analysis for the floating structure, addressing both weight control and dimensional control activities in detail. It directly addresses the question, is well-organized and professional, and cites a specific source to support its claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the stability analysis requirements for floating structures, covering criteria, methodologies, standards, and key entities. It is directly relevant to the question, well-organized, and supported by specific references to the cited source document."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-02",
+      "expected_domain": "NAVAL ARCHITECTURE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.01,
+      "without_elapsed_s": 33.12,
+      "elapsed_s_delta": 1.89,
+      "with_graph_chunks": 17,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.3333333333333333,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed list of hydrodynamic studies relevant to vessel design, covering various aspects such as VIV, dynamic analysis, transportation loads, and CFD studies. It is well-organized and directly addresses the question. However, the cited sources are not fully verified for alignment with all claims, slightly impacting accuracy."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed list of hydrodynamic studies relevant to vessel design, covering key aspects like CFD analysis, vibration assessments, and vent dispersion studies. It is well-organized and directly addresses the question. However, the inclusion of criteria for selecting studies, while useful, slightly overlaps with the main focus, and some claims could benefit from clearer source attribution."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-01",
+      "expected_domain": "OFFSHORE STRUCTURE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 38.29,
+      "without_elapsed_s": 38.05,
+      "elapsed_s_delta": 0.24,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 13,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 3.0,
+        "relevance": 3.0,
+        "fluency": 4.0,
+        "accuracy": 3.0,
+        "overall": 3.25,
+        "reasoning": "The answer provides a mix of geotechnical, structural, and engineering requirements but lacks focus on specific foundation analysis for the offshore platform jacket. While some relevant points are included, such as soil investigations and pile connection details, other sections drift into unrelated topics like civil design and temporary structures. The writing is clear and professional, but the accuracy is diminished by the inclusion of tangential information not directly tied to the question."
+      },
+      "without_judge": {
+        "completeness": 4.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 4.0,
+        "overall": 4.5,
+        "reasoning": "The answer provides a detailed and structured explanation of the foundation analysis required for an offshore platform jacket, covering geotechnical, structural, dynamic, and environmental considerations. It is highly relevant and well-written, but the completeness score is slightly reduced as it could elaborate more on specific methodologies or standards for analysis. The accuracy is strong but slightly reduced due to the lack of explicit verification of all cited claims against the sources."
+      },
+      "judge_deltas": {
+        "completeness": -1.0,
+        "relevance": -2.0,
+        "fluency": -1.0,
+        "accuracy": -1.0,
+        "overall": -1.25
+      }
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-02",
+      "expected_domain": "OFFSHORE STRUCTURE",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "ROTATING EQUIPMENT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.7,
+      "without_confidence": 0.95,
+      "confidence_delta": -0.25,
+      "with_elapsed_s": 26.58,
+      "without_elapsed_s": 31.65,
+      "elapsed_s_delta": -5.07,
+      "with_graph_chunks": 2,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -16,
+      "reference_jaccard": 0.25,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 2.0,
+        "relevance": 3.0,
+        "fluency": 4.0,
+        "accuracy": 4.0,
+        "overall": 3.25,
+        "reasoning": "The answer acknowledges the lack of information in the provided documentation, which partially addresses the question but leaves a significant gap in terms of providing any mooring system requirements. It is relevant to the question but does not fully satisfy it. The response is clear and professional, and the claim about the absence of information appears consistent with the cited sources."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the mooring system requirements, addressing general and specific aspects, as well as additional considerations. It is directly relevant to the question, clearly written, and supported by cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": -3.0,
+        "relevance": -2.0,
+        "fluency": -1.0,
+        "accuracy": -1.0,
+        "overall": -1.75
+      }
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-01",
+      "expected_domain": "MATERIALS AND TECHNOLOGY",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "PIPING INSTALLATION",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 34.38,
+      "without_elapsed_s": 36.18,
+      "elapsed_s_delta": -1.8,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 11,
+      "graph_chunks_delta": 1,
+      "reference_jaccard": 0.8571428571428571,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers material selection requirements for corrosion-resistant piping, addressing material types, certification standards, design considerations, and operational factors. It is directly relevant to the question, well-organized, and supported by specific references to credible sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers material selection requirements for corrosion-resistant piping, addressing specific materials, criteria for suitability, and additional considerations. It remains focused on the question, is well-organized, and cites multiple sources to support its claims, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-02",
+      "expected_domain": "MATERIALS AND TECHNOLOGY",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 38.53,
+      "without_elapsed_s": 42.24,
+      "elapsed_s_delta": -3.71,
+      "with_graph_chunks": 13,
+      "without_graph_chunks": 18,
+      "graph_chunks_delta": -5,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the coating specifications, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims. No gaps or inconsistencies are evident."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the required coating specifications, including preparation, environmental conditions, standards, and vendor details. It directly addresses the question, is well-structured, and cites specific sources to support its claims, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-01",
+      "expected_domain": "ADVANCED SYSTEMS",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "INFORMATION TECHNOLOGY",
+        "CONTROL SYSTEMS"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 40.17,
+      "without_elapsed_s": 44.14,
+      "elapsed_s_delta": -3.97,
+      "with_graph_chunks": 10,
+      "without_graph_chunks": 28,
+      "graph_chunks_delta": -18,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers digital optimization, AI, and IoT technologies required for the project, directly addressing the question. It is well-structured, clearly written, and all claims are supported by specific references to the cited sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the required digital optimization, AI, and IoT technologies for the project, directly addressing the question with no gaps or irrelevant information. It is well-structured, professionally written, and all claims are supported by specific references to the cited sources."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-02",
+      "expected_domain": "ADVANCED SYSTEMS",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "CONTROL SYSTEMS",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 41.59,
+      "without_elapsed_s": 39.78,
+      "elapsed_s_delta": 1.81,
+      "with_graph_chunks": 19,
+      "without_graph_chunks": 28,
+      "graph_chunks_delta": -9,
+      "reference_jaccard": 0.6,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the expected smart system integration scope, including technical, compliance, and operational requirements, while directly addressing the question. It is well-organized, professionally written, and supported by specific citations from relevant documents, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly details the smart system integrations expected under the contract, directly addressing the question with specific systems, integration requirements, and compliance measures. It is well-organized, clearly written, and supported by cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INFO_TECH-01",
+      "expected_domain": "INFORMATION TECHNOLOGY",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 31.94,
+      "without_elapsed_s": 33.09,
+      "elapsed_s_delta": -1.15,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": -9,
+      "reference_jaccard": 0.75,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively addresses both IT infrastructure and server requirements, directly aligns with the question, is well-structured and professional, and cites specific sources to support all claims, ensuring accuracy."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers IT infrastructure and server requirements, addressing all aspects such as software, network design, telecommunications, cybersecurity, and server specifications. It is directly relevant to the question, well-organized, and supported by cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "INFO_TECH-02",
+      "expected_domain": "INFORMATION TECHNOLOGY",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 32.63,
+      "without_elapsed_s": 35.04,
+      "elapsed_s_delta": -2.41,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 24,
+      "graph_chunks_delta": -12,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly lists the required software platforms for project administration, directly addresses the question, is well-organized and professional, and cites specific source documents to support its claims. No gaps or inconsistencies are evident."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly lists the required software platforms, provides detailed requirements for their usage, and includes specific compliance and submission standards. It is directly relevant to the question, well-organized, and supported by cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-01",
+      "expected_domain": "PROJECT EXECUTION SYSTEMS",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.31,
+      "without_elapsed_s": 39.06,
+      "elapsed_s_delta": -3.75,
+      "with_graph_chunks": 6,
+      "without_graph_chunks": 20,
+      "graph_chunks_delta": -14,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the requirements of the Aveva 3D modeling system as they apply to engineering deliverables, covering all relevant aspects such as software usage, data integrity, clash detection, deliverables, and organizational planning. It is well-structured, clearly written, and directly tied to the question. The claims are supported by specific references to the cited sources, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively covers the Aveva 3D modeling system requirements for engineering deliverables, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-02",
+      "expected_domain": "PROJECT EXECUTION SYSTEMS",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.8,
+      "without_elapsed_s": 36.33,
+      "elapsed_s_delta": -0.53,
+      "with_graph_chunks": 13,
+      "without_graph_chunks": 28,
+      "graph_chunks_delta": -15,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer comprehensively lists the required EDMS and collaborative tools, directly addresses the question, is well-organized and professional, and cites specific sources to support all claims, ensuring accuracy."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the question by detailing both the required EDMS and collaborative tools, referencing specific systems, software, and protocols. It is well-organized, clearly written, and directly relevant to the project requirements. The claims are supported by cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "COSTS_CONTROL-01",
+      "expected_domain": "COSTS CONTROL",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "COSTS CONTROL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.17,
+      "without_elapsed_s": 42.59,
+      "elapsed_s_delta": -6.42,
+      "with_graph_chunks": 7,
+      "without_graph_chunks": 10,
+      "graph_chunks_delta": -3,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both cost tracking and variance analysis requirements, directly aligns with the question, is well-structured and professional, and cites specific source documents to substantiate its claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the cost tracking and variance analysis requirements, covering all key aspects such as cost reporting, variance analysis, and root cause analysis. It is directly relevant to the question, well-organized, and clearly written. The details are consistent with the cited sources, and no unsupported claims are present."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "COSTS_CONTROL-02",
+      "expected_domain": "COSTS CONTROL",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "COSTS CONTROL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 34.22,
+      "without_elapsed_s": 42.18,
+      "elapsed_s_delta": -7.96,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 26,
+      "graph_chunks_delta": -14,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the budget forecasting obligations, directly addresses the question, is well-organized and professional, and cites specific sections and pages from the contract documents to support its claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the budget forecasting obligations, directly addresses the question, is well-organized and professional, and cites specific clauses and sections from the provided source document to ensure accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "RISK_MANAGEMENT-01",
+      "expected_domain": "RISK MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "RISK MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.64,
+      "without_elapsed_s": 45.0,
+      "elapsed_s_delta": -8.36,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 21,
+      "graph_chunks_delta": -7,
+      "reference_jaccard": 0.3333333333333333,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly outlines the risk register management process, addressing all key aspects such as plan submission, updates, workshops, and reporting. It is directly relevant to the question, well-structured, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly outlines the risk register management process, addressing all aspects of the question with detailed steps and requirements. It remains focused on the topic, is well-structured and professional, and cites specific sources to support its claims, ensuring accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "RISK_MANAGEMENT-02",
+      "expected_domain": "RISK MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "RISK MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 37.07,
+      "without_elapsed_s": 35.08,
+      "elapsed_s_delta": 1.99,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 19,
+      "graph_chunks_delta": -5,
+      "reference_jaccard": 0.375,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly identifies project risks and provides detailed contingency planning measures for each category, directly addressing the question. It is well-organized, clearly written, and supported by specific references to cited sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly identifies project risks and provides detailed contingency planning measures for each risk category, directly addressing the question. It is well-organized, clearly written, and supported by specific references to source documents, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "DOCUMENT_CONTROL-01",
+      "expected_domain": "DOCUMENT CONTROL",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "DOCUMENT CONTROL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 37.4,
+      "without_elapsed_s": 34.9,
+      "elapsed_s_delta": 2.5,
+      "with_graph_chunks": 19,
+      "without_graph_chunks": 17,
+      "graph_chunks_delta": 2,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both document revision and version control requirements, directly aligns with the question, is well-structured and professional, and cites specific sources to substantiate all claims."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the document revision and version control requirements, referencing specific processes, tools, and standards. It is directly relevant to the question, well-structured, and supported by cited sources, with no apparent inconsistencies or unsupported claims."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "DOCUMENT_CONTROL-02",
+      "expected_domain": "DOCUMENT CONTROL",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "DOCUMENT CONTROL"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 37.69,
+      "without_elapsed_s": 33.31,
+      "elapsed_s_delta": 4.38,
+      "with_graph_chunks": 24,
+      "without_graph_chunks": 24,
+      "graph_chunks_delta": 0,
+      "reference_jaccard": 0.4,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both transmittal and document register requirements, directly aligns with the question, and is well-organized and professional. It cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both transmittal and document register requirements, referencing specific documents and exhibits. It is directly relevant to the question, well-structured, and professionally written. The details provided are consistent with the cited sources, ensuring accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "HSE_MANAGEMENT-01",
+      "expected_domain": "HSE MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "HSE MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 1.0,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.05,
+      "with_elapsed_s": 35.36,
+      "without_elapsed_s": 36.54,
+      "elapsed_s_delta": -1.18,
+      "with_graph_chunks": 9,
+      "without_graph_chunks": 9,
+      "graph_chunks_delta": 0,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the question by detailing all required emergency response procedures, including specific steps and alignment with company standards. It remains focused on the topic, is well-structured, and cites a credible source to support its claims, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the question by detailing all required emergency response procedures, including specific actions and implementation steps. It remains focused on the topic, is well-organized and professional, and cites a credible source to support its claims. No gaps or inaccuracies are evident."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "HSE_MANAGEMENT-02",
+      "expected_domain": "HSE MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "HSE MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 36.52,
+      "without_elapsed_s": 37.65,
+      "elapsed_s_delta": -1.13,
+      "with_graph_chunks": 9,
+      "without_graph_chunks": 22,
+      "graph_chunks_delta": -13,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the incident management and reporting requirements, covering all key aspects such as processes, classifications, reporting timelines, and specific responsibilities. It is directly relevant to the question, well-structured, and clearly written. The details are consistent with the cited sources, and no unsupported claims are present."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the incident management and reporting requirements, covering both procedural and reporting aspects as specified in the question. It remains focused on the topic, is well-structured and professional, and cites a specific source document with page references, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-01",
+      "expected_domain": "SCHEDULE MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 32.1,
+      "without_elapsed_s": 33.67,
+      "elapsed_s_delta": -1.57,
+      "with_graph_chunks": 17,
+      "without_graph_chunks": 22,
+      "graph_chunks_delta": -5,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both critical path and baseline schedule requirements, providing detailed and specific information directly relevant to the question. It is well-organized, clearly written, and supported by properly cited sources, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both critical path and baseline schedule requirements, directly aligns with the question, is well-structured and professional, and cites specific sources to support all claims, ensuring accuracy and reliability."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-02",
+      "expected_domain": "SCHEDULE MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 35.4,
+      "without_elapsed_s": 39.27,
+      "elapsed_s_delta": -3.87,
+      "with_graph_chunks": 12,
+      "without_graph_chunks": 10,
+      "graph_chunks_delta": 2,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both progress tracking and Gantt chart requirements, covering all key aspects such as reporting frequency, S-curves, histograms, and baseline updates. It is directly relevant to the question, well-organized, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the progress tracking and Gantt chart requirements, covering all key aspects such as reporting, measurement, and scheduling. It is directly relevant to the question, well-structured, and supported by specific references to source documents, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-01",
+      "expected_domain": "QUALITY MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "QUALITY MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 41.78,
+      "without_elapsed_s": 39.6,
+      "elapsed_s_delta": 2.18,
+      "with_graph_chunks": 10,
+      "without_graph_chunks": 11,
+      "graph_chunks_delta": -1,
+      "reference_jaccard": 0.6,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers both QA and QC procedures, directly addressing the question with detailed and specific requirements. It is well-organized, professional, and clearly written, with all claims supported by cited sources. No gaps or inaccuracies are evident."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers the QA/QC procedures the Contractor must follow, addressing both Quality Assurance and Quality Control requirements in detail. It is directly relevant to the question, well-organized, and professionally written. The claims are supported by specific references to cited sources, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-02",
+      "expected_domain": "QUALITY MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "QUALITY MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.98,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.03,
+      "with_elapsed_s": 43.17,
+      "without_elapsed_s": 36.8,
+      "elapsed_s_delta": 6.37,
+      "with_graph_chunks": 21,
+      "without_graph_chunks": 24,
+      "graph_chunks_delta": -3,
+      "reference_jaccard": 0.5,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly outlines the NCR management process, addressing all key steps and requirements. It remains focused on the question, is well-structured and professional, and cites specific sources to support its claims, ensuring accuracy and credibility."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly outlines the NCR management process, addressing all key steps and requirements. It remains focused on the question, is well-structured and professional, and cites a specific source to support its claims, ensuring accuracy and credibility."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "WEIGHT_CONTROL-01",
+      "expected_domain": "WEIGHT CONTROL AND MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 33.48,
+      "without_elapsed_s": 31.06,
+      "elapsed_s_delta": 2.42,
+      "with_graph_chunks": 8,
+      "without_graph_chunks": 16,
+      "graph_chunks_delta": -8,
+      "reference_jaccard": 1.0,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both weight estimation and center-of-gravity reporting requirements, directly answering the question without omissions or irrelevant information. It is well-organized, professionally written, and cites specific documents to support its claims, ensuring accuracy and consistency."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both weight estimation and center-of-gravity reporting requirements, providing detailed and specific information directly relevant to the question. It is well-organized, clearly written, and supported by cited sources, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "WEIGHT_CONTROL-02",
+      "expected_domain": "WEIGHT CONTROL AND MANAGEMENT",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "domain_hit": true,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 31.03,
+      "without_elapsed_s": 40.85,
+      "elapsed_s_delta": -9.82,
+      "with_graph_chunks": 3,
+      "without_graph_chunks": 12,
+      "graph_chunks_delta": -9,
+      "reference_jaccard": 0.4,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly outlines the weight reduction strategy, directly addressing the question with specific activities and procedures. It is well-written, organized, and supported by cited sources, ensuring accuracy and relevance."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses the weight reduction strategy for the floating asset, detailing specific procedures, requirements, and cited sources. It is directly relevant to the question, well-structured, and professionally written. The information is consistent with the cited documents, ensuring accuracy."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-01",
+      "expected_domain": "TRANSPORT AND INSTALLATION",
+      "route": "aggregation",
+      "domain_scope": "multi",
+      "predicted_domains": [
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 39.5,
+      "without_elapsed_s": 42.91,
+      "elapsed_s_delta": -3.41,
+      "with_graph_chunks": 14,
+      "without_graph_chunks": 21,
+      "graph_chunks_delta": -7,
+      "reference_jaccard": 0.14285714285714285,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly addresses both heavy-lift and marine transport requirements for module installation, covering key aspects such as lift plans, ground preparation, proximity restrictions, module yard selection, and Marine Warranty Surveyor involvement. It is directly relevant, well-organized, and supported by specific source references, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers heavy-lift and marine transport requirements for module installation, addressing lift planning, ground preparation, design considerations, and marine transport procedures. It remains focused on the question, is well-organized, and cites specific sources to support all claims, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-02",
+      "expected_domain": "TRANSPORT AND INSTALLATION",
+      "route": "aggregation",
+      "domain_scope": "single",
+      "predicted_domains": [
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "domain_hit": false,
+      "with_ok": true,
+      "without_ok": true,
+      "with_confidence": 0.95,
+      "without_confidence": 0.95,
+      "confidence_delta": 0.0,
+      "with_elapsed_s": 46.34,
+      "without_elapsed_s": 42.71,
+      "elapsed_s_delta": 3.63,
+      "with_graph_chunks": 13,
+      "without_graph_chunks": 11,
+      "graph_chunks_delta": 2,
+      "reference_jaccard": 0.6666666666666666,
+      "answer_changed": true,
+      "with_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers both loadout and seafastening procedures, directly addressing the question with detailed steps and requirements. It is well-organized, clearly written, and cites specific sources to support all claims, ensuring accuracy and professionalism."
+      },
+      "without_judge": {
+        "completeness": 5.0,
+        "relevance": 5.0,
+        "fluency": 5.0,
+        "accuracy": 5.0,
+        "overall": 5.0,
+        "reasoning": "The answer thoroughly covers both loadout and seafastening procedures, directly addressing the question with detailed steps and requirements. It is well-organized, clearly written, and cites specific sources to support all claims, ensuring accuracy and professionalism."
+      },
+      "judge_deltas": {
+        "completeness": 0.0,
+        "relevance": 0.0,
+        "fluency": 0.0,
+        "accuracy": 0.0,
+        "overall": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+Answer:
+Change Orders are formal written instructions issued by the Company 
+to modify the scope, cost, or schedule of the Works. For Re-measurable 
+Works, pricing is based on actual quantities measured during execution, 
+using pre-agreed Unit Rates or Time Rates as specified in the contract. 
+When a Change Order impacts Re-measurable Works, the pricing is adjusted 
+using the applicable rates from the contract schedules (e.g., Schedule B1 
+or C1). If no applicable rates exist, new rates are negotiated based on 
+the principles used to establish the original rates. Additionally, indirect
+costs are only applied if the Change Order results in an approved extension 
+of time to the critical path of the Work Time Schedule. The adjustments 
+from Change Orders are incorporated into the progress measurement system 
+and invoicing, ensuring alignment with the updated scope and quantities.
+
+
+
+
+
+
+### 💡 How do Change Orders impact the pricing of Re-measurable Works?
+When a Change Order involves Re-measurable Works, the pricing is adjusted 
+using the unit rates provided in the contract schedules. If the Change 
+Order results in an extension of time affecting the critical path of the 
+Work Time Schedule, indirect costs may also be applied to the relevant 
+portion of the work. If no applicable rates exist in the contract, new 
+rates are negotiated between the Company and the Contractor. Additionally,
+ the scope and cost adjustments from approved Change Orders are 
+ incorporated into the progress measurement and invoicing systems 
+ [Source 1, Evidence 2, 3; Source 3, Evidence 4, 5].

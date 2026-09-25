@@ -1,0 +1,233 @@
+{
+    "PROCUREMENT": [
+        "procurement", "equipment", "purchasing", "supplies", "materials",
+        "contracts", "vendors", "logistics", "supply-chain", "purchase-orders",
+        "sourcing", "rfq", "bidding", "suppliers"
+    ],
+
+    "PROCESS & HSED (SAFETY IN DESIGN)": [
+        "process", "production", "plant", "chemical", "engineering",
+        "pfds", "pids", "flow", "reactors", "distillation", "philosophy",
+        "hse", "design", "safety", "fire", "protection", "hazard",
+        "hazop", "hazid", "risk", "safeguards", "safety-in-design"
+    ],
+
+
+    "LEGAL / CONTRACT": [
+        "legal", "contract", "agreement", "terms", "conditions",
+        "compliance", "regulatory", "law", "clauses", "obligations",
+        "rights", "liability", "indemnity", "dispute", "resolution"
+    ],
+
+    "FINANCE / TAX": [
+        "finance", "financial", "accounting", "budget", "cost",
+        "invoicing", "payment", "tax", "fiscal", "revenue",
+        "expenditure", "profit", "loss", "cash-flow", "roi"
+    ],
+
+    "INSURANCE": [
+        "insurance", "coverage", "policy", "premium", "claim",
+        "liability", "risk", "indemnity", "underwriting", "broker",
+        "insurer", "benefits", "compensation"
+    ],
+
+    "INTELLECTUAL PROPERTY / NDA": [
+        "intellectual", "property", "ip", "nda", "confidential",
+        "non-disclosure", "proprietary", "patent", "trademark", "copyright",
+        "trade-secret", "confidentiality", "licensing"
+    ],
+
+    "INFORMATION MANAGEMENT": [
+        "information", "management", "systems",
+        "handling", "collection", "data", "documents", "records",
+        "databases", "workflows", "handover", "bid", "edms", "coordination"
+    ],
+
+    "CYBERSECURITY": [
+        "cybersecurity", "cyber", "security", "data-privacy",
+        "network", "protection", "firewall", "encryption", "access-control",
+        "threat", "vulnerability", "intrusion", "authentication"
+    ],
+
+    "ROTATING EQUIPMENT": [
+        "rotating", "machinery", "pumps", "compressors", "turbines",
+        "design", "maintenance", "operation", "suppliers", "bearings",
+        "seals", "drivers", "dynamic"
+    ],
+
+    "PRESSURE VESSELS": [
+        "pressure", "vessels", "design", "fabrication", "inspection",
+        "heat", "exchangers", "columns", "reactors", "drums", "tanks", "fea",
+        "asme", "codes", "shell", "nozzle"
+    ],
+
+    "PIPING INSTALLATION": [
+        "piping", "installation", "layouts", "isometrics", "material",
+        "specs", "procedures", "line", "welding", "fittings", "supports",
+        "routing", "stress", "analysis"
+    ],
+
+    "PIPELINES": [
+        "pipelines", "pipeline", "design", "routing", "flow",
+        "assurance", "construction", "integrity", "pigging", "transport",
+        "transmission", "subsea", "onshore", "offshore"
+    ],
+
+    "PACKAGE": [
+        "package", "packaged", "units", "skids", "modular",
+        "equipment", "integrated", "pre-assembled", "vendor", "supplier"
+    ],
+
+    "FIRED EQUIPMENT": [
+        "fired", "equipment", "heaters", "boilers", "furnaces",
+        "combustion", "burners", "thermal", "heating", "fuel"
+    ],
+
+    "ONSHORE BUILDING/ ARCHITECTURE": [
+        "onshore", "building", "architecture", "structures", "facilities",
+        "design", "layout", "infrastructure", "construction", "civil",
+        "foundations", "ground", "land-based"
+    ],
+
+    "CONTROL SYSTEMS": [
+        "control", "systems", "automation", "scada", "dcs",
+        "plc", "instrumentation", "process-control", "logic", "programming",
+        "hmi", "monitoring"
+    ],
+
+    "TELECOMMUNICATIONS": [
+        "telecommunications", "telecom", "communications", "network",
+        "radio", "telephone", "data", "fiber", "wireless", "connectivity"
+    ],
+
+    "LABORATORY": [
+        "laboratory", "lab", "testing", "analysis", "samples",
+        "equipment", "instruments", "quality", "research", "experiments"
+    ],
+
+    "SUBCONTRACTING": [
+        "subcontracting", "subcontractor", "outsourcing",
+        "scope", "contracts", "coordination", "deliverables", "yards",
+        "third-party", "vendor-management"
+    ],
+
+    "OFFSHORE MOBILE SYSTEM": [
+        "offshore", "mobile", "rigs", "fpsos", "floating",
+        "systems", "design", "documentation", "drilling", "units",
+        "vessel", "platform"
+    ],
+
+    "OFFSHORE BUILDING/ ARCHITECTURE": [
+        "offshore", "building", "architecture", "quarters", "accommodation",
+        "modules", "outfitting", "design", "living", "facilities",
+        "helideck", "layout"
+    ],
+
+    "CIVIL / STRUCTURAL": [
+        "civil", "structural", "works", "architecture", "foundations",
+        "concrete", "steel", "structures", "bridges", "buildings", "roads",
+        "frame", "beam", "column", "slab"
+    ],
+
+    "ELECTRICAL": [
+        "electrical", "power", "distribution", "cabling",
+        "switchgear", "substations", "transformers", "powergrid", "generation", "lighting",
+        "load", "voltage", "current", "protection"
+    ],
+
+    "INSTRUMENTATION": [
+        "instrumentation", "instruments", "sensors", "transmitters",
+        "measurement", "control", "devices", "gauges", "meters",
+        "field-devices", "calibration"
+    ],
+
+    "HVAC": [
+        "hvac", "heating", "ventilation", "air", "conditioning",
+        "systems", "design", "specifications", "ducts", "chillers",
+        "cooling", "climate-control"
+    ],
+
+    "NAVAL ARCHITECTURE": [
+        "naval", "architecture", "ship", "floating", "structure",
+        "design", "stability", "analysis", "vessels", "marine", "hydrodynamics",
+        "hull", "buoyancy", "draft"
+    ],
+
+    "OFFSHORE STRUCTURE": [
+        "offshore", "structure", "platform", "subsea", "design",
+        "analysis", "jackets", "floating", "modules", "topsides", "installation",
+        "foundation", "mooring"
+    ],
+
+    "MATERIALS AND TECHNOLOGY": [
+        "materials", "technology", "metallurgy", "corrosion",
+        "specifications", "coatings", "alloys", "composites", "innovation",
+        "properties", "selection", "testing"
+    ],
+
+    "ADVANCED SYSTEMS": [
+        "advanced", "systems", "digital", "optimization",
+        "industrial", "integration", "technology", "innovation",
+        "ai", "iot", "smart", "intelligent"
+    ],
+
+    "INFORMATION TECHNOLOGY": [
+        "information", "technology", "it", "software", "hardware",
+        "systems", "network", "infrastructure", "applications", "servers",
+        "computing", "digital"
+    ],
+
+    "PROJECT EXECUTION SYSTEMS": [
+        "execution", "systems", "administration", "applications", "modeling",
+        "engineering", "process", "information", "proposal", "software",
+        "tools", "platforms", "aveva", "3d"
+    ],
+
+    "COSTS CONTROL": [
+        "costs", "control", "budget", "financial", "tracking",
+        "monitoring", "expenditure", "estimates", "variance", "forecasting",
+        "cost-management"
+    ],
+
+    "RISK MANAGEMENT": [
+        "risk", "management", "assessment", "mitigation", "identification",
+        "analysis", "contingency", "threats", "opportunities", "evaluation",
+        "register", "monitoring"
+    ],
+
+    "DOCUMENT CONTROL": [
+        "document", "control", "management", "records", "filing",
+        "version", "revision", "distribution", "archive", "repository",
+        "transmittal", "register"
+    ],
+
+    "HSE MANAGEMENT": [
+        "hse", "management", "safety", "health", "environment",
+        "policies", "procedures", "workforce", "emergency", "regulations",
+        "training", "compliance", "incident", "security"
+    ],
+
+    "SCHEDULE MANAGEMENT": [
+        "schedule", "management", "planning", "timelines", "milestones",
+        "charts", "progress", "tracking", "gantt", "critical-path",
+        "baseline", "delay", "coordination"
+    ],
+
+    "QUALITY MANAGEMENT": [
+        "quality", "management", "plans", "audits", "inspections",
+        "control", "policies", "assurance", "standards", "certification", "compliance",
+        "qaqc", "procedures", "ncr"
+    ],
+
+    "WEIGHT CONTROL AND MANAGEMENT": [
+        "weight", "control", "management", "estimation", "reporting",
+        "monitoring", "structures", "modules", "lifting", "balance",
+        "center-of-gravity", "mass"
+    ],
+
+    "TRANSPORT AND INSTALLATION": [
+        "installation", "transport", "marine", "lifting", "modules",
+        "heavy-lift", "operations", "cargo", "mobilization", "towing",
+        "loadout", "seafastening", "rigging"
+    ]
+}

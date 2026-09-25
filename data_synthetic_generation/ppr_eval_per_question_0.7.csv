@@ -1,0 +1,87 @@
+question,n_hops,via_hub,question_type,entity_mrr,hub_leakage@20,ent_recall@5,rel_recall@5,chunk_recall@5,ent_recall@10,rel_recall@10,chunk_recall@10,ent_recall@20,rel_recall@20,chunk_recall@20
+Which approved vendor for copper alloy (flanged ≤ 150 #) als,2,False,bridge,1.0,6,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which approved vendor provides both FGS Field Push Buttons a,2,False,bridge,0.5,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What is the payment mechanism for the J1000 - Instr and Cont,3,False,bridge,1.0,2,0.75,0.6666666666666666,0.5,1.0,1.0,1.0,1.0,1.0,1.0
+Which approved vendor for On-Off Gate Valves also supplies A,2,False,bridge,1.0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How is AGRU Train 2 associated with Key Deliverable Dates th,3,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How is the Land Access Agreement with Santos connected to th,2,False,bridge,1.0,6,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Does the Main Technical Pack Submission include the Common P,2,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How does Materials & Corrosion Control contribute to achievi,2,False,bridge,0.5,1,0.6666666666666666,0.5,1.0,0.6666666666666666,1.0,1.0,1.0,1.0,1.0
+What is the relationship between the completion of Brownfiel,2,False,bridge,1.0,3,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What document specifies the requirements for lifting design ,2,False,bridge,1.0,3,1.0,0.5,0.5,1.0,0.5,0.5,1.0,1.0,1.0
+What is the tender number associated with the Ichthys Gas Fi,2,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What specific template must be used for submitting tenderers,2,False,bridge,0.5,4,0.6666666666666666,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which company provides both Decoupling Diodes and Power Supp,2,False,bridge,0.5,3,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How must the Contractor manage unsatisfactory drug and alcoh,2,True,bridge,0.5,3,0.3333333333333333,0.0,0.0,0.3333333333333333,0.0,0.0,0.3333333333333333,0.0,0.0
+What is the scheduled timeline connection between the comple,2,False,bridge,0.5,4,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What constraints must the Commissioning – HOC activity compl,2,False,bridge,1.0,3,0.3333333333333333,0.0,0.5,0.6666666666666666,0.5,0.5,0.6666666666666666,0.5,0.5
+Which approved vendor for Control Panel Enclosures – Relays ,2,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Why does the Transfer of Care, Custody and Control (TCCC) pr",3,False,bridge,0.5,3,0.25,0.3333333333333333,0.3333333333333333,0.5,0.3333333333333333,0.6666666666666666,0.75,0.6666666666666666,1.0
+How are Australian Site Construction Labour Personnel compen,2,False,bridge,0.2,3,0.3333333333333333,0.5,0.5,0.6666666666666666,0.5,1.0,1.0,1.0,1.0
+Why must requisitions for the Onshore CCS Pipeline be update,3,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which regulatory authority governs the Environment Protectio,2,False,bridge,0.5,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How must temporary equipment and facilities on Site be manag,2,True,bridge,1.0,3,1.0,0.5,0.5,1.0,0.5,0.5,1.0,1.0,1.0
+Where are the liquefied natural gas (LNG) processing facilit,2,False,bridge,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+How are Change Orders related to the pricing of Re-measurabl,2,False,bridge,0.3333333333333333,2,0.6666666666666666,0.5,0.5,0.6666666666666666,0.5,0.5,1.0,1.0,1.0
+What financial penalty is incurred if the individual respons,2,False,bridge,1.0,1,0.3333333333333333,0.5,0.5,0.6666666666666666,0.5,0.5,1.0,1.0,1.0
+What legal framework governs the RCTI payment process that t,2,False,bridge,0.3333333333333333,3,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What is the purpose of documents categorized as 'Category le,2,False,bridge,1.0,3,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Why is it important to supply seamless pipes and fittings fo,3,False,bridge,1.0,0,0.75,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How is the Human Resources and Industrial Relations Strategy,3,True,bridge,0.5,1,0.75,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which supplier of manual call points is also an approved ven,2,False,bridge,1.0,0,0.6666666666666666,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Where can the amended terms for Section 18 – inclement Weath,2,False,bridge,0.2,2,0.3333333333333333,0.5,0.5,0.6666666666666666,0.5,1.0,1.0,1.0,1.0
+If the Cyber Security Management Plan is achieved 12 weeks a,2,False,bridge,0.5,3,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"How can changes to the Work, authorized through a Change Ord",2,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which vendor supplies both Thermal Mass Flow Meters and Abra,2,False,bridge,1.0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+If the Semi-Lean/Lean H-EX L-552-E-001-C is scheduled for co,2,False,bridge,1.0,2,0.6666666666666666,0.5,0.5,0.6666666666666666,0.5,0.5,0.6666666666666666,0.5,1.0
+What is the connection between the submission deadline for t,3,True,bridge,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Which authority issues the NT Environmental Approval (referr,2,False,bridge,1.0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How does the inclusion of Insulation as a sub-discipline rel,3,True,bridge,1.0,2,0.5,0.6666666666666666,0.5,1.0,0.6666666666666666,0.5,1.0,0.6666666666666666,1.0
+Why must the Module Offloading Facility for international sh,2,False,bridge,0.5,2,1.0,0.5,0.5,1.0,1.0,1.0,1.0,1.0,1.0
+"Who is responsible for health, safety, and environmental lea",2,False,bridge,0.25,1,0.3333333333333333,0.0,0.5,0.6666666666666666,0.5,1.0,0.6666666666666666,1.0,1.0
+How does Appendix L3 relate to the Project Controls Plan in ,2,False,bridge,0.2,3,0.3333333333333333,0.5,0.5,0.6666666666666666,0.5,1.0,0.6666666666666666,1.0,1.0
+What equipment is associated with both the installation of P,2,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What legal framework must the Contractor comply with for all,2,True,bridge,1.0,3,0.3333333333333333,0.0,0.0,0.3333333333333333,0.0,0.0,0.3333333333333333,0.0,0.0
+How are Technical Reviews connected to the deliverables form,2,False,bridge,0.5,4,0.3333333333333333,0.5,0.5,0.6666666666666666,0.5,0.5,0.6666666666666666,0.5,1.0
+How does factory acceptance testing help prevent Works Defec,2,False,bridge,1.0,3,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What is the timeline specified for milestone FG3-4 in relati,2,False,bridge,1.0,2,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+If the AGRU Semi-Lean Solvent Pump L-551-P-003-C is schedule,3,False,bridge,0.5,2,0.6666666666666666,0.3333333333333333,0.3333333333333333,0.6666666666666666,0.3333333333333333,1.0,0.6666666666666666,0.3333333333333333,1.0
+"Which companies provide Decoupling Diodes, and does any of t",3,False,bridge,0.5,0,0.25,0.6666666666666666,1.0,0.75,1.0,1.0,1.0,1.0,1.0
+Which legal framework governs both the Land Access Agreement,2,False,bridge,1.0,6,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+If the ZIP file for Package A contains referenced attachment,3,False,bridge,1.0,2,0.5,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which approved vendor for copper alloy valves (flanged ≤ 150,2,False,bridge,1.0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which approved vendor can supply both FGS Field Push Buttons,2,False,bridge,1.0,2,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which entity is responsible for approving the Maritime Secur,2,False,bridge,1.0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Where is Acoustic Detection installed, and how is the Compan",2,True,bridge,0.5,5,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What is the security classification of the document that app,2,False,bridge,0.2,3,0.3333333333333333,0.0,0.0,0.6666666666666666,0.0,0.5,0.6666666666666666,0.5,0.5
+What document provides the times and durations for Train 1 P,2,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How does the piping network design contribute to protecting ,2,False,bridge,0.5,0,0.6666666666666666,0.0,1.0,0.6666666666666666,0.5,1.0,1.0,1.0,1.0
+"Which approvals issued by the Department of Lands, Planning ",3,False,bridge,1.0,6,0.5,0.3333333333333333,0.5,1.0,1.0,1.0,1.0,1.0,1.0
+Why must work performed within the EPC Allocated Area comply,3,False,bridge,1.0,1,0.75,0.3333333333333333,1.0,1.0,0.6666666666666666,1.0,1.0,0.6666666666666666,1.0
+"How are Lump Sum Works connected to the Project bases, stand",2,False,bridge,0.25,1,0.3333333333333333,0.5,1.0,0.6666666666666666,0.5,1.0,0.6666666666666666,0.5,1.0
+How are Factory Acceptance Test (FAT) activities connected t,3,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What qualifications must a welder have to meet the specifica,2,False,bridge,0.5,2,0.6666666666666666,0.5,0.5,1.0,1.0,1.0,1.0,1.0,1.0
+Who operates the Ichthys LNG Project and acts as an agent fo,2,False,bridge,1.0,3,1.0,0.5,0.5,1.0,1.0,1.0,1.0,1.0,1.0
+Which vendors supply both Stainless Steel Pipe (Seamless) an,2,False,bridge,1.0,0,1.0,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What is the time gap between the achievement of the Document,2,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Which approved vendor for On/Off Valves from 2"" NB up to and",2,False,bridge,1.0,0,0.6666666666666666,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which specific area included in the CCS Pipeline Corridor an,3,False,bridge,1.0,1,0.5,0.3333333333333333,0.3333333333333333,0.75,0.6666666666666666,0.6666666666666666,0.75,0.6666666666666666,1.0
+How can tenderers on the Ichthys Onshore AGRU and CCS Projec,2,False,bridge,1.0,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which approved vendor for Control Panel Enclosures – Relays ,2,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How does the Insurance Advisor indirectly support the Compan,2,True,bridge,1.0,5,1.0,0.5,1.0,1.0,0.5,1.0,1.0,1.0,1.0
+How is the combined pipe rack – equipment module connected t,2,False,bridge,0.3333333333333333,0,0.6666666666666666,0.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which supplier of Abrasive Service Sequencing On-Off Valves ,2,False,bridge,0.5,1,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How is the Contract Basis of Design (BOD) connected to the C,3,False,bridge,1.0,3,0.75,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How is the validated physical progress of the Work linked to,3,False,bridge,0.25,1,0.5,0.3333333333333333,0.3333333333333333,0.5,0.3333333333333333,0.6666666666666666,0.75,0.6666666666666666,1.0
+"Which companies provide Decoupling Diodes, and does any of t",3,False,bridge,0.5,0,0.25,0.6666666666666666,1.0,0.75,1.0,1.0,1.0,1.0,1.0
+Which company that provides Needle Valves (API 3000 to 10000,2,False,bridge,1.0,2,0.6666666666666666,0.5,1.0,0.6666666666666666,1.0,1.0,1.0,1.0,1.0
+What is the relative deadline for completing the commissioni,2,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Where are the Supplementary Power package FEED Deliverables ,3,False,bridge,1.0,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How does Clause 32.4 of the General Conditions influence the,3,False,bridge,0.1,3,0.0,0.0,0.0,0.25,0.0,0.0,0.25,0.0,0.0
+Why does the Pre-Inspection Meeting (PIM) require ten workin,2,False,bridge,0.5,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How does Appendix A7.2 Manual of Permitted Operations influe,2,False,bridge,1.0,1,0.6666666666666666,0.5,0.5,0.6666666666666666,1.0,1.0,1.0,1.0,1.0
+How are Change Orders related to engineering work connected ,3,False,bridge,0.25,1,0.5,0.3333333333333333,0.3333333333333333,0.5,0.3333333333333333,0.3333333333333333,0.75,0.6666666666666666,0.6666666666666666
+What legal framework governs the RCTI payment process that t,2,False,bridge,0.3333333333333333,3,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+How is the Human Resources and Industrial Relations Strategy,3,True,bridge,0.5,1,0.75,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+Which department is responsible for issuing the Night Bunker,2,False,bridge,1.0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+What financial consequence is tied to RFIC-4 if it is not ac,2,False,bridge,0.5,1,0.6666666666666666,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0

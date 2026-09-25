@@ -1,0 +1,179 @@
+ Which approved vendor for copper alloy (flanged ≤ 150 #) also supplies gate valv
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 393/393 [00:00<00:00, 8433.11it/s]
+    context_precision_without_reference=0.6667
+[2/86] Which approved vendor provides both FGS Field Push Buttons and Clean Agent or CO
+    context_precision_without_reference=0.1534
+[3/86] What is the payment mechanism for the J1000 - Instr and Controls functional grou
+    context_precision_without_reference=0.6858
+[4/86] Which approved vendor for On-Off Gate Valves also supplies Abrasive Service Sequ
+    context_precision_without_reference=0.7917
+[5/86] How is AGRU Train 2 associated with Key Deliverable Dates through its role in th
+    context_precision_without_reference=0.9946
+[6/86] How is the Land Access Agreement with Santos connected to the Land Development C
+    context_precision_without_reference=1.0000
+[7/86] Does the Main Technical Pack Submission include the Common Pipe Rack Modular Ass
+    context_precision_without_reference=0.9940
+[8/86] How does Materials & Corrosion Control contribute to achieving the Process Desig
+    context_precision_without_reference=1.0000
+[9/86] What is the relationship between the completion of Brownfields work and the mile
+    context_precision_without_reference=0.9674
+[10/86] What document specifies the requirements for lifting design and execution on Sit
+    context_precision_without_reference=0.6713
+[11/86] What is the tender number associated with the Ichthys Gas Field Development Proj
+    context_precision_without_reference=1.0000
+[12/86] What specific template must be used for submitting tenderers' questions/clarific
+    context_precision_without_reference=0.9650
+[13/86] Which company provides both Decoupling Diodes and Power Supply Units, and how ar
+    context_precision_without_reference=0.7222
+[14/86] How must the Contractor manage unsatisfactory drug and alcohol test results in r
+    context_precision_without_reference=0.9818
+[15/86] What is the scheduled timeline connection between the completion of the AGRU Sem
+    context_precision_without_reference=0.8264
+[16/86] What constraints must the Commissioning – HOC activity comply with, and how are 
+    context_precision_without_reference=1.0000
+[17/86] Which approved vendor for Control Panel Enclosures – Relays - outdoor is also ap
+    context_precision_without_reference=0.6213
+[18/86] Why does the Transfer of Care, Custody and Control (TCCC) process require compli
+    context_precision_without_reference=0.9696
+[19/86] How are Australian Site Construction Labour Personnel compensated for on-site pr
+    context_precision_without_reference=0.8775
+[20/86] Why must requisitions for the Onshore CCS Pipeline be updated for award purposes
+    context_precision_without_reference=0.9682
+[21/86] Which regulatory authority governs the Environment Protection Approval - Off Plo
+    context_precision_without_reference=0.8238
+[22/86] How must temporary equipment and facilities on Site be managed to ensure complia
+    context_precision_without_reference=1.0000
+[23/86] Where are the liquefied natural gas (LNG) processing facilities associated with 
+    context_precision_without_reference=1.0000
+[24/86] How are Change Orders related to the pricing of Re-measurable Works in the conte
+    context_precision_without_reference=0.9818
+[25/86] What financial penalty is incurred if the individual responsible for overseeing 
+    context_precision_without_reference=0.8262
+[26/86] What legal framework governs the RCTI payment process that the Company may elect
+    context_precision_without_reference=0.7350
+[27/86] What is the purpose of documents categorized as 'Category left blank' in the con
+    context_precision_without_reference=1.0000
+
+1/59] Why is it important to supply seamless pipes and fittings for the piping network
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 393/393 [00:00<00:00, 6200.90it/s]
+    context_precision_without_reference=0.7098
+[2/59] How is the Human Resources and Industrial Relations Strategy connected to the Co
+    context_precision_without_reference=1.0000
+[3/59] Which supplier of manual call points is also an approved vendor for water system
+    context_precision_without_reference=0.6722
+[4/59] Where can the amended terms for Section 18 – inclement Weather, which changed 'w
+    context_precision_without_reference=0.8333
+[5/59] If the Cyber Security Management Plan is achieved 12 weeks after the Contract Da
+    context_precision_without_reference=1.0000
+[6/59] How can changes to the Work, authorized through a Change Order, impact the cost 
+    context_precision_without_reference=1.0000
+[7/59] Which vendor supplies both Thermal Mass Flow Meters and Abrasive Service Sequenc
+    context_precision_without_reference=0.5687
+[8/59] If the Semi-Lean/Lean H-EX L-552-E-001-C is scheduled for completion 2 weeks aft
+    context_precision_without_reference=0.9967
+[9/59] What is the connection between the submission deadline for the Supplementary Pow
+    context_precision_without_reference=0.8348
+[10/59] Which authority issues the NT Environmental Approval (referral)- On Plot, and ho
+    context_precision_without_reference=0.9163
+[11/59] How does the inclusion of Insulation as a sub-discipline relate to the Contracto
+    context_precision_without_reference=1.0000
+[12/59] Why must the Module Offloading Facility for international shipments be aligned w
+    context_precision_without_reference=1.0000
+[13/59] Who is responsible for health, safety, and environmental leadership at the locat
+    context_precision_without_reference=0.3329
+[14/59] How does Appendix L3 relate to the Project Controls Plan in terms of compliance 
+    context_precision_without_reference=0.9151
+[15/59] What equipment is associated with both the installation of Point CO2 Detection a
+    context_precision_without_reference=1.0000
+[16/59] What legal framework must the Contractor comply with for all Works provided unde
+    context_precision_without_reference=1.0000
+[17/59] How are Technical Reviews connected to the deliverables forming the scope basis 
+    context_precision_without_reference=1.0000
+[18/59] How does factory acceptance testing help prevent Works Defects in the Ichthys On
+    context_precision_without_reference=1.0000
+[19/59] What is the timeline specified for milestone FG3-4 in relation to the scheduled 
+    context_precision_without_reference=0.8634
+[20/59] If the AGRU Semi-Lean Solvent Pump L-551-P-003-C is scheduled for completion at 
+    context_precision_without_reference=0.6603
+[21/59] Which companies provide Decoupling Diodes, and does any of them also supply Powe
+    context_precision_without_reference=1.0000
+[22/59] Which legal framework governs both the Land Access Agreement (for Survey) involv
+    context_precision_without_reference=1.0000
+[23/59] If the ZIP file for Package A contains referenced attachments, how must it be su
+    context_precision_without_reference=0.5929
+[24/59] Which approved vendor for copper alloy valves (flanged ≤ 150 #) also supplies ga
+    context_precision_without_reference=0.1250
+[25/59] Which approved vendor can supply both FGS Field Push Buttons and Clean Agent or 
+    context_precision_without_reference=1.0000
+[26/59] Which entity is responsible for approving the Maritime Security Plan, and how is
+    context_precision_without_reference=0.6222
+[27/59] Where is Acoustic Detection installed, and how is the Company involved in the ve
+    context_precision_without_reference=0.9564
+[28/59] What is the security classification of the document that applies to all work per
+    context_precision_without_reference=0.4822
+[29/59] What document provides the times and durations for Train 1 Pit Stops and is also
+    context_precision_without_reference=0.5967
+[30/59] How does the piping network design contribute to protecting workers and the envi
+    context_precision_without_reference=0.9974
+[31/59] Which approvals issued by the Department of Lands, Planning and Environment are 
+    context_precision_without_reference=0.6746
+[32/59] Why must work performed within the EPC Allocated Area comply with the Safe Handl
+    context_precision_without_reference=0.6600
+[33/59] How are Lump Sum Works connected to the Project bases, standards, criteria, and 
+    context_precision_without_reference=1.0000
+[34/59] How are Factory Acceptance Test (FAT) activities connected to the notification o
+    context_precision_without_reference=0.8371
+[35/59] What qualifications must a welder have to meet the specification requirements, a
+    context_precision_without_reference=0.9640
+[36/59] Who operates the Ichthys LNG Project and acts as an agent for the Ichthys IJV?
+    context_precision_without_reference=0.9003
+[37/59] Which vendors supply both Stainless Steel Pipe (Seamless) and Carbon Steel Flang
+    context_precision_without_reference=0.4429
+[38/59] What is the time gap between the achievement of the Document Control Procedure a
+    context_precision_without_reference=0.8215
+[39/59] Which approved vendor for On/Off Valves from 2" NB up to and including 24" (Flan
+    context_precision_without_reference=0.6046
+[40/59] Which specific area included in the CCS Pipeline Corridor and EHV Power Transmis
+    context_precision_without_reference=0.8875
+[41/59] How can tenderers on the Ichthys Onshore AGRU and CCS Project seek guidance on s
+    context_precision_without_reference=0.7017
+[42/59] Which approved vendor for Control Panel Enclosures – Relays - outdoor is also ap
+    context_precision_without_reference=0.5892
+[43/59] How does the Insurance Advisor indirectly support the Company in matters related
+    context_precision_without_reference=0.8869
+[44/59] How is the combined pipe rack – equipment module connected to the compressor she
+    context_precision_without_reference=0.6904
+[45/59] Which supplier of Abrasive Service Sequencing On-Off Valves is also an approved 
+    context_precision_without_reference=0.6459
+[46/59] How is the Contract Basis of Design (BOD) connected to the CO2 Compressor Packag
+    context_precision_without_reference=1.0000
+[47/59] How is the validated physical progress of the Work linked to the Re-measurable p
+    context_precision_without_reference=1.0000
+[48/59] Which companies provide Decoupling Diodes, and does any of them also supply Powe
+    context_precision_without_reference=1.0000
+[49/59] Which company that provides Needle Valves (API 3000 to 10000) is also responsibl
+    context_precision_without_reference=1.0000
+[50/59] What is the relative deadline for completing the commissioning activity 'HOC' th
+    context_precision_without_reference=0.9853
+[51/59] Where are the Supplementary Power package FEED Deliverables listed, and how is t
+    context_precision_without_reference=1.0000
+[52/59] How does Clause 32.4 of the General Conditions influence the pricing of Change O
+    context_precision_without_reference=1.0000
+[53/59] Why does the Pre-Inspection Meeting (PIM) require ten working days’ notice for t
+    context_precision_without_reference=0.7306
+[54/59] How does Appendix A7.2 Manual of Permitted Operations influence the preparation 
+    context_precision_without_reference=0.9689
+[55/59] How are Change Orders related to engineering work connected to the Unit Rates fo
+    context_precision_without_reference=1.0000
+[56/59] What legal framework governs the RCTI payment process that the Company may elect
+    context_precision_without_reference=0.7646
+[57/59] How is the Human Resources and Industrial Relations Strategy connected to the Co
+    context_precision_without_reference=1.0000
+[58/59] Which department is responsible for issuing the Night Bunkering Permit and appro
+    context_precision_without_reference=0.7030
+[59/59] What financial consequence is tied to RFIC-4 if it is not achieved by the Comple
+    context_precision_without_reference=0.9377
+
+average context_precision_without_reference across 86 questions: 0.8407

@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {"id": "PROCUREMENT-01", "domain": "PROCUREMENT", "question": "What are the requirements for vendor selection and material sourcing under this tender?"},
+    {"id": "PROCUREMENT-02", "domain": "PROCUREMENT", "question": "What RFQ and bidding process must the Contractor follow when procuring long-lead equipment?"},
+
+    {"id": "PROCESS_HSED-01", "domain": "PROCESS & HSED (SAFETY IN DESIGN)", "question": "What HAZOP and HAZID reviews are required during the process design phase?"},
+    {"id": "PROCESS_HSED-02", "domain": "PROCESS & HSED (SAFETY IN DESIGN)", "question": "What process design philosophy and safety-in-design safeguards apply to the AGRU upgrade?"},
+
+    {"id": "LEGAL_CONTRACT-01", "domain": "LEGAL / CONTRACT", "question": "What are the Contractor's obligations regarding dispute resolution?"},
+    {"id": "LEGAL_CONTRACT-02", "domain": "LEGAL / CONTRACT", "question": "What indemnity and liability provisions apply to the Contractor under this contract?"},
+
+    {"id": "FINANCE_TAX-01", "domain": "FINANCE / TAX", "question": "What are the payment terms and invoicing requirements for the Contractor?"},
+    {"id": "FINANCE_TAX-02", "domain": "FINANCE / TAX", "question": "What tax compliance and fiscal reporting obligations does the Contractor have?"},
+
+    {"id": "INSURANCE-01", "domain": "INSURANCE", "question": "What insurance coverage must the Contractor obtain and maintain during the project?"},
+    {"id": "INSURANCE-02", "domain": "INSURANCE", "question": "What is the minimum third-party liability insurance limit required per occurrence?"},
+
+    {"id": "IP_NDA-01", "domain": "INTELLECTUAL PROPERTY / NDA", "question": "What confidentiality obligations apply to information shared under this tender?"},
+    {"id": "IP_NDA-02", "domain": "INTELLECTUAL PROPERTY / NDA", "question": "Who owns the intellectual property rights for designs developed during the contract?"},
+
+    {"id": "INFO_MGMT-01", "domain": "INFORMATION MANAGEMENT", "question": "What document control and EDMS requirements apply to project deliverables?"},
+    {"id": "INFO_MGMT-02", "domain": "INFORMATION MANAGEMENT", "question": "What are the data and information handover requirements at contract close-out?"},
+
+    {"id": "CYBERSECURITY-01", "domain": "CYBERSECURITY", "question": "What cybersecurity requirements apply to the process control systems network?"},
+    {"id": "CYBERSECURITY-02", "domain": "CYBERSECURITY", "question": "What access control and authentication measures are required for project IT systems?"},
+
+    {"id": "ROTATING_EQUIPMENT-01", "domain": "ROTATING EQUIPMENT", "question": "What are the specification requirements for the CO2 compressor?"},
+    {"id": "ROTATING_EQUIPMENT-02", "domain": "ROTATING EQUIPMENT", "question": "What maintenance and supplier qualification strategy is required for pumps and turbines?"},
+
+    {"id": "PRESSURE_VESSELS-01", "domain": "PRESSURE VESSELS", "question": "What ASME code compliance is required for the pressure vessels in the AGRU upgrade?"},
+    {"id": "PRESSURE_VESSELS-02", "domain": "PRESSURE VESSELS", "question": "What inspection requirements apply to the heat exchangers and columns?"},
+
+    {"id": "PIPING_INSTALLATION-01", "domain": "PIPING INSTALLATION", "question": "What welding standards apply to piping installation on this project?"},
+    {"id": "PIPING_INSTALLATION-02", "domain": "PIPING INSTALLATION", "question": "What are the 'Issued for Construction' deliverable requirements for piping isometrics?"},
+
+    {"id": "PIPELINES-01", "domain": "PIPELINES", "question": "What integrity management requirements apply to the pipeline systems?"},
+    {"id": "PIPELINES-02", "domain": "PIPELINES", "question": "What pigging operation requirements apply to the transmission pipelines?"},
+
+    {"id": "PACKAGE-01", "domain": "PACKAGE", "question": "What are the requirements for vendor-supplied packaged equipment skids?"},
+    {"id": "PACKAGE-02", "domain": "PACKAGE", "question": "What documentation must be provided for pre-assembled modular equipment packages?"},
+
+    {"id": "FIRED_EQUIPMENT-01", "domain": "FIRED EQUIPMENT", "question": "What are the design requirements for the fired heaters in the process package?"},
+    {"id": "FIRED_EQUIPMENT-02", "domain": "FIRED EQUIPMENT", "question": "What combustion and burner design standards apply to the boilers?"},
+
+    {"id": "ONSHORE_BUILDING-01", "domain": "ONSHORE BUILDING/ ARCHITECTURE", "question": "What civil foundation requirements apply to the onshore buildings in this project?"},
+    {"id": "ONSHORE_BUILDING-02", "domain": "ONSHORE BUILDING/ ARCHITECTURE", "question": "What architectural design standards apply to the onshore facility layout?"},
+
+    {"id": "CONTROL_SYSTEMS-01", "domain": "CONTROL SYSTEMS", "question": "What DCS and SCADA requirements apply to the process control system?"},
+    {"id": "CONTROL_SYSTEMS-02", "domain": "CONTROL SYSTEMS", "question": "What HMI design standards must the Contractor follow for the automation system?"},
+
+    {"id": "TELECOM-01", "domain": "TELECOMMUNICATIONS", "question": "What telecommunications infrastructure is required for the site?"},
+    {"id": "TELECOM-02", "domain": "TELECOMMUNICATIONS", "question": "What radio and fiber optic communication systems must be installed?"},
+
+    {"id": "LABORATORY-01", "domain": "LABORATORY", "question": "What laboratory testing facilities are required for quality sample analysis?"},
+    {"id": "LABORATORY-02", "domain": "LABORATORY", "question": "What equipment must be provided for the on-site laboratory?"},
+
+    {"id": "SUBCONTRACTING-01", "domain": "SUBCONTRACTING", "question": "What are the requirements for managing subcontractors on this project?"},
+    {"id": "SUBCONTRACTING-02", "domain": "SUBCONTRACTING", "question": "What yard management obligations apply to subcontracted fabrication work?"},
+
+    {"id": "OFFSHORE_MOBILE-01", "domain": "OFFSHORE MOBILE SYSTEM", "question": "What design documentation is required for mobile offshore units used in this project?"},
+    {"id": "OFFSHORE_MOBILE-02", "domain": "OFFSHORE MOBILE SYSTEM", "question": "What requirements apply to floating production systems used on this project?"},
+
+    {"id": "OFFSHORE_BUILDING-01", "domain": "OFFSHORE BUILDING/ ARCHITECTURE", "question": "What are the design requirements for offshore living quarters and accommodation modules?"},
+    {"id": "OFFSHORE_BUILDING-02", "domain": "OFFSHORE BUILDING/ ARCHITECTURE", "question": "What helideck layout standards apply to the offshore facility?"},
+
+    {"id": "CIVIL_STRUCTURAL-01", "domain": "CIVIL / STRUCTURAL", "question": "What structural engineering standards apply to the concrete and steel structures?"},
+    {"id": "CIVIL_STRUCTURAL-02", "domain": "CIVIL / STRUCTURAL", "question": "What foundation design requirements apply to the new structures?"},
+
+    {"id": "ELECTRICAL-01", "domain": "ELECTRICAL", "question": "What electrical power distribution requirements apply to the new equipment?"},
+    {"id": "ELECTRICAL-02", "domain": "ELECTRICAL", "question": "What switchgear and transformer specifications are required for the substation?"},
+
+    {"id": "INSTRUMENTATION-01", "domain": "INSTRUMENTATION", "question": "What field device and transmitter specifications apply to the instrumentation scope?"},
+    {"id": "INSTRUMENTATION-02", "domain": "INSTRUMENTATION", "question": "What calibration procedures are required for the measurement instruments?"},
+
+    {"id": "HVAC-01", "domain": "HVAC", "question": "What HVAC system design requirements apply to the control room?"},
+    {"id": "HVAC-02", "domain": "HVAC", "question": "What ductwork and chiller specifications are required for the facility?"},
+
+    {"id": "NAVAL_ARCHITECTURE-01", "domain": "NAVAL ARCHITECTURE", "question": "What stability analysis is required for the floating structure?"},
+    {"id": "NAVAL_ARCHITECTURE-02", "domain": "NAVAL ARCHITECTURE", "question": "What hydrodynamic studies must be performed for the vessel design?"},
+
+    {"id": "OFFSHORE_STRUCTURE-01", "domain": "OFFSHORE STRUCTURE", "question": "What foundation analysis is required for the offshore platform jacket?"},
+    {"id": "OFFSHORE_STRUCTURE-02", "domain": "OFFSHORE STRUCTURE", "question": "What mooring system requirements apply to the offshore structure?"},
+
+    {"id": "MATERIALS_TECHNOLOGY-01", "domain": "MATERIALS AND TECHNOLOGY", "question": "What material selection requirements apply to corrosion-resistant piping?"},
+    {"id": "MATERIALS_TECHNOLOGY-02", "domain": "MATERIALS AND TECHNOLOGY", "question": "What coating specifications are required for the equipment?"},
+
+    {"id": "ADVANCED_SYSTEMS-01", "domain": "ADVANCED SYSTEMS", "question": "What digital optimization or AI/IoT technologies are required for this project?"},
+    {"id": "ADVANCED_SYSTEMS-02", "domain": "ADVANCED SYSTEMS", "question": "What smart system integration is expected under this contract?"},
+
+    {"id": "INFO_TECH-01", "domain": "INFORMATION TECHNOLOGY", "question": "What IT infrastructure and server requirements apply to the project systems?"},
+    {"id": "INFO_TECH-02", "domain": "INFORMATION TECHNOLOGY", "question": "What software platforms must the Contractor use for project administration?"},
+
+    {"id": "PROJECT_EXEC_SYSTEMS-01", "domain": "PROJECT EXECUTION SYSTEMS", "question": "What 3D modeling system (Aveva) requirements apply to the engineering deliverables?"},
+    {"id": "PROJECT_EXEC_SYSTEMS-02", "domain": "PROJECT EXECUTION SYSTEMS", "question": "What EDMS and collaborative tools must be set up for the project?"},
+
+    {"id": "COSTS_CONTROL-01", "domain": "COSTS CONTROL", "question": "What cost tracking and variance analysis requirements apply to the Contractor?"},
+    {"id": "COSTS_CONTROL-02", "domain": "COSTS CONTROL", "question": "What are the budget forecasting obligations under this contract?"},
+
+    {"id": "RISK_MANAGEMENT-01", "domain": "RISK MANAGEMENT", "question": "What risk register management process must the Contractor follow?"},
+    {"id": "RISK_MANAGEMENT-02", "domain": "RISK MANAGEMENT", "question": "What contingency planning is required for identified project risks?"},
+
+    {"id": "DOCUMENT_CONTROL-01", "domain": "DOCUMENT CONTROL", "question": "What document revision and version control requirements apply to deliverables?"},
+    {"id": "DOCUMENT_CONTROL-02", "domain": "DOCUMENT CONTROL", "question": "What are the transmittal and document register requirements for this project?"},
+
+    {"id": "HSE_MANAGEMENT-01", "domain": "HSE MANAGEMENT", "question": "What emergency response procedures must the Contractor implement?"},
+    {"id": "HSE_MANAGEMENT-02", "domain": "HSE MANAGEMENT", "question": "What incident management and reporting requirements apply to the Contractor?"},
+
+    {"id": "SCHEDULE_MANAGEMENT-01", "domain": "SCHEDULE MANAGEMENT", "question": "What are the critical path and baseline schedule requirements for this project?"},
+    {"id": "SCHEDULE_MANAGEMENT-02", "domain": "SCHEDULE MANAGEMENT", "question": "What progress tracking and Gantt chart requirements apply to the Contractor?"},
+
+    {"id": "QUALITY_MANAGEMENT-01", "domain": "QUALITY MANAGEMENT", "question": "What QA/QC procedures must the Contractor follow?"},
+    {"id": "QUALITY_MANAGEMENT-02", "domain": "QUALITY MANAGEMENT", "question": "What non-conformance report (NCR) management process is required?"},
+
+    {"id": "WEIGHT_CONTROL-01", "domain": "WEIGHT CONTROL AND MANAGEMENT", "question": "What weight estimation and center-of-gravity reporting requirements apply to the modules?"},
+    {"id": "WEIGHT_CONTROL-02", "domain": "WEIGHT CONTROL AND MANAGEMENT", "question": "What weight reduction strategy must the Contractor follow for the floating asset?"},
+
+    {"id": "TRANSPORT_INSTALLATION-01", "domain": "TRANSPORT AND INSTALLATION", "question": "What heavy-lift and marine transport requirements apply to module installation?"},
+    {"id": "TRANSPORT_INSTALLATION-02", "domain": "TRANSPORT AND INSTALLATION", "question": "What loadout and seafastening procedures must the Contractor follow?"}
+  ]
+}

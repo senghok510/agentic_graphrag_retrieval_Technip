@@ -1,0 +1,1646 @@
+{
+  "n_questions": 80,
+  "baseline": {
+    "scoped_correct": 56,
+    "scoped_wrong": 20,
+    "full_scope": 4,
+    "errors": 0,
+    "accuracy_when_scoped": 0.7368
+  },
+  "keyword_signal_variant": {
+    "scoped_correct": 56,
+    "scoped_wrong": 20,
+    "full_scope": 4,
+    "errors": 0,
+    "accuracy_when_scoped": 0.7368
+  },
+  "flipped_wrong_to_correct": [],
+  "flipped_correct_to_wrong": [],
+  "baseline_results": [
+    {
+      "id": "PROCUREMENT-01",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns vendor selection and material sourcing, which falls under the PROCUREMENT domain."
+    },
+    {
+      "id": "PROCUREMENT-02",
+      "expected": "PROCUREMENT",
+      "scope": "multi",
+      "predicted": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "reasoning": "The question involves procurement processes and compliance with RFQ and bidding requirements, which also touch on contractual obligations."
+    },
+    {
+      "id": "PROCESS_HSED-01",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns HAZOP and HAZID reviews, which are part of process safety and design."
+    },
+    {
+      "id": "PROCESS_HSED-02",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns process design philosophy and safety-in-design safeguards, which fall under PROCESS & HSED."
+    },
+    {
+      "id": "LEGAL_CONTRACT-01",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "reasoning": "Dispute resolution is clearly a legal matter tied to contract terms and conditions."
+    },
+    {
+      "id": "LEGAL_CONTRACT-02",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns indemnity and liability provisions, which fall under legal and contractual matters."
+    },
+    {
+      "id": "FINANCE_TAX-01",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns payment terms and invoicing, which fall under financial management and accounting."
+    },
+    {
+      "id": "FINANCE_TAX-02",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns tax compliance and fiscal reporting, which falls under the FINANCE / TAX domain."
+    },
+    {
+      "id": "INSURANCE-01",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns insurance coverage requirements for the Contractor."
+    },
+    {
+      "id": "INSURANCE-02",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns third-party liability insurance limits, which falls under the INSURANCE domain."
+    },
+    {
+      "id": "IP_NDA-01",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": false,
+      "reasoning": "The question pertains to confidentiality obligations, which are typically addressed within legal and contractual frameworks."
+    },
+    {
+      "id": "IP_NDA-02",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": false,
+      "reasoning": "The question pertains to ownership and rights, which are legal matters covered under contract terms and conditions."
+    },
+    {
+      "id": "INFO_MGMT-01",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "multi",
+      "predicted": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns document control processes and EDMS systems, which span both domains."
+    },
+    {
+      "id": "INFO_MGMT-02",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "multi",
+      "predicted": [
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "reasoning": "The question involves data handover, document management, and contract close-out requirements."
+    },
+    {
+      "id": "CYBERSECURITY-01",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns cybersecurity requirements for process control systems, which falls under the CONTROL SYSTEMS domain."
+    },
+    {
+      "id": "CYBERSECURITY-02",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION TECHNOLOGY"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns access control and authentication measures, which fall under IT infrastructure and systems management."
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-01",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns the specification requirements for a CO2 compressor, which falls under rotating machinery."
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-02",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "multi",
+      "predicted": [
+        "ROTATING EQUIPMENT",
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns maintenance strategies (ROTATING EQUIPMENT) and supplier qualification (PROCUREMENT)."
+    },
+    {
+      "id": "PRESSURE_VESSELS-01",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns ASME code compliance for pressure vessels, which falls under the PRESSURE VESSELS domain."
+    },
+    {
+      "id": "PRESSURE_VESSELS-02",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns inspection requirements for heat exchangers and columns, which fall under the PRESSURE VESSELS domain."
+    },
+    {
+      "id": "PIPING_INSTALLATION-01",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns welding standards related to piping installation, which falls under the PIPING INSTALLATION domain."
+    },
+    {
+      "id": "PIPING_INSTALLATION-02",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns piping isometrics and their 'Issued for Construction' deliverable requirements, which fall under PIPING INSTALLATION."
+    },
+    {
+      "id": "PIPELINES-01",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns integrity management for pipeline systems, which falls under the PIPELINES domain."
+    },
+    {
+      "id": "PIPELINES-02",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns pigging operations, which are directly related to pipeline transmission systems."
+    },
+    {
+      "id": "PACKAGE-01",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "PACKAGE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns packaged equipment skids, which fall under the PACKAGE domain."
+    },
+    {
+      "id": "PACKAGE-02",
+      "expected": "PACKAGE",
+      "scope": "multi",
+      "predicted": [
+        "PACKAGE",
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns documentation for modular equipment packages, which involves package specifications and procurement processes."
+    },
+    {
+      "id": "FIRED_EQUIPMENT-01",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "multi",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns fired heaters, which are part of the process package and involve process design and safety considerations."
+    },
+    {
+      "id": "FIRED_EQUIPMENT-02",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": false,
+      "reasoning": "The question pertains to combustion and burner design standards, which are part of process engineering and safety considerations in design."
+    },
+    {
+      "id": "ONSHORE_BUILDING-01",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns civil foundation requirements for onshore buildings, which falls under this domain."
+    },
+    {
+      "id": "ONSHORE_BUILDING-02",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns architectural design standards for onshore facility layouts, which falls under the domain of onshore building and architecture."
+    },
+    {
+      "id": "CONTROL_SYSTEMS-01",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns DCS and SCADA requirements, which fall under the domain of process control systems."
+    },
+    {
+      "id": "CONTROL_SYSTEMS-02",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns HMI design standards, which fall under the domain of automation and process control systems."
+    },
+    {
+      "id": "TELECOM-01",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns telecommunications infrastructure for the site."
+    },
+    {
+      "id": "TELECOM-02",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns radio and fiber optic communication systems, which fall under the TELECOMMUNICATIONS domain."
+    },
+    {
+      "id": "LABORATORY-01",
+      "expected": "LABORATORY",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns laboratory testing for quality sample analysis, which falls under quality control and assurance processes."
+    },
+    {
+      "id": "LABORATORY-02",
+      "expected": "LABORATORY",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question pertains to equipment requirements for an on-site laboratory, which falls under facility and infrastructure design."
+    },
+    {
+      "id": "SUBCONTRACTING-01",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "SUBCONTRACTING"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns managing subcontractors, which falls under the SUBCONTRACTING domain."
+    },
+    {
+      "id": "SUBCONTRACTING-02",
+      "expected": "SUBCONTRACTING",
+      "scope": "multi",
+      "predicted": [
+        "SUBCONTRACTING",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "reasoning": "The question pertains to subcontractor scope and yard management, which involves subcontracting and structural considerations for fabrication work."
+    },
+    {
+      "id": "OFFSHORE_MOBILE-01",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "multi",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "CIVIL / STRUCTURAL",
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "reasoning": "Mobile offshore units require design documentation spanning process safety, structural integrity, and quality compliance."
+    },
+    {
+      "id": "OFFSHORE_MOBILE-02",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "multi",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "CIVIL / STRUCTURAL",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": false,
+      "reasoning": "Floating production systems involve process design, structural considerations, and weight management for stability."
+    },
+    {
+      "id": "OFFSHORE_BUILDING-01",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "multi",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "HVAC"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns architectural design, structural considerations, and climate control systems for offshore living quarters."
+    },
+    {
+      "id": "OFFSHORE_BUILDING-02",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": false,
+      "reasoning": "Helideck layout standards pertain to facility design and infrastructure, which falls under architectural considerations."
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-01",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns structural engineering standards for concrete and steel structures, which falls under the CIVIL / STRUCTURAL domain."
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-02",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns foundation design, which falls under civil and structural engineering."
+    },
+    {
+      "id": "ELECTRICAL-01",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns electrical power distribution, which falls under the ELECTRICAL domain."
+    },
+    {
+      "id": "ELECTRICAL-02",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns switchgear and transformer specifications, which fall under the ELECTRICAL domain."
+    },
+    {
+      "id": "INSTRUMENTATION-01",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns field devices and transmitter specifications, which fall under the INSTRUMENTATION domain."
+    },
+    {
+      "id": "INSTRUMENTATION-02",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns calibration procedures for measurement instruments, which falls under the INSTRUMENTATION domain."
+    },
+    {
+      "id": "HVAC-01",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns HVAC system design requirements for a control room."
+    },
+    {
+      "id": "HVAC-02",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns ductwork and chiller specifications, which fall under HVAC system design and climate control for facilities."
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-01",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": false,
+      "reasoning": "Stability analysis for floating structures directly relates to weight estimation, center-of-gravity calculations, and mass management."
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-02",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns vessel design, which falls under the domain of PRESSURE VESSELS."
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-01",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "Foundation analysis for an offshore platform jacket falls under structural engineering, specifically related to civil foundations and structural design."
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-02",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "multi",
+      "predicted": [
+        "CIVIL / STRUCTURAL",
+        "PIPELINES",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": false,
+      "reasoning": "Mooring systems for offshore structures involve structural design, pipeline considerations, and safety aspects related to process engineering."
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-01",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns material selection for corrosion-resistant piping, which falls under metallurgy and material science."
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-02",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns coating specifications, which fall under material science and corrosion management."
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-01",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question is general and cross-cutting, potentially involving multiple domains like INFORMATION TECHNOLOGY, CONTROL SYSTEMS, and INFORMATION MANAGEMENT, but it is unclear which specific ones apply."
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-02",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "multi",
+      "predicted": [
+        "CONTROL SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": false,
+      "reasoning": "The question involves smart system integration, which spans automation, IT infrastructure, and engineering application management."
+    },
+    {
+      "id": "INFO_TECH-01",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION TECHNOLOGY"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns IT infrastructure and server requirements, which fall under the INFORMATION TECHNOLOGY domain."
+    },
+    {
+      "id": "INFO_TECH-02",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "multi",
+      "predicted": [
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns software platforms for project administration, which involves data handling and engineering application systems."
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-01",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "multi",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns 3D modeling systems (Aveva) and their application to engineering deliverables, which involves system setup and data handling workflows."
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-02",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "multi",
+      "predicted": [
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns EDMS and collaborative tools, which fall under information workflows and engineering application setup."
+    },
+    {
+      "id": "COSTS_CONTROL-01",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "COSTS CONTROL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns cost tracking and variance analysis, which falls under the COSTS CONTROL domain."
+    },
+    {
+      "id": "COSTS_CONTROL-02",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns budget forecasting, which falls under financial management and obligations."
+    },
+    {
+      "id": "RISK_MANAGEMENT-01",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns risk register management, which falls under the domain of RISK MANAGEMENT."
+    },
+    {
+      "id": "RISK_MANAGEMENT-02",
+      "expected": "RISK MANAGEMENT",
+      "scope": "multi",
+      "predicted": [
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "Contingency planning for project risks involves risk assessment and mitigation strategies, as well as safety and emergency response considerations."
+    },
+    {
+      "id": "DOCUMENT_CONTROL-01",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns document revision and version control, which falls under the DOCUMENT CONTROL domain."
+    },
+    {
+      "id": "DOCUMENT_CONTROL-02",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "multi",
+      "predicted": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question pertains to transmittal and document register requirements, which involve document lifecycle management and information workflows."
+    },
+    {
+      "id": "HSE_MANAGEMENT-01",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns emergency response procedures, which fall under Health, Safety, Environment, and Security management."
+    },
+    {
+      "id": "HSE_MANAGEMENT-02",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "Incident management and reporting requirements are specific to Health, Safety, Environment, and Security management."
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-01",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns project schedules, timelines, and baseline requirements, which fall under SCHEDULE MANAGEMENT."
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-02",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns progress tracking and Gantt chart requirements, which fall under schedule management."
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-01",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically pertains to QA/QC procedures, which fall under the domain of Quality Management."
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-02",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns NCR management, which falls under quality control and assurance processes."
+    },
+    {
+      "id": "WEIGHT_CONTROL-01",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns weight estimation and center-of-gravity reporting, which falls under the domain of WEIGHT CONTROL AND MANAGEMENT."
+    },
+    {
+      "id": "WEIGHT_CONTROL-02",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns weight reduction strategies for a floating asset, which falls under the domain of weight control and management."
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-01",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "multi",
+      "predicted": [
+        "SUBCONTRACTING",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "The question involves module installation, which relates to subcontractor coordination and structural considerations for heavy-lift and marine transport."
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-02",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "multi",
+      "predicted": [
+        "SUBCONTRACTING",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "The question pertains to loadout and seafastening, which involve subcontractor coordination and structural considerations for stability and transport."
+    },
+    {
+      "id": "GENERAL-01",
+      "expected": "GENERAL",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question is general and cross-cutting, requiring information from multiple domains to define the overall scope of work."
+    },
+    {
+      "id": "GENERAL-02",
+      "expected": "GENERAL",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question is general and cross-cutting, addressing obligations across the entire contract, which may involve multiple domains."
+    }
+  ],
+  "variant_results": [
+    {
+      "id": "PROCUREMENT-01",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns vendor selection and material sourcing, which are core aspects of the PROCUREMENT domain."
+    },
+    {
+      "id": "PROCUREMENT-02",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns RFQ and bidding processes related to equipment procurement, which falls under the PROCUREMENT domain."
+    },
+    {
+      "id": "PROCESS_HSED-01",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns HAZOP and HAZID reviews, which are core aspects of safety in design within process engineering."
+    },
+    {
+      "id": "PROCESS_HSED-02",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns process design philosophy and safety-in-design safeguards, which align directly with the PROCESS & HSED domain."
+    },
+    {
+      "id": "LEGAL_CONTRACT-01",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns dispute resolution, which falls under the domain of legal matters and contract obligations."
+    },
+    {
+      "id": "LEGAL_CONTRACT-02",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns indemnity and liability provisions, which fall under the domain of legal matters and contract terms."
+    },
+    {
+      "id": "FINANCE_TAX-01",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns payment terms and invoicing, which are covered under financial management and accounting."
+    },
+    {
+      "id": "FINANCE_TAX-02",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns tax compliance and fiscal reporting, which are core aspects of the FINANCE / TAX domain."
+    },
+    {
+      "id": "INSURANCE-01",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns insurance coverage, which aligns directly with the INSURANCE domain."
+    },
+    {
+      "id": "INSURANCE-02",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns third-party liability insurance limits, which falls under the INSURANCE domain."
+    },
+    {
+      "id": "IP_NDA-01",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns confidentiality obligations, which fall under legal matters and contract terms."
+    },
+    {
+      "id": "IP_NDA-02",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns ownership of intellectual property rights, which falls under contract terms and legal obligations."
+    },
+    {
+      "id": "INFO_MGMT-01",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "multi",
+      "predicted": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly mentions document control and EDMS requirements, which align with these two domains."
+    },
+    {
+      "id": "INFO_MGMT-02",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns data and information handover requirements, which align with the domain's focus on managing data workflows, EDMS systems, and client data-handover compliance."
+    },
+    {
+      "id": "CYBERSECURITY-01",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns cybersecurity for process control systems, which falls under the CONTROL SYSTEMS domain."
+    },
+    {
+      "id": "CYBERSECURITY-02",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION TECHNOLOGY"
+      ],
+      "hit": false,
+      "reasoning": "The question specifically concerns access control and authentication measures, which fall under IT infrastructure and security management."
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-01",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns a CO2 compressor, which falls under the domain of rotating machinery including compressors."
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-02",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns maintenance and supplier qualification for pumps and turbines, which are covered under the ROTATING EQUIPMENT domain."
+    },
+    {
+      "id": "PRESSURE_VESSELS-01",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns ASME code compliance for pressure vessels, which directly aligns with the PRESSURE VESSELS domain."
+    },
+    {
+      "id": "PRESSURE_VESSELS-02",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns inspection requirements for heat exchangers and columns, which fall under the PRESSURE VESSELS domain."
+    },
+    {
+      "id": "PIPING_INSTALLATION-01",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns welding standards related to piping installation, which aligns directly with the PIPING INSTALLATION domain."
+    },
+    {
+      "id": "PIPING_INSTALLATION-02",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns 'Issued for Construction' deliverables for piping isometrics, which falls under PIPING INSTALLATION."
+    },
+    {
+      "id": "PIPELINES-01",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns pipeline systems and their integrity management, which aligns directly with the PIPELINES domain."
+    },
+    {
+      "id": "PIPELINES-02",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns pigging operations and transmission pipelines, which are covered under the PIPELINES domain."
+    },
+    {
+      "id": "PACKAGE-01",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "PACKAGE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns vendor-supplied packaged equipment skids, which aligns directly with the PACKAGE domain."
+    },
+    {
+      "id": "PACKAGE-02",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "PACKAGE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns pre-assembled modular equipment packages, which aligns directly with the PACKAGE domain."
+    },
+    {
+      "id": "FIRED_EQUIPMENT-01",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "multi",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns fired heaters, which are part of process design and packaged equipment systems."
+    },
+    {
+      "id": "FIRED_EQUIPMENT-02",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns combustion and burner design standards for boilers, which aligns with process engineering and safety-in-design aspects."
+    },
+    {
+      "id": "ONSHORE_BUILDING-01",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "multi",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns civil foundation requirements for onshore buildings, which directly relates to both architectural design and structural engineering."
+    },
+    {
+      "id": "ONSHORE_BUILDING-02",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns architectural design standards for onshore facility layouts, which directly aligns with the ONSHORE BUILDING/ ARCHITECTURE domain."
+    },
+    {
+      "id": "CONTROL_SYSTEMS-01",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns DCS and SCADA, which are core topics within the CONTROL SYSTEMS domain."
+    },
+    {
+      "id": "CONTROL_SYSTEMS-02",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns HMI design standards for automation systems, which falls under the CONTROL SYSTEMS domain."
+    },
+    {
+      "id": "TELECOM-01",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns telecommunications infrastructure, which aligns directly with the TELECOMMUNICATIONS domain."
+    },
+    {
+      "id": "TELECOM-02",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns radio and fiber optic communication systems, which fall under the TELECOMMUNICATIONS domain."
+    },
+    {
+      "id": "LABORATORY-01",
+      "expected": "LABORATORY",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns laboratory testing for quality sample analysis, which aligns with quality control and assurance processes in QUALITY MANAGEMENT."
+    },
+    {
+      "id": "LABORATORY-02",
+      "expected": "LABORATORY",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question pertains to equipment requirements for an on-site laboratory, which aligns with facility layouts and infrastructure under this domain."
+    },
+    {
+      "id": "SUBCONTRACTING-01",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "SUBCONTRACTING"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns managing subcontractors, which directly aligns with the SUBCONTRACTING domain."
+    },
+    {
+      "id": "SUBCONTRACTING-02",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "SUBCONTRACTING"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns yard management obligations in the context of subcontracted fabrication work, which falls under the SUBCONTRACTING domain."
+    },
+    {
+      "id": "OFFSHORE_MOBILE-01",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "multi",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PIPELINES",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns design documentation for mobile offshore units, which spans process safety, pipeline design, and structural considerations."
+    },
+    {
+      "id": "OFFSHORE_MOBILE-02",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "multi",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "CIVIL / STRUCTURAL",
+        "RISK MANAGEMENT"
+      ],
+      "hit": false,
+      "reasoning": "Floating production systems involve process safety, structural considerations, and risk management for offshore operations."
+    },
+    {
+      "id": "OFFSHORE_BUILDING-01",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "multi",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "HVAC"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns offshore living quarters, which involve architectural design, structural considerations, and HVAC systems for climate control."
+    },
+    {
+      "id": "OFFSHORE_BUILDING-02",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": false,
+      "reasoning": "Helideck layout standards pertain to facility design and infrastructure, fitting the domain of architectural and structural considerations."
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-01",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns structural engineering standards for concrete and steel structures, which falls under the CIVIL / STRUCTURAL domain."
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-02",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "reasoning": "The question clearly pertains to foundation design, which falls under civil and structural engineering."
+    },
+    {
+      "id": "ELECTRICAL-01",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns electrical power distribution, which falls under the ELECTRICAL domain."
+    },
+    {
+      "id": "ELECTRICAL-02",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns switchgear and transformer specifications, which fall under the ELECTRICAL domain."
+    },
+    {
+      "id": "INSTRUMENTATION-01",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns field devices and transmitter specifications, which fall under the INSTRUMENTATION domain."
+    },
+    {
+      "id": "INSTRUMENTATION-02",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns calibration procedures for measurement instruments, which falls under the INSTRUMENTATION domain."
+    },
+    {
+      "id": "HVAC-01",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns HVAC system design requirements, which directly align with the HVAC domain."
+    },
+    {
+      "id": "HVAC-02",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns ductwork and chiller specifications, which fall under HVAC system design and climate control for facilities."
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-01",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "Stability analysis for floating structures aligns with structural engineering principles, including foundations and frame design."
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-02",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns vessel design, which aligns with the domain covering pressure vessels and related hydrodynamic studies."
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-01",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns foundation analysis for an offshore platform jacket, which falls under structural engineering and foundation design."
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-02",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns offshore structure mooring systems, which align with pipeline routing and subsea/offshore infrastructure."
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-01",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "multi",
+      "predicted": [
+        "PIPING INSTALLATION",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns material selection for corrosion-resistant piping, which involves both piping specifications and material science considerations."
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-02",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns coating specifications, which fall under material science and corrosion management."
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-01",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question is general and cross-cutting, potentially involving multiple domains like INFORMATION TECHNOLOGY, INFORMATION MANAGEMENT, CONTROL SYSTEMS, and others, but no single or limited set of domains clearly fits."
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-02",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question is general and does not specify any particular engineering domain, making it cross-cutting or unclear."
+    },
+    {
+      "id": "INFO_TECH-01",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION TECHNOLOGY"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns IT infrastructure and server requirements, which aligns directly with the INFORMATION TECHNOLOGY domain."
+    },
+    {
+      "id": "INFO_TECH-02",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "multi",
+      "predicted": [
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns software platforms for project administration, which aligns with information workflows and engineering application management."
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-01",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question specifically concerns 3D modeling systems (Aveva), which falls under the domain of PROJECT EXECUTION SYSTEMS."
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-02",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "multi",
+      "predicted": [
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns EDMS and collaborative tools setup, which aligns with both data handling workflows (INFORMATION MANAGEMENT) and engineering application systems (PROJECT EXECUTION SYSTEMS)."
+    },
+    {
+      "id": "COSTS_CONTROL-01",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "COSTS CONTROL"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns cost tracking and variance analysis, which are core aspects of the COSTS CONTROL domain."
+    },
+    {
+      "id": "COSTS_CONTROL-02",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns budget forecasting obligations, which align with financial management and cost-related processes under the FINANCE / TAX domain."
+    },
+    {
+      "id": "RISK_MANAGEMENT-01",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns risk register management, which is a core aspect of the RISK MANAGEMENT domain."
+    },
+    {
+      "id": "RISK_MANAGEMENT-02",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns contingency planning for project risks, which is a core aspect of the RISK MANAGEMENT domain."
+    },
+    {
+      "id": "DOCUMENT_CONTROL-01",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns document revision and version control, which falls under the DOCUMENT CONTROL domain."
+    },
+    {
+      "id": "DOCUMENT_CONTROL-02",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns transmittal and document register requirements, which fall under the domain of DOCUMENT CONTROL."
+    },
+    {
+      "id": "HSE_MANAGEMENT-01",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns emergency response procedures, which fall under Health, Safety, Environment, and Security management."
+    },
+    {
+      "id": "HSE_MANAGEMENT-02",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question concerns incident management and reporting, which directly aligns with HSE MANAGEMENT's focus on workforce safety, emergency response, and regulatory compliance."
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-01",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns critical path and baseline schedule requirements, which fall under SCHEDULE MANAGEMENT."
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-02",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns progress tracking and Gantt chart requirements, which are core aspects of schedule management."
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-01",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns QA/QC procedures, which are central to the QUALITY MANAGEMENT domain."
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-02",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question directly concerns NCR management, which is explicitly covered under Quality Management."
+    },
+    {
+      "id": "WEIGHT_CONTROL-01",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns weight estimation and center-of-gravity reporting, which directly aligns with the domain description."
+    },
+    {
+      "id": "WEIGHT_CONTROL-02",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "reasoning": "The question explicitly concerns weight reduction strategies for floating assets, which aligns directly with the domain description."
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-01",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "multi",
+      "predicted": [
+        "SUBCONTRACTING",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "The question involves module installation, which relates to subcontractor coordination and structural considerations for heavy-lift and marine transport."
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-02",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "multi",
+      "predicted": [
+        "SUBCONTRACTING",
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "reasoning": "The question concerns loadout and seafastening, which involve subcontractor coordination and structural engineering for stability and safety."
+    },
+    {
+      "id": "GENERAL-01",
+      "expected": "GENERAL",
+      "scope": "full",
+      "predicted": [],
+      "hit": null,
+      "reasoning": "The question is general and cross-cutting, asking for the overall scope of work without specifying any particular engineering domain."
+    },
+    {
+      "id": "GENERAL-02",
+      "expected": "GENERAL",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": false,
+      "reasoning": "The question explicitly concerns contract obligations, which aligns directly with the LEGAL / CONTRACT domain."
+    }
+  ]
+}

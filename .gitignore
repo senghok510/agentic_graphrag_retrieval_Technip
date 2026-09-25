@@ -1,0 +1,69 @@
+# IDE and operating-system files
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+.claude/
+*.sln.DotSettings.user
+*.*proj.user
+
+# Secrets and local environment
+.env
+**/.env
+certificates/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Node.js / Next.js
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs and generated run data
+logs/
+**/logs/
+*.log
+*.jsonl
+mlflow.db
+mlruns/
+
+# Large data and embeddings
+ai-services/embeddings/
+ai-services/embeddings_large/
+ai-services/all_chunks.json
+ai-services/recomposed_files*.json
+ai-services/entities_extracted.json
+ai-services/validated_entities.json
+ai-services/classification.json
+ai-services/data/
+ROC_INPEX/
+
+# Local databases
+**/vectordb/
+*.db
+*.sqlite
+*.sqlite3
+
+# Snyk-generated instructions
+.github/instructions/snyk_rules.instructions.md

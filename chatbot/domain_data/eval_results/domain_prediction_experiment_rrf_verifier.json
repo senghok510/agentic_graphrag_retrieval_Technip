@@ -1,0 +1,3318 @@
+{
+  "n_questions": 78,
+  "top_k": 10,
+  "rrf_k": 10,
+  "summary": {
+    "scoped_correct": 76,
+    "scoped_wrong": 2,
+    "general_scope": 0,
+    "errors": 0,
+    "accuracy_when_scoped": 0.9744,
+    "candidate_recall_at_k": 1.0
+  },
+  "missed_because_not_in_top_k": [],
+  "results": [
+    {
+      "id": "PROCUREMENT-01",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "PROCUREMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "ROTATING EQUIPMENT",
+        "DOCUMENT CONTROL",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROCUREMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "DOCUMENT CONTROL",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "keyword_ranked": [
+        "PROCUREMENT",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "reasoning": "The question directly pertains to vendor selection and material sourcing, which are core responsibilities of the PROCUREMENT domain."
+    },
+    {
+      "id": "PROCUREMENT-02",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "PROCUREMENT",
+        "FIRED EQUIPMENT",
+        "PACKAGE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LABORATORY",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "ROTATING EQUIPMENT",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROCUREMENT",
+        "SUBCONTRACTING",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "TRANSPORT AND INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "LABORATORY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question directly pertains to RFQ and bidding processes, which fall under the scope of procurement activities."
+    },
+    {
+      "id": "PROCESS_HSED-01",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "candidates": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "FIRED EQUIPMENT",
+        "PIPELINES",
+        "HSE MANAGEMENT",
+        "RISK MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "HVAC",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "keyword_ranked": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE"
+      ],
+      "reasoning": "The question explicitly pertains to HAZOP and HAZID reviews, which are core aspects of safety in design within the process engineering domain."
+    },
+    {
+      "id": "PROCESS_HSED-02",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "candidates": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "NAVAL ARCHITECTURE",
+        "HVAC"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "PIPING INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "PIPELINES",
+        "CONTROL SYSTEMS",
+        "FIRED EQUIPMENT",
+        "QUALITY MANAGEMENT",
+        "OFFSHORE STRUCTURE"
+      ],
+      "keyword_ranked": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE"
+      ],
+      "reasoning": "The question explicitly involves process design philosophy and safety-in-design safeguards, which align directly with the PROCESS & HSED domain."
+    },
+    {
+      "id": "LEGAL_CONTRACT-01",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "candidates": [
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "DOCUMENT CONTROL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPING INSTALLATION",
+        "INTELLECTUAL PROPERTY / NDA",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "DOCUMENT CONTROL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPING INSTALLATION",
+        "INTELLECTUAL PROPERTY / NDA",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT"
+      ],
+      "reasoning": "The question directly pertains to dispute resolution, which is explicitly covered under the LEGAL / CONTRACT domain."
+    },
+    {
+      "id": "LEGAL_CONTRACT-02",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "candidates": [
+        "LEGAL / CONTRACT",
+        "INSURANCE",
+        "SUBCONTRACTING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "QUALITY MANAGEMENT",
+        "RISK MANAGEMENT",
+        "PROCUREMENT",
+        "TRANSPORT AND INSTALLATION",
+        "LABORATORY",
+        "DOCUMENT CONTROL"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "LEGAL / CONTRACT",
+        "INSURANCE",
+        "SUBCONTRACTING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "QUALITY MANAGEMENT",
+        "RISK MANAGEMENT",
+        "PROCUREMENT",
+        "TRANSPORT AND INSTALLATION",
+        "LABORATORY",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT",
+        "INSURANCE"
+      ],
+      "reasoning": "The question directly pertains to indemnity and liability provisions, which are core aspects of legal and contractual matters."
+    },
+    {
+      "id": "FINANCE_TAX-01",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "candidates": [
+        "LEGAL / CONTRACT",
+        "FINANCE / TAX",
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "COSTS CONTROL",
+        "TRANSPORT AND INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "DOCUMENT CONTROL"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "FINANCE / TAX",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "COSTS CONTROL",
+        "TRANSPORT AND INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "FINANCE / TAX",
+        "LEGAL / CONTRACT"
+      ],
+      "reasoning": "The question pertains to payment terms and invoicing, which are directly related to financial management and payment processing."
+    },
+    {
+      "id": "FINANCE_TAX-02",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "candidates": [
+        "FINANCE / TAX",
+        "LEGAL / CONTRACT",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "SUBCONTRACTING",
+        "INFORMATION MANAGEMENT",
+        "COSTS CONTROL",
+        "PROCUREMENT",
+        "PIPING INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "FINANCE / TAX",
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "INFORMATION MANAGEMENT",
+        "COSTS CONTROL",
+        "PROCUREMENT",
+        "PIPING INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "INSURANCE",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT",
+        "FINANCE / TAX",
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to tax compliance and fiscal reporting, which are explicitly covered under the FINANCE / TAX domain."
+    },
+    {
+      "id": "INSURANCE-01",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "candidates": [
+        "INSURANCE",
+        "SUBCONTRACTING",
+        "LEGAL / CONTRACT",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "COSTS CONTROL",
+        "PROCUREMENT",
+        "TRANSPORT AND INSTALLATION",
+        "RISK MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "INSURANCE",
+        "SUBCONTRACTING",
+        "LEGAL / CONTRACT",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "COSTS CONTROL",
+        "PROCUREMENT",
+        "TRANSPORT AND INSTALLATION",
+        "RISK MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "INSURANCE"
+      ],
+      "reasoning": "The question explicitly pertains to insurance coverage, which directly aligns with the scope of the INSURANCE domain."
+    },
+    {
+      "id": "INSURANCE-02",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "candidates": [
+        "INSURANCE",
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "RISK MANAGEMENT",
+        "INTELLECTUAL PROPERTY / NDA",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "INSURANCE",
+        "LEGAL / CONTRACT",
+        "RISK MANAGEMENT",
+        "INTELLECTUAL PROPERTY / NDA",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "ROTATING EQUIPMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "INSURANCE",
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING"
+      ],
+      "reasoning": "The question directly pertains to insurance coverage and liability limits, which falls under the INSURANCE domain."
+    },
+    {
+      "id": "IP_NDA-01",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "INTELLECTUAL PROPERTY / NDA"
+      ],
+      "hit": true,
+      "candidates": [
+        "LEGAL / CONTRACT",
+        "INTELLECTUAL PROPERTY / NDA",
+        "INFORMATION MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS",
+        "CYBERSECURITY",
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "LEGAL / CONTRACT",
+        "INTELLECTUAL PROPERTY / NDA",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY",
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "PROCUREMENT",
+        "LABORATORY",
+        "GENERAL"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT",
+        "INTELLECTUAL PROPERTY / NDA",
+        "INFORMATION MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question pertains to confidentiality obligations, which directly align with the domain of intellectual property and non-disclosure agreements."
+    },
+    {
+      "id": "IP_NDA-02",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "INTELLECTUAL PROPERTY / NDA"
+      ],
+      "hit": true,
+      "candidates": [
+        "INTELLECTUAL PROPERTY / NDA",
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROCUREMENT",
+        "DOCUMENT CONTROL",
+        "CIVIL / STRUCTURAL",
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "INTELLECTUAL PROPERTY / NDA",
+        "LEGAL / CONTRACT",
+        "SUBCONTRACTING",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROCUREMENT",
+        "DOCUMENT CONTROL",
+        "CIVIL / STRUCTURAL",
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT",
+        "INTELLECTUAL PROPERTY / NDA"
+      ],
+      "reasoning": "The question directly pertains to ownership of intellectual property rights, which is the focus of the INTELLECTUAL PROPERTY / NDA domain."
+    },
+    {
+      "id": "INFO_MGMT-01",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": false,
+      "candidates": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "COSTS CONTROL",
+        "CONTROL SYSTEMS",
+        "SUBCONTRACTING",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "INSTRUMENTATION",
+        "PROJECT EXECUTION SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PIPING INSTALLATION",
+        "COSTS CONTROL",
+        "OFFSHORE MOBILE SYSTEM",
+        "SCHEDULE MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "keyword_ranked": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "CONTROL SYSTEMS",
+        "SUBCONTRACTING",
+        "INSTRUMENTATION",
+        "COSTS CONTROL",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question explicitly focuses on document control and EDMS requirements, which align directly with the DOCUMENT CONTROL domain's scope."
+    },
+    {
+      "id": "INFO_MGMT-02",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "INFORMATION MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "TELECOMMUNICATIONS",
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "DOCUMENT CONTROL",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "SUBCONTRACTING",
+        "LEGAL / CONTRACT",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "keyword_ranked": [
+        "INFORMATION MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "TELECOMMUNICATIONS",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question focuses on data and information handover, which aligns with information workflows, EDMS systems, and client data-handover compliance managed under INFORMATION MANAGEMENT."
+    },
+    {
+      "id": "CYBERSECURITY-01",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "CYBERSECURITY"
+      ],
+      "hit": true,
+      "candidates": [
+        "CYBERSECURITY",
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROJECT EXECUTION SYSTEMS",
+        "ADVANCED SYSTEMS",
+        "INSTRUMENTATION",
+        "INFORMATION TECHNOLOGY",
+        "INFORMATION MANAGEMENT",
+        "TELECOMMUNICATIONS",
+        "QUALITY MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "CYBERSECURITY",
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ADVANCED SYSTEMS",
+        "ELECTRICAL",
+        "INSTRUMENTATION",
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "CONTROL SYSTEMS",
+        "CYBERSECURITY",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INFORMATION MANAGEMENT",
+        "TELECOMMUNICATIONS",
+        "OFFSHORE MOBILE SYSTEM",
+        "INSTRUMENTATION",
+        "HVAC"
+      ],
+      "reasoning": "The question specifically addresses cybersecurity requirements, which directly aligns with the CYBERSECURITY domain."
+    },
+    {
+      "id": "CYBERSECURITY-02",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "CYBERSECURITY"
+      ],
+      "hit": true,
+      "candidates": [
+        "CYBERSECURITY",
+        "CONTROL SYSTEMS",
+        "INFORMATION MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS",
+        "ADVANCED SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "COSTS CONTROL",
+        "INSTRUMENTATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "CYBERSECURITY",
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "CONTROL SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "ADVANCED SYSTEMS",
+        "DOCUMENT CONTROL",
+        "COSTS CONTROL",
+        "RISK MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "CYBERSECURITY",
+        "CONTROL SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "INFORMATION MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "INSTRUMENTATION",
+        "HVAC",
+        "ADVANCED SYSTEMS",
+        "PROJECT EXECUTION SYSTEMS",
+        "COSTS CONTROL"
+      ],
+      "reasoning": "The question specifically addresses access control and authentication, which are core aspects of cybersecurity."
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-01",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "ROTATING EQUIPMENT",
+        "FIRED EQUIPMENT",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "HVAC",
+        "PACKAGE",
+        "PIPELINES",
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INSTRUMENTATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ROTATING EQUIPMENT",
+        "FIRED EQUIPMENT",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "HVAC",
+        "PACKAGE",
+        "PIPELINES",
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INSTRUMENTATION"
+      ],
+      "keyword_ranked": [],
+      "reasoning": "The question specifically pertains to a CO2 compressor, which falls under the domain of rotating machinery such as compressors."
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-02",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "QUALITY MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPELINES",
+        "PROCUREMENT",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "FIRED EQUIPMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ROTATING EQUIPMENT",
+        "QUALITY MANAGEMENT",
+        "PACKAGE",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPELINES",
+        "PROCUREMENT",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "FIRED EQUIPMENT"
+      ],
+      "keyword_ranked": [
+        "ROTATING EQUIPMENT",
+        "PACKAGE"
+      ],
+      "reasoning": "The question specifically addresses maintenance and supplier qualification for pumps and turbines, which are covered under the ROTATING EQUIPMENT domain."
+    },
+    {
+      "id": "PRESSURE_VESSELS-01",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "candidates": [
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE",
+        "LEGAL / CONTRACT",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PRESSURE VESSELS",
+        "PIPING INSTALLATION",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPELINES",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "OFFSHORE STRUCTURE",
+        "NAVAL ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "PRESSURE VESSELS",
+        "LEGAL / CONTRACT",
+        "NAVAL ARCHITECTURE",
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "The question explicitly mentions ASME code compliance for pressure vessels, which directly aligns with the PRESSURE VESSELS domain."
+    },
+    {
+      "id": "PRESSURE_VESSELS-02",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "candidates": [
+        "PRESSURE VESSELS",
+        "FIRED EQUIPMENT",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE",
+        "HVAC",
+        "PIPELINES",
+        "MATERIALS AND TECHNOLOGY",
+        "INSTRUMENTATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PRESSURE VESSELS",
+        "FIRED EQUIPMENT",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE",
+        "HVAC",
+        "PIPELINES",
+        "MATERIALS AND TECHNOLOGY",
+        "INSTRUMENTATION"
+      ],
+      "keyword_ranked": [
+        "PRESSURE VESSELS"
+      ],
+      "reasoning": "Heat exchangers and columns fall under the design, fabrication, and inspection scope of pressure vessels as described."
+    },
+    {
+      "id": "PIPING_INSTALLATION-01",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": true,
+      "candidates": [
+        "PIPING INSTALLATION",
+        "OFFSHORE STRUCTURE",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PIPELINES",
+        "PRESSURE VESSELS",
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "PRESSURE VESSELS",
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE",
+        "OFFSHORE STRUCTURE",
+        "MATERIALS AND TECHNOLOGY",
+        "ROTATING EQUIPMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "PIPING INSTALLATION",
+        "OFFSHORE STRUCTURE",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "reasoning": "The question directly pertains to welding standards for piping installation, which is explicitly covered under the PIPING INSTALLATION domain."
+    },
+    {
+      "id": "PIPING_INSTALLATION-02",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": true,
+      "candidates": [
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "DOCUMENT CONTROL",
+        "OFFSHORE MOBILE SYSTEM",
+        "PACKAGE",
+        "CIVIL / STRUCTURAL",
+        "FIRED EQUIPMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "DOCUMENT CONTROL",
+        "OFFSHORE MOBILE SYSTEM",
+        "PACKAGE",
+        "CIVIL / STRUCTURAL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "FIRED EQUIPMENT"
+      ],
+      "keyword_ranked": [
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "reasoning": "The question specifically pertains to 'Issued for Construction' deliverables for piping isometrics, which falls under the scope of PIPING INSTALLATION."
+    },
+    {
+      "id": "PIPELINES-01",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "candidates": [
+        "PIPELINES",
+        "INFORMATION MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "CONTROL SYSTEMS",
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "RISK MANAGEMENT",
+        "ADVANCED SYSTEMS",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PIPELINES",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "ROTATING EQUIPMENT",
+        "INFORMATION MANAGEMENT",
+        "HSE MANAGEMENT",
+        "INSTRUMENTATION",
+        "PRESSURE VESSELS",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "INFORMATION MANAGEMENT",
+        "PIPELINES",
+        "CONTROL SYSTEMS",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC",
+        "ADVANCED SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS",
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL"
+      ],
+      "reasoning": "The question specifically pertains to pipeline systems and their integrity management, which is directly covered under the PIPELINES domain."
+    },
+    {
+      "id": "PIPELINES-02",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "candidates": [
+        "PIPELINES",
+        "ROTATING EQUIPMENT",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "FIRED EQUIPMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PACKAGE",
+        "INSTRUMENTATION",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PIPELINES",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "FIRED EQUIPMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PACKAGE",
+        "INSTRUMENTATION",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "keyword_ranked": [
+        "PIPELINES",
+        "ROTATING EQUIPMENT"
+      ],
+      "reasoning": "Pigging operations are explicitly covered under the PIPELINES domain, which includes transmission systems and pigging activities."
+    },
+    {
+      "id": "PACKAGE-01",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "PACKAGE"
+      ],
+      "hit": true,
+      "candidates": [
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "PROCUREMENT",
+        "LABORATORY",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PACKAGE",
+        "PIPING INSTALLATION",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES"
+      ],
+      "keyword_ranked": [
+        "PACKAGE",
+        "PROCUREMENT",
+        "FIRED EQUIPMENT",
+        "LABORATORY"
+      ],
+      "reasoning": "The question directly pertains to vendor-supplied packaged equipment skids, which aligns specifically with the PACKAGE domain."
+    },
+    {
+      "id": "PACKAGE-02",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "PACKAGE"
+      ],
+      "hit": true,
+      "candidates": [
+        "PACKAGE",
+        "OFFSHORE MOBILE SYSTEM",
+        "FIRED EQUIPMENT",
+        "PROCUREMENT",
+        "LABORATORY",
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "DOCUMENT CONTROL",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ROTATING EQUIPMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PACKAGE",
+        "OFFSHORE MOBILE SYSTEM",
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "DOCUMENT CONTROL",
+        "FIRED EQUIPMENT",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "PACKAGE",
+        "PROCUREMENT",
+        "FIRED EQUIPMENT",
+        "LABORATORY",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "reasoning": "The question specifically pertains to pre-assembled modular equipment packages, which aligns directly with the scope of the PACKAGE domain."
+    },
+    {
+      "id": "FIRED_EQUIPMENT-01",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "FIRED EQUIPMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PIPELINES",
+        "HVAC",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "PACKAGE",
+        "PIPING INSTALLATION",
+        "HVAC",
+        "ROTATING EQUIPMENT",
+        "PIPELINES",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "keyword_ranked": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "PACKAGE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC"
+      ],
+      "reasoning": "The question specifically asks about design requirements for fired heaters, which directly aligns with the FIRED EQUIPMENT domain."
+    },
+    {
+      "id": "FIRED_EQUIPMENT-02",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "FIRED EQUIPMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "FIRED EQUIPMENT",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "HVAC",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "QUALITY MANAGEMENT",
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "FIRED EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "HVAC",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE",
+        "QUALITY MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPELINES"
+      ],
+      "keyword_ranked": [
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "NAVAL ARCHITECTURE"
+      ],
+      "reasoning": "The question specifically pertains to combustion and burner design standards for boilers, which falls under the FIRED EQUIPMENT domain."
+    },
+    {
+      "id": "ONSHORE_BUILDING-01",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "CIVIL / STRUCTURAL",
+        "PIPELINES",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "PRESSURE VESSELS"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "PRESSURE VESSELS",
+        "HVAC"
+      ],
+      "keyword_ranked": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "PIPELINES",
+        "OFFSHORE STRUCTURE"
+      ],
+      "reasoning": "The question specifically pertains to civil foundation requirements for onshore buildings, which aligns directly with the scope of this domain."
+    },
+    {
+      "id": "ONSHORE_BUILDING-02",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "OFFSHORE STRUCTURE",
+        "NAVAL ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "HVAC",
+        "ROTATING EQUIPMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PIPELINES",
+        "HVAC",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE"
+      ],
+      "reasoning": "The question explicitly refers to architectural design standards for onshore facility layouts, which aligns directly with this domain."
+    },
+    {
+      "id": "CONTROL_SYSTEMS-01",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "candidates": [
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INSTRUMENTATION",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "COSTS CONTROL",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPING INSTALLATION",
+        "ADVANCED SYSTEMS"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INSTRUMENTATION",
+        "PIPING INSTALLATION",
+        "ADVANCED SYSTEMS",
+        "DOCUMENT CONTROL",
+        "HVAC",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "keyword_ranked": [
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INSTRUMENTATION",
+        "PROJECT EXECUTION SYSTEMS",
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to DCS and SCADA, which are core topics within the CONTROL SYSTEMS domain."
+    },
+    {
+      "id": "CONTROL_SYSTEMS-02",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "candidates": [
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "HVAC",
+        "ROTATING EQUIPMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "PRESSURE VESSELS",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "QUALITY MANAGEMENT",
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "CONTROL SYSTEMS",
+        "HVAC",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PIPING INSTALLATION",
+        "PROJECT EXECUTION SYSTEMS",
+        "ADVANCED SYSTEMS",
+        "HSE MANAGEMENT",
+        "PACKAGE",
+        "QUALITY MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "keyword_ranked": [
+        "CONTROL SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "NAVAL ARCHITECTURE"
+      ],
+      "reasoning": "The question specifically pertains to HMI design standards, which falls under the scope of automation and control systems."
+    },
+    {
+      "id": "TELECOM-01",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "candidates": [
+        "TELECOMMUNICATIONS",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "INFORMATION TECHNOLOGY",
+        "ELECTRICAL",
+        "CYBERSECURITY",
+        "LABORATORY",
+        "TRANSPORT AND INSTALLATION",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION",
+        "OFFSHORE STRUCTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "TELECOMMUNICATIONS",
+        "INFORMATION TECHNOLOGY",
+        "ELECTRICAL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CYBERSECURITY",
+        "LABORATORY",
+        "TRANSPORT AND INSTALLATION",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION",
+        "OFFSHORE STRUCTURE"
+      ],
+      "keyword_ranked": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "TELECOMMUNICATIONS",
+        "INFORMATION TECHNOLOGY"
+      ],
+      "reasoning": "The question explicitly asks about telecommunications infrastructure, which aligns directly with the TELECOMMUNICATIONS domain."
+    },
+    {
+      "id": "TELECOM-02",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "candidates": [
+        "TELECOMMUNICATIONS",
+        "ADVANCED SYSTEMS",
+        "OFFSHORE MOBILE SYSTEM",
+        "CONTROL SYSTEMS",
+        "INFORMATION MANAGEMENT",
+        "HVAC",
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "INSTRUMENTATION",
+        "ELECTRICAL"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "TELECOMMUNICATIONS",
+        "ADVANCED SYSTEMS",
+        "INSTRUMENTATION",
+        "ELECTRICAL",
+        "OFFSHORE MOBILE SYSTEM",
+        "TRANSPORT AND INSTALLATION",
+        "CONTROL SYSTEMS",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "FIRED EQUIPMENT",
+        "PIPING INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "TELECOMMUNICATIONS",
+        "INFORMATION MANAGEMENT",
+        "CONTROL SYSTEMS",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC",
+        "ADVANCED SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question directly pertains to radio and fiber optic communication systems, which are covered under the TELECOMMUNICATIONS domain."
+    },
+    {
+      "id": "LABORATORY-01",
+      "expected": "LABORATORY",
+      "scope": "single",
+      "predicted": [
+        "LABORATORY"
+      ],
+      "hit": true,
+      "candidates": [
+        "LABORATORY",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "NAVAL ARCHITECTURE",
+        "RISK MANAGEMENT",
+        "INSTRUMENTATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "LABORATORY",
+        "QUALITY MANAGEMENT",
+        "INSTRUMENTATION",
+        "MATERIALS AND TECHNOLOGY",
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "PACKAGE"
+      ],
+      "keyword_ranked": [
+        "LABORATORY",
+        "PIPING INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "MATERIALS AND TECHNOLOGY",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "The question specifically pertains to laboratory testing facilities and quality sample analysis, which directly aligns with the LABORATORY domain."
+    },
+    {
+      "id": "LABORATORY-02",
+      "expected": "LABORATORY",
+      "scope": "single",
+      "predicted": [
+        "LABORATORY"
+      ],
+      "hit": true,
+      "candidates": [
+        "LABORATORY",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "PROCUREMENT",
+        "INSTRUMENTATION",
+        "ROTATING EQUIPMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "HVAC",
+        "PIPING INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "LABORATORY",
+        "INSTRUMENTATION",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "HVAC",
+        "PIPING INSTALLATION",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "keyword_ranked": [
+        "LABORATORY",
+        "PROCUREMENT",
+        "PACKAGE",
+        "FIRED EQUIPMENT"
+      ],
+      "reasoning": "The question specifically pertains to equipment for an on-site laboratory, which aligns directly with the LABORATORY domain."
+    },
+    {
+      "id": "SUBCONTRACTING-01",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "SUBCONTRACTING"
+      ],
+      "hit": true,
+      "candidates": [
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "QUALITY MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "HSE MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "QUALITY MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "HSE MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "keyword_ranked": [],
+      "reasoning": "The question directly pertains to managing subcontractors, which aligns specifically with the scope of the SUBCONTRACTING domain."
+    },
+    {
+      "id": "SUBCONTRACTING-02",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "SUBCONTRACTING"
+      ],
+      "hit": true,
+      "candidates": [
+        "LEGAL / CONTRACT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PRESSURE VESSELS",
+        "HSE MANAGEMENT",
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "SUBCONTRACTING"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "LEGAL / CONTRACT",
+        "PACKAGE",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT",
+        "INFORMATION MANAGEMENT",
+        "PRESSURE VESSELS",
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "HSE MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to yard management obligations in the context of subcontracted fabrication work, which aligns with the scope of the SUBCONTRACTING domain."
+    },
+    {
+      "id": "OFFSHORE_MOBILE-01",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "single",
+      "predicted": [
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPELINES",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PACKAGE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HVAC"
+      ],
+      "reasoning": "The question specifically pertains to design documentation for mobile offshore units, which is explicitly covered by the OFFSHORE MOBILE SYSTEM domain."
+    },
+    {
+      "id": "OFFSHORE_MOBILE-02",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "single",
+      "predicted": [
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "NAVAL ARCHITECTURE",
+        "CONTROL SYSTEMS",
+        "INFORMATION MANAGEMENT",
+        "HVAC",
+        "PROJECT EXECUTION SYSTEMS",
+        "ADVANCED SYSTEMS",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "TRANSPORT AND INSTALLATION",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPING INSTALLATION",
+        "FIRED EQUIPMENT",
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE MOBILE SYSTEM",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INFORMATION MANAGEMENT",
+        "CONTROL SYSTEMS",
+        "HVAC",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "ADVANCED SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question specifically pertains to floating production systems, which are explicitly covered under the OFFSHORE MOBILE SYSTEM domain."
+    },
+    {
+      "id": "OFFSHORE_BUILDING-01",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PIPING INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "NAVAL ARCHITECTURE"
+      ],
+      "reasoning": "The question specifically pertains to offshore living quarters and accommodation modules, which are explicitly covered under this domain."
+    },
+    {
+      "id": "OFFSHORE_BUILDING-02",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "OFFSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "QUALITY MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "NAVAL ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "NAVAL ARCHITECTURE",
+        "HVAC",
+        "PIPELINES"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "Helideck layout standards are directly related to offshore facility architecture and helideck design, which is covered under this domain."
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-01",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "candidates": [
+        "CIVIL / STRUCTURAL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "CIVIL / STRUCTURAL",
+        "OFFSHORE STRUCTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY",
+        "ELECTRICAL"
+      ],
+      "keyword_ranked": [
+        "CIVIL / STRUCTURAL",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to structural engineering standards for concrete and steel structures, which is explicitly covered by the CIVIL / STRUCTURAL domain."
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-02",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE STRUCTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPELINES"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE STRUCTURE",
+        "CIVIL / STRUCTURAL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "OFFSHORE MOBILE SYSTEM",
+        "ROTATING EQUIPMENT"
+      ],
+      "keyword_ranked": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "HVAC"
+      ],
+      "reasoning": "Foundation design requirements align most closely with civil and structural engineering, which explicitly covers foundations and related structural elements."
+    },
+    {
+      "id": "ELECTRICAL-01",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "candidates": [
+        "ELECTRICAL",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "PROCUREMENT",
+        "LABORATORY",
+        "DOCUMENT CONTROL",
+        "ROTATING EQUIPMENT",
+        "PIPING INSTALLATION",
+        "HVAC",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ELECTRICAL",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "PIPING INSTALLATION",
+        "HVAC",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "INSTRUMENTATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "keyword_ranked": [
+        "ELECTRICAL",
+        "PROCUREMENT",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "LABORATORY",
+        "DOCUMENT CONTROL"
+      ],
+      "reasoning": "The question specifically pertains to electrical power distribution requirements, which aligns directly with the ELECTRICAL domain."
+    },
+    {
+      "id": "ELECTRICAL-02",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "candidates": [
+        "ELECTRICAL",
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "OFFSHORE STRUCTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CONTROL SYSTEMS"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ELECTRICAL",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "HVAC",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "OFFSHORE STRUCTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CONTROL SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "keyword_ranked": [
+        "ELECTRICAL",
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "reasoning": "The question specifically pertains to switchgear and transformer specifications, which are explicitly covered under the ELECTRICAL domain."
+    },
+    {
+      "id": "INSTRUMENTATION-01",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "candidates": [
+        "CONTROL SYSTEMS",
+        "INSTRUMENTATION",
+        "MATERIALS AND TECHNOLOGY",
+        "HVAC",
+        "SUBCONTRACTING",
+        "PIPING INSTALLATION",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PIPELINES"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "INSTRUMENTATION",
+        "CONTROL SYSTEMS",
+        "PIPING INSTALLATION",
+        "FIRED EQUIPMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PIPELINES",
+        "TELECOMMUNICATIONS",
+        "MATERIALS AND TECHNOLOGY",
+        "PRESSURE VESSELS"
+      ],
+      "keyword_ranked": [
+        "CONTROL SYSTEMS",
+        "SUBCONTRACTING",
+        "INSTRUMENTATION",
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "reasoning": "The question directly pertains to field devices and transmitter specifications, which are explicitly covered under the INSTRUMENTATION domain."
+    },
+    {
+      "id": "INSTRUMENTATION-02",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "candidates": [
+        "INSTRUMENTATION",
+        "LABORATORY",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "CONTROL SYSTEMS",
+        "FIRED EQUIPMENT",
+        "INFORMATION MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "INSTRUMENTATION",
+        "LABORATORY",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "CONTROL SYSTEMS",
+        "FIRED EQUIPMENT",
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "INSTRUMENTATION",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "The question specifically pertains to calibration procedures for measurement instruments, which falls under the scope of the INSTRUMENTATION domain."
+    },
+    {
+      "id": "HVAC-01",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "candidates": [
+        "HVAC",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "CONTROL SYSTEMS",
+        "PRESSURE VESSELS",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "HVAC",
+        "CONTROL SYSTEMS",
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "ELECTRICAL",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "PRESSURE VESSELS",
+        "PACKAGE"
+      ],
+      "keyword_ranked": [
+        "HVAC",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CONTROL SYSTEMS",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "INSTRUMENTATION"
+      ],
+      "reasoning": "The question specifically pertains to HVAC system design requirements, which directly aligns with the HVAC domain."
+    },
+    {
+      "id": "HVAC-02",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "candidates": [
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "FIRED EQUIPMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "LABORATORY",
+        "PRESSURE VESSELS",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "HVAC",
+        "PIPING INSTALLATION",
+        "FIRED EQUIPMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "LABORATORY",
+        "PRESSURE VESSELS",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "ELECTRICAL"
+      ],
+      "keyword_ranked": [
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "reasoning": "The question explicitly pertains to ductwork and chiller specifications, which are core aspects of the HVAC domain."
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-01",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "NAVAL ARCHITECTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "RISK MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "OFFSHORE MOBILE SYSTEM",
+        "RISK MANAGEMENT"
+      ],
+      "reasoning": "Stability analysis for floating structures is a core aspect of naval architecture, which explicitly covers this topic."
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-02",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "NAVAL ARCHITECTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE MOBILE SYSTEM",
+        "PRESSURE VESSELS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "NAVAL ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "PIPELINES",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HVAC"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "NAVAL ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE STRUCTURE",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPELINES",
+        "PIPING INSTALLATION",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE MOBILE SYSTEM",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "PIPELINES",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE"
+      ],
+      "reasoning": "Hydrodynamic studies are explicitly covered under Naval Architecture, which focuses on vessel design and related analyses."
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-01",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "OFFSHORE STRUCTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "PIPELINES",
+        "LABORATORY",
+        "RISK MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE STRUCTURE",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "NAVAL ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION",
+        "PIPELINES"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "LABORATORY",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE",
+        "RISK MANAGEMENT"
+      ],
+      "reasoning": "Foundation analysis for an offshore platform jacket directly aligns with the scope of offshore structures, which includes foundation analysis and installation procedures."
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-02",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "OFFSHORE STRUCTURE"
+      ],
+      "hit": true,
+      "candidates": [
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "NAVAL ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "TRANSPORT AND INSTALLATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPELINES",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE STRUCTURE",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE"
+      ],
+      "reasoning": "The question specifically pertains to mooring system requirements, which are covered under the scope of offshore structures, including mooring anchors and related systems."
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-01",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "candidates": [
+        "PIPING INSTALLATION",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPELINES",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "PROCUREMENT",
+        "OFFSHORE STRUCTURE",
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PIPING INSTALLATION",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPELINES",
+        "PRESSURE VESSELS",
+        "ROTATING EQUIPMENT",
+        "PROCUREMENT",
+        "OFFSHORE STRUCTURE",
+        "FIRED EQUIPMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PACKAGE"
+      ],
+      "keyword_ranked": [
+        "PIPING INSTALLATION",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "reasoning": "The question focuses on material selection and corrosion resistance, which aligns directly with the expertise of the 'MATERIALS AND TECHNOLOGY' domain."
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-02",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "candidates": [
+        "FIRED EQUIPMENT",
+        "PACKAGE",
+        "MATERIALS AND TECHNOLOGY",
+        "LABORATORY",
+        "PROCUREMENT",
+        "HVAC",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "QUALITY MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "MATERIALS AND TECHNOLOGY",
+        "FIRED EQUIPMENT",
+        "PACKAGE",
+        "PIPING INSTALLATION",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "LABORATORY",
+        "HVAC",
+        "QUALITY MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "keyword_ranked": [
+        "PROCUREMENT",
+        "PACKAGE",
+        "FIRED EQUIPMENT",
+        "LABORATORY",
+        "HVAC",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "reasoning": "The question specifically pertains to coating specifications, which falls under material science and coatings expertise."
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-01",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "ADVANCED SYSTEMS"
+      ],
+      "hit": true,
+      "candidates": [
+        "ADVANCED SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "CONTROL SYSTEMS",
+        "CYBERSECURITY",
+        "INFORMATION MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS",
+        "INSTRUMENTATION",
+        "TELECOMMUNICATIONS",
+        "HVAC"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ADVANCED SYSTEMS",
+        "CONTROL SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "CYBERSECURITY",
+        "INFORMATION MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "PROJECT EXECUTION SYSTEMS",
+        "INSTRUMENTATION",
+        "TELECOMMUNICATIONS",
+        "HVAC"
+      ],
+      "keyword_ranked": [
+        "ADVANCED SYSTEMS",
+        "INFORMATION TECHNOLOGY"
+      ],
+      "reasoning": "The question explicitly mentions digital optimization and AI/IoT technologies, which are core aspects of the ADVANCED SYSTEMS domain."
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-02",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "ADVANCED SYSTEMS"
+      ],
+      "hit": true,
+      "candidates": [
+        "ADVANCED SYSTEMS",
+        "LEGAL / CONTRACT",
+        "CONTROL SYSTEMS",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "PACKAGE",
+        "INFORMATION MANAGEMENT",
+        "ELECTRICAL",
+        "HVAC",
+        "CYBERSECURITY"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "ADVANCED SYSTEMS",
+        "CONTROL SYSTEMS",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "PACKAGE",
+        "INFORMATION MANAGEMENT",
+        "ELECTRICAL",
+        "HVAC",
+        "CYBERSECURITY",
+        "PROCUREMENT"
+      ],
+      "keyword_ranked": [
+        "ADVANCED SYSTEMS",
+        "LEGAL / CONTRACT"
+      ],
+      "reasoning": "The question explicitly refers to smart system integration, which aligns with the scope of advanced systems engineering and intelligent automation covered by ADVANCED SYSTEMS."
+    },
+    {
+      "id": "INFO_TECH-01",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION TECHNOLOGY"
+      ],
+      "hit": true,
+      "candidates": [
+        "INFORMATION TECHNOLOGY",
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONTROL SYSTEMS",
+        "ADVANCED SYSTEMS",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HVAC",
+        "OFFSHORE MOBILE SYSTEM",
+        "PROCUREMENT",
+        "PIPING INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "INFORMATION MANAGEMENT",
+        "ADVANCED SYSTEMS",
+        "PROCUREMENT",
+        "CONTROL SYSTEMS",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HVAC"
+      ],
+      "keyword_ranked": [
+        "INFORMATION TECHNOLOGY",
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CONTROL SYSTEMS",
+        "OFFSHORE MOBILE SYSTEM",
+        "HVAC",
+        "ADVANCED SYSTEMS",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question specifically pertains to IT infrastructure and server requirements, which aligns directly with the scope of INFORMATION TECHNOLOGY."
+    },
+    {
+      "id": "INFO_TECH-02",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": false,
+      "candidates": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION TECHNOLOGY",
+        "SCHEDULE MANAGEMENT",
+        "SUBCONTRACTING",
+        "INFORMATION MANAGEMENT",
+        "PROCUREMENT",
+        "DOCUMENT CONTROL",
+        "COSTS CONTROL",
+        "QUALITY MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROJECT EXECUTION SYSTEMS",
+        "SCHEDULE MANAGEMENT",
+        "SUBCONTRACTING",
+        "INFORMATION MANAGEMENT",
+        "PROCUREMENT",
+        "DOCUMENT CONTROL",
+        "COSTS CONTROL",
+        "QUALITY MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "LEGAL / CONTRACT"
+      ],
+      "keyword_ranked": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION TECHNOLOGY"
+      ],
+      "reasoning": "The question pertains to software platforms for project administration, which aligns with the management of engineering applications and collaborative tools described under PROJECT EXECUTION SYSTEMS."
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-01",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": true,
+      "candidates": [
+        "PROJECT EXECUTION SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "SUBCONTRACTING",
+        "PIPING INSTALLATION",
+        "PRESSURE VESSELS",
+        "OFFSHORE MOBILE SYSTEM",
+        "ADVANCED SYSTEMS",
+        "HVAC",
+        "PACKAGE",
+        "NAVAL ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PRESSURE VESSELS",
+        "OFFSHORE MOBILE SYSTEM",
+        "ADVANCED SYSTEMS",
+        "HVAC",
+        "PACKAGE",
+        "NAVAL ARCHITECTURE",
+        "DOCUMENT CONTROL"
+      ],
+      "keyword_ranked": [
+        "PROJECT EXECUTION SYSTEMS",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "SUBCONTRACTING"
+      ],
+      "reasoning": "The question directly pertains to 3D modeling systems (Aveva), which falls under the scope of managing engineering applications and software platforms."
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-02",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": true,
+      "candidates": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PROCUREMENT",
+        "COSTS CONTROL",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "HSE MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PROCUREMENT",
+        "COSTS CONTROL",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "HSE MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "reasoning": "The question specifically focuses on setting up EDMS and collaborative tools, which aligns directly with the responsibilities of PROJECT EXECUTION SYSTEMS."
+    },
+    {
+      "id": "COSTS_CONTROL-01",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "COSTS CONTROL"
+      ],
+      "hit": true,
+      "candidates": [
+        "COSTS CONTROL",
+        "FINANCE / TAX",
+        "SCHEDULE MANAGEMENT",
+        "PIPING INSTALLATION",
+        "RISK MANAGEMENT",
+        "LABORATORY",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "SUBCONTRACTING",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "SCHEDULE MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "PROCUREMENT",
+        "FINANCE / TAX",
+        "PIPING INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "COSTS CONTROL",
+        "FINANCE / TAX",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "reasoning": "The question explicitly pertains to cost tracking and variance analysis, which are core aspects of the COSTS CONTROL domain."
+    },
+    {
+      "id": "COSTS_CONTROL-02",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "COSTS CONTROL"
+      ],
+      "hit": true,
+      "candidates": [
+        "COSTS CONTROL",
+        "LEGAL / CONTRACT",
+        "FINANCE / TAX",
+        "SUBCONTRACTING",
+        "PROCUREMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "FINANCE / TAX",
+        "LEGAL / CONTRACT",
+        "PROCUREMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "keyword_ranked": [
+        "LEGAL / CONTRACT",
+        "COSTS CONTROL",
+        "FINANCE / TAX"
+      ],
+      "reasoning": "The question specifically pertains to budget forecasting obligations, which directly aligns with the scope of COSTS CONTROL."
+    },
+    {
+      "id": "RISK_MANAGEMENT-01",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INSURANCE",
+        "SCHEDULE MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "COSTS CONTROL",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PROCUREMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "RISK MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "DOCUMENT CONTROL",
+        "INSURANCE",
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "HSE MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to risk register management, which is explicitly covered under the RISK MANAGEMENT domain."
+    },
+    {
+      "id": "RISK_MANAGEMENT-02",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "DOCUMENT CONTROL",
+        "HSE MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "DOCUMENT CONTROL",
+        "HSE MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "RISK MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "reasoning": "Contingency planning is a core component of risk management, directly addressing the mitigation and response to identified project risks."
+    },
+    {
+      "id": "DOCUMENT_CONTROL-01",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": true,
+      "candidates": [
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "COSTS CONTROL",
+        "CONTROL SYSTEMS",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "INSTRUMENTATION",
+        "INFORMATION MANAGEMENT",
+        "PIPING INSTALLATION",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "PIPING INSTALLATION",
+        "PROJECT EXECUTION SYSTEMS",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "DOCUMENT CONTROL",
+        "CONTROL SYSTEMS",
+        "SUBCONTRACTING",
+        "INSTRUMENTATION",
+        "COSTS CONTROL",
+        "QUALITY MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to document revision and version control, which is explicitly covered under DOCUMENT CONTROL."
+    },
+    {
+      "id": "DOCUMENT_CONTROL-02",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": true,
+      "candidates": [
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "PIPING INSTALLATION",
+        "TRANSPORT AND INSTALLATION",
+        "SUBCONTRACTING",
+        "OFFSHORE MOBILE SYSTEM",
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "RISK MANAGEMENT",
+        "PIPING INSTALLATION",
+        "TRANSPORT AND INSTALLATION",
+        "SUBCONTRACTING",
+        "OFFSHORE MOBILE SYSTEM",
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "keyword_ranked": [
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to transmittals and document register requirements, which are core functions of document control."
+    },
+    {
+      "id": "HSE_MANAGEMENT-01",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "HSE MANAGEMENT",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "RISK MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "PIPING INSTALLATION",
+        "TRANSPORT AND INSTALLATION",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "keyword_ranked": [
+        "HSE MANAGEMENT",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "Emergency response procedures are directly covered under Health, Safety, Environment, and Security management."
+    },
+    {
+      "id": "HSE_MANAGEMENT-02",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "SUBCONTRACTING",
+        "LEGAL / CONTRACT",
+        "PIPING INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "HSE MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "RISK MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "DOCUMENT CONTROL",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PIPING INSTALLATION",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "HSE MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "Incident management and reporting requirements are directly related to Health, Safety, and Environment management."
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-01",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "PROJECT EXECUTION SYSTEMS",
+        "RISK MANAGEMENT",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "DOCUMENT CONTROL",
+        "PROCUREMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "PROJECT EXECUTION SYSTEMS",
+        "RISK MANAGEMENT",
+        "PIPING INSTALLATION",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "DOCUMENT CONTROL",
+        "PROCUREMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to critical path and baseline schedule requirements, which are core aspects of schedule management."
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-02",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "RISK MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "RISK MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "keyword_ranked": [
+        "SCHEDULE MANAGEMENT",
+        "COSTS CONTROL"
+      ],
+      "reasoning": "Progress tracking and Gantt chart requirements are directly related to managing project schedules and timelines."
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-01",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "QUALITY MANAGEMENT",
+        "PIPING INSTALLATION",
+        "HSE MANAGEMENT",
+        "LABORATORY",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "QUALITY MANAGEMENT",
+        "LABORATORY",
+        "PIPING INSTALLATION",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HSE MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "keyword_ranked": [
+        "PIPING INSTALLATION",
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to QA/QC procedures, which are explicitly covered under QUALITY MANAGEMENT."
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-02",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "QUALITY MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "HSE MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "QUALITY MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "PROCUREMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "SUBCONTRACTING",
+        "COSTS CONTROL",
+        "HSE MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "keyword_ranked": [
+        "QUALITY MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "RISK MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "HSE MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "NCR management is explicitly covered under the scope of QUALITY MANAGEMENT, which includes handling non-conformance reports."
+    },
+    {
+      "id": "WEIGHT_CONTROL-01",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE",
+        "MATERIALS AND TECHNOLOGY",
+        "INSTRUMENTATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "OFFSHORE MOBILE SYSTEM",
+        "PACKAGE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PRESSURE VESSELS",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "MATERIALS AND TECHNOLOGY",
+        "INSTRUMENTATION"
+      ],
+      "keyword_ranked": [
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "reasoning": "The question directly pertains to weight estimation and center-of-gravity reporting, which are explicitly covered by this domain."
+    },
+    {
+      "id": "WEIGHT_CONTROL-02",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "candidates": [
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "TRANSPORT AND INSTALLATION",
+        "SUBCONTRACTING",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "PIPING INSTALLATION"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "OFFSHORE STRUCTURE",
+        "NAVAL ARCHITECTURE",
+        "SUBCONTRACTING",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "ROTATING EQUIPMENT",
+        "PIPING INSTALLATION"
+      ],
+      "keyword_ranked": [
+        "OFFSHORE MOBILE SYSTEM",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to weight reduction strategies for a floating asset, which is explicitly covered under this domain."
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-01",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "hit": true,
+      "candidates": [
+        "TRANSPORT AND INSTALLATION",
+        "OFFSHORE STRUCTURE",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "PIPELINES",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PACKAGE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "TRANSPORT AND INSTALLATION",
+        "OFFSHORE STRUCTURE",
+        "OFFSHORE MOBILE SYSTEM",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "NAVAL ARCHITECTURE",
+        "PACKAGE",
+        "PIPING INSTALLATION",
+        "PIPELINES"
+      ],
+      "keyword_ranked": [
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "PIPELINES",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE"
+      ],
+      "reasoning": "The question directly pertains to heavy-lift operations, marine transport, and module installation, which are explicitly covered under this domain."
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-02",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "hit": true,
+      "candidates": [
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "SUBCONTRACTING",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "candidate_recall": true,
+      "semantic_ranked": [
+        "TRANSPORT AND INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "OFFSHORE STRUCTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "SUBCONTRACTING",
+        "OFFSHORE MOBILE SYSTEM",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "PIPING INSTALLATION",
+        "PACKAGE"
+      ],
+      "keyword_ranked": [
+        "TRANSPORT AND INSTALLATION",
+        "PIPING INSTALLATION",
+        "HSE MANAGEMENT",
+        "QUALITY MANAGEMENT"
+      ],
+      "reasoning": "The question directly pertains to loadout and seafastening procedures, which are explicitly covered under TRANSPORT AND INSTALLATION."
+    }
+  ]
+}

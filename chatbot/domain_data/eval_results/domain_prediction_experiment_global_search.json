@@ -1,0 +1,5305 @@
+{
+  "n_questions": 78,
+  "top_k": 5,
+  "summary": {
+    "scoped_correct": 42,
+    "scoped_wrong": 36,
+    "general_scope": 0,
+    "errors": 0,
+    "accuracy_when_scoped": 0.5385,
+    "candidate_recall_at_k": 0.6667
+  },
+  "missed_because_not_in_top_k": [
+    "CYBERSECURITY-02",
+    "ROTATING_EQUIPMENT-02",
+    "PRESSURE_VESSELS-02",
+    "PIPING_INSTALLATION-02",
+    "PACKAGE-02",
+    "FIRED_EQUIPMENT-01",
+    "FIRED_EQUIPMENT-02",
+    "ONSHORE_BUILDING-01",
+    "ONSHORE_BUILDING-02",
+    "TELECOM-02",
+    "LABORATORY-01",
+    "LABORATORY-02",
+    "SUBCONTRACTING-02",
+    "OFFSHORE_MOBILE-01",
+    "OFFSHORE_MOBILE-02",
+    "OFFSHORE_BUILDING-01",
+    "OFFSHORE_BUILDING-02",
+    "HVAC-02",
+    "NAVAL_ARCHITECTURE-01",
+    "NAVAL_ARCHITECTURE-02",
+    "OFFSHORE_STRUCTURE-01",
+    "OFFSHORE_STRUCTURE-02",
+    "ADVANCED_SYSTEMS-01",
+    "ADVANCED_SYSTEMS-02",
+    "INFO_TECH-01",
+    "INFO_TECH-02"
+  ],
+  "results": [
+    {
+      "id": "PROCUREMENT-01",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "PROCUREMENT": 3,
+        "DOCUMENT CONTROL": 1,
+        "SUBCONTRACTING": 1
+      },
+      "reasoning": "3/5 top relations classified as 'PROCUREMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "5bc6f8f9ac31d6999cbd15dde598118330b8d1d2",
+          "subject": "Company",
+          "object": "Tenderer",
+          "label": "issues_instructions_to",
+          "vector_score": 0.81182461977005,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "5f10298feb6235b4ce6ab4afac617b85064848bf",
+          "subject": "Company",
+          "object": "CO2 Compressor",
+          "label": "manages_vendor_selection",
+          "vector_score": 0.798712968826294,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "81c80399cd2445dead50ef2f8165a7d6f5ce1d25",
+          "subject": "Tender Bulletin 0012",
+          "object": "Tenderer",
+          "label": "provides_updates_to",
+          "vector_score": 0.795884907245636,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "78b3209e966fa15e736346cf831d92ea49fae48e",
+          "subject": "Tenderer",
+          "object": "EPC ITT",
+          "label": "develops_proposal_for",
+          "vector_score": 0.7801365256309509,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "f96ca8bedf5a01865b2d064a7a974bdfb76a9924",
+          "subject": "Contractor",
+          "object": "Appendix I2",
+          "label": "must_utilize",
+          "vector_score": 0.7791206240653992,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROCUREMENT-02",
+      "expected": "PROCUREMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "SUBCONTRACTING": 2,
+        "PROCUREMENT": 3
+      },
+      "reasoning": "3/5 top relations classified as 'PROCUREMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b410a751869a2d3a219ca0534e41c65fd8321427",
+          "subject": "Recommendations for Award (RFA's)",
+          "object": "A13-17-012",
+          "label": "document_reference",
+          "vector_score": 0.7908554077148438,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        },
+        {
+          "relation_id": "d67931177845c1016d4840b5cc9af0de5e6b9e04",
+          "subject": "requisitions",
+          "object": "award",
+          "label": "updated_for_award",
+          "vector_score": 0.7892006039619446,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "24a18a9a569f7f4665582ce3c25449d48b6a6036",
+          "subject": "data sheets",
+          "object": "award",
+          "label": "updated_for_award",
+          "vector_score": 0.7855721116065979,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "55febf6bde46d35f8ce61ad6088ac3457fe4213a",
+          "subject": "Recommendations for Award (RFA's)",
+          "object": "Contractor's List of Subcontracted Work",
+          "label": "required_before_award",
+          "vector_score": 0.7843197584152222,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        },
+        {
+          "relation_id": "aed0ea5475a22b1e593932e0f6182a33ea20b75f",
+          "subject": "Procurement and Supply Activities",
+          "object": "equipment",
+          "label": "status_reporting_required",
+          "vector_score": 0.7804074287414551,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROCESS_HSED-01",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "PROCESS & HSED (SAFETY IN DESIGN)": 2,
+        "CONSTRUCTION AND PCC&SU": 1,
+        "HSE MANAGEMENT": 1,
+        "QUALITY MANAGEMENT": 1
+      },
+      "reasoning": "2/5 top relations classified as 'PROCESS & HSED (SAFETY IN DESIGN)'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b54cd73b8b73a50dc14e7400857160029128c98e",
+          "subject": "Process Design Review (PDR)",
+          "object": "HAZOP",
+          "label": "must_be_conducted_prior_to",
+          "vector_score": 0.8314622640609741,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "21a64ac0cdea391d62eb6a498299698fb57c9960",
+          "subject": "Tender Engagement Workshops",
+          "object": "Process Philosophy and HAZOP",
+          "label": "includes_topic",
+          "vector_score": 0.7911262512207031,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "acab28ff1781bc729c171ecdf5a3a8b8716f19a2",
+          "subject": "major design package",
+          "object": "preliminary and detailed constructability reviews",
+          "label": "requires",
+          "vector_score": 0.782515287399292,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "bd7e1a1d965e293f469d19384a7e8a923809587c",
+          "subject": "criticality assessment process",
+          "object": "Health, Safety and Environment",
+          "label": "must_consider",
+          "vector_score": 0.7824006676673889,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "989d629b1e42f02b52493f90cd69969884a71433",
+          "subject": "QMP",
+          "object": "Section 3.1",
+          "label": "referenced_in",
+          "vector_score": 0.7807571887969971,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROCESS_HSED-02",
+      "expected": "PROCESS & HSED (SAFETY IN DESIGN)",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "PROCESS & HSED (SAFETY IN DESIGN)": 2,
+        "CONTROL SYSTEMS": 2,
+        "ELECTRICAL": 1
+      },
+      "reasoning": "2/5 top relations classified as 'PROCESS & HSED (SAFETY IN DESIGN)'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b4019ee1de725b07e16248fd1833a5304a6d30fd",
+          "subject": "Plant design",
+          "object": "Safety Critical Elements",
+          "label": "must_not_impair",
+          "vector_score": 0.8111864924430847,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "9600e2ae3bb3868a974a3fce8e97d8bf5591b175",
+          "subject": "ILNG Facility Control and Safety System",
+          "object": "Plant infrastructure",
+          "label": "supports_increased_capacity",
+          "vector_score": 0.8058781623840332,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "8fd7dbfce95dd9aaba0c1a7daa4d66ee5fd8bf06",
+          "subject": "Power Distribution Control System (PDCS)",
+          "object": "Electrical systems",
+          "label": "requires_updates",
+          "vector_score": 0.7965335845947266,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "8981f1fe1063533532fb155f05f048fb6121b9b4",
+          "subject": "Contractor",
+          "object": "Plant Control and Safety Systems",
+          "label": "responsible_for_design_and_configuration",
+          "vector_score": 0.7904485464096069,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "2ec6d6ae0eec7e9b56bab0dabe359bac32e13d9c",
+          "subject": "Technical Safety Design",
+          "object": "Plant Operations",
+          "label": "enables_hazard_assessment",
+          "vector_score": 0.7904027700424194,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LEGAL_CONTRACT-01",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "LEGAL / CONTRACT": 3,
+        "HSE MANAGEMENT": 2
+      },
+      "reasoning": "3/5 top relations classified as 'LEGAL / CONTRACT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "9c2a1660310ca3b3a1cf200284d12ec483ad5c3e",
+          "subject": "Contractor",
+          "object": "disputes procedure",
+          "label": "must_provide",
+          "vector_score": 0.8569817543029785,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "cdb233c352df6a6c1f9ce69e7e8cad6b3aace510",
+          "subject": "Contractor",
+          "object": "Works",
+          "label": "must_continue_performance",
+          "vector_score": 0.8410762548446655,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "ed268fbc95c18707d4ad3b279a7a43896e03d681",
+          "subject": "Contractor",
+          "object": "grievance resolution procedure",
+          "label": "must_provide",
+          "vector_score": 0.8381294012069702,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e671afd84aa37bb625005cfa81527c7dc13f658a",
+          "subject": "Contractor",
+          "object": "grievance resolution procedure",
+          "label": "must_provide_details",
+          "vector_score": 0.8342223167419434,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "a677037cef2c50115e65e8c551f44cdfd71b8757",
+          "subject": "Contract",
+          "object": "clause 26",
+          "label": "subject_to",
+          "vector_score": 0.8188894987106323,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LEGAL_CONTRACT-02",
+      "expected": "LEGAL / CONTRACT",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "LEGAL / CONTRACT": 4,
+        "INSURANCE": 1
+      },
+      "reasoning": "4/5 top relations classified as 'LEGAL / CONTRACT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "554c2e7b4881b4271ce7bcb7e69fb0c3d37e59ba",
+          "subject": "Contractor",
+          "object": "Company Group",
+          "label": "indemnifies",
+          "vector_score": 0.8507091999053955,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "fdbd5321035e3debcc18a48bbe8f60a24ebdb6a8",
+          "subject": "Contractor Group",
+          "object": "Company Group",
+          "label": "indemnifies",
+          "vector_score": 0.8489851355552673,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "8d94b384e5b0e72203bec1f0e60cfe4caaa90365",
+          "subject": "Contractor",
+          "object": "Company Group",
+          "label": "indemnifies",
+          "vector_score": 0.8481301069259644,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "97d9a11e3b6ab317a5b314e0717e8f4affbb9be9",
+          "subject": "Contractor",
+          "object": "third party liability insurance",
+          "label": "must_effect",
+          "vector_score": 0.8475538492202759,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "fdd2db2d7c969d08d0b6c6be9adc656e4cd1f2fd",
+          "subject": "Contractor",
+          "object": "Company Group",
+          "label": "indemnifies",
+          "vector_score": 0.8472014665603638,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FINANCE_TAX-01",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "LEGAL / CONTRACT": 2,
+        "FINANCE / TAX": 3
+      },
+      "reasoning": "3/5 top relations classified as 'FINANCE / TAX'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "a5624cb0a57d8ab74187c06837d47660a81b2ec4",
+          "subject": "Monthly invoicing",
+          "object": "clause 34",
+          "label": "governed_by",
+          "vector_score": 0.8005671501159668,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "9380cb251903c6cc0a07653a58825e55ef4e4830",
+          "subject": "Company",
+          "object": "Payment Schedule",
+          "label": "must_pay_amount_specified_in",
+          "vector_score": 0.7949221730232239,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        },
+        {
+          "relation_id": "aefc17b1681d95dc1cf9405b007e1c1631ae7665",
+          "subject": "Company",
+          "object": "forty-five (45) days",
+          "label": "must_make_payment_within",
+          "vector_score": 0.7865837812423706,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "5650cf4ad608bb60ed54380362c43980cf1bc26b",
+          "subject": "Contractor",
+          "object": "Change Order",
+          "label": "must_invoice_for",
+          "vector_score": 0.7677832841873169,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        },
+        {
+          "relation_id": "d22069fa3f3a1e4a2bc3e3cec172e52d94057b8f",
+          "subject": "Invoice",
+          "object": "clause 11.2(b)",
+          "label": "must_include_information_from",
+          "vector_score": 0.7645471096038818,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FINANCE_TAX-02",
+      "expected": "FINANCE / TAX",
+      "scope": "single",
+      "predicted": [
+        "FINANCE / TAX"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "FINANCE / TAX": 5
+      },
+      "reasoning": "5/5 top relations classified as 'FINANCE / TAX'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "6c546d83af66e0ab03a0a71deaafedab725a84a3",
+          "subject": "Contractor",
+          "object": "GST Law",
+          "label": "must_comply_with",
+          "vector_score": 0.8362733125686646,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        },
+        {
+          "relation_id": "6e117cbfbed9fb765e62168aa255a08e994193fc",
+          "subject": "Company",
+          "object": "import or export taxes",
+          "label": "responsible_for",
+          "vector_score": 0.8163933753967285,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        },
+        {
+          "relation_id": "d3816a962c6933b4bdfe24c6be8c738ca55d690a",
+          "subject": "Contractor",
+          "object": "GST Law",
+          "label": "must_comply_with",
+          "vector_score": 0.8100822567939758,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        },
+        {
+          "relation_id": "fe558e246432cde2428c1b2eaf1114484dc20af8",
+          "subject": "Invoice",
+          "object": "ABN",
+          "label": "must_include",
+          "vector_score": 0.8003342747688293,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        },
+        {
+          "relation_id": "1074d8a7532a8bb19b47ad60e4636a924b62297a",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "represents_and_warrants",
+          "vector_score": 0.7994277477264404,
+          "domains": [
+            "FINANCE / TAX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INSURANCE-01",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "PROJECT EXECUTION SYSTEMS": 1,
+        "LEGAL / CONTRACT": 1,
+        "INSURANCE": 2,
+        "PROCESS & HSED (SAFETY IN DESIGN)": 1
+      },
+      "reasoning": "2/5 top relations classified as 'INSURANCE'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "dd6a69af4366b9fe43fd497149e25991decd77b7",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for_execution",
+          "vector_score": 0.8189469575881958,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "442b0c683890bdaedf995ff55becf106922a1caa",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for",
+          "vector_score": 0.8157446384429932,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "97d9a11e3b6ab317a5b314e0717e8f4affbb9be9",
+          "subject": "Contractor",
+          "object": "third party liability insurance",
+          "label": "must_effect",
+          "vector_score": 0.8146732449531555,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "3092f3ae7875cc2e37a564af8aaf02f30b186481",
+          "subject": "Contractor Group",
+          "object": "general third party liability insurance",
+          "label": "must_obtain_and_maintain",
+          "vector_score": 0.8095187544822693,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "843931dee6e7fe60f83c01e14fc94c382e1b9ea5",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for",
+          "vector_score": 0.8056343793869019,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INSURANCE-02",
+      "expected": "INSURANCE",
+      "scope": "single",
+      "predicted": [
+        "INSURANCE"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "INSURANCE": 5
+      },
+      "reasoning": "5/5 top relations classified as 'INSURANCE'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "9e73d1f1580487ae752948792ab41fe298280ecd",
+          "subject": "Contractor Group",
+          "object": "motor vehicle liability insurance",
+          "label": "must_obtain_and_maintain",
+          "vector_score": 0.7656190395355225,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "3092f3ae7875cc2e37a564af8aaf02f30b186481",
+          "subject": "Contractor Group",
+          "object": "general third party liability insurance",
+          "label": "must_obtain_and_maintain",
+          "vector_score": 0.7634709477424622,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "f1c16e8c5df379fdb88b9a1273d5a4bcb7db24c1",
+          "subject": "Contractor",
+          "object": "Appendix L4",
+          "label": "must_comply_with",
+          "vector_score": 0.7593984603881836,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "875bd52156a0565c4b9a31ca477b36e7a15d7e9c",
+          "subject": "Tenderer",
+          "object": "insurance_policies",
+          "label": "must_provide_details_of",
+          "vector_score": 0.754384458065033,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "62e57c8e43134bbe6900f7580af1c0777fe0c7c0",
+          "subject": "insurer",
+          "object": "repair/reinstatement measures",
+          "label": "approves",
+          "vector_score": 0.7530989646911621,
+          "domains": [
+            "INSURANCE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IP_NDA-01",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "LEGAL / CONTRACT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "LEGAL / CONTRACT": 4,
+        "INTELLECTUAL PROPERTY / NDA": 1
+      },
+      "reasoning": "4/5 top relations classified as 'LEGAL / CONTRACT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "3585ba7b1b318a0543cf4ee251721c45631f7df8",
+          "subject": "Contractor",
+          "object": "Contract",
+          "label": "must_treat_as_confidential",
+          "vector_score": 0.8251339197158813,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "5182366d56fcef405c431ac42d1d0cf58d195f09",
+          "subject": "Company",
+          "object": "clarification",
+          "label": "may_share_with_all_tenderers",
+          "vector_score": 0.8019471764564514,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "fb1e263f59a300a2e31f11b0db7d9cba3c84e924",
+          "subject": "Tenderer",
+          "object": "Confidentiality Agreement",
+          "label": "bound_by",
+          "vector_score": 0.7987291216850281,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "b170d287c099ff9fcffa1344d06dc9b012537e12",
+          "subject": "Tenderer",
+          "object": "commercially sensitive",
+          "label": "may_mark_as",
+          "vector_score": 0.7968009114265442,
+          "domains": [
+            "INTELLECTUAL PROPERTY / NDA"
+          ]
+        },
+        {
+          "relation_id": "017571908ac3807e6ebd7bd62af3a6e302645f8e",
+          "subject": "The Tenderer",
+          "object": "ITT",
+          "label": "must_maintain_confidentiality",
+          "vector_score": 0.7951748967170715,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IP_NDA-02",
+      "expected": "INTELLECTUAL PROPERTY / NDA",
+      "scope": "single",
+      "predicted": [
+        "INTELLECTUAL PROPERTY / NDA"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "INTELLECTUAL PROPERTY / NDA": 5
+      },
+      "reasoning": "5/5 top relations classified as 'INTELLECTUAL PROPERTY / NDA'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "3e2efd45d87c8845695423b4cdb86064a84b8dfd",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "assigns_intellectual_property_rights",
+          "vector_score": 0.8457711935043335,
+          "domains": [
+            "INTELLECTUAL PROPERTY / NDA"
+          ]
+        },
+        {
+          "relation_id": "475dfb60c14b9b29e1aa0b1d3fc71362264ea823",
+          "subject": "Deliverables",
+          "object": "Company",
+          "label": "intellectual_property_vests_in",
+          "vector_score": 0.8362163305282593,
+          "domains": [
+            "INTELLECTUAL PROPERTY / NDA"
+          ]
+        },
+        {
+          "relation_id": "2bcef104b468dd71f475d627b46c8efd56d33c23",
+          "subject": "Company",
+          "object": "Contractor",
+          "label": "grants_licence_to",
+          "vector_score": 0.827068567276001,
+          "domains": [
+            "INTELLECTUAL PROPERTY / NDA"
+          ]
+        },
+        {
+          "relation_id": "49d85d4aa7e1542e66bdc6624c17d4f6b31fa955",
+          "subject": "Company",
+          "object": "Contractor",
+          "label": "grants_license_to_use_intellectual_property",
+          "vector_score": 0.8155293464660645,
+          "domains": [
+            "INTELLECTUAL PROPERTY / NDA"
+          ]
+        },
+        {
+          "relation_id": "ffd8896d434062a6172621808df67209a7b9e16e",
+          "subject": "Contractor",
+          "object": "Company Group",
+          "label": "grants_license_to_use_background_ip",
+          "vector_score": 0.7899259328842163,
+          "domains": [
+            "INTELLECTUAL PROPERTY / NDA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INFO_MGMT-01",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "INFORMATION MANAGEMENT": 2,
+        "DOCUMENT CONTROL": 2,
+        "ONSHORE BUILDING/ ARCHITECTURE": 1
+      },
+      "reasoning": "2/5 top relations classified as 'INFORMATION MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "67e20960896420367e315ac59ba92d290348ed33",
+          "subject": "Document Deliverables Register",
+          "object": "documents and data",
+          "label": "must_include",
+          "vector_score": 0.8321106433868408,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "dbfbcf714f75131eab3a1dbc82d9e3bc706eb009",
+          "subject": "Tenderer",
+          "object": "Electronic Document Management System",
+          "label": "must_provide_description_of",
+          "vector_score": 0.8012787103652954,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "f4283f0325715dfa6655d203db74453fd39288b8",
+          "subject": "Tenderer",
+          "object": "document control process",
+          "label": "must_implement",
+          "vector_score": 0.7996342778205872,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "e4297824e3ecc97b59698715f91309497083c10a",
+          "subject": "Appendix A13.03",
+          "object": "Certification Dossier",
+          "label": "requires_document",
+          "vector_score": 0.797178328037262,
+          "domains": [
+            "ONSHORE BUILDING/ ARCHITECTURE"
+          ]
+        },
+        {
+          "relation_id": "bdda171e948d8c54f4f836a05df7a0127220c1cc",
+          "subject": "Document Deliverables Register",
+          "object": "Exhibit E",
+          "label": "must_comply_with",
+          "vector_score": 0.7947220802307129,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INFO_MGMT-02",
+      "expected": "INFORMATION MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "INFORMATION MANAGEMENT": 1,
+        "ELECTRICAL": 1,
+        "DOCUMENT CONTROL": 1,
+        "PIPING INSTALLATION": 1
+      },
+      "reasoning": "1/5 top relations classified as 'CONSTRUCTION AND PCC&SU'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "2a000ae188e1337da09aca32f9c20615a0bdd6f7",
+          "subject": "Contractor",
+          "object": "Handover Certificates",
+          "label": "must_define_process_for",
+          "vector_score": 0.8294945359230042,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "d689a2f91a1075bfc2249969348e9062929a7262",
+          "subject": "Software Data Files",
+          "object": "handover",
+          "label": "final_files_required_for",
+          "vector_score": 0.8265483975410461,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "ed877741f4bcfbd4731f90880dd3ae551fbe0376",
+          "subject": "Handover to Contractor commissioning team",
+          "object": "EHV Power Transmission",
+          "label": "handover_of",
+          "vector_score": 0.8228557705879211,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "193d414b86ab44354ac59f5cc2a916cae22b0ffb",
+          "subject": "final handover dossiers",
+          "object": "all stages of the Work",
+          "label": "relates_to",
+          "vector_score": 0.8198736906051636,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "28f006dabc9c9bc3d8e6405684d17eb6bb1d09f3",
+          "subject": "Contractor",
+          "object": "piping Works and systems",
+          "label": "handover_to",
+          "vector_score": 0.8143169283866882,
+          "domains": [
+            "PIPING INSTALLATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-01",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "CYBERSECURITY"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "CYBERSECURITY": 4,
+        "INFORMATION TECHNOLOGY": 1
+      },
+      "reasoning": "4/5 top relations classified as 'CYBERSECURITY'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "60582dcd9cbd907035dcd49c845a26cfae2f38e1",
+          "subject": "Contractor",
+          "object": "Cyber Security Standard",
+          "label": "must_conform_to",
+          "vector_score": 0.77998948097229,
+          "domains": [
+            "CYBERSECURITY"
+          ]
+        },
+        {
+          "relation_id": "24b33e4685dc7c84cb793798bf44422089a24845",
+          "subject": "Company",
+          "object": "Cyber Security Management Plan",
+          "label": "must_approve",
+          "vector_score": 0.7769017219543457,
+          "domains": [
+            "CYBERSECURITY"
+          ]
+        },
+        {
+          "relation_id": "0435b9880da2b5188abc24cda54eeb94009738af",
+          "subject": "System Cyber Security Configuration",
+          "object": "Contractor",
+          "label": "must_supply",
+          "vector_score": 0.7746903896331787,
+          "domains": [
+            "CYBERSECURITY"
+          ]
+        },
+        {
+          "relation_id": "e36715a2cefba99f897732afceec67ebb893fcfe",
+          "subject": "Contractor Group",
+          "object": "Network",
+          "label": "must_protect",
+          "vector_score": 0.7683831453323364,
+          "domains": [
+            "INFORMATION TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "322e5c6885b2e054fe4e75c23ac744fd54f4e204",
+          "subject": "Rotating Instrument System Cyber Security Configuration",
+          "object": "Contractor",
+          "label": "must_supply",
+          "vector_score": 0.7657757997512817,
+          "domains": [
+            "CYBERSECURITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CYBERSECURITY-02",
+      "expected": "CYBERSECURITY",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "LEGAL / CONTRACT": 1,
+        "HSE MANAGEMENT": 3,
+        "CONTROL SYSTEMS": 1
+      },
+      "reasoning": "3/5 top relations classified as 'HSE MANAGEMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "cf38876e059691d820893f2e0d88bd8b9b44e800",
+          "subject": "Contractor Regulatory Approvals",
+          "object": "Personnel access permits to third-party facilities",
+          "label": "includes",
+          "vector_score": 0.7640078663825989,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "1b80fe0aa776d1989a175aba4e1a8b89e7fe5f3c",
+          "subject": "Contractor",
+          "object": "security control and verification of personnel",
+          "label": "responsible_for",
+          "vector_score": 0.7577821016311646,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "9a0e90baa760972a4b3ac5482ea3f8b75908ebce",
+          "subject": "Security Management Plan",
+          "object": "COMPANY Security Policy",
+          "label": "must_comply_with",
+          "vector_score": 0.7469388246536255,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "1a62d73ce047436343b65c690c7de49d9d1ef1c1",
+          "subject": "Control System Work",
+          "object": "Safety Instrumented Systems (SIS)",
+          "label": "includes",
+          "vector_score": 0.7464454770088196,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "600031a92abadf3ad13cb4b07eb719651543abe2",
+          "subject": "Boundary fencing",
+          "object": "Company",
+          "label": "requires_approval_from",
+          "vector_score": 0.7462823987007141,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-01",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "PROCUREMENT": 1,
+        "PACKAGE": 1,
+        "ROTATING EQUIPMENT": 1,
+        "PIPING INSTALLATION": 1,
+        "INFORMATION TECHNOLOGY": 1
+      },
+      "reasoning": "1/5 top relations classified as 'PROCUREMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "4864803af26a33a9edbe88b8d000cd5dccf61217",
+          "subject": "Spare Parts",
+          "object": "0000-AG-SPC-70002",
+          "label": "must_be_specified_in_accordance_with",
+          "vector_score": 0.7743154764175415,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "41adb1318b97dd84aa961531d16eef65cc9e8eee",
+          "subject": "Material handling equipment",
+          "object": "0000-AG-SPC-60002",
+          "label": "must_be_designed_in_accordance_with",
+          "vector_score": 0.7666949033737183,
+          "domains": [
+            "PACKAGE"
+          ]
+        },
+        {
+          "relation_id": "2cb771df3f0f9085d3cdab34527192e04dd46d6d",
+          "subject": "Spare Parts",
+          "object": "0000-AG-SPC-70002",
+          "label": "specified_in",
+          "vector_score": 0.7623304128646851,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "747ad5008ad835bca93d05b1adad36bf2c9888b3",
+          "subject": "valve datasheets",
+          "object": "Specifications",
+          "label": "must_meet_requirements_of",
+          "vector_score": 0.7596884369850159,
+          "domains": [
+            "PIPING INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "34dc0747adf110d70a714215ec2bb2cb0a4671ab",
+          "subject": "All IT provided equipment",
+          "object": "Company Specification",
+          "label": "must_comply_with",
+          "vector_score": 0.7558457255363464,
+          "domains": [
+            "INFORMATION TECHNOLOGY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROTATING_EQUIPMENT-02",
+      "expected": "ROTATING EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "QUALITY MANAGEMENT": 2,
+        "CONSTRUCTION AND PCC&SU": 2,
+        "MATERIALS AND TECHNOLOGY": 1
+      },
+      "reasoning": "2/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "bf737ff40039b5794564364a9ff3b1e650340123",
+          "subject": "Manufacturing Procedure Qualification",
+          "object": "Company",
+          "label": "may_be_witnessed_by",
+          "vector_score": 0.768351674079895,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "ad98bbace2edf89f161be8a6382f992dfe6a6f1c",
+          "subject": "Contractor",
+          "object": "Spare Parts",
+          "label": "responsible_for_preservation",
+          "vector_score": 0.7547042369842529,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "f95e563e1d8be6ae3156c661b5949046d5f09a68",
+          "subject": "Contractor",
+          "object": "Vendors",
+          "label": "responsible_for_quality_surveillance",
+          "vector_score": 0.7516356706619263,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "ec39efe8f9dd005a3376ce80f08c64948fd43d95",
+          "subject": "Company Approval of the Handover Certificate",
+          "object": "maintenance",
+          "label": "must_remain_in_place_until",
+          "vector_score": 0.7478494644165039,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "a2ac64771e80ebaf6c6d24aa8e63b3f4d22554fe",
+          "subject": "material control processes",
+          "object": "handling, storage, and preservation",
+          "label": "must_include",
+          "vector_score": 0.7472013831138611,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRESSURE_VESSELS-01",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "PRESSURE VESSELS"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "PRESSURE VESSELS": 4
+      },
+      "reasoning": "4/5 top relations classified as 'PRESSURE VESSELS'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "a866e5dd64b0d571b59d1f51584f31de2ff47997",
+          "subject": "Contractor",
+          "object": "Pressure Safety Valves",
+          "label": "responsible_for_calibration",
+          "vector_score": 0.8027061820030212,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "864583e095149595b6e02083b77b60e70194b2a3",
+          "subject": "Pressure Equipment",
+          "object": "Certifying Authority",
+          "label": "requires_verification_by",
+          "vector_score": 0.7978658080101013,
+          "domains": [
+            "PRESSURE VESSELS"
+          ]
+        },
+        {
+          "relation_id": "38a1500552118cc48fe04938c2129ee7978f75b1",
+          "subject": "Pressure Vessels",
+          "object": "testing requirement",
+          "label": "includes",
+          "vector_score": 0.7938722372055054,
+          "domains": [
+            "PRESSURE VESSELS"
+          ]
+        },
+        {
+          "relation_id": "800e34be122cc545c53354aafedb0e61c13e2a8e",
+          "subject": "Pressure Vessel Code Compliance/Certs (U-Stamp/Form X)",
+          "object": "Contractor",
+          "label": "must_supply",
+          "vector_score": 0.7912267446517944,
+          "domains": [
+            "PRESSURE VESSELS"
+          ]
+        },
+        {
+          "relation_id": "781c3d6ff873c151d9153d9a610faf1c7a58f836",
+          "subject": "Pressure Vessel Conformity Assessment to AS 3920",
+          "object": "Contractor",
+          "label": "must_supply",
+          "vector_score": 0.787910521030426,
+          "domains": [
+            "PRESSURE VESSELS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRESSURE_VESSELS-02",
+      "expected": "PRESSURE VESSELS",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "QUALITY MANAGEMENT": 4
+      },
+      "reasoning": "4/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "65f671ceb32d23785a631dc7552dbd3ae97bb87a",
+          "subject": "Construction Equipment",
+          "object": "inspection certificates",
+          "label": "must_have_valid_certificates",
+          "vector_score": 0.8305898904800415,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "b48206771ae61be3923fac08d2e0547fd3a9eb7e",
+          "subject": "Testing equipment",
+          "object": "NATA calibration certificate",
+          "label": "must_have",
+          "vector_score": 0.8079369068145752,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "f2e0ded4de36c48e32546f06366c2f7d9b17abc8",
+          "subject": "remote inspection procedure",
+          "object": "Test equipment identification",
+          "label": "must_address",
+          "vector_score": 0.8032520413398743,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "1d5c06a558e11fbfd6a6e77ca8d2402e933157ee",
+          "subject": "remote inspection procedure",
+          "object": "Calibration of test equipment",
+          "label": "must_address",
+          "vector_score": 0.8008168339729309,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "66a5107abaa539824f21662e6c0c6aa0228f9c45",
+          "subject": "Pressure Test and Calibration Certificates",
+          "object": "Instruments (pressure parts)",
+          "label": "required_for",
+          "vector_score": 0.799119770526886,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PIPING_INSTALLATION-01",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "PROCESS & HSED (SAFETY IN DESIGN)": 1,
+        "QUALITY MANAGEMENT": 3,
+        "PIPING INSTALLATION": 1
+      },
+      "reasoning": "3/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "0387bc40324892f7745d2453d9a8e0971f39d396",
+          "subject": "Welding Allowance",
+          "object": "ASME B-31-3",
+          "label": "requires_compliance_with",
+          "vector_score": 0.8428454399108887,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "5205cc5263d5a3136b627b943e84ba66c80cd8ed",
+          "subject": "Company standards",
+          "object": "non-destructive testing",
+          "label": "governs",
+          "vector_score": 0.8270670771598816,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "11872b85e051446689b5de236d4d25d2df1e9bda",
+          "subject": "seamless pipe and fittings",
+          "object": "Piping systems",
+          "label": "required_material",
+          "vector_score": 0.8244919180870056,
+          "domains": [
+            "PIPING INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "f2548419334bdd89a5ed62c5539ced34f8938134",
+          "subject": "Welding",
+          "object": "ISO 3834-2",
+          "label": "must_comply_with",
+          "vector_score": 0.8225603699684143,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "d801478e78318522c432f9b3fa544df6788c7711",
+          "subject": "Welding inspection",
+          "object": "Contractor’s ITP",
+          "label": "detailed_in",
+          "vector_score": 0.8006025552749634,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PIPING_INSTALLATION-02",
+      "expected": "PIPING INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CIVIL / STRUCTURAL": 1,
+        "LEGAL / CONTRACT": 1,
+        "ELECTRICAL": 1,
+        "ONSHORE BUILDING/ ARCHITECTURE": 1,
+        "PIPELINES": 1
+      },
+      "reasoning": "1/5 top relations classified as 'CIVIL / STRUCTURAL'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "e8ff3b8ed69b76013d52c894eea789ca85d4d83e",
+          "subject": "A13-22-033",
+          "object": "pipeline scope",
+          "label": "related_to",
+          "vector_score": 0.7790194153785706,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "ac65663674f609613f3fcfed9dde08526abce89f",
+          "subject": "Deliverables",
+          "object": "Works",
+          "label": "relates_to",
+          "vector_score": 0.774324357509613,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "9123b562d2f9b0f4b79702c57caafb27d4c9e0af",
+          "subject": "A13-22-034",
+          "object": "pipeline scope",
+          "label": "related_to",
+          "vector_score": 0.7721145153045654,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "b493f14a76fab260b597056268bf385342dee52a",
+          "subject": "Appendix A13.03",
+          "object": "Construction Specifications",
+          "label": "requires_document",
+          "vector_score": 0.7712274193763733,
+          "domains": [
+            "ONSHORE BUILDING/ ARCHITECTURE"
+          ]
+        },
+        {
+          "relation_id": "55772285494d7879de49d846185268953cf9ca04",
+          "subject": "A13-22-032",
+          "object": "pipeline scope",
+          "label": "related_to",
+          "vector_score": 0.7680683135986328,
+          "domains": [
+            "PIPELINES"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PIPELINES-01",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "PIPELINES"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "PIPELINES": 5
+      },
+      "reasoning": "5/5 top relations classified as 'PIPELINES'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "8e23b9af61f675299158611d71e1d42991c1131a",
+          "subject": "Pipeline Management Plan – Pressure Testing",
+          "object": "Department of Mining and Energy",
+          "label": "requires_approval_from",
+          "vector_score": 0.7905862331390381,
+          "domains": [
+            "PIPELINES"
+          ]
+        },
+        {
+          "relation_id": "4868612fef8c3f2013670a93a363a4f11116fdc8",
+          "subject": "Contractor",
+          "object": "pipeline interface activities",
+          "label": "responsible_for",
+          "vector_score": 0.788284957408905,
+          "domains": [
+            "PIPELINES"
+          ]
+        },
+        {
+          "relation_id": "62143c53d63631b5671b17f3c1fa89346028359d",
+          "subject": "Cultural Heritage Management Plan",
+          "object": "pipeline corridor",
+          "label": "applies_to",
+          "vector_score": 0.7869110703468323,
+          "domains": [
+            "PIPELINES"
+          ]
+        },
+        {
+          "relation_id": "418cbea627dda674e401aeb833d9fcb727aed24b",
+          "subject": "Onshore CCS Pipeline",
+          "object": "Inspection Test Plans",
+          "label": "requires_verification",
+          "vector_score": 0.7810531854629517,
+          "domains": [
+            "PIPELINES"
+          ]
+        },
+        {
+          "relation_id": "7f1a7d99dba6d3742b2311043e1ffd3c9baadc80",
+          "subject": "A13-22-017",
+          "object": "Pipeline",
+          "label": "includes_assessments",
+          "vector_score": 0.7791245579719543,
+          "domains": [
+            "PIPELINES"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PIPELINES-02",
+      "expected": "PIPELINES",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "HSE MANAGEMENT": 2,
+        "PIPELINES": 2
+      },
+      "reasoning": "2/5 top relations classified as 'HSE MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "691fa9325dcbdf7c16d2703e049a7f3093ccb2b7",
+          "subject": "Company Operations Team",
+          "object": "LNG plant operations",
+          "label": "responsible_for_minimizing_disruption",
+          "vector_score": 0.7801154255867004,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "4789343690b468a8a7245ff9712346d0d2ecd3f1",
+          "subject": "operational liquid discharges",
+          "object": "drainage management plan",
+          "label": "reviewed_in_plan",
+          "vector_score": 0.7796981930732727,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "59d9b926e9921cfda7c4a8d7e10dcb3cc7fece8b",
+          "subject": "Company",
+          "object": "SIMOPS",
+          "label": "controls_application",
+          "vector_score": 0.7775739431381226,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "2417d740194787561cffad26699af2141599b1ff",
+          "subject": "Pipeline AS 2885 Safety Management Study Workshop Report",
+          "object": "approved third party",
+          "label": "must_be_performed_by",
+          "vector_score": 0.7763214111328125,
+          "domains": [
+            "PIPELINES"
+          ]
+        },
+        {
+          "relation_id": "4868612fef8c3f2013670a93a363a4f11116fdc8",
+          "subject": "Contractor",
+          "object": "pipeline interface activities",
+          "label": "responsible_for",
+          "vector_score": 0.7761187553405762,
+          "domains": [
+            "PIPELINES"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PACKAGE-01",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "ROTATING EQUIPMENT": 2,
+        "PACKAGE": 2,
+        "SUBCONTRACTING": 1
+      },
+      "reasoning": "2/5 top relations classified as 'ROTATING EQUIPMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "e76a8fee30648bdaeea59bcbf44dc00a7437fba0",
+          "subject": "Vendor and Subcontractor handling, installation, alignment and preservation requirements",
+          "object": "mechanical equipment packages",
+          "label": "compliance_required",
+          "vector_score": 0.791192889213562,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "d3221917d81d33bdc9deec0449eafccfb33675c1",
+          "subject": "Heat exchanger pressure containment heads and bundles",
+          "object": "vendor-designed cooling system element",
+          "label": "part_of",
+          "vector_score": 0.7804343700408936,
+          "domains": [
+            "PACKAGE"
+          ]
+        },
+        {
+          "relation_id": "b42c9b3c91fd2b9c2f75015b9b8b7c77a168c438",
+          "subject": "Metering Skid",
+          "object": "water treatment",
+          "label": "requires_support_from",
+          "vector_score": 0.7752859592437744,
+          "domains": [
+            "PACKAGE"
+          ]
+        },
+        {
+          "relation_id": "475d36f825450c5bd7b13f7b7ab0e25dcdfaec4d",
+          "subject": "Contractor",
+          "object": "Vendor and Supplier",
+          "label": "must_comply_with_requirements",
+          "vector_score": 0.7711259126663208,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "f96ca8bedf5a01865b2d064a7a974bdfb76a9924",
+          "subject": "Contractor",
+          "object": "Appendix I2",
+          "label": "must_utilize",
+          "vector_score": 0.7664732336997986,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PACKAGE-02",
+      "expected": "PACKAGE",
+      "scope": "single",
+      "predicted": [
+        "PROCUREMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "PROCUREMENT": 2,
+        "INSURANCE": 1,
+        "DOCUMENT CONTROL": 1,
+        "ROTATING EQUIPMENT": 1
+      },
+      "reasoning": "2/5 top relations classified as 'PROCUREMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "aed0ea5475a22b1e593932e0f6182a33ea20b75f",
+          "subject": "Procurement and Supply Activities",
+          "object": "equipment",
+          "label": "status_reporting_required",
+          "vector_score": 0.8257393836975098,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "43782f4fc258fd2eeb7bd93d2c1b6ec82de70b69",
+          "subject": "Contractor",
+          "object": "equipment, materials, plant and consumables",
+          "label": "must_list",
+          "vector_score": 0.8186489343643188,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "ed4102ba34146ff56b5c3d8458bf935fe16f4f3c",
+          "subject": "A13-01-031",
+          "object": "Exhibit L",
+          "label": "must_comply_with",
+          "vector_score": 0.8033134937286377,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "ab6e3975e68d9ca36fa2ec08373909b5fff6de48",
+          "subject": "Procurement and Supply Activities",
+          "object": "materials",
+          "label": "status_reporting_required",
+          "vector_score": 0.793796181678772,
+          "domains": [
+            "PROCUREMENT"
+          ]
+        },
+        {
+          "relation_id": "e76a8fee30648bdaeea59bcbf44dc00a7437fba0",
+          "subject": "Vendor and Subcontractor handling, installation, alignment and preservation requirements",
+          "object": "mechanical equipment packages",
+          "label": "compliance_required",
+          "vector_score": 0.7923092842102051,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FIRED_EQUIPMENT-01",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "ROTATING EQUIPMENT": 2,
+        "PACKAGE": 1,
+        "PROCESS & HSED (SAFETY IN DESIGN)": 1,
+        "CONSTRUCTION AND PCC&SU": 1
+      },
+      "reasoning": "2/5 top relations classified as 'ROTATING EQUIPMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "bf699074ff52fb2d29bf08bae907ec05eba3e821",
+          "subject": "Mechanical (Rotating Equipment) Engineering",
+          "object": "Exhibit E",
+          "label": "guided_by",
+          "vector_score": 0.7827719449996948,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "b5d01ded21e624ed792b26f333feffa62bd4a2ef",
+          "subject": "A13-20-075",
+          "object": "Mechanical (Static, Tank and Package) Equipment",
+          "label": "documentation_required_for",
+          "vector_score": 0.7817353010177612,
+          "domains": [
+            "PACKAGE"
+          ]
+        },
+        {
+          "relation_id": "0eeaad3c6aec1c77dd45f5da2fcbdfbb264f93d4",
+          "subject": "Mechanical (Rotating Equipment) Engineering",
+          "object": "Appendix E3",
+          "label": "guided_by",
+          "vector_score": 0.781591534614563,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "ef3fb7363ca7398ea3abb17889a8babc84784a60",
+          "subject": "HTRI",
+          "object": "Process Basis of Design",
+          "label": "specified_in",
+          "vector_score": 0.7806593179702759,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "13a61cd9bd7dced83bd5f8791cb8afbcf94303ac",
+          "subject": "Performance Test Procedures",
+          "object": "Basic Engineering Design Package",
+          "label": "takes_input_from",
+          "vector_score": 0.7795391082763672,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FIRED_EQUIPMENT-02",
+      "expected": "FIRED EQUIPMENT",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "HSE MANAGEMENT": 1,
+        "CONTROL SYSTEMS": 1,
+        "PROCESS & HSED (SAFETY IN DESIGN)": 2
+      },
+      "reasoning": "2/5 top relations classified as 'PROCESS & HSED (SAFETY IN DESIGN)'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "cd50366a6fe8a4d4408d6f4b81948b7661cd042b",
+          "subject": "construction engineering",
+          "object": "design Specifications",
+          "label": "must_comply_with",
+          "vector_score": 0.8253470659255981,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "8a7332594a4b28f23186b08f9fe310ec4a62a738",
+          "subject": "design",
+          "object": "Exhibit F",
+          "label": "must_comply_with_provisions_of",
+          "vector_score": 0.8190624117851257,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "b2823a65874197584aaa0d5e2d7a2ab8be4a0ba1",
+          "subject": "Functional safety checks",
+          "object": "IEC 61511",
+          "label": "must_comply_with",
+          "vector_score": 0.8162766695022583,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "9d810e4f2a5463531f859a9a318ad521adfe5a31",
+          "subject": "Fire Protection Design Report",
+          "object": "applicable specifications, codes and standards",
+          "label": "must_demonstrate_compliance_with",
+          "vector_score": 0.8127995729446411,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "1fa95698aa11365e79556a986190182690731212",
+          "subject": "Contractor",
+          "object": "Company design standards",
+          "label": "must_comply_with",
+          "vector_score": 0.8063392043113708,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ONSHORE_BUILDING-01",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CIVIL / STRUCTURAL": 4,
+        "TRANSPORT AND INSTALLATION": 1
+      },
+      "reasoning": "4/5 top relations classified as 'CIVIL / STRUCTURAL'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "03cfabd753eaefa1782dd26a727af72b47e39a20",
+          "subject": "Foundation Selection",
+          "object": "pile diameter",
+          "label": "requires_review_of",
+          "vector_score": 0.7737294435501099,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "b3655d0b26cbcb3ec192217af9f6802e4ef92791",
+          "subject": "Design and methods",
+          "object": "site preparation and installation of foundations",
+          "label": "enables_safe_and_effective",
+          "vector_score": 0.7716143131256104,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "dc17422c1c8b3b2dec54939d4dd04763550e4d81",
+          "subject": "Contractor",
+          "object": "A13-06-071",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.7615798711776733,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "14e753a32da71dfb37ec06e9fab30a0b6c2da615",
+          "subject": "Design and methods",
+          "object": "module and equipment on-land transport and final placement",
+          "label": "enables_safe_and_effective",
+          "vector_score": 0.7570616006851196,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "7ff8e6a3cbd475f58c6fb48bc1f3dc48306005dd",
+          "subject": "section 8.10",
+          "object": "Civil design",
+          "label": "specifies_requirements_for",
+          "vector_score": 0.7565317153930664,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ONSHORE_BUILDING-02",
+      "expected": "ONSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "HSE MANAGEMENT": 1,
+        "PROCESS & HSED (SAFETY IN DESIGN)": 2
+      },
+      "reasoning": "2/5 top relations classified as 'PROCESS & HSED (SAFETY IN DESIGN)'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "e0bfcc69dc40f0048aa292a6e59303a7033b22df",
+          "subject": "Company",
+          "object": "Current Layout",
+          "label": "assessing_alternate_layouts",
+          "vector_score": 0.8047879338264465,
+          "domains": []
+        },
+        {
+          "relation_id": "2c170536057bd474f67c0b548aa4da5ee0d1bad9",
+          "subject": "Plant",
+          "object": "Design Dossier",
+          "label": "constructed_in_accordance_with",
+          "vector_score": 0.7868437767028809,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "8a7332594a4b28f23186b08f9fe310ec4a62a738",
+          "subject": "design",
+          "object": "Exhibit F",
+          "label": "must_comply_with_provisions_of",
+          "vector_score": 0.775287389755249,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "3d03221c2af8ddf8959ca79c6c798011985de2f6",
+          "subject": "Plant design",
+          "object": "Ichthys LNG Facility Operations Safety Case L290-AH-SCA-10002",
+          "label": "referenced_for_compliance",
+          "vector_score": 0.7752469182014465,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "1fa95698aa11365e79556a986190182690731212",
+          "subject": "Contractor",
+          "object": "Company design standards",
+          "label": "must_comply_with",
+          "vector_score": 0.7738227248191833,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CONTROL_SYSTEMS-01",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "CONTROL SYSTEMS": 5
+      },
+      "reasoning": "5/5 top relations classified as 'CONTROL SYSTEMS'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "cf13c85c76c037cd86a9e754701a4b07f3b3915b",
+          "subject": "Control System Work",
+          "object": "Programmable Logic Controllers (PLCs)",
+          "label": "includes",
+          "vector_score": 0.7733956575393677,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "3272b19f65e2c1cd3e15f0eeebbe0799c0c1b064",
+          "subject": "Control System Work",
+          "object": "Process Control Systems (PCS)",
+          "label": "includes",
+          "vector_score": 0.7660065293312073,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "67fbfcf4ee17f8bccc04677b693c52514590b366",
+          "subject": "Control System Work",
+          "object": "Analyser Data Acquisition System (ADAS)",
+          "label": "includes",
+          "vector_score": 0.7655041217803955,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "7dfd656ddf6a8ecd60f95c68843e07a5d03a7604",
+          "subject": "Control System Work",
+          "object": "Condition Performance Monitoring System (CPMS)",
+          "label": "includes",
+          "vector_score": 0.759774923324585,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "6ec5df0bbe0272469802a2364171fafb39fd7209",
+          "subject": "Control System Work",
+          "object": "Fire & Gas Systems (FGS)",
+          "label": "includes",
+          "vector_score": 0.7397066950798035,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CONTROL_SYSTEMS-02",
+      "expected": "CONTROL SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "CONTROL SYSTEMS": 3,
+        "PROJECT EXECUTION SYSTEMS": 1,
+        "PROCESS & HSED (SAFETY IN DESIGN)": 1
+      },
+      "reasoning": "3/5 top relations classified as 'CONTROL SYSTEMS'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b2823a65874197584aaa0d5e2d7a2ab8be4a0ba1",
+          "subject": "Functional safety checks",
+          "object": "IEC 61511",
+          "label": "must_comply_with",
+          "vector_score": 0.8058050870895386,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "83e01057995dd557fdf2930b84903fce8c8c2594",
+          "subject": "Contractor",
+          "object": "Company standards and specifications",
+          "label": "must_ensure_compliance_with",
+          "vector_score": 0.7851395010948181,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "40b0fd7f6e19b132c3e6a720b865750853af3519",
+          "subject": "ILNG facility",
+          "object": "software coding, application libraries, documentation and structure",
+          "label": "must_comply_with",
+          "vector_score": 0.7846457958221436,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "1fa95698aa11365e79556a986190182690731212",
+          "subject": "Contractor",
+          "object": "Company design standards",
+          "label": "must_comply_with",
+          "vector_score": 0.7838836908340454,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "7893308f55a5c27d421b4720ab8a08ac607ccd32",
+          "subject": "Company",
+          "object": "Plant Control and Safety Systems",
+          "label": "approves_equipment_deviation",
+          "vector_score": 0.7792987823486328,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TELECOM-01",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "TELECOMMUNICATIONS": 4,
+        "ELECTRICAL": 1
+      },
+      "reasoning": "4/5 top relations classified as 'TELECOMMUNICATIONS'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b1d68d52adea94ef3112572e99d531c357c57524",
+          "subject": "telecommunication equipment",
+          "object": "underground cable routes",
+          "label": "includes",
+          "vector_score": 0.8286329507827759,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "9088536908ae9ab325560292c6aa011c47bea5dd",
+          "subject": "Contractor",
+          "object": "Telecoms Installation Standards",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8174410462379456,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "8b4ec5611ccedf713a7b0e0f5875b40cc353c53c",
+          "subject": "Company Authorisations",
+          "object": "Radio Installation and Operations",
+          "label": "includes",
+          "vector_score": 0.8001739978790283,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "fd4a1d2c8be2048e3ca781bceb56f367d707d3dd",
+          "subject": "electrical cables",
+          "object": "telecommunication cables",
+          "label": "installed_together_with",
+          "vector_score": 0.7951554656028748,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "6f7dcf6e27b134f06c88c694fa96b84c1fec2f69",
+          "subject": "Contractor",
+          "object": "Telecommunications System Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.794187068939209,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TELECOM-02",
+      "expected": "TELECOMMUNICATIONS",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONTROL SYSTEMS": 2,
+        "HVAC": 1,
+        "CONSTRUCTION AND PCC&SU": 1,
+        "ROTATING EQUIPMENT": 1
+      },
+      "reasoning": "2/5 top relations classified as 'CONTROL SYSTEMS'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "fe525fa36641ee5d4cebb49ec0f3c8526ebb8b8f",
+          "subject": "Exhibit E3-10-041",
+          "object": "Software Applications",
+          "label": "specifies_requirements_for",
+          "vector_score": 0.7723512649536133,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "6ec5df0bbe0272469802a2364171fafb39fd7209",
+          "subject": "Control System Work",
+          "object": "Fire & Gas Systems (FGS)",
+          "label": "includes",
+          "vector_score": 0.7658872008323669,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "b3de94ba94a3af6276f1c574f3fcda6a03c08847",
+          "subject": "HVAC systems",
+          "object": "administrative areas",
+          "label": "required_for",
+          "vector_score": 0.7630627751350403,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "1dd3bd8685cbfe613b67ee8001f5dd5769b0043c",
+          "subject": "Contractor",
+          "object": "Company Requirements",
+          "label": "must_comply_with",
+          "vector_score": 0.7558240294456482,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "475d36f825450c5bd7b13f7b7ab0e25dcdfaec4d",
+          "subject": "Contractor",
+          "object": "Vendor and Supplier",
+          "label": "must_comply_with_requirements",
+          "vector_score": 0.7552698850631714,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LABORATORY-01",
+      "expected": "LABORATORY",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "MATERIALS AND TECHNOLOGY": 1,
+        "QUALITY MANAGEMENT": 3,
+        "PACKAGE": 1
+      },
+      "reasoning": "3/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "8ac923f9daac6671bde79e9b2d24f8fd03f8c297",
+          "subject": "material control processes",
+          "object": "inspection and testing",
+          "label": "must_include",
+          "vector_score": 0.7996639609336853,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "5205cc5263d5a3136b627b943e84ba66c80cd8ed",
+          "subject": "Company standards",
+          "object": "non-destructive testing",
+          "label": "governs",
+          "vector_score": 0.797900378704071,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "557edc4cf008d7e4064354636c91f2e56381081b",
+          "subject": "Contractor",
+          "object": "laboratories performing testing/calibration",
+          "label": "must_conduct_periodic_audits",
+          "vector_score": 0.7948172092437744,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "449c70d4971476f4bf874df018d7a877d2d8ce45",
+          "subject": "Major equipment procurement and testing",
+          "object": "Vendor’s factory/Module Yard quality assurance and control",
+          "label": "includes",
+          "vector_score": 0.7844727039337158,
+          "domains": [
+            "PACKAGE"
+          ]
+        },
+        {
+          "relation_id": "8c887a7c8efffe5e0e41055c3a7b541f35bfc96a",
+          "subject": "Contractor",
+          "object": "inspections and quality assurance",
+          "label": "responsible_for_managing",
+          "vector_score": 0.7788572907447815,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LABORATORY-02",
+      "expected": "LABORATORY",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "PACKAGE": 1,
+        "QUALITY MANAGEMENT": 2,
+        "CONSTRUCTION AND PCC&SU": 1,
+        "TRANSPORT AND INSTALLATION": 1
+      },
+      "reasoning": "2/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "d5dd7e92b28f88d94433224cc22646853d50ff1a",
+          "subject": "Major equipment procurement and testing",
+          "object": "Site installation",
+          "label": "includes",
+          "vector_score": 0.7368785738945007,
+          "domains": [
+            "PACKAGE"
+          ]
+        },
+        {
+          "relation_id": "557edc4cf008d7e4064354636c91f2e56381081b",
+          "subject": "Contractor",
+          "object": "laboratories performing testing/calibration",
+          "label": "must_conduct_periodic_audits",
+          "vector_score": 0.7283809185028076,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "b046ac905a812ba952a75b7c6c0d10f29b5ce1b8",
+          "subject": "Local Instrument Room",
+          "object": "utilities",
+          "label": "utilities_installed",
+          "vector_score": 0.7179309725761414,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "b48206771ae61be3923fac08d2e0547fd3a9eb7e",
+          "subject": "Testing equipment",
+          "object": "NATA calibration certificate",
+          "label": "must_have",
+          "vector_score": 0.7108790874481201,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "184f58f80957a9a56a15bfb9c1d8d57e851fe419",
+          "subject": "Design and methods",
+          "object": "module offload",
+          "label": "enables_safe_and_effective",
+          "vector_score": 0.7088924646377563,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SUBCONTRACTING-01",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "SUBCONTRACTING"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "SUBCONTRACTING": 2,
+        "QUALITY MANAGEMENT": 2
+      },
+      "reasoning": "2/5 top relations classified as 'SUBCONTRACTING'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "899389cfc812ecc8b6dbae31b3426b3639a039c7",
+          "subject": "Contractor",
+          "object": "Subcontractor",
+          "label": "responsible_for_management",
+          "vector_score": 0.85530686378479,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        },
+        {
+          "relation_id": "682606fff9427582d364d4c373d188c8589ea513",
+          "subject": "Contractor",
+          "object": "Subcontractors",
+          "label": "must_ensure_compliance",
+          "vector_score": 0.8463822603225708,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        },
+        {
+          "relation_id": "01d5ca9943e4f65bf142e35a3990dab5f0129df8",
+          "subject": "HRIRMP",
+          "object": "Subcontractors",
+          "label": "must_be_complied_with_by",
+          "vector_score": 0.8417766094207764,
+          "domains": []
+        },
+        {
+          "relation_id": "8ee3351680176fabe9650f3b281546ea0b528724",
+          "subject": "Contractor",
+          "object": "QMP",
+          "label": "must_include_subcontractor_management_details",
+          "vector_score": 0.839572012424469,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e43654a61d3f0fb0f77c6f0c1da96df5adc96bce",
+          "subject": "Contractor",
+          "object": "Subcontractors and Vendors",
+          "label": "must_extend_quality_requirements_to",
+          "vector_score": 0.8390929102897644,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SUBCONTRACTING-02",
+      "expected": "SUBCONTRACTING",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "DOCUMENT CONTROL": 1,
+        "INFORMATION MANAGEMENT": 1,
+        "CONSTRUCTION AND PCC&SU": 1,
+        "LEGAL / CONTRACT": 1,
+        "PROJECT EXECUTION SYSTEMS": 1
+      },
+      "reasoning": "1/5 top relations classified as 'DOCUMENT CONTROL'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "8b1fdc7e34b5481b9b156fd3509df15498d10d70",
+          "subject": "Fabrication Measurement Database",
+          "object": "Contractor",
+          "label": "must_be_prepared_by",
+          "vector_score": 0.8095376491546631,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "3b798b5c5832abd7380de86e4b4a98fb05b7c941",
+          "subject": "Contractor",
+          "object": "Fabrication Measurement Database",
+          "label": "must_prepare",
+          "vector_score": 0.8069593906402588,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "2d11aea62b0d2a10b573d78df8a159f60b7be00a",
+          "subject": "Contractor",
+          "object": "Module Yard",
+          "label": "responsible_for_establishing",
+          "vector_score": 0.8058692216873169,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "6de9f9e6f3c34543165e1c4a26ad5eaeb7321a6c",
+          "subject": "Subcontractor",
+          "object": "Work",
+          "label": "performs",
+          "vector_score": 0.7992507219314575,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "dd6a69af4366b9fe43fd497149e25991decd77b7",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for_execution",
+          "vector_score": 0.7989897131919861,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFFSHORE_MOBILE-01",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "single",
+      "predicted": [
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 2,
+        "CIVIL / STRUCTURAL": 1,
+        "DOCUMENT CONTROL": 1
+      },
+      "reasoning": "2/5 top relations classified as 'CONSTRUCTION AND PCC&SU'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "0a00f6fe659f06223cf55420f229369b182ef358",
+          "subject": "Commissioning",
+          "object": "project documents, Specifications and standards",
+          "label": "must_comply_with",
+          "vector_score": 0.8425052762031555,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "1042cb03b818bdd8bef30c01113e0f009df5b0ac",
+          "subject": "Exhibit A",
+          "object": "Exhibit E",
+          "label": "forms_project_bases",
+          "vector_score": 0.8296560645103455,
+          "domains": []
+        },
+        {
+          "relation_id": "7c3bd91a30fde84f6353892ad49c6bbbf2f0ca17",
+          "subject": "Contractor",
+          "object": "Exhibit A",
+          "label": "must_prepare_documents_in_accordance_with",
+          "vector_score": 0.8174744248390198,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "8a17206e5688de022ebf83a3c93e5ac12e29b05b",
+          "subject": "A13-05-025",
+          "object": "Contractor",
+          "label": "must_supply",
+          "vector_score": 0.8171182870864868,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "df59b989c7dbc03a0fe5d943f98d73dd5734feec",
+          "subject": "as built documentation",
+          "object": "Approval",
+          "label": "required_for",
+          "vector_score": 0.8136051893234253,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFFSHORE_MOBILE-02",
+      "expected": "OFFSHORE MOBILE SYSTEM",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "HVAC": 2,
+        "CONSTRUCTION AND PCC&SU": 1,
+        "INFORMATION MANAGEMENT": 1,
+        "LEGAL / CONTRACT": 1
+      },
+      "reasoning": "2/5 top relations classified as 'HVAC'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "2e2c91f6bd901ea8a24d8a78dabf88212fec5388",
+          "subject": "HVAC systems",
+          "object": "control rooms",
+          "label": "required_for",
+          "vector_score": 0.7941902875900269,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "0a00f6fe659f06223cf55420f229369b182ef358",
+          "subject": "Commissioning",
+          "object": "project documents, Specifications and standards",
+          "label": "must_comply_with",
+          "vector_score": 0.7880110144615173,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "b3de94ba94a3af6276f1c574f3fcda6a03c08847",
+          "subject": "HVAC systems",
+          "object": "administrative areas",
+          "label": "required_for",
+          "vector_score": 0.7786403298377991,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "dc6907a4a15e61bb89f21f66d99b1911ae6d2d14",
+          "subject": "Project CMS",
+          "object": "Commissioning Work",
+          "label": "used_to_document",
+          "vector_score": 0.7756561040878296,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "70a3b201416339b7df56a90e54ae25d60e8d160c",
+          "subject": "contractual requirements for approval of employment conditions",
+          "object": "the Project",
+          "label": "applies_to",
+          "vector_score": 0.7728717923164368,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFFSHORE_BUILDING-01",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 2,
+        "HSE MANAGEMENT": 1,
+        "TRANSPORT AND INSTALLATION": 2
+      },
+      "reasoning": "2/5 top relations classified as 'CONSTRUCTION AND PCC&SU'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "fda1119d4a121fad96c9b2b1375ca88c2f38bcca",
+          "subject": "Contractor",
+          "object": "Marine offloading infrastructure",
+          "label": "must_upgrade_if_required",
+          "vector_score": 0.7773634195327759,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "8b19896d4173e3f00508dc59d7c92712e291a09a",
+          "subject": "onshore facility",
+          "object": "segregation and storage of wastes",
+          "label": "must_provide_space_for",
+          "vector_score": 0.7721768617630005,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e78b2d3cfb6b571c5de0e9f4f968baf59eb9f916",
+          "subject": "Modular Assemblies",
+          "object": "Marine Warranty Certification",
+          "label": "requires_assessment_for",
+          "vector_score": 0.7693488597869873,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "184f58f80957a9a56a15bfb9c1d8d57e851fe419",
+          "subject": "Design and methods",
+          "object": "module offload",
+          "label": "enables_safe_and_effective",
+          "vector_score": 0.7674585580825806,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "76eb7a5141f7bf15d4d52ba7d314136dcce7cb27",
+          "subject": "Exhibit A7",
+          "object": "ILNG facility",
+          "label": "describes_work_at",
+          "vector_score": 0.7632591724395752,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFFSHORE_BUILDING-02",
+      "expected": "OFFSHORE BUILDING/ ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 2,
+        "ELECTRICAL": 1
+      },
+      "reasoning": "2/5 top relations classified as 'CONSTRUCTION AND PCC&SU'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "e0bfcc69dc40f0048aa292a6e59303a7033b22df",
+          "subject": "Company",
+          "object": "Current Layout",
+          "label": "assessing_alternate_layouts",
+          "vector_score": 0.8184691667556763,
+          "domains": []
+        },
+        {
+          "relation_id": "cd50366a6fe8a4d4408d6f4b81948b7661cd042b",
+          "subject": "construction engineering",
+          "object": "design Specifications",
+          "label": "must_comply_with",
+          "vector_score": 0.787134051322937,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "2c56a7073a7454f811e7588a5a3fe59f3854fa86",
+          "subject": "EEHA requirements",
+          "object": "CCS System",
+          "label": "must_be_considered_for",
+          "vector_score": 0.7844024896621704,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "2c170536057bd474f67c0b548aa4da5ee0d1bad9",
+          "subject": "Plant",
+          "object": "Design Dossier",
+          "label": "constructed_in_accordance_with",
+          "vector_score": 0.7815591096878052,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "627dcace7b980456c21e95709556ded6d0979fd2",
+          "subject": "Tenderer",
+          "object": "Alternative Layout Options",
+          "label": "allowed_to_propose_changes",
+          "vector_score": 0.778023362159729,
+          "domains": []
+        }
+      ]
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-01",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CONSTRUCTION AND PCC&SU"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "QUALITY MANAGEMENT": 1,
+        "CIVIL / STRUCTURAL": 1,
+        "MATERIALS AND TECHNOLOGY": 1,
+        "TRANSPORT AND INSTALLATION": 1
+      },
+      "reasoning": "1/5 top relations classified as 'CONSTRUCTION AND PCC&SU'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "cd50366a6fe8a4d4408d6f4b81948b7661cd042b",
+          "subject": "construction engineering",
+          "object": "design Specifications",
+          "label": "must_comply_with",
+          "vector_score": 0.8339182138442993,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "5205cc5263d5a3136b627b943e84ba66c80cd8ed",
+          "subject": "Company standards",
+          "object": "non-destructive testing",
+          "label": "governs",
+          "vector_score": 0.8092255592346191,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "80f0fcda3594d866e4fb85320d6f63cfcd7c3416",
+          "subject": "Modular Assemblies",
+          "object": "E3-04-003",
+          "label": "must_comply_with",
+          "vector_score": 0.8044623732566833,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "1530e96b02ccf260810d5c8b7342f43ff6a83025",
+          "subject": "Primary Structural Steel",
+          "object": "3.1",
+          "label": "requires_certificate_type",
+          "vector_score": 0.800989031791687,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "732d20bcd6f7d94395c4c56c8bc9a7f38b5d9e05",
+          "subject": "MTV",
+          "object": "local and global strength assessment",
+          "label": "requires",
+          "vector_score": 0.798374593257904,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CIVIL_STRUCTURAL-02",
+      "expected": "CIVIL / STRUCTURAL",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "CIVIL / STRUCTURAL": 3,
+        "HSE MANAGEMENT": 1
+      },
+      "reasoning": "3/5 top relations classified as 'CIVIL / STRUCTURAL'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "cd50366a6fe8a4d4408d6f4b81948b7661cd042b",
+          "subject": "construction engineering",
+          "object": "design Specifications",
+          "label": "must_comply_with",
+          "vector_score": 0.8193962574005127,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "3686a1f2390717e86408c9a3dc68e4f36d1beb64",
+          "subject": "section 8.9",
+          "object": "Structural design",
+          "label": "specifies_requirements_for",
+          "vector_score": 0.8087485432624817,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "61cd6281ed9ddeeb047703bb4700ba91ecadc0cd",
+          "subject": "Contractor",
+          "object": "Company Specifications L320-AC-BOD-0001",
+          "label": "must_design_in_accordance_with",
+          "vector_score": 0.8019955158233643,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "80f0fcda3594d866e4fb85320d6f63cfcd7c3416",
+          "subject": "Modular Assemblies",
+          "object": "E3-04-003",
+          "label": "must_comply_with",
+          "vector_score": 0.7988159656524658,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "8a7332594a4b28f23186b08f9fe310ec4a62a738",
+          "subject": "design",
+          "object": "Exhibit F",
+          "label": "must_comply_with_provisions_of",
+          "vector_score": 0.7986664772033691,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRICAL-01",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "ELECTRICAL": 4,
+        "CONTROL SYSTEMS": 1
+      },
+      "reasoning": "4/5 top relations classified as 'ELECTRICAL'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "8fd7dbfce95dd9aaba0c1a7daa4d66ee5fd8bf06",
+          "subject": "Power Distribution Control System (PDCS)",
+          "object": "Electrical systems",
+          "label": "requires_updates",
+          "vector_score": 0.7801952958106995,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "9d793e5ee3e222d97e1a4304b368ae190fb3c9d0",
+          "subject": "power distribution (PDP) systems and cabinets",
+          "object": "Common LER/LIR Modular Assembly",
+          "label": "requires_installation_in",
+          "vector_score": 0.7769517302513123,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "9e1e3cd67724871754edf145fa1f80c860c64ec3",
+          "subject": "instrument and electrical tie-ins",
+          "object": "Power Distribution Control System",
+          "label": "requires_integration_with",
+          "vector_score": 0.7760432958602905,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "02f4dd2b2c011c8124bfbab0e8583645647a2da9",
+          "subject": "Variable Speed Drive System (VSDS) – Low Voltage",
+          "object": "PDL",
+          "label": "approved_vendor",
+          "vector_score": 0.7745612859725952,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "da92c01a34704800f383b6f995f522b763e2a068",
+          "subject": "Electrical systems",
+          "object": "Plant systems",
+          "label": "must_integrate_with",
+          "vector_score": 0.7718719244003296,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ELECTRICAL-02",
+      "expected": "ELECTRICAL",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "ELECTRICAL": 4,
+        "CONSTRUCTION AND PCC&SU": 1
+      },
+      "reasoning": "4/5 top relations classified as 'ELECTRICAL'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "014d997ef2e90e27e09aa4b95cf709a3e09a0480",
+          "subject": "Siemens",
+          "object": "Switchgear (132kV)",
+          "label": "approved_vendor_for",
+          "vector_score": 0.7880913019180298,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "79eb98f84b7e733affa270fbd7dce185ee40e1c8",
+          "subject": "EHV Power Transmission system",
+          "object": "earthing systems",
+          "label": "requires_design_for",
+          "vector_score": 0.7835080623626709,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "cedab482420cc434ae83311c5bb2e91f17ae98d6",
+          "subject": "ABB",
+          "object": "Switchgear (HV) – Up to and including 17.5 kV",
+          "label": "approved_vendor_for",
+          "vector_score": 0.7696101069450378,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "ade271583e3860c59af6de3640f50adb9c77c0af",
+          "subject": "Exhibit A7",
+          "object": "Supplementary Power corridors",
+          "label": "describes_work_at",
+          "vector_score": 0.7692784070968628,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "4151fae73b5e04f9b3328fc1796959c6bf7c7c59",
+          "subject": "EHV Power Transmission",
+          "object": "ILNG facility",
+          "label": "established_at",
+          "vector_score": 0.7633711099624634,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INSTRUMENTATION-01",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "INSTRUMENTATION"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "ELECTRICAL": 1,
+        "INSTRUMENTATION": 4
+      },
+      "reasoning": "4/5 top relations classified as 'INSTRUMENTATION'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "719d7c3a5d9ae9b1531b923f66871fa138e5c672",
+          "subject": "electrical cables",
+          "object": "instrumentation cables",
+          "label": "installed_together_with",
+          "vector_score": 0.8231058716773987,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "66da9189cefb5c4e5e1cf34137e7d72004e6ebfc",
+          "subject": "A13-16-079",
+          "object": "Process Calculation Datasheets for all Instrumentation",
+          "label": "describes",
+          "vector_score": 0.8076999187469482,
+          "domains": [
+            "INSTRUMENTATION"
+          ]
+        },
+        {
+          "relation_id": "18ea2ae05b08ac29f4c098d0471ce7007c0acc92",
+          "subject": "Contractor",
+          "object": "A13-13-093 Instrument and Control Functional Design Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8019899129867554,
+          "domains": [
+            "INSTRUMENTATION"
+          ]
+        },
+        {
+          "relation_id": "f6076e5c15ed3f5528a8bc01d13406e02be58d45",
+          "subject": "Contractor",
+          "object": "A13-13-092 Instrument and Control Equipment Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.800304651260376,
+          "domains": [
+            "INSTRUMENTATION"
+          ]
+        },
+        {
+          "relation_id": "3883a10727d0b06c018b35a6ce10dbda8a59fa7e",
+          "subject": "Contractor",
+          "object": "A13-13-062 Instrument and Control Instrumentation / Control Philosophies",
+          "label": "responsible_for_supply",
+          "vector_score": 0.7967735528945923,
+          "domains": [
+            "INSTRUMENTATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INSTRUMENTATION-02",
+      "expected": "INSTRUMENTATION",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "QUALITY MANAGEMENT": 4,
+        "INSTRUMENTATION": 1
+      },
+      "reasoning": "4/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b48206771ae61be3923fac08d2e0547fd3a9eb7e",
+          "subject": "Testing equipment",
+          "object": "NATA calibration certificate",
+          "label": "must_have",
+          "vector_score": 0.83536297082901,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "1d5c06a558e11fbfd6a6e77ca8d2402e933157ee",
+          "subject": "remote inspection procedure",
+          "object": "Calibration of test equipment",
+          "label": "must_address",
+          "vector_score": 0.8324481248855591,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "108f7c9948673a7298406735383357bba6316f01",
+          "subject": "Pressure Testing",
+          "object": "Section 4.13",
+          "label": "calibration_must_follow",
+          "vector_score": 0.8250519037246704,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "4ddc2fa671b9ebefb05d336f52e64c24fe2c90f3",
+          "subject": "Contractor",
+          "object": "National and/or International Standard",
+          "label": "must_calibrate_to_standard",
+          "vector_score": 0.8191664814949036,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "4bad1712e88347112050db331dc72cb32dba3460",
+          "subject": "calibration certificates",
+          "object": "Company Approval",
+          "label": "requires_approval",
+          "vector_score": 0.8161116242408752,
+          "domains": [
+            "INSTRUMENTATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HVAC-01",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "ELECTRICAL": 1,
+        "TELECOMMUNICATIONS": 1,
+        "HVAC": 3
+      },
+      "reasoning": "3/5 top relations classified as 'HVAC'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "79eb98f84b7e733affa270fbd7dce185ee40e1c8",
+          "subject": "EHV Power Transmission system",
+          "object": "earthing systems",
+          "label": "requires_design_for",
+          "vector_score": 0.7902246713638306,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "6f7dcf6e27b134f06c88c694fa96b84c1fec2f69",
+          "subject": "Contractor",
+          "object": "Telecommunications System Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.7853981256484985,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "2e2c91f6bd901ea8a24d8a78dabf88212fec5388",
+          "subject": "HVAC systems",
+          "object": "control rooms",
+          "label": "required_for",
+          "vector_score": 0.7817109227180481,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "b3de94ba94a3af6276f1c574f3fcda6a03c08847",
+          "subject": "HVAC systems",
+          "object": "administrative areas",
+          "label": "required_for",
+          "vector_score": 0.7786026000976562,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "adf769b2e667cdd874c9169455c828ecda44b7b3",
+          "subject": "Exhibit E Design Dossier",
+          "object": "Heating, Ventilation and Air Conditioning (HVAC)",
+          "label": "specifies_requirements_for",
+          "vector_score": 0.7767298817634583,
+          "domains": [
+            "HVAC"
+          ]
+        }
+      ]
+    },
+
+    // {"id": "HVAC-01", "domain": "HVAC", "question": "What HVAC system design requirements apply to the control room?"},
+    // {"id": "HVAC-02", "domain": "HVAC", "question": "What ductwork and chiller specifications are required for the facility?"},
+
+    {
+      "id": "HVAC-02",
+      "expected": "HVAC",
+      "scope": "single",
+      "predicted": [
+        "CONTROL SYSTEMS"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "TELECOMMUNICATIONS": 1,
+        "CONTROL SYSTEMS": 3,
+        "CYBERSECURITY": 1
+      },
+      "reasoning": "3/5 top relations classified as 'CONTROL SYSTEMS'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "6f7dcf6e27b134f06c88c694fa96b84c1fec2f69",
+          "subject": "Contractor",
+          "object": "Telecommunications System Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.72673499584198,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "ad5c2c79cb9c3bb1c7b63eebb1a05a51e63f168a",
+          "subject": "ILNG Facility Control and Safety System",
+          "object": "MS Office",
+          "label": "requires_additional_software",
+          "vector_score": 0.7233856320381165,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "fe525fa36641ee5d4cebb49ec0f3c8526ebb8b8f",
+          "subject": "Exhibit E3-10-041",
+          "object": "Software Applications",
+          "label": "specifies_requirements_for",
+          "vector_score": 0.7185279130935669,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "67fbfcf4ee17f8bccc04677b693c52514590b366",
+          "subject": "Control System Work",
+          "object": "Analyser Data Acquisition System (ADAS)",
+          "label": "includes",
+          "vector_score": 0.7180903553962708,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "ef6e1bc82d9775678f3f94a5f64278bfb204f25a",
+          "subject": "ILNG Facility Control and Safety System",
+          "object": "Anti-Virus Software",
+          "label": "requires_additional_software",
+          "vector_score": 0.7176283597946167,
+          "domains": [
+            "CYBERSECURITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-01",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "TRANSPORT AND INSTALLATION": 2,
+        "HSE MANAGEMENT": 1,
+        "CONTROL SYSTEMS": 1,
+        "CIVIL / STRUCTURAL": 1
+      },
+      "reasoning": "2/5 top relations classified as 'TRANSPORT AND INSTALLATION'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "13c773a51f85662859b41fefb3fb2b5b7ae83686",
+          "subject": "MTV",
+          "object": "stability calculations",
+          "label": "requires",
+          "vector_score": 0.812761664390564,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "eafacd13027a8054ce8982e30c68265a2cf818fc",
+          "subject": "stability conditions",
+          "object": "sub-module installation sequence",
+          "label": "must_consider",
+          "vector_score": 0.7779086828231812,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "6a9514b8324e72bbfceae447fef7746f517a9f59",
+          "subject": "Emergency Systems Survivability Analysis (ESSA)",
+          "object": "approved third party",
+          "label": "must_be_performed_by",
+          "vector_score": 0.767218828201294,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "b2823a65874197584aaa0d5e2d7a2ab8be4a0ba1",
+          "subject": "Functional safety checks",
+          "object": "IEC 61511",
+          "label": "must_comply_with",
+          "vector_score": 0.7662737965583801,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "a81b4986f4db167368d3f1c8e991d55b1604606f",
+          "subject": "Calculation report for Modular Assembly steelwork",
+          "object": "temporary structures",
+          "label": "demonstrates_compliance_with",
+          "vector_score": 0.7642096877098083,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAVAL_ARCHITECTURE-02",
+      "expected": "NAVAL ARCHITECTURE",
+      "scope": "single",
+      "predicted": [
+        "PIPING INSTALLATION"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "PIPING INSTALLATION": 3,
+        "PRESSURE VESSELS": 1,
+        "MATERIALS AND TECHNOLOGY": 1
+      },
+      "reasoning": "3/5 top relations classified as 'PIPING INSTALLATION'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "bb8f0dd4683bf72f74b10660efdd2eaf15456e7b",
+          "subject": "surge conditions",
+          "object": "L290-AP-PHI-0003",
+          "label": "analyzed_in_accordance_with",
+          "vector_score": 0.7805358171463013,
+          "domains": [
+            "PIPING INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "101d3e6194e123b72252057d55b4388ae8d1a801",
+          "subject": "Contractor",
+          "object": "Computational Fluid Dynamics (CFD)",
+          "label": "must_use_for_analysis",
+          "vector_score": 0.7797335386276245,
+          "domains": [
+            "PIPING INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "c31ae32db5aaae85301ebf2d3dd47c01a03f6947",
+          "subject": "hydraulic calculations",
+          "object": "piping isometrics",
+          "label": "must_be_verified_based_on",
+          "vector_score": 0.7640571594238281,
+          "domains": [
+            "PIPING INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "57af4a18a9c45232b2b50560a78cf74299807811",
+          "subject": "HP Suction KO Drum",
+          "object": "MDMT",
+          "label": "material_selection_consideration",
+          "vector_score": 0.7629071474075317,
+          "domains": [
+            "PRESSURE VESSELS"
+          ]
+        },
+        {
+          "relation_id": "371c88eff21e1fd51452312d46aa8cb138b0a1a0",
+          "subject": "velocity limits",
+          "object": "Duplex Stainless Steel",
+          "label": "design_consideration",
+          "vector_score": 0.760969877243042,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-01",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "CIVIL / STRUCTURAL"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CIVIL / STRUCTURAL": 4,
+        "TRANSPORT AND INSTALLATION": 1
+      },
+      "reasoning": "4/5 top relations classified as 'CIVIL / STRUCTURAL'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "03cfabd753eaefa1782dd26a727af72b47e39a20",
+          "subject": "Foundation Selection",
+          "object": "pile diameter",
+          "label": "requires_review_of",
+          "vector_score": 0.7916145324707031,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "b3655d0b26cbcb3ec192217af9f6802e4ef92791",
+          "subject": "Design and methods",
+          "object": "site preparation and installation of foundations",
+          "label": "enables_safe_and_effective",
+          "vector_score": 0.788825511932373,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "14e753a32da71dfb37ec06e9fab30a0b6c2da615",
+          "subject": "Design and methods",
+          "object": "module and equipment on-land transport and final placement",
+          "label": "enables_safe_and_effective",
+          "vector_score": 0.7773159742355347,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "e43720a90912bf95512d5c1b0d0dd00c17cbccd3",
+          "subject": "Structural design",
+          "object": "crane",
+          "label": "requires_transport_method",
+          "vector_score": 0.7635844349861145,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        },
+        {
+          "relation_id": "92ccafdda918c463295cd9e8734b78048ffbb0de",
+          "subject": "Foundation Selection",
+          "object": "precast installation methodology",
+          "label": "requires_review_of",
+          "vector_score": 0.7628155946731567,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OFFSHORE_STRUCTURE-02",
+      "expected": "OFFSHORE STRUCTURE",
+      "scope": "single",
+      "predicted": [
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "TRANSPORT AND INSTALLATION": 3,
+        "CONSTRUCTION AND PCC&SU": 1,
+        "CIVIL / STRUCTURAL": 1
+      },
+      "reasoning": "3/5 top relations classified as 'TRANSPORT AND INSTALLATION'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "e78b2d3cfb6b571c5de0e9f4f968baf59eb9f916",
+          "subject": "Modular Assemblies",
+          "object": "Marine Warranty Certification",
+          "label": "requires_assessment_for",
+          "vector_score": 0.7873101234436035,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "5de8ff4764eb63b7f8e230b4665e307c61afcfe2",
+          "subject": "Contractor",
+          "object": "Marine Warranty Surveyor",
+          "label": "must_comply_with",
+          "vector_score": 0.7667685151100159,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "fda1119d4a121fad96c9b2b1375ca88c2f38bcca",
+          "subject": "Contractor",
+          "object": "Marine offloading infrastructure",
+          "label": "must_upgrade_if_required",
+          "vector_score": 0.7648381590843201,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "4b126cced90d73b8a859703b625fcf3841150f78",
+          "subject": "MOF LAT for berthing pockets",
+          "object": "ILNG MOF Wharf",
+          "label": "applies_to",
+          "vector_score": 0.7617922425270081,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "80f0fcda3594d866e4fb85320d6f63cfcd7c3416",
+          "subject": "Modular Assemblies",
+          "object": "E3-04-003",
+          "label": "must_comply_with",
+          "vector_score": 0.7601003646850586,
+          "domains": [
+            "CIVIL / STRUCTURAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-01",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "MATERIALS AND TECHNOLOGY": 5
+      },
+      "reasoning": "5/5 top relations classified as 'MATERIALS AND TECHNOLOGY'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "95c4acb686b0e44fa2897f610c1123076da7a41c",
+          "subject": "CRA material",
+          "object": "Duplex SS",
+          "label": "example_of_material",
+          "vector_score": 0.8268698453903198,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "6118e22e04abe7abb245e44f2f0d15ed8129adda",
+          "subject": "SS316/316L",
+          "object": "CO2, H2S, BTEX",
+          "label": "selected_due_to_resistance_to",
+          "vector_score": 0.8152210712432861,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "ea41671b623fbf4ad7a070a35d201b7e4d41110b",
+          "subject": "GRE/P",
+          "object": "CCS water services",
+          "label": "potential_material_alternative",
+          "vector_score": 0.8106136322021484,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "0a53b4c488ec0c3876c0acf02d8988f4e79c9438",
+          "subject": "Duplex Stainless Steel",
+          "object": "CO2 Compressor LP Discharge Piping",
+          "label": "selected_material",
+          "vector_score": 0.8104523420333862,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "617b4e3944a8cc7f89fb398ed96a15d3c931aa03",
+          "subject": "316SS",
+          "object": "breathers/drains",
+          "label": "must_include",
+          "vector_score": 0.80647873878479,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MATERIALS_TECHNOLOGY-02",
+      "expected": "MATERIALS AND TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "QUALITY MANAGEMENT": 2,
+        "MATERIALS AND TECHNOLOGY": 3
+      },
+      "reasoning": "3/5 top relations classified as 'MATERIALS AND TECHNOLOGY'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "1a46b6b52d5bcefaa1cc29c41edc13147cc23c34",
+          "subject": "Coating Inspection",
+          "object": "Appendix C",
+          "label": "references_minimum_qualifications_in",
+          "vector_score": 0.8049349188804626,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "55cb073fa10c83a56ae8a76227eefb2dc2da87eb",
+          "subject": "Contractor",
+          "object": "X060-AL-SPC-60018",
+          "label": "must_verify_or_modify",
+          "vector_score": 0.800957441329956,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "2ac55d11db5e00f42a2e7df3fb91372026962920",
+          "subject": "Contractor",
+          "object": "X060-AL-SPC-60019",
+          "label": "must_verify_or_modify",
+          "vector_score": 0.7916041612625122,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "de8f136251f552f5ae13d58c0639e3c6a51eadab",
+          "subject": "A13-18-011",
+          "object": "Contractor",
+          "label": "must_supply",
+          "vector_score": 0.7896379828453064,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "2f8bcca06e048cdb154fee7bd257f6b320c6afe5",
+          "subject": "Contractor",
+          "object": "L290-AL-SPC-70006",
+          "label": "must_comply_with",
+          "vector_score": 0.7807453870773315,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-01",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "ELECTRICAL"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "MATERIALS AND TECHNOLOGY": 1,
+        "ELECTRICAL": 2,
+        "PROJECT EXECUTION SYSTEMS": 1
+      },
+      "reasoning": "2/5 top relations classified as 'ELECTRICAL'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "31fdb468fa3687565ead92d14ccea3493ddca082",
+          "subject": "Dehydration max ppm requirement",
+          "object": "associated technologies",
+          "label": "under_assessment",
+          "vector_score": 0.7154773473739624,
+          "domains": [
+            "MATERIALS AND TECHNOLOGY"
+          ]
+        },
+        {
+          "relation_id": "e0bfcc69dc40f0048aa292a6e59303a7033b22df",
+          "subject": "Company",
+          "object": "Current Layout",
+          "label": "assessing_alternate_layouts",
+          "vector_score": 0.7080010175704956,
+          "domains": []
+        },
+        {
+          "relation_id": "da92c01a34704800f383b6f995f522b763e2a068",
+          "subject": "Electrical systems",
+          "object": "Plant systems",
+          "label": "must_integrate_with",
+          "vector_score": 0.698412299156189,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "relation_id": "834858f01f2d042ddb5c93beb9964f9040bb0ec7",
+          "subject": "Contractor",
+          "object": "Hexagon",
+          "label": "shall_use_tools_from",
+          "vector_score": 0.6948827505111694,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "edde59902358de505b8b631d7594671b57c2165c",
+          "subject": "Three winding transformers",
+          "object": "11 kV switchboards",
+          "label": "proposed_for",
+          "vector_score": 0.6938550472259521,
+          "domains": [
+            "ELECTRICAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ADVANCED_SYSTEMS-02",
+      "expected": "ADVANCED SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "TELECOMMUNICATIONS"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "TELECOMMUNICATIONS": 2,
+        "CONTROL SYSTEMS": 2,
+        "QUALITY MANAGEMENT": 1
+      },
+      "reasoning": "2/5 top relations classified as 'TELECOMMUNICATIONS'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "6f7dcf6e27b134f06c88c694fa96b84c1fec2f69",
+          "subject": "Contractor",
+          "object": "Telecommunications System Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8128875494003296,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "8981f1fe1063533532fb155f05f048fb6121b9b4",
+          "subject": "Contractor",
+          "object": "Plant Control and Safety Systems",
+          "label": "responsible_for_design_and_configuration",
+          "vector_score": 0.8012892007827759,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "0223414f075fec5795e5d1c1b77eb37c49c2f7b5",
+          "subject": "Contractor",
+          "object": "Telecoms Equipment and Component Specifications",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8002484440803528,
+          "domains": [
+            "TELECOMMUNICATIONS"
+          ]
+        },
+        {
+          "relation_id": "0b9ff966b68d2b32caa9ddcf31f0417016ac64ba",
+          "subject": "System Integrated Test (SIT)",
+          "object": "Contractor",
+          "label": "must_perform",
+          "vector_score": 0.7930708527565002,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "9c7defa81d1d5d5edc9b43861207adac26ab5195",
+          "subject": "Contractor",
+          "object": "Integrated Control and Safety System (ICSS)",
+          "label": "must_update",
+          "vector_score": 0.7925487160682678,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INFO_TECH-01",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "HVAC"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "HVAC": 2,
+        "CONTROL SYSTEMS": 2
+      },
+      "reasoning": "2/5 top relations classified as 'HVAC'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "fda1119d4a121fad96c9b2b1375ca88c2f38bcca",
+          "subject": "Contractor",
+          "object": "Marine offloading infrastructure",
+          "label": "must_upgrade_if_required",
+          "vector_score": 0.7507975697517395,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "2e2c91f6bd901ea8a24d8a78dabf88212fec5388",
+          "subject": "HVAC systems",
+          "object": "control rooms",
+          "label": "required_for",
+          "vector_score": 0.7439123392105103,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "b3de94ba94a3af6276f1c574f3fcda6a03c08847",
+          "subject": "HVAC systems",
+          "object": "administrative areas",
+          "label": "required_for",
+          "vector_score": 0.743274986743927,
+          "domains": [
+            "HVAC"
+          ]
+        },
+        {
+          "relation_id": "fe525fa36641ee5d4cebb49ec0f3c8526ebb8b8f",
+          "subject": "Exhibit E3-10-041",
+          "object": "Software Applications",
+          "label": "specifies_requirements_for",
+          "vector_score": 0.7379130125045776,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "6ec5df0bbe0272469802a2364171fafb39fd7209",
+          "subject": "Control System Work",
+          "object": "Fire & Gas Systems (FGS)",
+          "label": "includes",
+          "vector_score": 0.7376927733421326,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INFO_TECH-02",
+      "expected": "INFORMATION TECHNOLOGY",
+      "scope": "single",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "PROJECT EXECUTION SYSTEMS": 2,
+        "SUBCONTRACTING": 1,
+        "SCHEDULE MANAGEMENT": 1
+      },
+      "reasoning": "2/5 top relations classified as 'PROJECT EXECUTION SYSTEMS'",
+      "candidate_recall": false,
+      "top_relations": [
+        {
+          "relation_id": "dd6a69af4366b9fe43fd497149e25991decd77b7",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for_execution",
+          "vector_score": 0.8062331676483154,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "15578596bebd80a5bead64b647a7a1e3f388e3c1",
+          "subject": "Contractor",
+          "object": "services",
+          "label": "must_provide",
+          "vector_score": 0.8048439025878906,
+          "domains": []
+        },
+        {
+          "relation_id": "cbb7171a9d852552026b7c8065e762c3ee37a796",
+          "subject": "Contractor",
+          "object": "3D modelling applications",
+          "label": "must_use",
+          "vector_score": 0.802330732345581,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "8f82ef4f2ea66594d398e7fded9403a866c597eb",
+          "subject": "Contractor",
+          "object": "Key Personnel",
+          "label": "must_provide",
+          "vector_score": 0.8011070489883423,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        },
+        {
+          "relation_id": "e6e15b3f5daf18d252c21df96fbd3dc29efa3179",
+          "subject": "Primavera Project Planner P6",
+          "object": "Contract",
+          "label": "required_for",
+          "vector_score": 0.8002067804336548,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-01",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "ROTATING EQUIPMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "ROTATING EQUIPMENT": 2,
+        "PROJECT EXECUTION SYSTEMS": 2,
+        "CONSTRUCTION AND PCC&SU": 1
+      },
+      "reasoning": "2/5 top relations classified as 'ROTATING EQUIPMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "bf699074ff52fb2d29bf08bae907ec05eba3e821",
+          "subject": "Mechanical (Rotating Equipment) Engineering",
+          "object": "Exhibit E",
+          "label": "guided_by",
+          "vector_score": 0.817024290561676,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "0eeaad3c6aec1c77dd45f5da2fcbdfbb264f93d4",
+          "subject": "Mechanical (Rotating Equipment) Engineering",
+          "object": "Appendix E3",
+          "label": "guided_by",
+          "vector_score": 0.8162916898727417,
+          "domains": [
+            "ROTATING EQUIPMENT"
+          ]
+        },
+        {
+          "relation_id": "f4315c7e74820eda1b13556e6d1d9d941168805f",
+          "subject": "Contractor",
+          "object": "Engineering Management Plan",
+          "label": "must_produce",
+          "vector_score": 0.8126351237297058,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "cd50366a6fe8a4d4408d6f4b81948b7661cd042b",
+          "subject": "construction engineering",
+          "object": "design Specifications",
+          "label": "must_comply_with",
+          "vector_score": 0.8115519285202026,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "ceb36537f9674bf4e11fd53c76a6b2216e26e9e5",
+          "subject": "Contractor",
+          "object": "Engineering Data Warehouse Specification",
+          "label": "tools_must_comply_with",
+          "vector_score": 0.8100320100784302,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROJECT_EXEC_SYSTEMS-02",
+      "expected": "PROJECT EXECUTION SYSTEMS",
+      "scope": "single",
+      "predicted": [
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "PROJECT EXECUTION SYSTEMS": 3,
+        "CONTROL SYSTEMS": 1,
+        "DOCUMENT CONTROL": 1
+      },
+      "reasoning": "3/5 top relations classified as 'PROJECT EXECUTION SYSTEMS'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b849799ee4b68338f495251b4541a89869955cab",
+          "subject": "eTAP",
+          "object": "Company",
+          "label": "starting_model_provided_by",
+          "vector_score": 0.7331051826477051,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "cbb7171a9d852552026b7c8065e762c3ee37a796",
+          "subject": "Contractor",
+          "object": "3D modelling applications",
+          "label": "must_use",
+          "vector_score": 0.7262088656425476,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "67fbfcf4ee17f8bccc04677b693c52514590b366",
+          "subject": "Control System Work",
+          "object": "Analyser Data Acquisition System (ADAS)",
+          "label": "includes",
+          "vector_score": 0.7231911420822144,
+          "domains": [
+            "CONTROL SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "cac05141d4d4d6f78fb3c5944bf79199d66a3bb1",
+          "subject": "Company",
+          "object": "E3D ILNG Facility model",
+          "label": "hosts",
+          "vector_score": 0.7222912907600403,
+          "domains": [
+            "PROJECT EXECUTION SYSTEMS"
+          ]
+        },
+        {
+          "relation_id": "6f535b14906058d5bdc52b381b2ea359544b9ae5",
+          "subject": "processes, systems and software",
+          "object": "deliverable squad checking",
+          "label": "required_for_administration",
+          "vector_score": 0.7180424928665161,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COSTS_CONTROL-01",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "COSTS CONTROL"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "COSTS CONTROL": 4,
+        "SCHEDULE MANAGEMENT": 1
+      },
+      "reasoning": "4/5 top relations classified as 'COSTS CONTROL'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "a659794b466ca77682e5defd3f1aabd97c95256b",
+          "subject": "Contract Cost Report",
+          "object": "Outstanding Change Order Requests",
+          "label": "must_include",
+          "vector_score": 0.8056051731109619,
+          "domains": [
+            "COSTS CONTROL"
+          ]
+        },
+        {
+          "relation_id": "2cb1d2e3c016a1c7944d78177ff749ab3685a913",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "must_provide_cost_information_to",
+          "vector_score": 0.8042913675308228,
+          "domains": [
+            "COSTS CONTROL"
+          ]
+        },
+        {
+          "relation_id": "45c80ea4d6499873ac006f4c282258463fa6bcdf",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "must_provide_reports_to",
+          "vector_score": 0.8024737238883972,
+          "domains": [
+            "COSTS CONTROL"
+          ]
+        },
+        {
+          "relation_id": "c71a8354956a8ddcc8b45f4d64b4847848802577",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for_progress_measurement",
+          "vector_score": 0.8016229867935181,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "7fbab32ad5cada42ea2946d1b61c8556c48db48c",
+          "subject": "Company",
+          "object": "Contractor",
+          "label": "requires_documentary_evidence_from",
+          "vector_score": 0.80147385597229,
+          "domains": [
+            "COSTS CONTROL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COSTS_CONTROL-02",
+      "expected": "COSTS CONTROL",
+      "scope": "single",
+      "predicted": [
+        "COSTS CONTROL"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "COSTS CONTROL": 2,
+        "LEGAL / CONTRACT": 2,
+        "CONSTRUCTION AND PCC&SU": 1
+      },
+      "reasoning": "2/5 top relations classified as 'COSTS CONTROL'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "45c80ea4d6499873ac006f4c282258463fa6bcdf",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "must_provide_reports_to",
+          "vector_score": 0.7878742814064026,
+          "domains": [
+            "COSTS CONTROL"
+          ]
+        },
+        {
+          "relation_id": "9d7f09645fc733e6420171c40c8bd47581430631",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "must_provide_notice_to",
+          "vector_score": 0.7528083324432373,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        },
+        {
+          "relation_id": "1f3ae32075a919baaa5575b40ef7b3d332e876aa",
+          "subject": "major commodities",
+          "object": "Contractor",
+          "label": "tracks_ifc_status",
+          "vector_score": 0.7492122650146484,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "a659794b466ca77682e5defd3f1aabd97c95256b",
+          "subject": "Contract Cost Report",
+          "object": "Outstanding Change Order Requests",
+          "label": "must_include",
+          "vector_score": 0.7465554475784302,
+          "domains": [
+            "COSTS CONTROL"
+          ]
+        },
+        {
+          "relation_id": "442b0c683890bdaedf995ff55becf106922a1caa",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for",
+          "vector_score": 0.7425075173377991,
+          "domains": [
+            "LEGAL / CONTRACT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RISK_MANAGEMENT-01",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "RISK MANAGEMENT": 5
+      },
+      "reasoning": "5/5 top relations classified as 'RISK MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "c98a7af34b9421e39a53acf37b3b777e06b68be7",
+          "subject": "Contractor",
+          "object": "Risk Management Procedure",
+          "label": "must_deliver",
+          "vector_score": 0.8652316331863403,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "a405469f479a1955910fcff1d32c1f29cd44a2fe",
+          "subject": "Contractor",
+          "object": "risk assessments",
+          "label": "responsible_for_conducting",
+          "vector_score": 0.8637916445732117,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "979fcb0ad27b60d8b31c7797c8fcdb23b02fef4c",
+          "subject": "Contractor",
+          "object": "ISO 31000:2018",
+          "label": "must_comply_with",
+          "vector_score": 0.860939621925354,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "edfb418b9f51ce135a54fda37f69d8db01b1b2b8",
+          "subject": "Contractor",
+          "object": "Risk management",
+          "label": "responsible_for_including",
+          "vector_score": 0.8544907569885254,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "9c498afc59c2f1214224915402dcbec9bb29fabe",
+          "subject": "Contractor",
+          "object": "project risk management procedures",
+          "label": "align_risk_mitigation_with",
+          "vector_score": 0.8538476824760437,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RISK_MANAGEMENT-02",
+      "expected": "RISK MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "RISK MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "RISK MANAGEMENT": 4,
+        "HSE MANAGEMENT": 1
+      },
+      "reasoning": "4/5 top relations classified as 'RISK MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "edfb418b9f51ce135a54fda37f69d8db01b1b2b8",
+          "subject": "Contractor",
+          "object": "Risk management",
+          "label": "responsible_for_including",
+          "vector_score": 0.8226549625396729,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "1e29ac5887ca3a7e3cf944855be16aa47ad5083f",
+          "subject": "Contractor",
+          "object": "Project Risk Management Plan",
+          "label": "mitigates_risks_in_line_with",
+          "vector_score": 0.795689582824707,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "05ac049a38c4d11bf88097a370bf7b36f6ea3627",
+          "subject": "Emergency Plan",
+          "object": "emergency scenarios",
+          "label": "must_identify_and_mitigate",
+          "vector_score": 0.7881446480751038,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "a405469f479a1955910fcff1d32c1f29cd44a2fe",
+          "subject": "Contractor",
+          "object": "risk assessments",
+          "label": "responsible_for_conducting",
+          "vector_score": 0.7879064679145813,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "9c498afc59c2f1214224915402dcbec9bb29fabe",
+          "subject": "Contractor",
+          "object": "project risk management procedures",
+          "label": "align_risk_mitigation_with",
+          "vector_score": 0.7815917134284973,
+          "domains": [
+            "RISK MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DOCUMENT_CONTROL-01",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "DOCUMENT CONTROL"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "DOCUMENT CONTROL": 4,
+        "CONSTRUCTION AND PCC&SU": 1
+      },
+      "reasoning": "4/5 top relations classified as 'DOCUMENT CONTROL'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "6f535b14906058d5bdc52b381b2ea359544b9ae5",
+          "subject": "processes, systems and software",
+          "object": "deliverable squad checking",
+          "label": "required_for_administration",
+          "vector_score": 0.787398636341095,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "a49e3f2c2594bb5ef72cdf2eaa69e7a4fdea1a76",
+          "subject": "PWHT reports",
+          "object": "Revision",
+          "label": "must_include",
+          "vector_score": 0.7708442211151123,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "bbfc1ed5ec73929335cea2b25a62f96b0f7b5509",
+          "subject": "Updates to existing documentation",
+          "object": "Controlled Document Facility Mark-up Procedure [0000-A9-PRC-70015]",
+          "label": "must_follow_process_defined_in",
+          "vector_score": 0.7505956888198853,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "8e4b101a3f84836f80cec878dec3250e34994142",
+          "subject": "Pre-Commissioning and Commissioning dossiers",
+          "object": "Load Out Certificates",
+          "label": "required_for_review_prior_to_signature",
+          "vector_score": 0.7495073080062866,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "f4283f0325715dfa6655d203db74453fd39288b8",
+          "subject": "Tenderer",
+          "object": "document control process",
+          "label": "must_implement",
+          "vector_score": 0.749294102191925,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DOCUMENT_CONTROL-02",
+      "expected": "DOCUMENT CONTROL",
+      "scope": "single",
+      "predicted": [
+        "INFORMATION MANAGEMENT"
+      ],
+      "hit": false,
+      "domain_votes": {
+        "HSE MANAGEMENT": 1,
+        "INFORMATION MANAGEMENT": 3,
+        "DOCUMENT CONTROL": 1
+      },
+      "reasoning": "3/5 top relations classified as 'INFORMATION MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "13ad93ae5f3042219d424ad0255d82aa07fc9855",
+          "subject": "Documentation",
+          "object": "as-built records and disposal documentation",
+          "label": "must_include",
+          "vector_score": 0.7894437909126282,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "dbfbcf714f75131eab3a1dbc82d9e3bc706eb009",
+          "subject": "Tenderer",
+          "object": "Electronic Document Management System",
+          "label": "must_provide_description_of",
+          "vector_score": 0.7862114906311035,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "0ac60103ce6dd87fd4f0d8923d9ed7be52e7032d",
+          "subject": "document and record management process",
+          "object": "Document Management Standard",
+          "label": "must_align_with",
+          "vector_score": 0.7841601967811584,
+          "domains": [
+            "DOCUMENT CONTROL"
+          ]
+        },
+        {
+          "relation_id": "a1adf904bb3b17954c213f93610f84cf520df4d8",
+          "subject": "Company",
+          "object": "Document Control Information Management Plan",
+          "label": "must_approve",
+          "vector_score": 0.7777607440948486,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "67e20960896420367e315ac59ba92d290348ed33",
+          "subject": "Document Deliverables Register",
+          "object": "documents and data",
+          "label": "must_include",
+          "vector_score": 0.7761704921722412,
+          "domains": [
+            "INFORMATION MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HSE_MANAGEMENT-01",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "HSE MANAGEMENT": 4,
+        "PROCESS & HSED (SAFETY IN DESIGN)": 1
+      },
+      "reasoning": "4/5 top relations classified as 'HSE MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "3c47efef5a35decced4de81c6a8b99db3c296386",
+          "subject": "Contractor",
+          "object": "emergency response plans / protocols",
+          "label": "responsible_for_preparation",
+          "vector_score": 0.8635640144348145,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e163ac1faad254470e399958471fd66ba66757d5",
+          "subject": "Contractor",
+          "object": "HSE regulatory obligations",
+          "label": "must_comply_with",
+          "vector_score": 0.8237576484680176,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "a1cac4778366a538420a5d63b62d4d42d448fa20",
+          "subject": "Contractor",
+          "object": "Emergency Systems Survivability Analysis (ESSA) for SIMOPs/CONOPs phase",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8202551603317261,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "a45de7dbb5af828907959027611a4b5f490b983a",
+          "subject": "HAZOP reports",
+          "object": "Contractor",
+          "label": "referenced_for_upset_scenarios",
+          "vector_score": 0.8177456259727478,
+          "domains": [
+            "PROCESS & HSED (SAFETY IN DESIGN)"
+          ]
+        },
+        {
+          "relation_id": "01d364c2b4eb38c5ac6b432773608b401275167a",
+          "subject": "Contractor",
+          "object": "Appendix A of Exhibit F",
+          "label": "must_comply_with",
+          "vector_score": 0.815194308757782,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "HSE_MANAGEMENT-02",
+      "expected": "HSE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "HSE MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "HSE MANAGEMENT": 4,
+        "INSURANCE": 1
+      },
+      "reasoning": "4/5 top relations classified as 'HSE MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "54846ffc6f330ea5029f419e7e0df9face4a4d72",
+          "subject": "Statutory notifiable incidents or non-compliance notices",
+          "object": "Details of statutory notifiable incidents or non-compliance notices",
+          "label": "requires_detailed_information",
+          "vector_score": 0.8430257439613342,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "4cb026ad603d4c4c2d0bc4eff543f94831986c9c",
+          "subject": "Incident Reporting and Classification Guideline",
+          "object": "Company Incident Reporting and Investigation Procedure",
+          "label": "classified_in_accordance_with",
+          "vector_score": 0.8276959657669067,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "ad2eea0483eb102afa67dd54ec18ff9be3f11601",
+          "subject": "Contractor",
+          "object": "Incident Investigation and Reporting Standard",
+          "label": "must_follow",
+          "vector_score": 0.8252423405647278,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "92cb376bfcd674e29902ade56b71df85567dd1d8",
+          "subject": "APPENDIX A – INSURANCE INCIDENT REPORT FORM",
+          "object": "Statutory Authorities",
+          "label": "may_be_reported_to",
+          "vector_score": 0.823469340801239,
+          "domains": [
+            "INSURANCE"
+          ]
+        },
+        {
+          "relation_id": "38253c1453f602b4ba42eb55963ab6d4663ed7d0",
+          "subject": "Accident and Incident Reports",
+          "object": "Appendix L1",
+          "label": "listed_as_attachment",
+          "vector_score": 0.8200271129608154,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-01",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "SCHEDULE MANAGEMENT": 5
+      },
+      "reasoning": "5/5 top relations classified as 'SCHEDULE MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "366dd4729ef20c7c118235b8feb61c64a42df07f",
+          "subject": "Work Time Schedule",
+          "object": "Critical Path",
+          "label": "must_include",
+          "vector_score": 0.8354880809783936,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "2a7f061e53fbabc592d83dfd94001f2cb4f18139",
+          "subject": "Critical Path Schedule",
+          "object": "Work Time Schedule",
+          "label": "derived_from",
+          "vector_score": 0.8278050422668457,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "8267610fa4aca9657652545080c0a269ac21e911",
+          "subject": "Work Time Schedule",
+          "object": "Critical activities",
+          "label": "must_include",
+          "vector_score": 0.8194961547851562,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "c72ad949319b248d6e133775dfbfc4921637f153",
+          "subject": "APPENDIX C2 – CRITICAL PATH SCHEDULE",
+          "object": "Tenderer",
+          "label": "requires_proposal_from",
+          "vector_score": 0.7724938988685608,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "8371d10ba955727aa13608f450a0391ab5b8923d",
+          "subject": "Contractor",
+          "object": "Work Time Schedule",
+          "label": "responsible_for_providing",
+          "vector_score": 0.7702927589416504,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCHEDULE_MANAGEMENT-02",
+      "expected": "SCHEDULE MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "SCHEDULE MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "SCHEDULE MANAGEMENT": 4,
+        "SUBCONTRACTING": 1
+      },
+      "reasoning": "4/5 top relations classified as 'SCHEDULE MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "c71a8354956a8ddcc8b45f4d64b4847848802577",
+          "subject": "Contractor",
+          "object": "Work",
+          "label": "responsible_for_progress_measurement",
+          "vector_score": 0.7976647615432739,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "16b30c597f6e888682459d3ea0383cea5ea23d5e",
+          "subject": "Contractor",
+          "object": "Major Subcontractors",
+          "label": "responsible_for_incorporating_progress",
+          "vector_score": 0.796977162361145,
+          "domains": [
+            "SUBCONTRACTING"
+          ]
+        },
+        {
+          "relation_id": "b71590f774bcd623be3ea7ed4e273c6a850bdcce",
+          "subject": "Contractor",
+          "object": "manpower histograms",
+          "label": "must_develop",
+          "vector_score": 0.7950789928436279,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "bea15baeaa350c8d67ecc1730be95c94d1c70111",
+          "subject": "Contractor",
+          "object": "progress ‘S’ curves",
+          "label": "responsible_for_producing",
+          "vector_score": 0.7934201955795288,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "b6f986cf815b7edf026b62909b12b7d9eb0cafe8",
+          "subject": "Contractor",
+          "object": "progress tables",
+          "label": "must_submit_weekly",
+          "vector_score": 0.7925254702568054,
+          "domains": [
+            "SCHEDULE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-01",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "QUALITY MANAGEMENT": 5
+      },
+      "reasoning": "5/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "40070315667062581809cf73b21676dac07c22db",
+          "subject": "Contractor",
+          "object": "QA/QC personnel",
+          "label": "must_ensure_compliance",
+          "vector_score": 0.8553705811500549,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "87eeb5be389cae27dd9a12514d85500eb4a40d47",
+          "subject": "Contractor",
+          "object": "quality control",
+          "label": "responsible_for",
+          "vector_score": 0.8513646721839905,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "28feb232ecead5c2f7e8e626841288224e737f6b",
+          "subject": "Contractor",
+          "object": "A13-08-044",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8468659520149231,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "bad83e1888cf8bbb9de53c74b194cccbd983fe2c",
+          "subject": "Contractor",
+          "object": "A13-08-041",
+          "label": "responsible_for_supplying",
+          "vector_score": 0.8461748361587524,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "3ab1fc056c92c94ffc12e0b66e9c1f4d08f65930",
+          "subject": "Contractor",
+          "object": "Quality Assurance (QA) and Quality Control (QC)",
+          "label": "must_coordinate_with",
+          "vector_score": 0.8460962772369385,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUALITY_MANAGEMENT-02",
+      "expected": "QUALITY MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "QUALITY MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "QUALITY MANAGEMENT": 4,
+        "HSE MANAGEMENT": 1
+      },
+      "reasoning": "4/5 top relations classified as 'QUALITY MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "b6fe8b12ba739152fa01662b4ab9b63a46df494e",
+          "subject": "Non-Conformance Report",
+          "object": "Company",
+          "label": "must_be_submitted_to_for_review",
+          "vector_score": 0.7489016056060791,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "d502d4b509037647aa98d7cf56e8a47d02273a69",
+          "subject": "Non-Conformance Report (NCR)",
+          "object": "Approved Project Quality Management Plan",
+          "label": "review_and_approval_defined_by",
+          "vector_score": 0.7460272312164307,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e85a7566dbd15abdad17378100ff7ae8d5fac6ee",
+          "subject": "Non-Conformance Report (NCR)",
+          "object": "Approved Project Quality Management Plan",
+          "label": "review_and_approval_in_accordance_with",
+          "vector_score": 0.7402219772338867,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "f15a627ef281927b3c4d006f651bbecf45667b6a",
+          "subject": "Contractor",
+          "object": "NCR",
+          "label": "must_submit",
+          "vector_score": 0.7385223507881165,
+          "domains": [
+            "QUALITY MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "ba5b40bbc5a2675a047df55c1685bb61fcb988b6",
+          "subject": "Management of Change process",
+          "object": "Appendix A of Exhibit F",
+          "label": "defined_in",
+          "vector_score": 0.7366921901702881,
+          "domains": [
+            "HSE MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WEIGHT_CONTROL-01",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "WEIGHT CONTROL AND MANAGEMENT": 5
+      },
+      "reasoning": "5/5 top relations classified as 'WEIGHT CONTROL AND MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "7da58d07e7d9ef5147c69d2f66ed43f714ceb02a",
+          "subject": "transportation temporary steel",
+          "object": "COG of modules",
+          "label": "reduction_depends_on",
+          "vector_score": 0.7615473866462708,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "10f135fb181470eb30f749bfe867f13f93fac479",
+          "subject": "E3D Model",
+          "object": "bulk weights",
+          "label": "must_include",
+          "vector_score": 0.7514166831970215,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "c70ec69f714dff8fbd3740e5868b2e423e6f892a",
+          "subject": "structural steelwork design",
+          "object": "COG of modules",
+          "label": "efficiency_depends_on",
+          "vector_score": 0.7466831803321838,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "11711a220886fd7498fed4ede5fdea4c625c593f",
+          "subject": "sea grillage steelwork",
+          "object": "COG of modules",
+          "label": "reduction_depends_on",
+          "vector_score": 0.7465329170227051,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e7bf4b1bb3f1a87fafc43088327b7d1d3b9a3222",
+          "subject": "Weight Control",
+          "object": "Contractor and Company Approved weighing procedure(s)",
+          "label": "must_follow",
+          "vector_score": 0.720995306968689,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WEIGHT_CONTROL-02",
+      "expected": "WEIGHT CONTROL AND MANAGEMENT",
+      "scope": "single",
+      "predicted": [
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "WEIGHT CONTROL AND MANAGEMENT": 5
+      },
+      "reasoning": "5/5 top relations classified as 'WEIGHT CONTROL AND MANAGEMENT'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "7e81a48dd1e3f1fc22607a421a83d8e2a6689c2b",
+          "subject": "Contractor",
+          "object": "weight control procedure",
+          "label": "responsible_for_development",
+          "vector_score": 0.8197464942932129,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "e7bf4b1bb3f1a87fafc43088327b7d1d3b9a3222",
+          "subject": "Weight Control",
+          "object": "Contractor and Company Approved weighing procedure(s)",
+          "label": "must_follow",
+          "vector_score": 0.8070068955421448,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "af3c3d5c653986d2b8a4d495cacc66f6e5f8f192",
+          "subject": "weight control procedure",
+          "object": "Company",
+          "label": "subject_to_acceptance",
+          "vector_score": 0.7958687543869019,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "bbc500096eb691d89e83ef59d466a7dadf734fb1",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "requires_approval_from",
+          "vector_score": 0.794610857963562,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        },
+        {
+          "relation_id": "77d40207749bf131649ef1f469e4ce3e8eb1c7af",
+          "subject": "Weight Control",
+          "object": "construction data updates",
+          "label": "requires_provision_of",
+          "vector_score": 0.7920228242874146,
+          "domains": [
+            "WEIGHT CONTROL AND MANAGEMENT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-01",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "CONSTRUCTION AND PCC&SU": 1,
+        "TRANSPORT AND INSTALLATION": 4
+      },
+      "reasoning": "4/5 top relations classified as 'TRANSPORT AND INSTALLATION'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "7ae2cbe8e4c97f207e76a53f7da61af910f66a4f",
+          "subject": "loads above 50 tonnes",
+          "object": "existing Plant and infrastructure",
+          "label": "cannot_be_lifted_within",
+          "vector_score": 0.795841634273529,
+          "domains": [
+            "CONSTRUCTION AND PCC&SU"
+          ]
+        },
+        {
+          "relation_id": "c4c2c69be5eef7378bfa33275eac1c27e15f184e",
+          "subject": "complicated lift",
+          "object": "25 tonnes",
+          "label": "defined_as_exceeding",
+          "vector_score": 0.7903594374656677,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "b05ebe8b0ac41374405e5a6c4fc4c5d3a2a16019",
+          "subject": "Structural design",
+          "object": "SPMT",
+          "label": "requires_transport_method",
+          "vector_score": 0.790230929851532,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "780fb0e790c96d793726fdcf9d75c79b1778e794",
+          "subject": "Self-Propelled Modular Transporters",
+          "object": "Modular Assemblies",
+          "label": "required_for_transporting",
+          "vector_score": 0.7876455187797546,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "e78b2d3cfb6b571c5de0e9f4f968baf59eb9f916",
+          "subject": "Modular Assemblies",
+          "object": "Marine Warranty Certification",
+          "label": "requires_assessment_for",
+          "vector_score": 0.7857861518859863,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "TRANSPORT_INSTALLATION-02",
+      "expected": "TRANSPORT AND INSTALLATION",
+      "scope": "single",
+      "predicted": [
+        "TRANSPORT AND INSTALLATION"
+      ],
+      "hit": true,
+      "domain_votes": {
+        "TRANSPORT AND INSTALLATION": 5
+      },
+      "reasoning": "5/5 top relations classified as 'TRANSPORT AND INSTALLATION'",
+      "candidate_recall": true,
+      "top_relations": [
+        {
+          "relation_id": "458d98370fd790d29134fe9269c376503f4cb727",
+          "subject": "Contractor",
+          "object": "Company",
+          "label": "must_notify",
+          "vector_score": 0.8282423615455627,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "1c9621b63e852e2581f30ad81c10688fa0f47d3c",
+          "subject": "Marine Warranty Surveyor",
+          "object": "Contractor Items",
+          "label": "oversees_transport",
+          "vector_score": 0.8226228356361389,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "767e880e9887bc76d9abbda91c5262eee44453f8",
+          "subject": "Contractor",
+          "object": "MTV",
+          "label": "responsible_for_engineering",
+          "vector_score": 0.8196735382080078,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "5de8ff4764eb63b7f8e230b4665e307c61afcfe2",
+          "subject": "Contractor",
+          "object": "Marine Warranty Surveyor",
+          "label": "must_comply_with",
+          "vector_score": 0.8164475560188293,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        },
+        {
+          "relation_id": "f63125ae24674a1363a05cdb91a65eea6c56c160",
+          "subject": "detailed loadout procedure",
+          "object": "modules and or large project materials",
+          "label": "must_be_provided_for",
+          "vector_score": 0.8148283958435059,
+          "domains": [
+            "TRANSPORT AND INSTALLATION"
+          ]
+        }
+      ]
+    }
+  ]
+}

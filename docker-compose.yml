@@ -1,0 +1,39 @@
+# Local, production-shaped smoke test: builds both images and wires them
+# together exactly like the two Azure Container Apps will be wired (frontend
+# reaches the backend over the compose network, not localhost/CORS). Use this
+# to validate the Dockerfiles before pushing to ACR.
+#
+#   docker compose up --build
+#   open http://localhost:3000
+#
+# Reads secrets from the root .env (already used by `uvicorn --env-file ../.env`
+# today) -- do not commit real values, this file only references the var names.
+
+services:
+  backend:
+    build:
+      context: ./chatbot
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    ports:
+      - "7060:7060"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7060/pipeline/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ./web/pipeline-ui
+      dockerfile: Dockerfile
+    environment:
+      # "backend" resolves via Docker's internal DNS to the service above --
+      # same relationship as the Container Apps internal FQDN in production.
+      PIPELINE_API_URL: http://backend:7060
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy

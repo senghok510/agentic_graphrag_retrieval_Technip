@@ -1,0 +1,190 @@
+[
+  {
+    "question": "Which approved vendor for copper alloy valves with a flanged connection and pressure rating of ≤ 150 # also supplies gate valves and globe valves with a nominal diameter of ≥ 2 inches?",
+    "reference_answer": "Shipham is an approved vendor for copper alloy valves with a flanged connection and pressure rating of ≤ 150 # and also supplies gate valves and globe valves with a nominal diameter of ≥ 2 inches.",
+    "question_type": "bridge",
+    "gold_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_11_Exhibit_I_Major_Subcontractors_and_Vendors_Rev_0_20241216_pdf_size_541323_page_20_text_chunk_2",
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_11_Exhibit_I_Major_Subcontractors_and_Vendors_Rev_0_20241216_pdf_size_541323_page_21_text_chunk_1"
+    ],
+    "gold_relation_ids": [
+      "00e60bbe68791edf3e7f3c840f891d4337930729",
+      "bd921991b29f4e0100b35bee75c01ae2296bc902"
+    ],
+    "gold_entity_keys": [
+      "630ce4a19db0cd824d9be059d7d5b9fb1f686020",
+      "abff24f1722e75d914fe7e13c0635e1306dec9e3",
+      "c178449e403a225f6f0d40c7df9841999423aaf2"
+    ],
+    "gold_entity_names": [
+      "Shipham",
+      "Copper alloy (flanged ≤ 150 #)",
+      "Gate Valves – Globe valves (ND ≥ 2\")"
+    ],
+    "sampler": "path",
+    "n_hops": 2,
+    "n_distinct_chunks": 2,
+    "spans_files": 1,
+    "via_hub": false,
+    "sampled_relation_ids": [
+      "00e60bbe68791edf3e7f3c840f891d4337930729",
+      "bd921991b29f4e0100b35bee75c01ae2296bc902",
+      "4587e41adeab2cb573c07d7e1c2973017e4d5edf"
+    ],
+    "sampled_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_11_Exhibit_I_Major_Subcontractors_and_Vendors_Rev_0_20241216_pdf_size_541323_page_20_text_chunk_2",
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_11_Exhibit_I_Major_Subcontractors_and_Vendors_Rev_0_20241216_pdf_size_541323_page_21_text_chunk_1"
+    ],
+    "judge": {
+      "faithfulness": 5,
+      "multihop_necessity": 5,
+      "answer_completeness": 5,
+      "answer_independence": 5,
+      "clarity": 5,
+      "accept": true,
+      "reason": "The answer is faithful to the evidence, requires multi-hop reasoning across two chunks, is complete, independent of the question, and clearly resolves the connection asked."
+    },
+    "gen_reasoning": "Answering this requires connecting Shipham's approval for copper alloy valves (R1) with its supply of gate and globe valves (R2)."
+  },
+  {
+    "question": "How is Appendix E14 – FEED Technical Workshop Close Out Report connected to Exhibit E – Design Dossier?",
+    "reference_answer": "Appendix E14 – FEED Technical Workshop Close Out Report is updated in a native spreadsheet format, which will be incorporated into Exhibit E – Design Dossier before its finalisation.",
+    "question_type": "bridge",
+    "gold_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_07_Exhibit_E_Design_Dossier_Rev_2_20250808_Clean_pdf_size_249277_page_18_text_chunk_1",
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_07_Exhibit_E_Design_Dossier_Rev_2_20250808_Clean_pdf_size_249277_page_20_text_chunk_1"
+    ],
+    "gold_relation_ids": [
+      "cfc447dce1c90dd1b76a74f28baf929997fc2f23",
+      "9e208d0ddf75eab64de6d5059d2a0333a02aa675"
+    ],
+    "gold_entity_keys": [
+      "3ab5ac6c7a928bfacb34d9d0d4342e33e5393c09",
+      "a72eedf75fe9819658d328f8861519c22ce1f387",
+      "c4d6730dcc7b8d4c3db13e1ca11bc213a53f5c39"
+    ],
+    "gold_entity_names": [
+      "Exhibit E – Design Dossier",
+      "APPENDIX E14 – FEED TECHNICAL WORKSHOP CLOSE OUT REPORT",
+      "native spreadsheet"
+    ],
+    "sampler": "path",
+    "n_hops": 2,
+    "n_distinct_chunks": 2,
+    "spans_files": 1,
+    "via_hub": false,
+    "sampled_relation_ids": [
+      "cfc447dce1c90dd1b76a74f28baf929997fc2f23",
+      "9e208d0ddf75eab64de6d5059d2a0333a02aa675",
+      "c69870d5c1f891d3659535cbb587f8cdd02612c2"
+    ],
+    "sampled_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_07_Exhibit_E_Design_Dossier_Rev_2_20250808_Clean_pdf_size_249277_page_18_text_chunk_1",
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_07_Exhibit_E_Design_Dossier_Rev_2_20250808_Clean_pdf_size_249277_page_20_text_chunk_1"
+    ],
+    "judge": {
+      "faithfulness": 5,
+      "multihop_necessity": 5,
+      "answer_completeness": 5,
+      "answer_independence": 5,
+      "clarity": 5,
+      "accept": true,
+      "reason": "The answer is faithful to the evidence, requires multiple chunks to resolve, is complete, independent of the question, and clearly explains the connection."
+    },
+    "gen_reasoning": "The connection requires combining the fact that Appendix E14 is updated in a native spreadsheet (R1) with the fact that this native spreadsheet will be incorporated into Exhibit E – Design Dossier (R2)."
+  },
+  {
+    "question": "Which system includes equipment that must be commissioned no later than 2 months prior to the start of the SDP-7 2028 T1 Pit Stop Shut-down Campaign?",
+    "reference_answer": "System L551-818 includes the LP Flash Additional PSV-002, which must be commissioned no later than 2 months prior to the start of the SDP-7 2028 T1 Pit Stop Shut-down Campaign.",
+    "question_type": "bridge",
+    "gold_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_03_Exhibit_A8_Completions_Pre-Commissioning_Commissioning_and_Handover_Rev_2_20250808_Clean_pdf_size_585049_page_15_text_chunk_2",
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_05_Exhibit_C_Work_Time_Schedule_Rev_3_20250808_Clean_pdf_size_392463_page_11_text_chunk_1"
+    ],
+    "gold_relation_ids": [
+      "f3b8c428070d61bc381bd2dcc9623d80453fedd8",
+      "a96eed864afeaf29c12f9f16563bacb76ea0fc12"
+    ],
+    "gold_entity_keys": [
+      "3ac68f8eb88316b0d435d9c531df58c8524f919c",
+      "99f2d8eff9fdf9d29f129cdc2eec0b3224dcfb15",
+      "c5d00b7db683d0b93f798b8da7c1ed52dcf8a3b6"
+    ],
+    "gold_entity_names": [
+      "LP Flash Additional PSV-002",
+      "SDP-7 2028 T1 Pit Stop Shut-down Campaign",
+      "L551-818"
+    ],
+    "sampler": "multiseed",
+    "n_hops": 2,
+    "n_distinct_chunks": 2,
+    "spans_files": 2,
+    "via_hub": false,
+    "sampled_relation_ids": [
+      "446ea8f036c5b0583186591196a5eebd3ab6949e",
+      "f3b8c428070d61bc381bd2dcc9623d80453fedd8",
+      "a96eed864afeaf29c12f9f16563bacb76ea0fc12"
+    ],
+    "sampled_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_03_Exhibit_A8_Completions_Pre-Commissioning_Commissioning_and_Handover_Rev_2_20250808_Clean_pdf_size_585049_page_15_text_chunk_2",
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_C_-_05_Exhibit_C_Work_Time_Schedule_Rev_3_20250808_Clean_pdf_size_392463_page_11_text_chunk_1"
+    ],
+    "judge": {
+      "faithfulness": 5,
+      "multihop_necessity": 5,
+      "answer_completeness": 5,
+      "answer_independence": 5,
+      "clarity": 5,
+      "accept": true,
+      "reason": "The answer is faithful to the evidence, requires multi-hop reasoning across multiple chunks, is complete, independent of the question, and clearly resolves the connection asked."
+    },
+    "gen_reasoning": "The answer requires combining the fact that LP Flash Additional PSV-002 must meet the deadline (R2) with the fact that it is included in System L551-818 (R3)."
+  },
+  {
+    "question": "Does the Main Technical Pack Submission indirectly include the Common Pipe Rack Modular Assemblies?",
+    "reference_answer": "Yes, the Main Technical Pack Submission indirectly includes the Common Pipe Rack Modular Assemblies. This is because the Main Technical Pack Submission includes the functional group LER/LIR (evidence from chunk ROC_INPEX_Inpex_AGRU_CCS__FEED_validation_contract_Received_via_Ariba_03_Minor_Contract_Exhibit-B_Compensation_pdf_size_130182_page_3_text_chunk_2), and LER/LIR includes the Common Pipe Rack Modular Assemblies (evidence from chunk ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_B_-_Input_Exhibit_C_-_Work_Time_Schedule_Rev0_20241216_xlsx_size_33325_sheet_Exhibit_C_chunk_35).",
+    "question_type": "bridge",
+    "gold_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_B_-_Input_Exhibit_C_-_Work_Time_Schedule_Rev0_20241216_xlsx_size_33325_sheet_Exhibit_C_chunk_35",
+      "ROC_INPEX_Inpex_AGRU_CCS__FEED_validation_contract_Received_via_Ariba_03_Minor_Contract_Exhibit-B_Compensation_pdf_size_130182_page_3_text_chunk_2"
+    ],
+    "gold_relation_ids": [
+      "e53333598978a9148de62fcf770fc770ced3412e",
+      "ce45169a66967020ded597701cb0be9983167a27"
+    ],
+    "gold_entity_keys": [
+      "38b91a1ced6e032b0e24260795d06720003b7074",
+      "7e844d3acb1fd24d28269acb565c8130547a4649",
+      "e2ba32cd2e5665ba47100216a6acb34c55d29511"
+    ],
+    "gold_entity_names": [
+      "Main Technical Pack Submission",
+      "LER/LIR",
+      "Common Pipe Rack Modular Assemblies"
+    ],
+    "sampler": "path",
+    "n_hops": 2,
+    "n_distinct_chunks": 2,
+    "spans_files": 2,
+    "via_hub": false,
+    "sampled_relation_ids": [
+      "93940e552fca81d91454480fcfa7e07745eeb06c",
+      "e53333598978a9148de62fcf770fc770ced3412e",
+      "ce45169a66967020ded597701cb0be9983167a27"
+    ],
+    "sampled_chunk_ids": [
+      "ROC_INPEX_ITT_Ichthys_Onshore_AGRU_Upgrade_and_CCS_EPC_Contract_WS33071728_ITT_Part_B_-_Input_Exhibit_C_-_Work_Time_Schedule_Rev0_20241216_xlsx_size_33325_sheet_Exhibit_C_chunk_35",
+      "ROC_INPEX_Inpex_AGRU_CCS__FEED_validation_contract_Received_via_Ariba_03_Minor_Contract_Exhibit-B_Compensation_pdf_size_130182_page_3_text_chunk_2"
+    ],
+    "judge": {
+      "faithfulness": 5,
+      "multihop_necessity": 5,
+      "answer_completeness": 5,
+      "answer_independence": 5,
+      "clarity": 5,
+      "accept": true,
+      "reason": "The answer is faithful to the evidence, requires multi-hop reasoning across two relations, is complete, independent of the question, and clearly resolves the connection."
+    },
+    "gen_reasoning": "The question requires connecting the Main Technical Pack Submission to the Common Pipe Rack Modular Assemblies through the intermediate entity LER/LIR, which is supported by evidence from two different chunks."
+  }
+]

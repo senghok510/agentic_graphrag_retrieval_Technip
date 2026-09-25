@@ -1,0 +1,349 @@
+{
+  "document": {
+    "definition": "A self-contained tender or contract artifact that stands alone as a deliverable — a top-level Exhibit (e.g. Exhibit A, Exhibit A7, Exhibit M), a named map, report, plan, drawing, or specification that has its own document number or title. DO NOT use for Appendices or numbered sub-sections of an Exhibit (e.g. Appendix A1.3, Appendix A1.4) — those are sections.",
+    "examples": [
+      "Exhibit A – Scope of Work",
+      "Exhibit A7 – Traffic Management Plan",
+      "Exhibit M – Contractor's Organisation and Key Personnel",
+      "Site Installed Plant Envelope Map",
+      "Technical Specification for CCS Compressor Package",
+      "Vendor Data Requirements List (VDRL)"
+    ]
+  },
+  "section": {
+    "definition": "A numbered or named subdivision INSIDE a document — a chapter, clause group, appendix, or sub-exhibit whose locator is tied to its parent (e.g. Appendix A1.3 lives inside Exhibit A1). Use this for anything prefixed Appendix, Schedule, Annex, or Section when it is a sub-part of a larger document. DO NOT use for top-level Exhibits (Exhibit A, Exhibit B, Exhibit A7, etc.) — those are documents.",
+    "examples": [
+      "Appendix A1.3 - ILNG Facility Roads and Other Areas",
+      "Appendix A1.4 - Site Installed Plant Envelope Map",
+      "Section 5 – Site Authorisations",
+      "Schedule 1 – General Conditions",
+      "Annex II – Project Coordination Procedure"
+    ]
+  },
+  "clause": {
+    "definition": "A single, atomic contractual provision identified by a clause number — the smallest contractually binding unit of text. It expresses one obligation, requirement, condition, or definition.",
+    "examples": [
+      "Clause 12.4 (Liquidated Damages)",
+      "Article 8.1",
+      "Sub-clause 17.2(b)",
+      "GCC Clause 4.6 — Right to Suspend"
+    ]
+  },
+  "test": {
+    "definition": "A defined verification or qualification activity with explicit pass/fail criteria, performed at a specific point in the project lifecycle to demonstrate compliance of equipment, systems, or work.",
+    "examples": [
+      "Performance Test 3 (PT3)",
+      "Factory Acceptance Test (FAT)",
+      "Site Acceptance Test (SAT)",
+      "Hydrostatic Test",
+      "Reliability Run Test",
+      "Mechanical Completion Test"
+    ]
+  },
+  "functional_group": {
+    "definition": "A grouping of equipment or systems by engineering function or discipline — not a single tagged system. Used in EPC scope breakdowns to bundle related systems for design, procurement, or testing purposes.",
+    "examples": [
+      "Safety Systems",
+      "Utility Systems",
+      "Static Equipment",
+      "Rotating Equipment",
+      "Process Systems",
+      "Electrical Distribution"
+    ]
+  },
+  "system": {
+    "definition": "A physical or logical engineered subsystem of the plant or product being delivered — typically identified by a tag, unit number, or named function. The lowest level at which Mechanical Completion and commissioning are tracked. Distinct from individual equipment items: a system is composed of equipment.",
+    "examples": [
+      "CCS Unit 1",
+      "Cooling Water System",
+      "Fire & Gas Detection System",
+      "HV Switchgear",
+      "Closed Drain System"
+    ]
+  },
+  "equipment": {
+    "definition": "A specific tagged physical item installed in or supplied to the plant — pumps, vessels, valves, motors, instruments, heat exchangers. Identified by an equipment tag number such as P-101 or V-2305. Lower granularity than a system; equipment is what a system is built from.",
+    "examples": [
+      "Pump P-101",
+      "Vessel V-2305",
+      "Control Valve XV-410",
+      "Motor M-301",
+      "Pressure Transmitter PT-205",
+      "Heat Exchanger E-104",
+      "ESDV-7001"
+    ]
+  },
+  "material": {
+    "definition": "A substance, material grade, coating, or commodity specified for the work — typically referenced by a standard grade or material specification. Refers to the material itself, not equipment fabricated from it.",
+    "examples": [
+      "ASTM A106 Grade B carbon steel",
+      "Stainless Steel 316L",
+      "Inconel 625",
+      "three-layer FBE coating",
+      "mineral-insulated cable",
+      "neoprene gasket",
+      "glass wool insulation"
+    ]
+  },
+  "requirement": {
+    "definition": "A technical or contractual requirement statement — a 'shall' statement that defines a property, characteristic, or capability the work must possess. Often quantitative.",
+    "examples": [
+      "minimum capacity 500 m³/h",
+      "MTBF shall be greater than 5000 hours",
+      "noise level shall not exceed 85 dB(A) at 1 m",
+      "design pressure 75 barg"
+    ]
+  },
+  "obligation": {
+    "definition": "A legal or contractual duty imposed on a named party — an action verb phrase such as deliver, provide, indemnify, warrant, notify, comply with. Distinct from a technical 'shall' on the work itself.",
+    "examples": [
+      "Contractor shall indemnify Company",
+      "Contractor shall provide a 2-year warranty",
+      "Vendor shall notify within 14 days of any non-conformance",
+      "Bidder shall maintain professional indemnity insurance"
+    ]
+  },
+  "condition": {
+    "definition": "A pre-condition or post-condition that must be satisfied for something else to happen — typically expressed with 'subject to', 'provided that', 'after', 'upon completion of', or 'unless'.",
+    "examples": [
+      "subject to Company approval",
+      "after successful completion of FAT",
+      "upon issuance of the Taking Over Certificate",
+      "provided that all close-out reports have been accepted"
+    ]
+  },
+  "deliverable": {
+    "definition": "A tangible work product that the Contractor or Vendor must hand over to the Company — documents, drawings, hardware, software, spare parts, training, certificates. Each deliverable has an owner, due date, and acceptance criteria.",
+    "examples": [
+      "As-Built Drawings",
+      "Operations & Maintenance Manual",
+      "Spare Parts Package",
+      "Vendor Data Book",
+      "Training Materials",
+      "Material Test Certificates"
+    ]
+
+  },
+  "penalty": {
+    "definition": "A financial or contractual consequence levied for non-compliance, late performance, or breach — typically liquidated damages, performance LDs, retention forfeiture, or cure-period sanctions. Has a stated calculation rule and often a cap.",
+    "examples": [
+      "Liquidated Damages for delay",
+      "Performance LDs for shortfall in capacity",
+      "Cap on liability at 100% of contract price",
+      "Forfeiture of bid bond"
+    ]
+  },
+  "approval": {
+    "definition": "A formal authorisation or sign-off step — a discrete review gate where the Company, Authority, or Engineer must accept a deliverable, design, or activity before work can proceed.",
+    "examples": [
+      "Engineering Drawing Approval",
+      "Code 1 Approval (Approved)",
+      "No Objection Certificate (NOC)",
+      "Authority to Proceed",
+      "Punch-list Close-out Approval"
+    ]
+  },
+  "milestone": {
+    "definition": "A named scheduled event or date marker in the project programme — a fixed point used for progress measurement or contractual gates. Distinct from a payment event: a milestone is a project event, even if a payment is linked to it.",
+    "examples": [
+      "Mechanical Completion (MC)",
+      "Ready for Start-Up (RFSU)",
+      "Substantial Completion",
+      "Taking Over",
+      "Final Acceptance",
+      "Defect Liability Period End"
+    ]
+  },
+  "payment": {
+    "definition": "A scheduled payment, payment milestone, retention release, or invoiceable financial event in the contract payment schedule — the financial event itself. Distinct from `amount` (the figure) and from `milestone` (the project event the payment may be linked to).",
+    "examples": [
+      "Milestone Payment 30% on FAT Completion",
+      "Retention Release at Final Acceptance",
+      "Mobilisation Payment",
+      "Monthly Progress Payment",
+      "Advance Payment",
+      "Punch-list Close-out Payment"
+    ]
+  },
+  "role": {
+    "definition": "A contractual job function or position — the named role itself, not a specific person filling it. Includes Company, Contractor, and third-party functions defined by the contract.",
+    "examples": [
+      "Project Manager",
+      "Company Representative",
+      "QA/QC Inspector",
+      "Authorised Representative",
+      "Independent Verification Body",
+      "Engineer (under FIDIC)"
+    ]
+  },
+  "discipline": {
+    "definition": "An engineering or operational discipline used to organise scope, deliverables, or responsibility — Civil, Mechanical, Process, Electrical, Instrumentation & Control, HSE, Piping, Structural. Distinct from a job role (a role is a position; a discipline is a field of work) and distinct from a functional_group (a discipline is the field; a functional_group is a bundle of equipment).",
+    "examples": [
+      "Civil",
+      "Mechanical",
+      "Process",
+      "Electrical",
+      "Instrumentation & Control",
+      "HSE",
+      "Piping",
+      "Structural",
+      "Telecoms",
+      "Quality"
+    ]
+  },
+  "standard": {
+    "definition": "A formal published technical or industry standard referenced as a compliance basis — issued by a recognised standards body such as API, ASME, ISO, IEC, ANSI, NACE, AS/NZS.",
+    "examples": [
+      "API 650",
+      "ASME VIII Division 1",
+      "ISO 9001:2015",
+      "IEC 61511",
+      "AS/NZS 3000"
+    ]
+  },
+  "regulation": {
+    "definition": "A statutory or legal regulation issued by a government, regulator, or competent authority — has the force of law in a specific jurisdiction. Compliance is not optional.",
+    "examples": [
+      "NT Work Health and Safety Act 2011",
+      "EPBC Act 1999",
+      "NOPSEMA Safety Case Regulations",
+      "OPGGS(R) Regulations",
+      "ADG Code"
+    ]
+  },
+  "permit": {
+    "definition": "A regulatory permit, license, certificate, or authorisation issued by a government body or regulator — required by law before specified work can proceed. Distinct from `approval` (an internal contract gate) and from `regulation` (a permit is the artefact granted under a regulation).",
+    "examples": [
+      "Environmental Permit",
+      "Construction Permit",
+      "Occupancy Certificate",
+      "Hot Work Permit",
+      "Confined Space Entry Permit",
+      "Operating Licence",
+      "Import Permit",
+      "NOPSEMA Operations Authorisation"
+    ]
+  },
+  "organization": {
+    "definition": "A registered legal entity or recognised institutional body — operator, contractor, sub-contractor, vendor, regulator, certifying body, joint-venture partner. Always a named legal person.",
+    "examples": [
+      "INPEX Operations Australia",
+      "Saipem",
+      "Worley",
+      "NOPSEMA",
+      "Lloyd's Register",
+      "TOTAL E&P"
+    ]
+  },
+  "location": {
+    "definition": "A geographic place or fixed facility location — country, state, city, field, plant site, jetty, or named area where work is performed or equipment is installed.",
+    "examples": [
+      "Ichthys Field",
+      "Bladin Point",
+      "Darwin",
+      "Northern Territory, Australia",
+      "Browse Basin",
+      "Module Yard — Batam"
+    ]
+  },
+  "amount": {
+    "definition": "A monetary value with its currency — always extracted as a single string that includes both the number and the currency code or name. Used for contract price, payments, fees, bond values, caps, and any sum of money. Currency on its own is NOT a separate entity; it travels with the value.",
+    "examples": [
+      "AUD 50,000,000",
+      "USD 1.2 million",
+      "EUR 250,000",
+      "Contract Price of AUD 75M",
+      "Bid Bond of 2% of Contract Price",
+      "Cap of USD 10,000,000"
+    ]
+  },
+  "bond": {
+    "definition": "A financial security instrument required by the contract — bid bond, performance bond, advance payment guarantee, parent company guarantee, retention bond, standby letter of credit. Refers to the instrument itself, not the monetary value of it (the value is an `amount`) and not the obligation to provide it (which is an `obligation`).",
+    "examples": [
+      "Bid Bond",
+      "Performance Bond",
+      "Advance Payment Guarantee",
+      "Parent Company Guarantee",
+      "Retention Bond",
+      "Standby Letter of Credit",
+      "Warranty Bond"
+    ]
+  },
+  "insurance": {
+    "definition": "A named insurance policy or coverage type required to be held by Contractor, Vendor, or sub-contractor. Refers to the policy or coverage itself, not the obligation to maintain it (which is an `obligation`) and not the policy limit (which is an `amount`).",
+    "examples": [
+      "Professional Indemnity Insurance",
+      "Construction All Risks (CAR)",
+      "Marine Cargo Insurance",
+      "Workers' Compensation",
+      "Public and Products Liability",
+      "Third-Party Liability",
+      "Employer's Liability",
+      "Business Interruption Insurance"
+    ]
+  },
+  "duration": {
+    "definition": "A time span or period — a length of time, not a specific date. Used for warranty periods, notice periods, cure periods, response times, defect liability windows.",
+    "examples": [
+      "168 hours continuous operation",
+      "30 days written notice",
+      "2-year Defects Liability Period",
+      "14 working days response time",
+      "12-month warranty"
+    ]
+  },
+  "threshold": {
+    "definition": "A non-monetary numerical limit, boundary, or tolerance with its unit of measure — extracted as a single string that includes both the number and the unit. Covers minimums, maximums, ranges, percentages, and tolerances. Unit on its own is NOT a separate entity; it travels with the value.",
+    "examples": [
+      "maximum 5% deviation",
+      "minimum 95% availability",
+      "≤ 30 dB(A) noise level at 1 m",
+      "≥ 99.5 mol% purity",
+      "tolerance ±0.5 mm",
+      "design pressure 75 barg",
+      "minimum capacity 500 m³/h"
+    ]
+  },
+  "term": {
+    "definition": "A defined contractual term whose meaning is fixed by the contract or referenced documents — typically capitalised, listed in a Definitions clause, and used consistently throughout the contract. Extract only when the chunk DEFINES the term, not every time the term is used.",
+    "examples": [
+      "Effective Date",
+      "Substantial Completion",
+      "Force Majeure Event",
+      "Site",
+      "Variation",
+      "Confidential Information"
+    ]
+  },
+  "person": {
+    "definition": "A named individual human — a real person identified by full name. Used for signatories, named representatives, point-of-contact persons, or witnesses.",
+    "examples": [
+      "John Smith (Project Manager)",
+      "Jane Doe (Authorised Representative)",
+      "Dr. Ahmed Hassan (Technical Authority)"
+    ]
+  },
+  "project": {
+    "definition": "The overall named project, programme, or development — the umbrella name under which the contract is executed. Typically branded and singular per ITB.",
+    "examples": [
+      "Ichthys LNG Project",
+      "Browse FLNG Development",
+      "Scarborough Energy Project",
+      "Barossa Project",
+      "Gorgon Stage 2"
+    ]
+  },
+  "risk": {
+    "definition": "An identified risk, hazard, or threat captured in a risk register, HAZID, HAZOP, or contractor risk schedule — the named risk event itself, not the consequence or the mitigation. Used for safety, schedule, commercial, and technical risk tracking.",
+    "examples": [
+      "dropped object during heavy lift",
+      "schedule slippage on long-lead items",
+      "sour gas (H2S) exposure",
+      "weather window contraction",
+      "supplier insolvency",
+      "design change after Issued For Construction",
+      "geotechnical settlement at jetty foundations",
+      "interface clash between EPC packages"
+    ]
+  }
+}

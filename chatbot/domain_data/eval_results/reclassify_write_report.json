@@ -1,0 +1,4141 @@
+{
+  "itb_id": "ROC_INPEX",
+  "mode": "WRITE (--confirm set)",
+  "documents_processed": 84,
+  "mid_relation_tally": {
+    "unchanged": 15,
+    "strictly_more": 58,
+    "different_composition": 8,
+    "strictly_fewer": 3
+  },
+  "low_relation_tally": {
+    "strictly_more": 47,
+    "unchanged": 11,
+    "different_composition": 20,
+    "strictly_fewer": 6
+  },
+  "skipped_domains_tally": [
+    [
+      "high:GENERAL",
+      1
+    ],
+    [
+      "mid:INTELLECTUAL PROPERTY / NDA",
+      1
+    ],
+    [
+      "low:TRANSPORT AND INSTALLATION",
+      1
+    ],
+    [
+      "low:CYBERSECURITY",
+      1
+    ],
+    [
+      "low:LABORATORY",
+      1
+    ],
+    [
+      "low:NAVAL ARCHITECTURE",
+      1
+    ],
+    [
+      "low:FIRED EQUIPMENT",
+      1
+    ],
+    [
+      "low:OFFSHORE STRUCTURE",
+      1
+    ],
+    [
+      "low:OFFSHORE MOBILE SYSTEM",
+      1
+    ],
+    [
+      "low:OFFSHORE BUILDING/ ARCHITECTURE",
+      1
+    ],
+    [
+      "low:ADVANCED SYSTEMS",
+      1
+    ]
+  ],
+  "documents": [
+    {
+      "file_name": "00 Instrument of Agreement.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\00 Instrument of Agreement.pdf",
+      "old_high": [],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL",
+        "RISK MANAGEMENT"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "RISK MANAGEMENT",
+        "COSTS CONTROL"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [
+          "GENERAL"
+        ],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "01 Minor Contract General Conditions - Services (V6 1 August 2023).pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\01 Minor Contract General Conditions - Services (V6 1 August 2023).pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "CONSTRUCTION & COMM. START UP",
+        "INTELLECTUAL PROPERTY / NDA",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [
+          "INTELLECTUAL PROPERTY / NDA"
+        ],
+        "low": [
+          "TRANSPORT AND INSTALLATION"
+        ]
+      },
+      "written": true
+    },
+    {
+      "file_name": "02 Minor Contract_Exhibit-A_Scope of Work.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\02 Minor Contract_Exhibit-A_Scope of Work.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "MATERIALS AND TECHNOLOGY"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "INSTRUMENTATION",
+        "INFORMATION MANAGEMENT",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "03 Minor Contract_Exhibit-B_Compensation.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\03 Minor Contract_Exhibit-B_Compensation.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "FINANCE / TAX"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "04 Minor Contract_Exhibit-H AIP Requirements.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\04 Minor Contract_Exhibit-H AIP Requirements.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "COSTS CONTROL"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Annexure A - Form of Acknowledgement.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Annexure A - Form of Acknowledgement.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Annexure B - Form of Tender.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Annexure B - Form of Tender.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Contract Documents (Exhibits) & Information response templates list_20250430.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0003_Tender Supplement #3 Attachments\\Contract Documents (Exhibits) & Information response templates list_20250430.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "RISK MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Contract Documents (Exhibits) & Information response templates list_20250430.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0003_Tender Supplement #3 Attachments\\Contract Documents (Exhibits) & Information response templates list_20250430.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Exhibit B Tables - Commercial - Ichthys Onshore AGRU Upgrade and CCS Project FEED validation contract.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Exhibit B Tables - Commercial - Ichthys Onshore AGRU Upgrade and CCS Project FEED validation contract.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "COSTS CONTROL"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "ITT - Ichthys Onshore AGRU Upgrade and CCS EPC Contract_ITT Ariba Instructions_Responses.xls",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\ITT - Ichthys Onshore AGRU Upgrade and CCS EPC Contract_ITT Ariba Instructions_Responses.xls",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROCUREMENT",
+        "INTELLECTUAL PROPERTY / NDA",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": [
+          "CYBERSECURITY"
+        ]
+      },
+      "written": true
+    },
+    {
+      "file_name": "ITT Instructions Conditions and Acknowledgement of Tendering.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\ITT Instructions Conditions and Acknowledgement of Tendering.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "ITT Part B - Information Requested by Company_AIP.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\ITT Part B - Information Requested by Company_AIP.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [],
+      "low_relation": "strictly_fewer",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "ITT Part B - Information Requested by Company_HRIR.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\ITT Part B - Information Requested by Company_HRIR.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "HSE MANAGEMENT",
+        "RISK MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "ITT Part B - Information Requested by Company_Technical.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\ITT Part B - Information Requested by Company_Technical.docx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Package A (Contractual Evaluation Pack) Submission Requirement.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Package A Submission\\Package A (Contractual Evaluation Pack) Submission Requirement.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "ROC_INPEX/ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract/ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract_Doc Register as of 08 Aug 25.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract_Doc Register as of 08 Aug 25.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "ROC_INPEX/Inpex AGRU CCS _FEED validation contract_Received via Ariba/ITT Part B - Information Requested by Company_Quality.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\ITT Part B - Information Requested by Company_Quality.docx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ENGINEERING",
+        "PROJECT MANAGEMENT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "DOCUMENT CONTROL"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Ref L290-AQ-SPC-70001_0_REVIEWED_IFU.PDF",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Ref L290-AQ-SPC-70001_0_REVIEWED_IFU.PDF",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "INSTRUMENTATION",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "ELECTRICAL",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": [
+          "LABORATORY"
+        ]
+      },
+      "written": true
+    },
+    {
+      "file_name": "Template - Log of Tenderers Commercial Qualifications Rev0.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Template - Log of Tenderers Commercial Qualifications Rev0.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Template - Log of Tenderers Contractual Qualifications Rev0.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Template - Log of Tenderers Contractual Qualifications Rev0.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "Template - Log of Tenderers Technical Qualifications Rev0.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Inpex AGRU CCS _FEED validation contract_Received via Ariba\\Template - Log of Tenderers Technical Qualifications Rev0.docx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_fewer",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL"
+      ],
+      "low_relation": "strictly_fewer",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0001_Tender Supplement #1 - Updated Design Dossier (Jan25).pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0001_Tender Supplement #1 - Updated Design Dossier (Jan25).pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "FIRED EQUIPMENT",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONTROL SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": [
+          "NAVAL ARCHITECTURE",
+          "FIRED EQUIPMENT",
+          "OFFSHORE STRUCTURE"
+        ]
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0002_Tender Supplement #2 Update Design Dossier #2 & Contract Documents #1(Apr25).pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0002_Tender Supplement #2 Update Design Dossier #2 & Contract Documents #1(Apr25).pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": [
+          "OFFSHORE MOBILE SYSTEM",
+          "OFFSHORE BUILDING/ ARCHITECTURE"
+        ]
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0003_Tender Supplement #3 - Updated Design Dossier #3  Contract Documents (Exhibits)  Information response templates #2 (End April2025).pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0003_Tender Supplement #3 - Updated Design Dossier #3  Contract Documents (Exhibits)  Information response templates #2 (End April2025).pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "ELECTRICAL"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "FIRED EQUIPMENT",
+        "CIVIL / STRUCTURAL",
+        "OFFSHORE BUILDING/ ARCHITECTURE",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0004_Company_FEED_Value_Enhancement_Optimisation_Update.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0004_Company_FEED_Value_Enhancement_Optimisation_Update.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL",
+        "SUBCONTRACTING",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "MATERIALS AND TECHNOLOGY",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "PIPING INSTALLATION",
+        "SCHEDULE MANAGEMENT",
+        "ELECTRICAL",
+        "PRESSURE VESSELS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "CIVIL / STRUCTURAL",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0005_Tender Supplement #4 - Updated Design Dossier (EndMay25).pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0005_Tender Supplement #4 - Updated Design Dossier (EndMay25).pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "FIRED EQUIPMENT",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0006_Company_FEED_Value_Enhancement_Optimisation_Update.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0006_Company_FEED_Value_Enhancement_Optimisation_Update.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "PROJECT EXECUTION SYSTEMS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "MATERIALS AND TECHNOLOGY",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "TRANSPORT AND INSTALLATION",
+        "INSTRUMENTATION",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0007_Amendment to Tender Submission Timeline.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0007_Amendment to Tender Submission Timeline.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "SUBCONTRACTING"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0008_Design Dossier Minor Update.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0008_Design Dossier Minor Update.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "FIRED EQUIPMENT",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONTROL SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0009_Company_FEED_Value_Enhancement_Optimisation_Update_.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0009_Company_FEED_Value_Enhancement_Optimisation_Update_.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONTROL SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0010_Attachment 2_VE Opportunities.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0010_Attachment 2_VE Opportunities.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "PIPING INSTALLATION",
+        "RISK MANAGEMENT"
+      ],
+      "new_low": [
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "TELECOMMUNICATIONS",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0010_Company_FEED_Value_Enhancement_Optimisation_Update.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0010_Company_FEED_Value_Enhancement_Optimisation_Update.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "MATERIALS AND TECHNOLOGY",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "PRESSURE VESSELS",
+        "COSTS CONTROL",
+        "INSTRUMENTATION",
+        "CIVIL / STRUCTURAL"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0011_Tender Supplement #5 - Updated Design Dossier (Aug25).pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0011_Tender Supplement #5 - Updated Design Dossier (Aug25).pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL",
+        "PIPELINES",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "OFFSHORE MOBILE SYSTEM",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "FIRED EQUIPMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "ADVANCED SYSTEMS",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": [
+          "ADVANCED SYSTEMS"
+        ]
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0012 CO2 Compressor Update.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0012 CO2 Compressor Update.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "ENGINEERING",
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [
+        "PROJECT EXECUTION SYSTEMS",
+        "MATERIALS AND TECHNOLOGY",
+        "ROTATING EQUIPMENT"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PACKAGE",
+        "SUBCONTRACTING"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728 -TB-0013_Optional Relaxation to CO2 Export Stream Water Count and Brownfield Works Amendments.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\2.0 Tender Supplements\\WS33071728 -TB-0013_Optional Relaxation to CO2 Export Stream Water Count and Brownfield Works Amendments.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "RISK MANAGEMENT"
+      ],
+      "new_low": [
+        "SUBCONTRACTING",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "PIPING INSTALLATION",
+        "RISK MANAGEMENT",
+        "PRESSURE VESSELS",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part A - Conditions of Tendering_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part A - Conditions of Tendering_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "COSTS CONTROL",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part A - Form of Acknowledgement_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part A - Form of Acknowledgement_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "PACKAGE"
+      ],
+      "new_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "HSE MANAGEMENT",
+        "SCHEDULE MANAGEMENT",
+        "SUBCONTRACTING"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part A - Form of Tender_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part A - Form of Tender_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part A - Log of Clarifications (Commercial)_Rev[X].xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part A - Log of Clarifications (Commercial)_Rev[X].xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "ENGINEERING",
+        "LEGAL / CONTRACT",
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part A - Log of Clarifications (Contractual)_Rev[X].xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part A - Log of Clarifications (Contractual)_Rev[X].xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part A - Log of Clarifications (Technical)_Rev[X].xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part A - Log of Clarifications (Technical)_Rev[X].xlsx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit A7- Site Construction_Rev0_20241216.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit A7- Site Construction_Rev0_20241216.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_fewer",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [],
+      "low_relation": "strictly_fewer",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit B - Compensation_Rev1_20250430.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit B - Compensation_Rev1_20250430.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "ADVANCED SYSTEMS",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit B - Compensation_Rev2_20250808.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit B - Compensation_Rev2_20250808.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit C - Work Time Schedule_Rev.1_20250404.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit C - Work Time Schedule_Rev.1_20250404.xlsx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "SUBCONTRACTING",
+        "PACKAGE",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "PRESSURE VESSELS",
+        "TRANSPORT AND INSTALLATION",
+        "TELECOMMUNICATIONS",
+        "INSTRUMENTATION",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit C - Work Time Schedule_Rev0_20241216.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit C - Work Time Schedule_Rev0_20241216.xlsx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "SUBCONTRACTING",
+        "PACKAGE",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "PRESSURE VESSELS",
+        "TELECOMMUNICATIONS",
+        "INSTRUMENTATION",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit K - Company Items and Novated Contracts_Rev0_20241216.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit K - Company Items and Novated Contracts_Rev0_20241216.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "ELECTRICAL",
+        "TRANSPORT AND INSTALLATION",
+        "INFORMATION MANAGEMENT",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Input_Exhibit M - Contractors Organisation and Key Personnel_Rev0_20241216.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Input_Exhibit M - Contractors Organisation and Key Personnel_Rev0_20241216.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Questionnaire_Exhibit F_HSES_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Questionnaire_Exhibit F_HSES_Rev0_20241216.docx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "PROJECT MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "RISK MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Questionnaire_Exhibit H_AIP_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Questionnaire_Exhibit H_AIP_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [],
+      "low_relation": "strictly_fewer",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Questionnaire_General_Anti Bribery and Corruption_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Questionnaire_General_Anti Bribery and Corruption_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Questionnaire_General_Financial Due Diligence_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Questionnaire_General_Financial Due Diligence_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT",
+        "INSURANCE",
+        "FINANCE / TAX"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "INSURANCE",
+        "FINANCE / TAX",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part B - Questionnaire_General_Modern Slavery_Rev0_20241216.docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part B - Questionnaire_General_Modern Slavery_Rev0_20241216.docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 01_Instrument of Agreement_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 01_Instrument of Agreement_Rev.0_20241216.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "RISK MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 02_Schedule 1_Generald Conditions_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 02_Schedule 1_Generald Conditions_Rev.0_20241216.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "ENGINEERING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "INFORMATION TECHNOLOGY",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "CYBERSECURITY",
+        "INFORMATION MANAGEMENT",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A10_Project Interface Plans_Rev.1_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A10_Project Interface Plans_Rev.1_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION",
+        "CONTROL SYSTEMS",
+        "INSTRUMENTATION"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "ELECTRICAL",
+        "CIVIL / STRUCTURAL",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A11_Contractor Provided Services_Rev.2_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A11_Contractor Provided Services_Rev.2_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROJECT EXECUTION SYSTEMS",
+        "MATERIALS AND TECHNOLOGY",
+        "INFORMATION TECHNOLOGY"
+      ],
+      "new_low": [
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "CONSTRUCTION AND PCC&SU",
+        "INFORMATION TECHNOLOGY",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A12_Environmental Conditions_Rev.1_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A12_Environmental Conditions_Rev.1_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "PIPING INSTALLATION",
+        "TRANSPORT AND INSTALLATION",
+        "INFORMATION MANAGEMENT",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A13_Contractor Documentation_Rev.1_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A13_Contractor Documentation_Rev.1_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROJECT EXECUTION SYSTEMS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "ELECTRICAL",
+        "HVAC",
+        "INSTRUMENTATION",
+        "ROTATING EQUIPMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A1_Site Maps_Rev.1_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A1_Site Maps_Rev.1_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "ENGINEERING",
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "HSE MANAGEMENT",
+        "PACKAGE",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "TRANSPORT AND INSTALLATION",
+        "CIVIL / STRUCTURAL"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A3_Engineering_Rev.2_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A3_Engineering_Rev.2_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "CIVIL / STRUCTURAL",
+        "PIPING INSTALLATION",
+        "QUALITY MANAGEMENT",
+        "ELECTRICAL",
+        "CONTROL SYSTEMS",
+        "INSTRUMENTATION",
+        "ROTATING EQUIPMENT",
+        "TELECOMMUNICATIONS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A5_Modul Yard_Rev.2_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A5_Modul Yard_Rev.2_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "CONTROL SYSTEMS",
+        "HVAC",
+        "INSTRUMENTATION",
+        "WEIGHT CONTROL AND MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "HVAC",
+        "ELECTRICAL",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A7_Construction_Rev2.20250808.Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A7_Construction_Rev2.20250808.Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "PIPELINES",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A8_Completions Pre-Commissioning Commissioning and Handover_Rev.2_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A8_Completions Pre-Commissioning Commissioning and Handover_Rev.2_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "HSE MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "ELECTRICAL",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A9_Company Operability Assurance_Rev.1_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A9_Company Operability Assurance_Rev.1_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "COSTS CONTROL",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "MATERIALS AND TECHNOLOGY",
+        "HSE MANAGEMENT",
+        "PACKAGE",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "RISK MANAGEMENT",
+        "LABORATORY",
+        "INSTRUMENTATION",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A_Scope of Work_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A_Scope of Work_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "HSE MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 03_Exhibit A_Scope of Work_Rev.2_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 03_Exhibit A_Scope of Work_Rev.2_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "HSE MANAGEMENT",
+        "PROJECT EXECUTION SYSTEMS",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "ELECTRICAL",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 04_Exhibit B_Compensation_Rev.3_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 04_Exhibit B_Compensation_Rev.3_20250808_Clean.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "ELECTRICAL",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "PACKAGE",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 05_Exhibit C_Work Time Schedule_Rev.3_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 05_Exhibit C_Work Time Schedule_Rev.3_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "PROJECT EXECUTION SYSTEMS",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "SUBCONTRACTING",
+        "PACKAGE",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "PRESSURE VESSELS",
+        "TRANSPORT AND INSTALLATION",
+        "TELECOMMUNICATIONS",
+        "INSTRUMENTATION",
+        "CIVIL / STRUCTURAL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 06_Exhibit D_Performance Guarantees_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 06_Exhibit D_Performance Guarantees_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 07_Exhibit E_Design Dossier_Rev.2_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 07_Exhibit E_Design Dossier_Rev.2_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "ENGINEERING",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "DOCUMENT CONTROL",
+        "PIPELINES",
+        "PROJECT EXECUTION SYSTEMS",
+        "CIVIL / STRUCTURAL"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "PACKAGE",
+        "ROTATING EQUIPMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "ELECTRICAL",
+        "INFORMATION MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 08_Exhibit F_Health Safety Environment and Security (HSES)_Rev.1_20250808_Clean.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 08_Exhibit F_Health Safety Environment and Security (HSES)_Rev.1_20250808_Clean.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)"
+      ],
+      "new_mid": [
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "INFORMATION MANAGEMENT",
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 09_Exhibit G_Quality Requirements_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 09_Exhibit G_Quality Requirements_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "CONSTRUCTION AND PCC&SU",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 10_Exhibit H_Australian Industry Participation Requirements_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 10_Exhibit H_Australian Industry Participation Requirements_Rev.0_20241216.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "different_composition",
+      "old_low": [
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "INFORMATION TECHNOLOGY",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "different_composition",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 11_Exhibit I_Major Subcontractors and Vendors_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 11_Exhibit I_Major Subcontractors and Vendors_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "COSTS CONTROL",
+        "SUBCONTRACTING",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "LABORATORY",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "TELECOMMUNICATIONS",
+        "CIVIL / STRUCTURAL",
+        "MATERIALS AND TECHNOLOGY",
+        "CONTROL SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "INFORMATION MANAGEMENT",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 12_Exhibit J_Human Resources and Industrial Relations Requirements_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 12_Exhibit J_Human Resources and Industrial Relations Requirements_Rev.0_20241216.pdf",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "FINANCE / TAX",
+        "INSURANCE",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "INFORMATION TECHNOLOGY",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 13_Exhibit K_Company Items and Novated Contracts_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 13_Exhibit K_Company Items and Novated Contracts_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "DOCUMENT CONTROL",
+        "PIPELINES",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "ROTATING EQUIPMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPELINES",
+        "CONSTRUCTION AND PCC&SU",
+        "CONTROL SYSTEMS",
+        "RISK MANAGEMENT",
+        "PIPING INSTALLATION",
+        "ELECTRICAL",
+        "TRANSPORT AND INSTALLATION",
+        "TELECOMMUNICATIONS",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "INFORMATION MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 14_Exhibit L_Project Controls_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 14_Exhibit L_Project Controls_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "INSURANCE"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "CONSTRUCTION & COMM. START UP",
+        "INSURANCE",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "INFORMATION MANAGEMENT",
+        "COSTS CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SCHEDULE MANAGEMENT",
+        "RISK MANAGEMENT"
+      ],
+      "new_low": [
+        "INFORMATION TECHNOLOGY",
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "RISK MANAGEMENT",
+        "CYBERSECURITY",
+        "COSTS CONTROL",
+        "TRANSPORT AND INSTALLATION",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part C - 15_Exhibit M_Contractor's Organisation and Key Personnel_Rev.0_20241216.pdf",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part C - 15_Exhibit M_Contractor's Organisation and Key Personnel_Rev.0_20241216.pdf",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [
+        "HSE MANAGEMENT",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "SUBCONTRACTING"
+      ],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "HSE MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "CONSTRUCTION AND PCC&SU",
+        "SCHEDULE MANAGEMENT"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part D - Log of Qualification (Commercial)_Rev[X].docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part D - Log of Qualification (Commercial)_Rev[X].docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "strictly_fewer",
+      "old_low": [
+        "DOCUMENT CONTROL"
+      ],
+      "new_low": [],
+      "low_relation": "strictly_fewer",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part D - Log of Qualification (Contractual)_Rev[X].docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part D - Log of Qualification (Contractual)_Rev[X].docx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "LEGAL / CONTRACT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [],
+      "new_low": [],
+      "low_relation": "unchanged",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT Part D - Log of Qualification (Technical)_Rev[X].docx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\ITT_Ichthys Onshore AGRU Upgrade and CCS EPC Contract\\WS33071728_ITT Part D - Log of Qualification (Technical)_Rev[X].docx",
+      "old_high": [
+        "TECHNICAL"
+      ],
+      "new_high": [
+        "TECHNICAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "PROJECT MANAGEMENT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "PROCUREMENT"
+      ],
+      "mid_relation": "unchanged",
+      "old_low": [
+        "DOCUMENT CONTROL",
+        "QUALITY MANAGEMENT"
+      ],
+      "new_low": [
+        "DOCUMENT CONTROL"
+      ],
+      "low_relation": "strictly_fewer",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    },
+    {
+      "file_name": "WS33071728_ITT_Package A Contractual Evaluation Pack Submission_April 2025.xlsx",
+      "doc_url": "file://c:\\Users\\hseng\\Documents\\gds_tender_test\\ROC_INPEX\\Package A Submission\\WS33071728_ITT_Package A Contractual Evaluation Pack Submission_April 2025.xlsx",
+      "old_high": [
+        "NON-TECHNICAL"
+      ],
+      "new_high": [
+        "GENERAL"
+      ],
+      "old_mid": [
+        "PROCUREMENT",
+        "LEGAL / CONTRACT"
+      ],
+      "new_mid": [
+        "PROJECT MANAGEMENT",
+        "FINANCE / TAX",
+        "CONSTRUCTION & COMM. START UP",
+        "ENGINEERING",
+        "INTELLECTUAL PROPERTY / NDA",
+        "PROCUREMENT",
+        "PROCESS & HSED (SAFETY IN DESIGN)",
+        "LEGAL / CONTRACT"
+      ],
+      "mid_relation": "strictly_more",
+      "old_low": [],
+      "new_low": [
+        "QUALITY MANAGEMENT",
+        "SUBCONTRACTING",
+        "DOCUMENT CONTROL",
+        "PROJECT EXECUTION SYSTEMS",
+        "PIPING INSTALLATION",
+        "NAVAL ARCHITECTURE",
+        "INSTRUMENTATION",
+        "ONSHORE BUILDING/ ARCHITECTURE",
+        "INFORMATION MANAGEMENT",
+        "WEIGHT CONTROL AND MANAGEMENT",
+        "RISK MANAGEMENT",
+        "HSE MANAGEMENT",
+        "PIPELINES",
+        "HVAC",
+        "ELECTRICAL",
+        "INFORMATION TECHNOLOGY",
+        "MATERIALS AND TECHNOLOGY",
+        "CONSTRUCTION AND PCC&SU",
+        "TRANSPORT AND INSTALLATION",
+        "COSTS CONTROL",
+        "SCHEDULE MANAGEMENT",
+        "OFFSHORE STRUCTURE",
+        "ROTATING EQUIPMENT",
+        "PACKAGE",
+        "PRESSURE VESSELS",
+        "CIVIL / STRUCTURAL",
+        "CYBERSECURITY"
+      ],
+      "low_relation": "strictly_more",
+      "newly_created_domains": {
+        "high": [],
+        "mid": [],
+        "low": []
+      },
+      "written": true
+    }
+  ]
+}
