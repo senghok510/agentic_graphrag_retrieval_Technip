@@ -13,13 +13,12 @@ import json
 import logging
 import os
 from functools import lru_cache
-from typing import List
 
 import numpy as np
 
 from ..config.appSettings import (
-    get_openai_client,
     embed_document_large_model,
+    get_openai_client,
 )
 from ..services.neo4j_service import get_driver
 
@@ -50,6 +49,7 @@ def neo4j_driver():
 
 
 # ── LLM helpers (verbatim behaviour from the notebooks) ──────────────────────
+
 
 def call_json(system_prompt: str, user_prompt: str) -> dict:
     """One chat completion constrained to a JSON object, parsed to a dict."""
@@ -90,7 +90,10 @@ def validate_model(data: dict, model_cls):
 
 # ── Embedding helpers ────────────────────────────────────────────────────────
 
-def embed_texts_large_model(texts: List[str], dimensions: int = EMBED_DIMENSIONS) -> List[List[float]]:
+
+def embed_texts_large_model(
+    texts: list[str], dimensions: int = EMBED_DIMENSIONS
+) -> list[list[float]]:
     """Batched embeddings for a list of texts (relations, questions, etc.)."""
     response = openai_client().embeddings.create(
         model=EMBED_MODEL,
@@ -100,12 +103,13 @@ def embed_texts_large_model(texts: List[str], dimensions: int = EMBED_DIMENSIONS
     return [item.embedding for item in response.data]
 
 
-def embed_text(text: str, dimensions: int = EMBED_DIMENSIONS) -> List[float]:
+def embed_text(text: str, dimensions: int = EMBED_DIMENSIONS) -> list[float]:
     """Single-text embedding (delegates to the app helper)."""
     return embed_document_large_model(text, dimensions=dimensions)
 
 
 # ── Numeric helpers ──────────────────────────────────────────────────────────
+
 
 def _l2(v):
     v = np.asarray(v, dtype=np.float64)

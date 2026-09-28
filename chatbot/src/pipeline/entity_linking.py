@@ -23,7 +23,7 @@ import logging
 import re
 from collections import defaultdict
 from difflib import SequenceMatcher
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from .clients import call_json, neo4j_driver
 
@@ -112,11 +112,30 @@ RETURN ck AS chunk_id,
        connected_entities
 """
 
-_LINK_STOP = {"the", "a", "an", "and", "or", "of", "to", "for", "in", "on", "with", "by", "from",
-              "about", "requirement", "requirements", "related", "relevant"}
+_LINK_STOP = {
+    "the",
+    "a",
+    "an",
+    "and",
+    "or",
+    "of",
+    "to",
+    "for",
+    "in",
+    "on",
+    "with",
+    "by",
+    "from",
+    "about",
+    "requirement",
+    "requirements",
+    "related",
+    "relevant",
+}
 
 
 # ── Text helpers ─────────────────────────────────────────────────────────────
+
 
 def truncate_text(text: str, max_chars: int = 500) -> str:
     if not text:
@@ -133,7 +152,8 @@ def _norm(text: str) -> str:
 
 # ── Lucene builders + lexical scoring (evaluate_lightrag.py) ─────────────────
 
-def _entity_hint_variants(entity_hints: List[str]) -> Dict[str, List[str]]:
+
+def _entity_hint_variants(entity_hints: list[str]) -> dict[str, list[str]]:
     variants = {}
     for hint in entity_hints:
         base = (hint or "").strip()
@@ -158,7 +178,7 @@ def _entity_hint_variants(entity_hints: List[str]) -> Dict[str, List[str]]:
     return variants
 
 
-def _build_loose_lucene(entity_hints: List[str]) -> str:
+def _build_loose_lucene(entity_hints: list[str]) -> str:
     loose, variants = [], _entity_hint_variants(entity_hints)
     for hint in entity_hints:
         for form in variants.get(hint, [hint]):
@@ -176,8 +196,16 @@ def _score_entity_candidates(rows, entity_hints, category_hints=None, relation_h
     max_ft = max([float(r.get("ft_score") or 0.0) for r in rows] or [1.0])
     out = []
     for row in rows:
-        names = [x for x in [row.get("entity_name"), row.get("normalized_name"),
-                             row.get("llm_category"), *row.get("aliases", [])] if x]
+        names = [
+            x
+            for x in [
+                row.get("entity_name"),
+                row.get("normalized_name"),
+                row.get("llm_category"),
+                *row.get("aliases", []),
+            ]
+            if x
+        ]
         best_sim, matched = 0.0, []
         for hint in entity_hints:
             hn = _norm(hint)
@@ -202,27 +230,42 @@ def _score_entity_candidates(rows, entity_hints, category_hints=None, relation_h
             best_sim = max(best_sim, m)
         rel_types = [x for x in row.get("relation_types", []) if x]
         ft_norm = float(row.get("ft_score") or 0.0) / max_ft
-        score = (0.70 * ft_norm + 0.20 * best_sim + 0.05 * len(matched)
-                 + 0.03 * len(relation_hints & set(rel_types)))
+        score = (
+            0.70 * ft_norm
+            + 0.20 * best_sim
+            + 0.05 * len(matched)
+            + 0.03 * len(relation_hints & set(rel_types))
+        )
         if row.get("canonical_category") in category_hints:
             score += 0.02
-        out.append({**row, "matched_hints": matched,
-                    "best_hint_similarity": best_sim, "local_score": score, "seed_score": score,
-                    "source": "entity_fulltext", "source_scores": {"entity_fulltext": score}})
+        out.append(
+            {
+                **row,
+                "matched_hints": matched,
+                "best_hint_similarity": best_sim,
+                "local_score": score,
+                "seed_score": score,
+                "source": "entity_fulltext",
+                "source_scores": {"entity_fulltext": score},
+            }
+        )
     out.sort(key=lambda x: x["local_score"], reverse=True)
     return out
 
 
 # ── Conservative LLM MATCH filter + dedupe (ppr.py) ──────────────────────────
 
-def format_candidate_for_prompt(candidate: Dict[str, Any], rank: int) -> Dict[str, Any]:
+
+def format_candidate_for_prompt(candidate: dict[str, Any], rank: int) -> dict[str, Any]:
     compact_support = []
     for ch in (candidate.get("support_chunks", []) or [])[:2]:
-        compact_support.append({
-            "file_name": ch.get("file_name", "Unknown"),
-            "page_number": ch.get("page_number", "N/A"),
-            "text": truncate_text(ch.get("text", ch.get("content", "")), max_chars=350),
-        })
+        compact_support.append(
+            {
+                "file_name": ch.get("file_name", "Unknown"),
+                "page_number": ch.get("page_number", "N/A"),
+                "text": truncate_text(ch.get("text", ch.get("content", "")), max_chars=350),
+            }
+        )
     return {
         "rank": rank,
         "entity_key": str(candidate.get("entity_key", "")),
@@ -235,24 +278,27 @@ def format_candidate_for_prompt(candidate: Dict[str, Any], rank: int) -> Dict[st
     }
 
 
-def build_batch_entity_linking_prompt(user_query, entity_hints, entity_ft_candidates,
-                                      expected_categories=None, top_k=30) -> str:
+def build_batch_entity_linking_prompt(
+    user_query, entity_hints, entity_ft_candidates, expected_categories=None, top_k=30
+) -> str:
     candidates = []
     for rank, candidate in enumerate(entity_ft_candidates[:top_k], start=1):
-        candidates.append({
-            "rank": rank,
-            "entity_key": candidate.get("entity_key", ""),
-            "entity_name": candidate.get("entity_name", ""),
-            "canonical_category": candidate.get("canonical_category", ""),
-            "llm_category": candidate.get("llm_category", ""),
-            "aliases": candidate.get("aliases", [])[:8],
-            "description": truncate_text(candidate.get("description", ""), 350),
-            "matched_hints_from_retrieval": candidate.get("matched_hints", []),
-            "support_chunks": [
-                {"text": truncate_text(ch.get("text", ch.get("content", "")), 250)}
-                for ch in (candidate.get("support_chunks", []) or [])[:2]
-            ],
-        })
+        candidates.append(
+            {
+                "rank": rank,
+                "entity_key": candidate.get("entity_key", ""),
+                "entity_name": candidate.get("entity_name", ""),
+                "canonical_category": candidate.get("canonical_category", ""),
+                "llm_category": candidate.get("llm_category", ""),
+                "aliases": candidate.get("aliases", [])[:8],
+                "description": truncate_text(candidate.get("description", ""), 350),
+                "matched_hints_from_retrieval": candidate.get("matched_hints", []),
+                "support_chunks": [
+                    {"text": truncate_text(ch.get("text", ch.get("content", "")), 250)}
+                    for ch in (candidate.get("support_chunks", []) or [])[:2]
+                ],
+            }
+        )
     payload = {
         "user_query": user_query,
         "entity_hints": entity_hints,
@@ -306,20 +352,33 @@ Confidence guide:
 """.strip()
 
 
-def batch_link_entities_with_llm(user_query, entity_hints, entity_ft_candidates,
-                                 expected_categories=None, top_k=30, confidence_threshold=0.80):
+def batch_link_entities_with_llm(
+    user_query,
+    entity_hints,
+    entity_ft_candidates,
+    expected_categories=None,
+    top_k=30,
+    confidence_threshold=0.80,
+):
     """Conservative LLM MATCH/NON-MATCH filter over lexical candidates."""
     prompt = build_batch_entity_linking_prompt(
-        user_query=user_query, entity_hints=entity_hints,
+        user_query=user_query,
+        entity_hints=entity_hints,
         entity_ft_candidates=entity_ft_candidates,
-        expected_categories=expected_categories, top_k=top_k)
+        expected_categories=expected_categories,
+        top_k=top_k,
+    )
     data = call_json(
-        system_prompt=("You are a conservative entity linker for a tendering and EPC "
-                       "knowledge graph. Return strict JSON only."),
+        system_prompt=(
+            "You are a conservative entity linker for a tendering and EPC "
+            "knowledge graph. Return strict JSON only."
+        ),
         user_prompt=prompt,
     )
     raw_matches = data.get("matches", []) or []
-    candidate_by_key = {str(c.get("entity_key")): c for c in entity_ft_candidates if c.get("entity_key")}
+    candidate_by_key = {
+        str(c.get("entity_key")): c for c in entity_ft_candidates if c.get("entity_key")
+    }
 
     filtered, seen = [], set()
     for match in raw_matches:
@@ -343,17 +402,20 @@ def batch_link_entities_with_llm(user_query, entity_hints, entity_ft_candidates,
 def build_seed_dedup_prompt(user_query, matched_entities) -> str:
     compact_entities = []
     for rank, ent in enumerate(matched_entities, start=1):
-        compact_entities.append({
-            "rank": rank,
-            "entity_key": ent.get("entity_key") or ent.get("candidate_entity_key", ""),
-            "entity_name": ent.get("entity_name") or ent.get("candidate_entity_name", ""),
-            "canonical_category": ent.get("canonical_category") or ent.get("candidate_category", ""),
-            "llm_category": ent.get("llm_category", ""),
-            "aliases": ent.get("aliases", [])[:8],
-            "description": truncate_text(ent.get("description", ""), 300),
-            "matched_hint": ent.get("llm_matched_hint") or ent.get("entity_hint", ""),
-            "confidence": ent.get("confidence") or ent.get("llm_entity_link_confidence", 0.0),
-        })
+        compact_entities.append(
+            {
+                "rank": rank,
+                "entity_key": ent.get("entity_key") or ent.get("candidate_entity_key", ""),
+                "entity_name": ent.get("entity_name") or ent.get("candidate_entity_name", ""),
+                "canonical_category": ent.get("canonical_category")
+                or ent.get("candidate_category", ""),
+                "llm_category": ent.get("llm_category", ""),
+                "aliases": ent.get("aliases", [])[:8],
+                "description": truncate_text(ent.get("description", ""), 300),
+                "matched_hint": ent.get("llm_matched_hint") or ent.get("entity_hint", ""),
+                "confidence": ent.get("confidence") or ent.get("llm_entity_link_confidence", 0.0),
+            }
+        )
     payload = {"user_query": user_query, "matched_entities": compact_entities}
     return f"""
 You are cleaning a matched entity seed list for Personalized PageRank retrieval in an EPC/tender knowledge graph.
@@ -400,11 +462,12 @@ Return STRICT JSON only:
 """.strip()
 
 
-def dedupe_matched_seed_entities_with_llm(user_query, matched_entities) -> Dict[str, Any]:
+def dedupe_matched_seed_entities_with_llm(user_query, matched_entities) -> dict[str, Any]:
     prompt = build_seed_dedup_prompt(user_query=user_query, matched_entities=matched_entities)
     data = call_json(
-        system_prompt=("You deduplicate matched KG entity seeds for graph retrieval. "
-                       "Return strict JSON only."),
+        system_prompt=(
+            "You deduplicate matched KG entity seeds for graph retrieval. Return strict JSON only."
+        ),
         user_prompt=prompt,
     )
     kept = data.get("kept_entities", []) or []
@@ -435,22 +498,36 @@ def dedupe_matched_seed_entities_with_llm(user_query, matched_entities) -> Dict[
         if key not in kept_keys and key not in removed_keys:
             enriched = dict(original)
             enriched["dedupe_group_id"] = ""
-            enriched["dedupe_group_members"] = [{
-                "entity_key": key,
-                "entity_name": original.get("entity_name") or original.get("candidate_entity_name", ""),
-            }]
+            enriched["dedupe_group_members"] = [
+                {
+                    "entity_key": key,
+                    "entity_name": original.get("entity_name")
+                    or original.get("candidate_entity_name", ""),
+                }
+            ]
             enriched["dedupe_reason"] = "Missing from LLM dedupe output; kept defensively."
             enriched["is_deduped_representative"] = True
             final_entities.append(enriched)
 
-    return {"final_entities": final_entities, "kept_entities": kept,
-            "removed_entities": removed, "raw": data}
+    return {
+        "final_entities": final_entities,
+        "kept_entities": kept,
+        "removed_entities": removed,
+        "raw": data,
+    }
 
 
 # ── Public resolvers ─────────────────────────────────────────────────────────
 
-def link_entities(question, entity_hints=None, category_hints=None, relation_hints=None,
-                  ft_topk=50, confidence_threshold=0.80) -> List[Dict[str, Any]]:
+
+def link_entities(
+    question,
+    entity_hints=None,
+    category_hints=None,
+    relation_hints=None,
+    ft_topk=50,
+    confidence_threshold=0.80,
+) -> list[dict[str, Any]]:
     """Single-channel resolver (LightRAG aggregation branch).
 
     full-text → lexical score → conservative LLM filter. Returns the filtered
@@ -468,9 +545,13 @@ def link_entities(question, entity_hints=None, category_hints=None, relation_hin
         return []
     candidates = _score_entity_candidates(rows, entity_hints, category_hints, relation_hints)
     filtered, _ = batch_link_entities_with_llm(
-        user_query=question, entity_hints=entity_hints, entity_ft_candidates=candidates,
-        expected_categories=list(category_hints or []), top_k=50,
-        confidence_threshold=confidence_threshold)
+        user_query=question,
+        entity_hints=entity_hints,
+        entity_ft_candidates=candidates,
+        expected_categories=list(category_hints or []),
+        top_k=50,
+        confidence_threshold=confidence_threshold,
+    )
     return filtered
 
 
@@ -484,8 +565,9 @@ def _entity_ft_candidates(entity_hints, category_hints, relation_hints, top=ENTI
     return _score_entity_candidates(rows, entity_hints, category_hints, relation_hints)
 
 
-def _chunk_mediated_candidates(entity_hints, vector_rows, top_chunks=CHUNK_ENTITY_TOPK_CHUNKS,
-                               seed_topk=CHUNK_ENTITY_SEED_TOPK):
+def _chunk_mediated_candidates(
+    entity_hints, vector_rows, top_chunks=CHUNK_ENTITY_TOPK_CHUNKS, seed_topk=CHUNK_ENTITY_SEED_TOPK
+):
     """Channel 2: top vector chunks → MENTIONS entities → hint-scored candidates.
 
     Name-free recall: finds relevant chunks by meaning, reads off the entities
@@ -496,7 +578,9 @@ def _chunk_mediated_candidates(entity_hints, vector_rows, top_chunks=CHUNK_ENTIT
     if not chunk_ids:
         return []
     with neo4j_driver().session() as s:
-        rows_raw = [r.data() for r in s.run(VECTOR_ENTITY_EXPANSION_CYPHER, {"chunk_ids": chunk_ids})]
+        rows_raw = [
+            r.data() for r in s.run(VECTOR_ENTITY_EXPANSION_CYPHER, {"chunk_ids": chunk_ids})
+        ]
 
     candidates_by_key = {}
     for row in rows_raw:
@@ -505,8 +589,16 @@ def _chunk_mediated_candidates(entity_hints, vector_rows, top_chunks=CHUNK_ENTIT
             continue
         best_sim = 0.0
         matched = []
-        names = [x for x in [row.get("entity_name"), row.get("normalized_name"),
-                             row.get("llm_category"), *row.get("aliases", [])] if x]
+        names = [
+            x
+            for x in [
+                row.get("entity_name"),
+                row.get("normalized_name"),
+                row.get("llm_category"),
+                *row.get("aliases", []),
+            ]
+            if x
+        ]
         for hint in entity_hints:
             hn = _norm(hint)
             if not hn:
@@ -530,34 +622,50 @@ def _chunk_mediated_candidates(entity_hints, vector_rows, top_chunks=CHUNK_ENTIT
             best_sim = max(best_sim, m)
 
         support_chunk = {
-            "chunk_id": row.get("chunk_id"), "text": row.get("text", ""),
-            "file_name": row.get("file_name", "Unknown"), "page_number": row.get("page_number", "N/A"),
+            "chunk_id": row.get("chunk_id"),
+            "text": row.get("text", ""),
+            "file_name": row.get("file_name", "Unknown"),
+            "page_number": row.get("page_number", "N/A"),
         }
         existing = candidates_by_key.get(entity_key)
         if existing is None:
             candidates_by_key[entity_key] = {
-                "entity_key": entity_key, "entity_name": row.get("entity_name", ""),
+                "entity_key": entity_key,
+                "entity_name": row.get("entity_name", ""),
                 "canonical_category": row.get("canonical_category", "other"),
-                "llm_category": row.get("llm_category", ""), "description": row.get("description", ""),
-                "aliases": list(row.get("aliases", [])), "entity_matched_hints": matched,
+                "llm_category": row.get("llm_category", ""),
+                "description": row.get("description", ""),
+                "aliases": list(row.get("aliases", [])),
+                "entity_matched_hints": matched,
                 "connected_entities": list(row.get("connected_entities", [])),
-                "support_chunks": [support_chunk], "source": "entity_from_top_chunks",
-                "local_score": best_sim, "seed_score": best_sim,
+                "support_chunks": [support_chunk],
+                "source": "entity_from_top_chunks",
+                "local_score": best_sim,
+                "seed_score": best_sim,
                 "source_scores": {"entity_from_top_chunks": best_sim},
             }
         else:
             existing["local_score"] += best_sim
             existing["seed_score"] = existing["local_score"]
             existing["source_scores"]["entity_from_top_chunks"] = (
-                existing["source_scores"].get("entity_from_top_chunks", 0.0) + best_sim)
-            existing["entity_matched_hints"] = list(dict.fromkeys(existing["entity_matched_hints"] + matched))
-            if support_chunk["chunk_id"] not in {c.get("chunk_id") for c in existing["support_chunks"]}:
+                existing["source_scores"].get("entity_from_top_chunks", 0.0) + best_sim
+            )
+            existing["entity_matched_hints"] = list(
+                dict.fromkeys(existing["entity_matched_hints"] + matched)
+            )
+            if support_chunk["chunk_id"] not in {
+                c.get("chunk_id") for c in existing["support_chunks"]
+            }:
                 existing["support_chunks"].append(support_chunk)
 
-    return sorted(candidates_by_key.values(), key=lambda x: x["local_score"], reverse=True)[:seed_topk]
+    return sorted(candidates_by_key.values(), key=lambda x: x["local_score"], reverse=True)[
+        :seed_topk
+    ]
 
 
-def fuse_ppr_seeds(analysis: dict, vector_rows: List[Dict[str, Any]], top: int = 50) -> List[Dict[str, Any]]:
+def fuse_ppr_seeds(
+    analysis: dict, vector_rows: list[dict[str, Any]], top: int = 50
+) -> list[dict[str, Any]]:
     """Two-channel entity linking → RRF-fused PPR seed entities (multi-hop branch).
 
     Channel 1 (entity full-text) + Channel 2 (chunk-mediated) are fused by
@@ -575,9 +683,15 @@ def fuse_ppr_seeds(analysis: dict, vector_rows: List[Dict[str, Any]], top: int =
 
     # RRF fusion across the two channels (verbatim from ppr.py seed-fusion cell).
     fused_by_key = {}
-    for source_name, candidates in [("entity_fulltext", ft_candidates),
-                                    ("entity_from_top_chunks", chunk_candidates)]:
-        ranked = sorted(candidates, key=lambda x: float(x.get("local_score") or x.get("seed_score") or 0.0), reverse=True)
+    for source_name, candidates in [
+        ("entity_fulltext", ft_candidates),
+        ("entity_from_top_chunks", chunk_candidates),
+    ]:
+        ranked = sorted(
+            candidates,
+            key=lambda x: float(x.get("local_score") or x.get("seed_score") or 0.0),
+            reverse=True,
+        )
         scores = [float(r.get("local_score") or r.get("seed_score") or 0.0) for r in ranked]
         score_min = min(scores) if scores else 0.0
         score_max = max(scores) if scores else 1.0
@@ -586,21 +700,40 @@ def fuse_ppr_seeds(analysis: dict, vector_rows: List[Dict[str, Any]], top: int =
             if not entity_key:
                 continue
             raw_score = float(row.get("local_score") or row.get("seed_score") or 0.0)
-            norm_score = ((raw_score - score_min) / (score_max - score_min)) if score_max > score_min else 1.0
-            rec = fused_by_key.setdefault(entity_key, {
-                "entity_key": entity_key, "entity_name": row.get("entity_name", ""),
-                "canonical_category": row.get("canonical_category", "other"),
-                "llm_category": row.get("llm_category", ""), "description": row.get("description", ""),
-                "aliases": [], "entity_matched_hints": [], "relation_types": [], "support_chunks": [],
-                "source_scores": defaultdict(float), "sources": [], "rrf_score": 0.0, "max_norm_score": 0.0,
-            })
+            norm_score = (
+                ((raw_score - score_min) / (score_max - score_min))
+                if score_max > score_min
+                else 1.0
+            )
+            rec = fused_by_key.setdefault(
+                entity_key,
+                {
+                    "entity_key": entity_key,
+                    "entity_name": row.get("entity_name", ""),
+                    "canonical_category": row.get("canonical_category", "other"),
+                    "llm_category": row.get("llm_category", ""),
+                    "description": row.get("description", ""),
+                    "aliases": [],
+                    "entity_matched_hints": [],
+                    "relation_types": [],
+                    "support_chunks": [],
+                    "source_scores": defaultdict(float),
+                    "sources": [],
+                    "rrf_score": 0.0,
+                    "max_norm_score": 0.0,
+                },
+            )
             rec["rrf_score"] += 1.0 / (60 + rank)
             rec["max_norm_score"] = max(rec["max_norm_score"], norm_score)
             rec["source_scores"][source_name] += norm_score
             rec["sources"] = list(dict.fromkeys(rec["sources"] + [source_name]))
             rec["aliases"] = list(dict.fromkeys(rec["aliases"] + list(row.get("aliases", []))))
-            rec["entity_matched_hints"] = list(dict.fromkeys(
-                rec["entity_matched_hints"] + list(row.get("entity_matched_hints", row.get("matched_hints", [])))))
+            rec["entity_matched_hints"] = list(
+                dict.fromkeys(
+                    rec["entity_matched_hints"]
+                    + list(row.get("entity_matched_hints", row.get("matched_hints", [])))
+                )
+            )
             existing_ids = {c.get("chunk_id") for c in rec["support_chunks"]}
             for chunk in row.get("support_chunks", []):
                 if chunk.get("chunk_id") not in existing_ids:
@@ -620,9 +753,16 @@ def fuse_ppr_seeds(analysis: dict, vector_rows: List[Dict[str, Any]], top: int =
 
     # Conservative confirmation + dedupe.
     filtered, _ = batch_link_entities_with_llm(
-        user_query=analysis["question"], entity_hints=entity_hints, entity_ft_candidates=fused,
-        expected_categories=category_hints, top_k=50, confidence_threshold=0.80)
+        user_query=analysis["question"],
+        entity_hints=entity_hints,
+        entity_ft_candidates=fused,
+        expected_categories=category_hints,
+        top_k=50,
+        confidence_threshold=0.80,
+    )
     if not filtered:
         filtered = fused  # keep RRF seeds if the LLM filter is too strict / unavailable
-    deduped = dedupe_matched_seed_entities_with_llm(user_query=analysis["question"], matched_entities=filtered)
+    deduped = dedupe_matched_seed_entities_with_llm(
+        user_query=analysis["question"], matched_entities=filtered
+    )
     return deduped["final_entities"]

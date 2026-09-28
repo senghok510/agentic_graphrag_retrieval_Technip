@@ -13,7 +13,7 @@ to the shared pipeline Neo4j driver.
 
 from __future__ import annotations
 
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from .clients import neo4j_driver
 
@@ -26,8 +26,9 @@ _DOMAIN_FILTER = (
 )
 
 
-def _local_candidate_relations(entity_keys: List[str], pool: int = 120, src_per_rel: int = 3,
-                               domains: Optional[List[str]] = None) -> List[Dict[str, Any]]:
+def _local_candidate_relations(
+    entity_keys: list[str], pool: int = 120, src_per_rel: int = 3, domains: list[str] | None = None
+) -> list[dict[str, Any]]:
     """All 1-hop relations of the seed entities, graph-weight ranked, bounded IN-DB.
 
     Each relation carries its ASSERTS source chunks (chunk_id, text, file_name,
@@ -38,7 +39,8 @@ def _local_candidate_relations(entity_keys: List[str], pool: int = 120, src_per_
     if not entity_keys:
         return []
     with neo4j_driver().session() as sess:
-        return sess.run(f"""
+        return sess.run(
+            f"""
             UNWIND $keys AS ekey
             MATCH (seed:Entity {{entityKey: ekey}})
             MATCH (sub:Entity)-[:SUBJECT_OF]->(r:Relation)-[:OBJECT_OF]->(obj:Entity)
@@ -62,11 +64,14 @@ def _local_candidate_relations(entity_keys: List[str], pool: int = 120, src_per_
                        file_name:   c.fileName,
                        page_number: c.pageNumber
                    }}] AS sources
-        """, {"keys": entity_keys, "pool": pool, "srck": src_per_rel,
-              "domains": domains or None}).data()
+        """,
+            {"keys": entity_keys, "pool": pool, "srck": src_per_rel, "domains": domains or None},
+        ).data()
 
 
-def _global_search(hl_keywords, top_k: int = 20, domains: Optional[List[str]] = None) -> List[Dict[str, Any]]:
+def _global_search(
+    hl_keywords, top_k: int = 20, domains: list[str] | None = None
+) -> list[dict[str, Any]]:
     """High-level theme keywords → relation vector search → relations + endpoints + chunks.
 
     When ``domains`` is given, results are restricted to relations ``CLASSIFIED_AS``
@@ -77,11 +82,13 @@ def _global_search(hl_keywords, top_k: int = 20, domains: Optional[List[str]] = 
     if not hl_keywords:
         return []
     from .clients import embed_texts_large_model
+
     qvec = embed_texts_large_model([", ".join(hl_keywords)])[0]
     # widen recall before the domain filter cuts the result set
     query_k = top_k * 4 if domains else top_k
     with neo4j_driver().session() as session:
-        return session.run(f"""
+        return session.run(
+            f"""
             CALL db.index.vector.queryNodes('relation_embedding_index', $query_k, $qvec)
             YIELD node AS r, score
             WHERE {_DOMAIN_FILTER}
@@ -94,15 +101,18 @@ def _global_search(hl_keywords, top_k: int = 20, domains: Optional[List[str]] = 
                    score AS vector_score, sources
             ORDER BY vector_score DESC
             LIMIT $top_k
-        """, {"query_k": query_k, "top_k": top_k, "qvec": qvec, "domains": domains or None}).data()
+        """,
+            {"query_k": query_k, "top_k": top_k, "qvec": qvec, "domains": domains or None},
+        ).data()
 
 
-def _relation_window_chunks(rel_ids: List[str], max_chunks: int = 14) -> List[Dict[str, Any]]:
+def _relation_window_chunks(rel_ids: list[str], max_chunks: int = 14) -> list[dict[str, Any]]:
     """Chunks asserting the given relations, ranked by support, widened prev/next via NEXT."""
     if not rel_ids:
         return []
     with neo4j_driver().session() as sess:
-        return sess.run("""
+        return sess.run(
+            """
             UNWIND $rel_ids AS rid
             MATCH (ch:Chunk)-[:ASSERTS]->(:Relation {relationId: rid})
             WITH ch,
@@ -124,21 +134,29 @@ def _relation_window_chunks(rel_ids: List[str], max_chunks: int = 14) -> List[Di
                    prev.text AS prev_text,
                    nxt.ChunkID AS next_id,
                    nxt.text AS next_text
-        """, {"rel_ids": rel_ids, "maxc": max_chunks}).data()
+        """,
+            {"rel_ids": rel_ids, "maxc": max_chunks},
+        ).data()
 
 
-def _attach_graph_weight(relations: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def _attach_graph_weight(relations: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Give every relation a uniform graph weight so the rerank blend is fair."""
     ids = [r["relation_id"] for r in relations]
     if not ids:
         return relations
     with neo4j_driver().session() as sess:
-        wmap = {w["relation_id"]: w["weight"] for w in sess.run("""
+        wmap = {
+            w["relation_id"]: w["weight"]
+            for w in sess.run(
+                """
             UNWIND $ids AS rid
             MATCH (r:Relation {relationId: rid})
             RETURN rid AS relation_id,
                    coalesce(r.aggregatedWeight, r.weight, r.relationshipStrength/10.0, 0) AS weight
-        """, {"ids": ids}).data()}
+        """,
+                {"ids": ids},
+            ).data()
+        }
     for r in relations:
         r["weight"] = wmap.get(r["relation_id"], 0.0)
     return relations

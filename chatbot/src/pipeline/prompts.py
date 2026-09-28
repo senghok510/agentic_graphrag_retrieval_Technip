@@ -301,8 +301,13 @@ Write a clear, concise answer to the question, grounded strictly in the context 
 """.strip()
 
 
-def detailed_answer_prompt(question: str, strategy: str, complexity_guidance: str,
-                           total_sources: int, numbered_knowledge_base: str) -> str:
+def detailed_answer_prompt(
+    question: str,
+    strategy: str,
+    complexity_guidance: str,
+    total_sources: int,
+    numbered_knowledge_base: str,
+) -> str:
     """The grounded, cited answer prompt used by ``answer.detailed_respond``."""
     return f"""You are an expert in tendering and procurement documents. Answer the user's question accurately and completely using ONLY the provided context.
 

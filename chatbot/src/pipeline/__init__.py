@@ -13,14 +13,15 @@ turned into importable functions, organised by mermaid stage:
     ppr                  Multi-hop branch (hub-aware Personalized PageRank)
     fusion               Candidate Context Fusion → RRF → Cross-Encoder rerank
     answer / answer_context   grounded, cited LLM answer generation
-    orchestrator         the end-to-end flow (run_pipeline)
+    langgraph_pipeline   the end-to-end StateGraph and pipeline nodes
+    orchestrator         compatibility entry point (run_pipeline)
 
 Entry point: ``from src.pipeline import run_pipeline``.
 """
 
+from .domain_routing import predict_graph_domains
 from .orchestrator import run_pipeline
 from .query_understanding import analyze_query, classify_retrieval_need, classify_strategy
-from .domain_routing import predict_graph_domains
 
 __all__ = [
     "run_pipeline",

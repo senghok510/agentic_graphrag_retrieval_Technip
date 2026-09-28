@@ -8,16 +8,16 @@ notebooks defined inline.
 
 from __future__ import annotations
 
-from typing import List, Literal
+from typing import Literal
 
 from pydantic import BaseModel, Field
 
 # Reuse the shared application response contract.
 from ..models.schemas import (  # noqa: F401
+    ComplexQueryExpansion,
     ReferenceGeneration,
     ResponseGeneration,
     SimpleQueryExpansion,
-    ComplexQueryExpansion,
 )
 
 
@@ -26,11 +26,21 @@ class GraphComplexityAnalysis(BaseModel):
 
     is_complex: bool = Field(description="Whether the query needs multi-hop reasoning")
     reasoning: str = Field(description="1-line explanation of why the query is complex or simple")
-    sub_questions: List[str] = Field(default_factory=list, description="Sub-questions for complex queries (0-3)")
-    entity_hints: List[str] = Field(default_factory=list, description="Specific named things from the question")
-    category_hints: List[str] = Field(default_factory=list, description="Canonical entity categories (closed list)")
-    relation_hints: List[str] = Field(default_factory=list, description="snake_case relationship intent hints")
-    high_level_keywords: List[str] = Field(default_factory=list, description="Overarching theme keywords (snake_case)")
+    sub_questions: list[str] = Field(
+        default_factory=list, description="Sub-questions for complex queries (0-3)"
+    )
+    entity_hints: list[str] = Field(
+        default_factory=list, description="Specific named things from the question"
+    )
+    category_hints: list[str] = Field(
+        default_factory=list, description="Canonical entity categories (closed list)"
+    )
+    relation_hints: list[str] = Field(
+        default_factory=list, description="snake_case relationship intent hints"
+    )
+    high_level_keywords: list[str] = Field(
+        default_factory=list, description="Overarching theme keywords (snake_case)"
+    )
 
 
 class StrategyChoice(BaseModel):
@@ -62,6 +72,10 @@ class RetrievalNeed(BaseModel):
 class GraphDomainPrediction(BaseModel):
     """Graph Domain Prediction (v2) — WHERE the graph searches. Never affects Hybrid RAG."""
 
-    scope: Literal["single", "multi", "full"] = Field(description="single/multi domain, or full graph (GENERAL)")
-    domains: List[str] = Field(default_factory=list, description="Exact domain names (empty when scope=full)")
+    scope: Literal["single", "multi", "full"] = Field(
+        description="single/multi domain, or full graph (GENERAL)"
+    )
+    domains: list[str] = Field(
+        default_factory=list, description="Exact domain names (empty when scope=full)"
+    )
     reasoning: str = Field(default="", description="one-line justification")

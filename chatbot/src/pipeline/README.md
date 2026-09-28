@@ -4,15 +4,15 @@ This package **is** the pipeline. It's what `pipeline_app.py` serves (via
 `src/routers/pipeline_router.py`) and what the Next.js UI in `web/pipeline-ui/`
 streams live.
 
-**Start here:** [`orchestrator.py`](orchestrator.py) — its `run_pipeline(question, ...)`
-function is the entire pipeline end to end. Every other file in this folder
-exists purely to be called by, or on behalf of, that one function. If you're
-trying to understand or change pipeline *behavior*, `orchestrator.py` is where
-the routing decisions live; the other files are where each step's actual work
-happens.
+**Start here:** [`langgraph_pipeline.py`](langgraph_pipeline.py) defines the
+shared state, nodes, and compiled graph. [`orchestrator.py`](orchestrator.py)
+keeps the existing `run_pipeline(question, ...)` public API as a compatibility
+wrapper, so the FastAPI routes, SSE stream, evaluation scripts, and UI do not
+need a separate migration.
 
 ```python
 from src.pipeline import run_pipeline
+
 result = run_pipeline("How are Change Orders related to Re-measurable Works?")
 ```
 
@@ -25,15 +25,15 @@ Query Understanding ─────────────────── qu
     └── Graph Domain Prediction ─────── domain_routing.py (predict_graph_domains)
           scopes the GRAPH branch only — never Hybrid RAG
 
-Route by retrieval need (orchestrator.py: GRAPH_BRANCH):
+Route by retrieval need (langgraph_pipeline.py: GRAPH_BRANCH):
     textual_factoid → Hybrid RAG only ────────────── retrieval.py (hybrid_rag)
     single_hop      → Local Graph Retrieval ──────── lightrag.py (run_single_hop)
     aggregation     → Dual-Level (local + global) ── lightrag.py (run_aggregation)
     multi_hop       → Hub-aware PPR ──────────────── ppr.py (run_multihop)
 
-  Every route except textual_factoid runs its graph branch CONCURRENTLY with
-  Hybrid RAG (orchestrator.py uses a ThreadPoolExecutor) — they're fused
-  afterward, not chosen between.
+  LangGraph fans Hybrid RAG and graph retrieval out as parallel nodes and joins
+  them at fusion. For textual_factoid, the graph node returns an empty result,
+  so only Hybrid RAG contributes candidates.
 
 Evidence Fusion (RRF) ──────────────────────────────── fusion.py (reciprocal_rank_fusion)
 Cross-Encoder Reranking (bge-reranker-large) ───────── fusion.py (rerank_chunks)
@@ -45,7 +45,8 @@ LLM Answer Generation ───────────────────�
 ### Entry point & event plumbing
 | File | Role |
 |---|---|
-| **`orchestrator.py`** | **The pipeline.** `run_pipeline()` — decides the route, runs branches (concurrently where applicable), fuses, reranks, generates the answer. Read this first, always. |
+| **`langgraph_pipeline.py`** | **The pipeline graph.** Defines `PipelineState`, each stage node, parallel joins, and the compiled `pipeline_graph`. |
+| `orchestrator.py` | Compatibility entry point. Its `run_pipeline()` delegates to the compiled LangGraph while preserving the legacy result and callback contracts. |
 | `__init__.py` | Public API: re-exports `run_pipeline`, `analyze_query`, `classify_retrieval_need`, `predict_graph_domains`, `classify_strategy`. Everything not listed here is an internal implementation detail of some stage. |
 | `streaming.py` | SSE transport adapter — runs `run_pipeline` in a worker thread and forwards each stage event to the FastAPI response as `data: {...}\n\n` frames. Not pipeline *logic*; purely how the UI watches it live. |
 | `trace.py` | The `Stage` context manager every stage below uses to emit `start`/`done`/`error` events and measure elapsed time. A no-op with zero overhead if no `emit` callback is passed (e.g. in `scripts/domain_eval/` runner scripts). |
@@ -89,7 +90,7 @@ LLM Answer Generation ───────────────────�
 For a `multi_hop` question, the file-level call path is:
 
 ```
-orchestrator.run_pipeline
+orchestrator.run_pipeline → langgraph_pipeline.pipeline_graph
  ├─ query_understanding.analyze_query
  ├─ query_understanding.classify_retrieval_need   → "multi_hop"
  ├─ domain_routing.predict_graph_domains

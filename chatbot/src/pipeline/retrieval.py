@@ -12,16 +12,17 @@ All chunk rows are normalised to the pipeline's common shape:
 from __future__ import annotations
 
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any
 
-from .clients import TARGET_ITB_ID, neo4j_driver
 from ..services.azure_search import azure_search_tool
+from .clients import TARGET_ITB_ID, neo4j_driver
 
 logger = logging.getLogger("agent_flow.pipeline.retrieval")
 
 
-def hybrid_search(query: str, tender_id: Optional[str] = None, top: int = 50,
-                  vector_query_text: Optional[str] = None) -> List[Dict[str, Any]]:
+def hybrid_search(
+    query: str, tender_id: str | None = None, top: int = 50, vector_query_text: str | None = None
+) -> list[dict[str, Any]]:
     """Azure AI Search hybrid (semantic + vector) query → raw tool rows.
 
     ``query`` drives BM25/semantic; ``vector_query_text`` (HyDE) drives the
@@ -42,7 +43,7 @@ def hybrid_search(query: str, tender_id: Optional[str] = None, top: int = 50,
         return []
 
 
-def hybrid_rag(analysis: dict, tender_id: Optional[str] = None, top: int = 50) -> List[Dict[str, Any]]:
+def hybrid_rag(analysis: dict, tender_id: str | None = None, top: int = 50) -> list[dict[str, Any]]:
     """Hybrid RAG evidence branch (v2) — BM25 + dense vector over the FULL Azure index.
 
     Per the spec this is never restricted by domain and runs for every route
@@ -58,21 +59,25 @@ def hybrid_rag(analysis: dict, tender_id: Optional[str] = None, top: int = 50) -
     return _normalise_search_rows(rows, source="hybrid_rag")
 
 
-def _normalise_search_rows(rows: List[Dict[str, Any]], source: str) -> List[Dict[str, Any]]:
+def _normalise_search_rows(rows: list[dict[str, Any]], source: str) -> list[dict[str, Any]]:
     out = []
     for row in rows:
-        out.append({
-            "chunk_id": row.get("CurrentChunkID") or row.get("chunk_id") or "",
-            "content": row.get("page_chunk", "") or row.get("content", ""),
-            "file_name": row.get("file_name", "Unknown"),
-            "page_number": row.get("page_number", "N/A"),
-            "score": float(row.get("reranker_score", 0.0) or 0.0),
-            "source": source,
-        })
+        out.append(
+            {
+                "chunk_id": row.get("CurrentChunkID") or row.get("chunk_id") or "",
+                "content": row.get("page_chunk", "") or row.get("content", ""),
+                "file_name": row.get("file_name", "Unknown"),
+                "page_number": row.get("page_number", "N/A"),
+                "score": float(row.get("reranker_score", 0.0) or 0.0),
+                "source": source,
+            }
+        )
     return out
 
 
-def vector_seed(analysis: dict, tender_id: str = TARGET_ITB_ID, top: int = 50) -> List[Dict[str, Any]]:
+def vector_seed(
+    analysis: dict, tender_id: str = TARGET_ITB_ID, top: int = 50
+) -> list[dict[str, Any]]:
     """Semantic Retrieval seed: expanded query (BM25) + HyDE (vector).
 
     Reproduces the notebook ``vector_seed`` including its score-threshold gate.
@@ -89,21 +94,25 @@ def vector_seed(analysis: dict, tender_id: str = TARGET_ITB_ID, top: int = 50) -
 
     out = []
     for row in filtered:
-        out.append({
-            "chunk_id": row.get("CurrentChunkID") or row.get("chunk_id") or "",
-            "content": row.get("page_chunk", ""),
-            "file_name": row.get("file_name", "Unknown"),
-            "page_number": row.get("page_number", "N/A"),
-            "azure_score": float(row.get("reranker_score", 0.0)),
-            "score": float(row.get("reranker_score", 0.0)),
-            "source": "vector_seed",
-            "contributions": {"vector_seed": float(row.get("reranker_score", 0.0))},
-        })
+        out.append(
+            {
+                "chunk_id": row.get("CurrentChunkID") or row.get("chunk_id") or "",
+                "content": row.get("page_chunk", ""),
+                "file_name": row.get("file_name", "Unknown"),
+                "page_number": row.get("page_number", "N/A"),
+                "azure_score": float(row.get("reranker_score", 0.0)),
+                "score": float(row.get("reranker_score", 0.0)),
+                "source": "vector_seed",
+                "contributions": {"vector_seed": float(row.get("reranker_score", 0.0))},
+            }
+        )
     logger.info("[vector_seed] kept %d chunks (threshold=%s)", len(out), current_threshold)
     return out
 
 
-def semantic_retrieval(analysis: dict, tender_id: Optional[str] = None, top: int = 20) -> List[Dict[str, Any]]:
+def semantic_retrieval(
+    analysis: dict, tender_id: str | None = None, top: int = 20
+) -> list[dict[str, Any]]:
     """Simple-query Semantic Retrieval (SEM leaf) → normalised chunk rows."""
     rows = hybrid_search(
         query=analysis.get("expanded_query") or analysis.get("question", ""),
@@ -134,7 +143,7 @@ LIMIT $top
 """
 
 
-def _build_chunk_lucene(entity_hints: List[str], keywords: List[str]) -> str:
+def _build_chunk_lucene(entity_hints: list[str], keywords: list[str]) -> str:
     terms = []
     for value in list(entity_hints or []) + list(keywords or []):
         value = (value or "").strip()
@@ -147,8 +156,9 @@ def _build_chunk_lucene(entity_hints: List[str], keywords: List[str]) -> str:
     return " OR ".join(dict.fromkeys(terms))
 
 
-def cypher_template_retrieval(analysis: dict, tender_id: Optional[str] = None,
-                              top: int = 15) -> List[Dict[str, Any]]:
+def cypher_template_retrieval(
+    analysis: dict, tender_id: str | None = None, top: int = 15
+) -> list[dict[str, Any]]:
     """Cypher Template Retrieval (Simple Query leaf).
 
     Deterministic KG full-text lookup: entity hints + expansion keywords →

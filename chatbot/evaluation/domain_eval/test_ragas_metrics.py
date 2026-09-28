@@ -39,11 +39,11 @@ longer exists in recent langchain-community releases (>=0.4 has removed
 legacy integration shims as that package is sunset). If `import ragas`
 raises `ModuleNotFoundError: No module named
 'langchain_community.chat_models.vertexai'`, pin an older langchain-community
-(e.g. `pip install "langchain-community<0.4"`) or check ragas's current
+(e.g. `uv add "langchain-community<0.4"`) or check ragas's current
 release notes for the compatible pin.
 
     cd chatbot
-    pip install ragas   # not yet in requirements.txt
+    uv add ragas
     python scripts/domain_eval/test_ragas_metrics.py
 """
 

@@ -1,11 +1,14 @@
 import logging
-from typing import Optional, List, Dict, Any
-from langchain_core.tools import tool
+from typing import Any
+
 from azure.search.documents.models import QueryType, VectorizedQuery
-from ..config.appSettings import get_settings, embed_document_large_model,ai_search_client
-from ..utils.constants import SEARCH_TOP_K, VECTOR_K_NEAREST_NEIGHBORS, VECTOR_EMBEDDING_FIELD
+from langchain_core.tools import tool
+
+from ..config.appSettings import ai_search_client, embed_document_large_model, get_settings
+from ..utils.constants import SEARCH_TOP_K, VECTOR_EMBEDDING_FIELD, VECTOR_K_NEAREST_NEIGHBORS
 
 logger = logging.getLogger("agent_flow.azure_search")
+
 
 def get_search_index() -> str:
     """
@@ -21,14 +24,15 @@ def get_search_index() -> str:
     logger.debug(f"Using unified APIM index: {selected_index}")
     return selected_index
 
-### vector_query_text: hyde_doc, 
+
+### vector_query_text: hyde_doc,
 @tool
 def azure_search_tool(
-    query: str, 
-    tender_id: Optional[str] = None, 
+    query: str,
+    tender_id: str | None = None,
     top: int = SEARCH_TOP_K,
-    vector_query_text: Optional[str] = None
-) -> List[Dict[str, Any]]:
+    vector_query_text: str | None = None,
+) -> list[dict[str, Any]]:
     """
     Query Azure Search index and return sorted results by reranker_score.
 
@@ -60,19 +64,27 @@ def azure_search_tool(
 
         # Determine the tender_id filter
         filter_expr = None
-        if tender_id :
+        if tender_id:
             filter_expr = f"tender_id eq '{tender_id}'"
         logger.info(f"Received query = {query}")
         logger.debug(f"DEBUG azure_search_tool: received query={query[:150] if query else 'NONE'}")
-        logger.info(f"Azure Search Config - Query: '{query}', ITB: '{tender_id}', Filter: '{filter_expr}'")
-        
+        logger.info(
+            f"Azure Search Config - Query: '{query}', ITB: '{tender_id}', Filter: '{filter_expr}'"
+        )
+
         # Perform hybrid search (semantic + vector)
         try:
-            logger.debug(f"Attempting Semantic Hybrid Search on index {get_settings().AZURE_SEARCH_INDEX_NAME}")
+            logger.debug(
+                f"Attempting Semantic Hybrid Search on index {get_settings().AZURE_SEARCH_INDEX_NAME}"
+            )
             semantic_config = get_settings().AI_SEARCH_SEMANTIC_SEARCH_CONFIG
             if not semantic_config:
-                raise Exception("SemanticQueriesNotAvailable: AI_SEARCH_SEMANTIC_SEARCH_CONFIG is not set")
-            logger.debug(f"Attempting Semantic Hybrid Search on index {get_settings().AZURE_SEARCH_INDEX_NAME}")
+                raise Exception(
+                    "SemanticQueriesNotAvailable: AI_SEARCH_SEMANTIC_SEARCH_CONFIG is not set"
+                )
+            logger.debug(
+                f"Attempting Semantic Hybrid Search on index {get_settings().AZURE_SEARCH_INDEX_NAME}"
+            )
             results = search_client.search(
                 search_text=query,
                 query_type=QueryType.SEMANTIC,
@@ -82,8 +94,8 @@ def azure_search_tool(
                 include_total_count=True,
                 semantic_configuration_name=semantic_config,
             )
-            logger.debug(f"Semantic Hybrid Search executed, collecting results...")
-            
+            logger.debug("Semantic Hybrid Search executed, collecting results...")
+
             # Collect all fields for sorting
             result_list_intermediate = [
                 {
@@ -91,13 +103,19 @@ def azure_search_tool(
                     "file_name": result["file_name"],
                     "page_number": result["page_number"],
                     "CurrentChunkID": result.get("chunk_id", ""),
-                    "reranker_score": result.get("@search.reranker_score", result.get("@search.score", 0))
+                    "reranker_score": result.get(
+                        "@search.reranker_score", result.get("@search.score", 0)
+                    ),
                 }
                 for result in results
             ]
         except Exception as semantic_err:
-            if "Semantic search is not enabled" in str(semantic_err) or "SemanticQueriesNotAvailable" in str(semantic_err):
-                logger.warning(f"Semantic search not available, falling back to standard hybrid search: {semantic_err}")
+            if "Semantic search is not enabled" in str(
+                semantic_err
+            ) or "SemanticQueriesNotAvailable" in str(semantic_err):
+                logger.warning(
+                    f"Semantic search not available, falling back to standard hybrid search: {semantic_err}"
+                )
                 # Fallback to standard vector + keyword search without Semantic ranking
                 results = search_client.search(
                     search_text=query,
@@ -106,7 +124,7 @@ def azure_search_tool(
                     filter=filter_expr,
                     include_total_count=True,
                 )
-                
+
                 # Collect all fields for sorting using standard search score
                 result_list_intermediate = [
                     {
@@ -114,7 +132,7 @@ def azure_search_tool(
                         "file_name": result["file_name"],
                         "page_number": result["page_number"],
                         "CurrentChunkID": result.get("chunk_id", ""),
-                        "reranker_score": result.get("@search.score", 0)
+                        "reranker_score": result.get("@search.score", 0),
                     }
                     for result in results
                 ]
@@ -124,9 +142,11 @@ def azure_search_tool(
         # Log score statistics only
         if result_list_intermediate:
             scores = [r["reranker_score"] for r in result_list_intermediate]
-            logger.debug(f"Azure Search: {len(result_list_intermediate)} results, scores {min(scores):.3f}-{max(scores):.3f}")
+            logger.debug(
+                f"Azure Search: {len(result_list_intermediate)} results, scores {min(scores):.3f}-{max(scores):.3f}"
+            )
         else:
-            logger.warning(f"Azure Search: 0 results")
+            logger.warning("Azure Search: 0 results")
 
         # Sort by reranker_score descending
         result_list_intermediate.sort(key=lambda x: x["reranker_score"], reverse=True)
@@ -139,7 +159,7 @@ def azure_search_tool(
                 "page_number": result["page_number"],
                 "CurrentChunkID": result["CurrentChunkID"],
                 "reranker_score": result["reranker_score"],
-                "source": "vector_db"
+                "source": "vector_db",
             }
             for result in result_list_intermediate
         ]

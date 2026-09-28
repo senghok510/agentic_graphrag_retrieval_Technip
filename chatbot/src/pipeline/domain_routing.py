@@ -18,11 +18,11 @@ import logging
 import re
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any
 
 from .clients import call_json, validate_model
-from .retrieval import hybrid_search, _normalise_search_rows
 from .prompts import DOMAIN_PREDICTION_SYSTEM_PROMPT, DOMAIN_PREDICTION_USER_PROMPT
+from .retrieval import _normalise_search_rows, hybrid_search
 from .schemas import GraphDomainPrediction
 
 logger = logging.getLogger("agent_flow.pipeline.domain_routing")
@@ -31,34 +31,38 @@ _DOMAIN_DIR = Path(__file__).resolve().parents[2] / "domain_data"
 
 
 @lru_cache(maxsize=1)
-def _domain_keywords() -> Dict[str, List[str]]:
+def _domain_keywords() -> dict[str, list[str]]:
     try:
-        return json.loads((_DOMAIN_DIR / "domain_keywords_ROC_INPEX.json").read_text(encoding="utf-8"))
+        return json.loads(
+            (_DOMAIN_DIR / "domain_keywords_ROC_INPEX.json").read_text(encoding="utf-8")
+        )
     except Exception as exc:  # pragma: no cover
         logger.warning("could not load domain_keywords.json: %s", exc)
         return {}
 
 
 @lru_cache(maxsize=1)
-def _domain_descriptions() -> Dict[str, str]:
+def _domain_descriptions() -> dict[str, str]:
     try:
-        return json.loads((_DOMAIN_DIR / "domain_description_ROC_INPEX.json").read_text(encoding="utf-8"))
+        return json.loads(
+            (_DOMAIN_DIR / "domain_description_ROC_INPEX.json").read_text(encoding="utf-8")
+        )
     except Exception as exc:  # pragma: no cover
         logger.warning("could not load domain_description.json: %s", exc)
         return {}
 
 
-def domain_names() -> List[str]:
+def domain_names() -> list[str]:
     return list(_domain_descriptions().keys()) or list(_domain_keywords().keys())
 
 
-def _keyword_scores(question: str) -> Dict[str, float]:
+def _keyword_scores(question: str) -> dict[str, float]:
     q = re.sub(r"[^a-z0-9\s\-]", " ", question.lower())
     q_tokens = set(re.split(r"\s+", q))
     # Hyphenated keywords (e.g. "access-control") must also match the naturally-written,
     # space-separated form ("access control") that real questions actually use.
     q_spaced = q.replace("-", " ")
-    scores: Dict[str, float] = {}
+    scores: dict[str, float] = {}
     for domain, keywords in _domain_keywords().items():
         hits = 0
         for kw in keywords:
@@ -74,8 +78,7 @@ def _keyword_scores(question: str) -> Dict[str, float]:
 
 
 _DOMAIN_PREDICT_SYS = (
-    "You classify tendering/EPC questions into engineering domains. "
-    "Return strict JSON only."
+    "You classify tendering/EPC questions into engineering domains. Return strict JSON only."
 )
 
 _DOMAIN_PREDICT_USER = """Given the question and the candidate engineering domains (with descriptions),
@@ -92,7 +95,7 @@ Return STRICT JSON:
 """
 
 
-def predict_domain(question: str) -> Dict[str, Any]:
+def predict_domain(question: str) -> dict[str, Any]:
     """Predict the engineering domain for a question.
 
     Combines a lexical keyword vote with an LLM decision over the domain
@@ -129,7 +132,9 @@ def predict_domain(question: str) -> Dict[str, Any]:
     }
 
 
-def can_answer_in_single_domain(analysis: dict, prediction: Optional[dict] = None) -> Tuple[bool, dict]:
+def can_answer_in_single_domain(
+    analysis: dict, prediction: dict | None = None
+) -> tuple[bool, dict]:
     """(v1, deprecated) The old single-domain gate. Superseded in v2 by
     ``predict_graph_domains`` — domain prediction no longer gates the whole
     pipeline, it only scopes graph retrieval."""
@@ -142,8 +147,9 @@ def can_answer_in_single_domain(analysis: dict, prediction: Optional[dict] = Non
     return yes, prediction
 
 
-def domain_aware_hybrid_search(analysis: dict, prediction: dict,
-                               tender_id: Optional[str] = None, top: int = 20) -> List[Dict[str, Any]]:
+def domain_aware_hybrid_search(
+    analysis: dict, prediction: dict, tender_id: str | None = None, top: int = 20
+) -> list[dict[str, Any]]:
     """(v1, deprecated) Domain-biased hybrid search.
 
     NOT used in v2 — per the spec, Hybrid RAG must always search the full Azure
@@ -153,8 +159,9 @@ def domain_aware_hybrid_search(analysis: dict, prediction: dict,
     domain_terms = _domain_keywords().get(domain, [])[:8]
     base_query = analysis.get("expanded_query") or analysis.get("question", "")
     domain_query = f"{base_query} {' '.join(domain_terms)}".strip()
-    rows = hybrid_search(query=domain_query, tender_id=tender_id, top=top,
-                         vector_query_text=analysis.get("hyde_doc"))
+    rows = hybrid_search(
+        query=domain_query, tender_id=tender_id, top=top, vector_query_text=analysis.get("hyde_doc")
+    )
     normalised = _normalise_search_rows(rows, source="domain_hybrid")
     for r in normalised:
         r["domain"] = domain
@@ -162,6 +169,7 @@ def domain_aware_hybrid_search(analysis: dict, prediction: dict,
 
 
 # ── v2: Graph Domain Prediction (scopes graph retrieval only) ────────────────
+
 
 @lru_cache(maxsize=1)
 def graph_domain_nodes() -> tuple:
@@ -172,6 +180,7 @@ def graph_domain_nodes() -> tuple:
     """
     try:
         from .clients import neo4j_driver
+
         with neo4j_driver().session() as s:
             rows = s.run(
                 "MATCH (d) WHERE d:LowLevelDomain OR d:MidLevelDomain OR d:HighLevelDomain "
@@ -185,7 +194,7 @@ def graph_domain_nodes() -> tuple:
     return tuple(domain_names())
 
 
-def predict_graph_domains(question: str, analysis: Optional[dict] = None) -> Dict[str, Any]:
+def predict_graph_domains(question: str, analysis: dict | None = None) -> dict[str, Any]:
     """Predict the GRAPH scope for a question: single / multi / full graph.
 
     Returns ``{scope, domains, reasoning, keyword_scores}``. ``domains`` are
@@ -197,13 +206,16 @@ def predict_graph_domains(question: str, analysis: Optional[dict] = None) -> Dic
     descriptions = _domain_descriptions()
     # Only offer the LLM domains that actually exist as nodes (when known).
     offer = [(n, descriptions.get(n, "")) for n in descriptions if not known or n in known]
-    domain_block = "\n".join(f"- {name}: {desc}" for name, desc in offer) or \
-        "\n".join(f"- {n}" for n in known)
+    domain_block = "\n".join(f"- {name}: {desc}" for name, desc in offer) or "\n".join(
+        f"- {n}" for n in known
+    )
 
     try:
         data = call_json(
             system_prompt=DOMAIN_PREDICTION_SYSTEM_PROMPT,
-            user_prompt=DOMAIN_PREDICTION_USER_PROMPT.format(question=question, domain_block=domain_block),
+            user_prompt=DOMAIN_PREDICTION_USER_PROMPT.format(
+                question=question, domain_block=domain_block
+            ),
         )
         pred = validate_model(data, GraphDomainPrediction)
         scope, domains = pred.scope, list(pred.domains)

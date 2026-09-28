@@ -16,7 +16,7 @@ FORMAT_KEYWORDS = {
     "table": ["table", "tabular", "matrix", "comparison chart"],
     "list": ["list", "checklist", "bullet points", "bullet", "itemize", "enumerate"],
     "schedule": ["schedule", "timeline", "phases", "milestones"],
-    "summary": ["summary", "overview", "executive summary"]
+    "summary": ["summary", "overview", "executive summary"],
 }
 """
 Keyword mappings for detecting user intent to format responses.
@@ -38,7 +38,7 @@ SUPPORT_LEVEL_NOT_SUPPORTED = "not_supported"
 VALID_SUPPORT_LEVELS = [
     SUPPORT_LEVEL_SUPPORTED,
     SUPPORT_LEVEL_PARTIALLY_SUPPORTED,
-    SUPPORT_LEVEL_NOT_SUPPORTED
+    SUPPORT_LEVEL_NOT_SUPPORTED,
 ]
 """All valid support levels for fact checking"""
 

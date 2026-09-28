@@ -8,12 +8,13 @@ Endpoints:
 
 from __future__ import annotations
 
+import asyncio
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from ..pipeline.orchestrator import run_pipeline
 from ..pipeline.streaming import stream_pipeline_sse
@@ -25,7 +26,7 @@ router = APIRouter(prefix="/pipeline", tags=["pipeline"])
 
 class AskRequest(BaseModel):
     question: str
-    tender_id: Optional[str] = None
+    tender_id: str | None = None
 
 
 class Reference(BaseModel):
@@ -35,11 +36,11 @@ class Reference(BaseModel):
 
 class AskResponse(BaseModel):
     answer: str
-    references: List[Reference] = []
+    references: list[Reference] = Field(default_factory=list)
     confidence: float = 0.0
-    route: Optional[str] = None
-    strategy: Optional[str] = None
-    debug: Dict[str, Any] = {}
+    route: str | None = None
+    strategy: str | None = None
+    debug: dict[str, Any] = Field(default_factory=dict)
 
 
 @router.get("/health")
@@ -51,16 +52,20 @@ async def health():
 async def ask(req: AskRequest):
     if not req.question or not req.question.strip():
         raise HTTPException(status_code=400, detail="question is required")
-    import asyncio
     try:
         result = await asyncio.to_thread(run_pipeline, req.question, req.tender_id)
     except Exception as exc:
         logger.exception("pipeline /ask failed")
-        raise HTTPException(status_code=500, detail=f"{type(exc).__name__}: {exc}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"{type(exc).__name__}: {exc}",
+        ) from exc
     answer = result["answer"]
     return AskResponse(
         answer=answer.answer,
-        references=[{"file_name": r.file_name, "page_number": r.page_number} for r in answer.references],
+        references=[
+            {"file_name": r.file_name, "page_number": r.page_number} for r in answer.references
+        ],
         confidence=answer.confidence_score,
         route=result.get("route"),
         strategy=result.get("strategy"),

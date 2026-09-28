@@ -9,7 +9,6 @@ stage can import it without a cycle.
 from __future__ import annotations
 
 import re
-from typing import Any, Dict, List, Tuple
 
 from .schemas import ReferenceGeneration
 
@@ -45,21 +44,28 @@ def group_knowledge_base_by_file(chunks: list) -> list:
         key = file_name.strip().lower()
         if key not in by_file:
             by_file[key] = {
-                "file_name": file_name, "page_number": "N/A", "page_numbers": [],
-                "content": "", "chunks": [], "source": "grouped_file", "score": 0.0,
+                "file_name": file_name,
+                "page_number": "N/A",
+                "page_numbers": [],
+                "content": "",
+                "chunks": [],
+                "source": "grouped_file",
+                "score": 0.0,
             }
             grouped.append(by_file[key])
         source = by_file[key]
         page_number = str(chunk.get("page_number", "N/A"))
         source["page_numbers"].append(page_number)
         source["score"] = max(float(source.get("score") or 0.0), float(chunk.get("score") or 0.0))
-        source["chunks"].append({
-            "content": chunk.get("content", "") or chunk.get("text", ""),
-            "page_number": page_number,
-            "chunk_id": chunk.get("chunk_id", ""),
-            "source": chunk.get("source", "unknown"),
-            "score": chunk.get("score", 0.0),
-        })
+        source["chunks"].append(
+            {
+                "content": chunk.get("content", "") or chunk.get("text", ""),
+                "page_number": page_number,
+                "chunk_id": chunk.get("chunk_id", ""),
+                "source": chunk.get("source", "unknown"),
+                "score": chunk.get("score", 0.0),
+            }
+        )
     for source in grouped:
         source["page_number"] = _format_page_set(source["page_numbers"])
         source["page_numbers"] = source["page_number"]
@@ -99,8 +105,9 @@ def _reference_for(knowledge_base: list, idx: int) -> ReferenceGeneration:
     )
 
 
-def remap_citations(answer: str, knowledge_base: list,
-                    fallback_top_n: int = 5) -> Tuple[str, List[ReferenceGeneration]]:
+def remap_citations(
+    answer: str, knowledge_base: list, fallback_top_n: int = 5
+) -> tuple[str, list[ReferenceGeneration]]:
     """Remap sparse ``[Source N]`` citations and build a compact reference list.
 
     Accepts both the mandated ``[Source N]`` / ``[Sources N, M]`` form and a bare
@@ -114,7 +121,8 @@ def remap_citations(answer: str, knowledge_base: list,
     the upstream cross-encoder) so the UI is never left with an empty source list.
     """
     citation_pattern = re.compile(
-        r"\[\s*(?:Sources?\s+)?(\d+(?:\s*(?:,|and|&)\s*(?:Sources?\s+)?\d+)*)\s*\]", re.IGNORECASE)
+        r"\[\s*(?:Sources?\s+)?(\d+(?:\s*(?:,|and|&)\s*(?:Sources?\s+)?\d+)*)\s*\]", re.IGNORECASE
+    )
     cited_numbers = []
     for match in citation_pattern.finditer(answer):
         for raw_num in re.findall(r"\d+", match.group(1)):

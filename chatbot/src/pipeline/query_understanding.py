@@ -17,27 +17,27 @@ import time
 
 from .clients import (
     call_json,
-    openai_client,
-    chat_deployment,
-    validate_model,
     canon_entity_categories,
+    chat_deployment,
+    openai_client,
+    validate_model,
 )
 from .prompts import (
-    HYDE_PROMPT,
     GRAPH_COMPLEXITY_PROMPT,
+    HYDE_PROMPT,
     QUERY_EXPANSION_PROMPT_COMPLEX,
     QUERY_EXPANSION_PROMPT_SIMPLE,
-    STRATEGY_SYSTEM_PROMPT,
-    STRATEGY_USER_PROMPT,
     RETRIEVAL_NEED_SYSTEM_PROMPT,
     RETRIEVAL_NEED_USER_PROMPT,
+    STRATEGY_SYSTEM_PROMPT,
+    STRATEGY_USER_PROMPT,
 )
 from .schemas import (
-    GraphComplexityAnalysis,
-    StrategyChoice,
-    RetrievalNeed,
     ComplexQueryExpansion,
+    GraphComplexityAnalysis,
+    RetrievalNeed,
     SimpleQueryExpansion,
+    StrategyChoice,
 )
 
 logger = logging.getLogger("agent_flow.pipeline.query_understanding")
@@ -103,8 +103,12 @@ def analyze_query(question: str) -> dict:
             relation_hints=[],
             high_level_keywords=[],
         )
-    logger.info("[analyse] complexity=%s sub=%d — %.1fs",
-                gca.is_complex, len(gca.sub_questions), time.time() - t0)
+    logger.info(
+        "[analyse] complexity=%s sub=%d — %.1fs",
+        gca.is_complex,
+        len(gca.sub_questions),
+        time.time() - t0,
+    )
 
     # ── HyDE for the whole question ──────────────────────────────────────────
     try:
@@ -128,7 +132,9 @@ def analyze_query(question: str) -> dict:
             data = call_json(_EXPAND_SYS, QUERY_EXPANSION_PROMPT_COMPLEX.format(query=question))
             exp = validate_model(data, ComplexQueryExpansion)
             for sub_question in sub_questions:
-                sub_data = call_json(_EXPAND_SYS, QUERY_EXPANSION_PROMPT_COMPLEX.format(query=sub_question))
+                sub_data = call_json(
+                    _EXPAND_SYS, QUERY_EXPANSION_PROMPT_COMPLEX.format(query=sub_question)
+                )
                 exp_sub = validate_model(sub_data, ComplexQueryExpansion)
                 expansion_keywords_sub_questions[sub_question] = exp_sub.keywords
         else:
@@ -140,8 +146,7 @@ def analyze_query(question: str) -> dict:
         logger.warning("expansion fallback (%s)", exc)
 
     expanded_query = (
-        f"{question} {' '.join(expansion_keywords)}".strip()
-        if expansion_keywords else question
+        f"{question} {' '.join(expansion_keywords)}".strip() if expansion_keywords else question
     )
 
     # ── Per-sub-question HyDE (used by the multi-hop / decomposition path) ────
@@ -154,7 +159,11 @@ def analyze_query(question: str) -> dict:
             hyde_doc_sub_questions[sub_question] = sub_question
 
     # ── Normalise hints ──────────────────────────────────────────────────────
-    cats_kept = [c for c in gca.category_hints if c in categories] if categories else list(gca.category_hints)
+    cats_kept = (
+        [c for c in gca.category_hints if c in categories]
+        if categories
+        else list(gca.category_hints)
+    )
     relation_hints = [
         re.sub(r"[^a-z0-9]+", "_", r.lower()).strip("_")
         for r in (gca.relation_hints or [])

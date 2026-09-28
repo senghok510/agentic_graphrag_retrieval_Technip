@@ -1,14 +1,16 @@
 import logging
-from typing import List, Dict, Any, Optional
-from neo4j import GraphDatabase
-from langchain_core.tools import tool
-from ..config.appSettings import get_settings,embed_document_large_model,embed_document_neo4j
+from typing import Any
 
+from langchain_core.tools import tool
+from neo4j import GraphDatabase
+
+from ..config.appSettings import embed_document_neo4j, get_settings
 
 logger = logging.getLogger("agent_flow.neo4j_service")
 
 _settings = None
 _driver = None
+
 
 def _get_settings():
     global _settings
@@ -16,17 +18,19 @@ def _get_settings():
         _settings = get_settings()
     return _settings
 
+
 def get_driver():
     global _driver
     if _driver is None:
         settings = _get_settings()
-        NEO4J_URI = getattr(settings, "NEO4J_URI")
-        NEO4J_USER = getattr(settings, "NEO4J_USER")
-        NEO4J_PASSWORD = getattr(settings, "NEO4J_PASSWORD")
+        NEO4J_URI = settings.NEO4J_URI
+        NEO4J_USER = settings.NEO4J_USER
+        NEO4J_PASSWORD = settings.NEO4J_PASSWORD
         _driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
     return _driver
 
-def neo4j_run_query(query: str, params: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+
+def neo4j_run_query(query: str, params: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     """
     Exécute une requête Cypher via le protocole Bolt.
     """
@@ -35,19 +39,20 @@ def neo4j_run_query(query: str, params: Optional[Dict[str, Any]] = None) -> List
         with driver.session() as session:
             result = session.run(query, params or {})
             records = [record.data() for record in result]
-            if params and 'ITB_ID' in params:
+            if params and "ITB_ID" in params:
                 logger.debug(f"Neo4j query: ITB_ID={params['ITB_ID']}, {len(records)} records")
             return records
     except Exception as e:
         logger.error(f"Neo4j query error: {e}")
         return []
 
+
 def neo4j_vector_search(
-    question_embedding: List[float],
+    question_embedding: list[float],
     tender_id: str,
     top_k: int = 10,
-    index_name: str = "document_chunks"
-) -> List[Dict[str, Any]]:
+    index_name: str = "document_chunks",
+) -> list[dict[str, Any]]:
     """
     Recherche vectorielle optimisée avec enrichissement de contexte.
     """
@@ -84,11 +89,11 @@ def neo4j_vector_search(
         "index_name": index_name,
         "top_k": top_k,
         "top_k_search": 100,
-        "ITB_ID": tender_id
+        "ITB_ID": tender_id,
     }
 
     results = neo4j_run_query(vector_search_query, params)
-    
+
     if results:
         logger.debug(f"Vector search: {len(results)} chunks, ITB_ID={tender_id}")
     else:
@@ -97,34 +102,37 @@ def neo4j_vector_search(
 
 
 @tool
-def neo4j_graph_tool(query: str, tender_id: str, top_k: int = 10) -> List[Dict[str, Any]]:
+def neo4j_graph_tool(query: str, tender_id: str, top_k: int = 10) -> list[dict[str, Any]]:
     """
     LangChain tool: vector search on Neo4j graph database.
     """
     try:
-
         query_embedding = embed_document_neo4j(query)
         records = neo4j_vector_search(query_embedding, tender_id, top_k=top_k)
-        
-        formatted = [{
-            "page_chunk": r.get('current_chunk_text', ''),
-            "file_name": r.get('document_filename', 'N/A'),
-            "page_number": str(r.get('Chunk_SeqNo', 'N/A')),
-            "score": float(r.get('score', 0.0)),
-            "CurrentChunkID": r.get('CurrentChunkID', ''),
-            "context_chunks": {
-                "previous": r.get('prev_chunk_text', ''),
-                "next": r.get('next_chunk_text', '')
-            },
-            "source": "graph_db"
-        } for r in records]
-        
+
+        formatted = [
+            {
+                "page_chunk": r.get("current_chunk_text", ""),
+                "file_name": r.get("document_filename", "N/A"),
+                "page_number": str(r.get("Chunk_SeqNo", "N/A")),
+                "score": float(r.get("score", 0.0)),
+                "CurrentChunkID": r.get("CurrentChunkID", ""),
+                "context_chunks": {
+                    "previous": r.get("prev_chunk_text", ""),
+                    "next": r.get("next_chunk_text", ""),
+                },
+                "source": "graph_db",
+            }
+            for r in records
+        ]
+
         logger.debug(f"Neo4j graph tool: {len(formatted)} results")
         return formatted
 
     except Exception as e:
         logger.error(f"Neo4j graph tool failed: {e}")
         return []
+
 
 # @tool
 # def neo4j_fulltext_search(keyword: str, tender_id: str, top_k: int = 10) -> List[Dict[str, Any]]:
@@ -145,7 +153,7 @@ def neo4j_graph_tool(query: str, tender_id: str, top_k: int = 10) -> List[Dict[s
 #     # Fallback to CONTAINS for numeric/code searches that Lucene tokenises poorly
 #     if not results:
 #         logger.debug(f"Lucene index returned 0 results for '{keyword}', falling back to CONTAINS scan")
-        
+
 #         fallback_query = """
 #         MATCH (c:Chunk)-[:PART_OF]->(d:Document)-[:BELONGS_TO]->(i:ITB {ITB_ID: $tender_id})
 #         WHERE c.text CONTAINS $keyword OR toString(c.sequenceNo) CONTAINS $keyword
@@ -156,14 +164,15 @@ def neo4j_graph_tool(query: str, tender_id: str, top_k: int = 10) -> List[Dict[s
 
 #     return results
 
+
 @tool
-def neo4j_expand_context_by_ids(chunk_ids: List[str]) -> List[Dict[str, Any]]:
+def neo4j_expand_context_by_ids(chunk_ids: list[str]) -> list[dict[str, Any]]:
     """
     Retrieve immediate neighbors and related document metadata for Chunk IDs.
     """
     if not chunk_ids:
         return []
-        
+
     query = """
     MATCH (node:Chunk)
     WHERE node.ChunkID IN $chunk_ids
@@ -183,8 +192,9 @@ def neo4j_expand_context_by_ids(chunk_ids: List[str]) -> List[Dict[str, Any]]:
     """
     return neo4j_run_query(query, {"chunk_ids": chunk_ids})
 
+
 @tool
-def neo4j_get_document_relationships(filename: str, tender_id: str) -> List[Dict[str, Any]]:
+def neo4j_get_document_relationships(filename: str, tender_id: str) -> list[dict[str, Any]]:
     """
     Find documents related to a specific document.
     """
@@ -196,8 +206,9 @@ def neo4j_get_document_relationships(filename: str, tender_id: str) -> List[Dict
     """
     return neo4j_run_query(query, {"filename": filename, "tender_id": tender_id})
 
+
 @tool
-def neo4j_get_itb_hierarchy(tender_id: str) -> List[Dict[str, Any]]:
+def neo4j_get_itb_hierarchy(tender_id: str) -> list[dict[str, Any]]:
     """
     Retrieve the structure for a given ITB.
     """
@@ -213,28 +224,9 @@ def neo4j_get_itb_hierarchy(tender_id: str) -> List[Dict[str, Any]]:
     """
     return neo4j_run_query(query, {"tender_id": tender_id})
 
-def get_all_documents_for_itb(tender_id: str) -> List[str]:
-    """
-    Retrieve a list of all document filenames for a given ITB.
-    """
-    query = """
-    MATCH (i:ITB {ITB_ID: $tender_id})<-[:BELONGS_TO]-(d:Document)
-    RETURN d.docURL as filename
-    """
-    results = neo4j_run_query(query, {"tender_id": tender_id})
-    return [r['filename'] for r in results if r.get('filename')]
-
-def close_neo4j_driver():
-    """Close the Neo4j driver."""
-    global _driver
-    if _driver:
-        _driver.close()
-        logger.info("Neo4j Bolt connection closed.")
-
 
 ### ask specifcally for a pdf file:
 ## work like in chatgpt
-
 
 
 # @tool
@@ -477,8 +469,9 @@ def close_neo4j_driver():
 # NEW: Document-centric retrieval tools (for document graph)
 # ============================================================
 
+
 @tool
-def get_all_documents_for_itb(tender_id: str) -> List[str]:
+def get_all_documents_for_itb(tender_id: str) -> list[str]:
     """
     Retrieve a list of all document filenames for a given ITB.
     Use when: broad exploration or when user asks for "all documents" or "what documents are available?"
@@ -488,11 +481,13 @@ def get_all_documents_for_itb(tender_id: str) -> List[str]:
     RETURN d.docURL as filename
     """
     results = neo4j_run_query(query, {"tender_id": tender_id})
-    return [r['filename'] for r in results if r.get('filename')]
+    return [r["filename"] for r in results if r.get("filename")]
 
 
 @tool
-async def search_document_summaries(keyword: str, tender_id: str, top_k: int = 5) -> List[Dict[str, Any]]:
+async def search_document_summaries(
+    keyword: str, tender_id: str, top_k: int = 5
+) -> list[dict[str, Any]]:
     """
     Search document summaries and metadata for keywords.
     Use when: User asks general questions that might match document content/titles.
@@ -508,11 +503,13 @@ async def search_document_summaries(keyword: str, tender_id: str, top_k: int = 5
     LIMIT $top_k
     """
     results = neo4j_run_query(query, {"tender_id": tender_id, "keyword": keyword, "top_k": top_k})
-    logger.info(f"search_document_summaries: found {len(results)} documents for keyword '{keyword}'")
+    logger.info(
+        f"search_document_summaries: found {len(results)} documents for keyword '{keyword}'"
+    )
     return results
 
 
-def _get_all_entities(tender_id: str) -> Dict[str, List[str]]:
+def _get_all_entities(tender_id: str) -> dict[str, list[str]]:
     """
     Fetch all entity names from the graph for a given ITB, grouped by type.
     Returns: {"Identity": [...], "Place": [...], "Topic": [...]}
@@ -534,7 +531,7 @@ def _get_all_entities(tender_id: str) -> Dict[str, List[str]]:
     RETURN DISTINCT 'Topic' AS type, e.topicName AS name
     """
     records = neo4j_run_query(query, {"tender_id": tender_id})
-    grouped: Dict[str, List[str]] = {"Identity": [], "Place": [], "Topic": []}
+    grouped: dict[str, list[str]] = {"Identity": [], "Place": [], "Topic": []}
     for r in records:
         t = r.get("type")
         n = r.get("name")
@@ -543,13 +540,16 @@ def _get_all_entities(tender_id: str) -> Dict[str, List[str]]:
     return grouped
 
 
-def _fuzzy_resolve_entity(entity_name: str, candidates: List[str], cutoff: float = 0.6) -> Optional[str]:
+def _fuzzy_resolve_entity(
+    entity_name: str, candidates: list[str], cutoff: float = 0.6
+) -> str | None:
     """
     Return the best fuzzy match from candidates for entity_name, or None.
     Uses difflib sequence matching (handles abbreviations, partial names, typos).
     cutoff: minimum similarity ratio (0–1). 0.6 is a reasonable default.
     """
     import difflib
+
     if not candidates:
         return None
 
@@ -562,7 +562,9 @@ def _fuzzy_resolve_entity(entity_name: str, candidates: List[str], cutoff: float
 
 
 @tool
-def find_documents_by_entity(entity_type: str, entity_name: str, tender_id: str) -> List[Dict[str, Any]]:
+def find_documents_by_entity(
+    entity_type: str, entity_name: str, tender_id: str
+) -> list[dict[str, Any]]:
     """
     Find documents mentioning a specific entity (company, place, topic).
     entity_type: 'Identity', 'Place', 'Topic'
@@ -573,12 +575,9 @@ def find_documents_by_entity(entity_type: str, entity_name: str, tender_id: str)
     all_entities = _get_all_entities(tender_id)
 
     # Search across all types unless a specific type is given
-    search_types = (
-        [entity_type] if entity_type in all_entities
-        else list(all_entities.keys())
-    )
+    search_types = [entity_type] if entity_type in all_entities else list(all_entities.keys())
 
-    resolved_name = entity_name  
+    resolved_name = entity_name
     resolved_type = None
 
     for etype in search_types:
@@ -639,11 +638,13 @@ def find_documents_by_entity(entity_type: str, entity_name: str, tender_id: str)
         """
 
     results = neo4j_run_query(query, {"entity_name": resolved_name, "tender_id": tender_id})
-    logger.info(f"find_documents_by_entity: found {len(results)} documents for entity '{resolved_name}'")
+    logger.info(
+        f"find_documents_by_entity: found {len(results)} documents for entity '{resolved_name}'"
+    )
     return results
 
 
-def _get_all_domains(tender_id: str) -> Dict[str, List[str]]:
+def _get_all_domains(tender_id: str) -> dict[str, list[str]]:
     """
     Fetch all domain names from the graph for a given ITB, grouped by level.
     Returns: {"high": [...], "mid": [...], "low": [...]}
@@ -665,7 +666,7 @@ def _get_all_domains(tender_id: str) -> Dict[str, List[str]]:
     RETURN DISTINCT 'low' AS level, ld.domainName AS name
     """
     records = neo4j_run_query(query, {"tender_id": tender_id})
-    grouped: Dict[str, List[str]] = {"high": [], "mid": [], "low": []}
+    grouped: dict[str, list[str]] = {"high": [], "mid": [], "low": []}
     for r in records:
         lv = r.get("level")
         nm = r.get("name")
@@ -675,7 +676,9 @@ def _get_all_domains(tender_id: str) -> Dict[str, List[str]]:
 
 
 @tool
-def find_documents_by_domain(domain_name: str, tender_id: str, level: str = "low") -> List[Dict[str, Any]]:
+def find_documents_by_domain(
+    domain_name: str, tender_id: str, level: str = "low"
+) -> list[dict[str, Any]]:
     """
     Find documents within a specific domain by level (high, mid, or low).
     level: 'high', 'mid', or 'low'
@@ -689,9 +692,7 @@ def find_documents_by_domain(domain_name: str, tender_id: str, level: str = "low
     resolved_level = level
 
     # Search the hinted level first, then fall back to all levels
-    levels_to_search = (
-        [level] + [lv for lv in ("high", "mid", "low") if lv != level]
-    )
+    levels_to_search = [level] + [lv for lv in ("high", "mid", "low") if lv != level]
 
     for lv in levels_to_search:
         match = _fuzzy_resolve_entity(domain_name, all_domains[lv])
@@ -732,12 +733,14 @@ def find_documents_by_domain(domain_name: str, tender_id: str, level: str = "low
     LIMIT 10
     """
     results = neo4j_run_query(query, {"domain_name": resolved_name, "tender_id": tender_id})
-    logger.info(f"find_documents_by_domain: found {len(results)} documents in domain '{resolved_name}' (level={resolved_level})")
+    logger.info(
+        f"find_documents_by_domain: found {len(results)} documents in domain '{resolved_name}' (level={resolved_level})"
+    )
     return results
 
 
 @tool
-def find_related_documents(filename: str, tender_id: str) -> List[Dict[str, Any]]:
+def find_related_documents(filename: str, tender_id: str) -> list[dict[str, Any]]:
     """
     Find documents related to a given document via REFERS_TO relationships.
     Sorted by composite relevance score (semantic + reference + domain).
@@ -762,7 +765,7 @@ def find_related_documents(filename: str, tender_id: str) -> List[Dict[str, Any]
 
 
 @tool
-def get_document_details(filename: str, tender_id: str) -> Dict[str, Any]:
+def get_document_details(filename: str, tender_id: str) -> dict[str, Any]:
     """
     Get full document properties including metadata, domains, and associated entities.
     Use when: You need to enrich a document with all its context and relationships.
@@ -802,7 +805,5 @@ def close_neo4j_driver():
     global _driver
     if _driver:
         _driver.close()
+        _driver = None
         logger.info("Neo4j Bolt connection closed.")
-        
-        
-        

@@ -11,7 +11,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
-from typing import AsyncGenerator, Optional
+from collections.abc import AsyncGenerator
 
 from .orchestrator import run_pipeline
 
@@ -24,9 +24,11 @@ def _sse(event: dict) -> str:
     return f"data: {json.dumps(event, ensure_ascii=False, default=str)}\n\n"
 
 
-async def stream_pipeline_sse(question: str, tender_id: Optional[str] = None) -> AsyncGenerator[str, None]:
+async def stream_pipeline_sse(
+    question: str, tender_id: str | None = None
+) -> AsyncGenerator[str, None]:
     loop = asyncio.get_running_loop()
-    queue: "asyncio.Queue" = asyncio.Queue()
+    queue: asyncio.Queue = asyncio.Queue()
 
     def emit(event: dict):
         # Called from the worker thread → hop back onto the event loop safely.
@@ -37,16 +39,20 @@ async def stream_pipeline_sse(question: str, tender_id: Optional[str] = None) ->
             result = run_pipeline(question, tender_id=tender_id, emit=emit)
             answer = result["answer"]
             debug = result.get("debug", {})
-            emit({
-                "type": "final",
-                "answer": answer.answer,
-                "references": [r.model_dump() if hasattr(r, "model_dump") else r for r in answer.references],
-                "confidence": answer.confidence_score,
-                "route": result.get("route"),                 # retrieval need
-                "domain_scope": debug.get("domain_scope"),     # single | multi | full
-                "graph_domains": debug.get("graph_domains"),   # scoped domains (or null)
-                "debug": debug,
-            })
+            emit(
+                {
+                    "type": "final",
+                    "answer": answer.answer,
+                    "references": [
+                        r.model_dump() if hasattr(r, "model_dump") else r for r in answer.references
+                    ],
+                    "confidence": answer.confidence_score,
+                    "route": result.get("route"),  # retrieval need
+                    "domain_scope": debug.get("domain_scope"),  # single | multi | full
+                    "graph_domains": debug.get("graph_domains"),  # scoped domains (or null)
+                    "debug": debug,
+                }
+            )
         except Exception as exc:  # surface failures to the UI instead of hanging
             logger.exception("pipeline stream failed")
             emit({"type": "error", "message": f"{type(exc).__name__}: {exc}"})
