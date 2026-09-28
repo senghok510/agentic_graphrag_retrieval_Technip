@@ -12,13 +12,12 @@ import logging
 import os
 import re
 import threading
-from typing import Any, Dict, List, Optional
 
 from azure.core.credentials import AccessToken, AzureKeyCredential
 from azure.core.pipeline.policies import SansIOHTTPPolicy
 from azure.search.documents import SearchClient
 from neo4j import GraphDatabase
-from openai import AzureOpenAI, APIConnectionError, APITimeoutError, RateLimitError
+from openai import APIConnectionError, APITimeoutError, AzureOpenAI, RateLimitError
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
 from . import config
@@ -66,10 +65,10 @@ class NoOpCredential:
 
 # ── Lazy, thread-safe singletons ──────────────────────────────────────────────
 
-_openai_client: Optional[AzureOpenAI] = None
+_openai_client: AzureOpenAI | None = None
 _openai_lock = threading.Lock()
 
-_search_client: Optional[SearchClient] = None
+_search_client: SearchClient | None = None
 _search_lock = threading.Lock()
 
 _neo4j_driver = None
@@ -85,7 +84,9 @@ def get_openai_client() -> AzureOpenAI:
                     azure_endpoint=os.getenv("AZURE_OPENAI_APIM"),
                     api_key="DUMMY",  # auth happens via the APIM subscription header, not this
                     api_version=os.getenv("AZURE_OPENAI_API_VERSION", "2024-02-15-preview"),
-                    default_headers={"Ocp-Apim-Subscription-Key": os.getenv("APIM_SUBSCRIPTION_KEY")},
+                    default_headers={
+                        "Ocp-Apim-Subscription-Key": os.getenv("APIM_SUBSCRIPTION_KEY")
+                    },
                 )
     return _openai_client
 
@@ -124,6 +125,7 @@ def chat_deployment() -> str:
 
 # ── LLM + embedding helpers ────────────────────────────────────────────────────
 
+
 @retry(
     retry=retry_if_exception_type((APITimeoutError, APIConnectionError, RateLimitError)),
     wait=wait_exponential(min=2, max=60),
@@ -144,7 +146,9 @@ def call_llm(system_prompt: str, user_prompt: str):
     )
 
 
-def embed_texts_large_model(texts: List[str], dimensions: int = config.EMBED_DIMENSIONS) -> List[List[float]]:
+def embed_texts_large_model(
+    texts: list[str], dimensions: int = config.EMBED_DIMENSIONS
+) -> list[list[float]]:
     response = get_openai_client().embeddings.create(
         model=config.EMBED_MODEL,
         input=texts,

@@ -11,7 +11,7 @@ top of existing Chunk nodes, matched by ChunkID).
 from __future__ import annotations
 
 import logging
-from typing import Any, Dict, List
+from typing import Any
 
 logger = logging.getLogger("graph_construction.pipeline.neo4j_writer")
 
@@ -34,10 +34,11 @@ def ensure_constraints(driver) -> None:
     logger.info("Constraints/indexes ensured")
 
 
-def write_entities(driver, entities: List[Dict[str, Any]]) -> None:
+def write_entities(driver, entities: list[dict[str, Any]]) -> None:
     with driver.session() as session:
         for entity in entities:
-            session.run("""
+            session.run(
+                """
                 MERGE (e:Entity {entityKey: $entity_key})
                 SET e.name = $name,
                     e.normalizedName = $normalized_name,
@@ -45,19 +46,21 @@ def write_entities(driver, entities: List[Dict[str, Any]]) -> None:
                     e.llmCategory = $llm_category,
                     e.description = $description,
                     e.aliases = $aliases
-            """, {
-                "entity_key": entity["entity_key"],
-                "name": entity["name"],
-                "normalized_name": entity["normalized_name"],
-                "canonical_category": entity["canonical_category"],
-                "llm_category": entity["llm_category"],
-                "description": entity.get("description", ""),
-                "aliases": entity.get("aliases", []),
-            })
+            """,
+                {
+                    "entity_key": entity["entity_key"],
+                    "name": entity["name"],
+                    "normalized_name": entity["normalized_name"],
+                    "canonical_category": entity["canonical_category"],
+                    "llm_category": entity["llm_category"],
+                    "description": entity.get("description", ""),
+                    "aliases": entity.get("aliases", []),
+                },
+            )
     logger.info("Wrote %d entity nodes", len(entities))
 
 
-def write_relations(driver, relations: List[Dict[str, Any]]) -> None:
+def write_relations(driver, relations: list[dict[str, Any]]) -> None:
     """MERGEs each Relation node + SUBJECT_OF/OBJECT_OF edges, including
     relationshipKeywords straight from extraction (see extraction.py's
     process_single_chunk / prompts.build_semantic_extraction_prompt) -- this
@@ -65,7 +68,8 @@ def write_relations(driver, relations: List[Dict[str, Any]]) -> None:
     backfill for relations that predate this or came back with no keywords."""
     with driver.session() as session:
         for rel in relations:
-            session.run("""
+            session.run(
+                """
                 MATCH (subject:Entity {entityKey: $subject_key})
                 MATCH (object:Entity {entityKey: $object_key})
                 MERGE (r:Relation {relationId: $relation_id})
@@ -78,33 +82,39 @@ def write_relations(driver, relations: List[Dict[str, Any]]) -> None:
                     r.objectKey = $object_key
                 MERGE (subject)-[:SUBJECT_OF]->(r)
                 MERGE (r)-[:OBJECT_OF]->(object)
-            """, {
-                "relation_id": rel["relation_id"],
-                "relationship_label": rel.get("relationship_label", ""),
-                "relationship_description": rel.get("relationship_description", ""),
-                "relationship_strength": int(rel.get("relationship_strength", 5)),
-                "relationship_keywords": rel.get("relationship_keywords", []),
-                "subject_key": rel["subject_key"],
-                "object_key": rel["object_key"],
-            })
+            """,
+                {
+                    "relation_id": rel["relation_id"],
+                    "relationship_label": rel.get("relationship_label", ""),
+                    "relationship_description": rel.get("relationship_description", ""),
+                    "relationship_strength": int(rel.get("relationship_strength", 5)),
+                    "relationship_keywords": rel.get("relationship_keywords", []),
+                    "subject_key": rel["subject_key"],
+                    "object_key": rel["object_key"],
+                },
+            )
     logger.info("Wrote %d relation nodes", len(relations))
 
 
-def write_mentions(driver, mentions: List[Dict[str, Any]]) -> None:
+def write_mentions(driver, mentions: list[dict[str, Any]]) -> None:
     with driver.session() as session:
         for mention in mentions:
-            session.run("""
+            session.run(
+                """
                 MATCH (ch:Chunk {ChunkID: $chunk_id})
                 MATCH (e:Entity {entityKey: $entity_key})
                 MERGE (ch)-[:MENTIONS]->(e)
-            """, {"chunk_id": mention["chunk_id"], "entity_key": mention["entity_key"]})
+            """,
+                {"chunk_id": mention["chunk_id"], "entity_key": mention["entity_key"]},
+            )
     logger.info("Wrote %d MENTIONS edges", len(mentions))
 
 
-def write_assertions(driver, assertions: List[Dict[str, Any]]) -> None:
+def write_assertions(driver, assertions: list[dict[str, Any]]) -> None:
     with driver.session() as session:
         for assertion in assertions:
-            session.run("""
+            session.run(
+                """
                 MATCH (ch:Chunk {ChunkID: $chunk_id})
                 MATCH (r:Relation {relationId: $relation_id})
                 MERGE (ch)-[a:ASSERTS {assertionKey: $assertion_key}]->(r)
@@ -115,17 +125,19 @@ def write_assertions(driver, assertions: List[Dict[str, Any]]) -> None:
                     a.pageNumber = $page_number,
                     a.docURL = $doc_url,
                     a.fileName = $file_name
-            """, {
-                "assertion_key": assertion["assertion_key"],
-                "chunk_id": assertion["chunk_id"],
-                "relation_id": assertion["relation_id"],
-                "evidence_text": assertion["evidence_text"],
-                "confidence": float(assertion.get("confidence", 0.75)),
-                "relationship_strength": int(assertion.get("relationship_strength", 5)),
-                "page_number": assertion.get("page_number"),
-                "doc_url": assertion.get("doc_url"),
-                "file_name": assertion.get("file_name", ""),
-            })
+            """,
+                {
+                    "assertion_key": assertion["assertion_key"],
+                    "chunk_id": assertion["chunk_id"],
+                    "relation_id": assertion["relation_id"],
+                    "evidence_text": assertion["evidence_text"],
+                    "confidence": float(assertion.get("confidence", 0.75)),
+                    "relationship_strength": int(assertion.get("relationship_strength", 5)),
+                    "page_number": assertion.get("page_number"),
+                    "doc_url": assertion.get("doc_url"),
+                    "file_name": assertion.get("file_name", ""),
+                },
+            )
     logger.info("Wrote %d ASSERTS edges", len(assertions))
 
 
@@ -147,22 +159,25 @@ def refresh_relation_aggregates(driver) -> None:
     logger.info("Refreshed relation aggregates")
 
 
-def write_entity_descriptions(driver, entity_description_rows: List[Dict[str, str]]) -> int:
+def write_entity_descriptions(driver, entity_description_rows: list[dict[str, str]]) -> int:
     """rows: [{"entity_key": ..., "description": ...}, ...] -- the merged
     descriptions from entity_merge.run_entity_description_merge()."""
     with driver.session() as session:
-        result = session.run("""
+        result = session.run(
+            """
             UNWIND $rows AS row
             MATCH (e:Entity {entityKey: row.entity_key})
             SET e.description = row.description
             RETURN count(e) AS updated_entities
-        """, {"rows": entity_description_rows}).single()
+        """,
+            {"rows": entity_description_rows},
+        ).single()
     updated = result["updated_entities"]
     logger.info("Updated Neo4j entity descriptions: %d", updated)
     return updated
 
 
-def get_graph_summary(driver) -> Dict[str, int]:
+def get_graph_summary(driver) -> dict[str, int]:
     with driver.session() as session:
         summary = session.run("""
             RETURN

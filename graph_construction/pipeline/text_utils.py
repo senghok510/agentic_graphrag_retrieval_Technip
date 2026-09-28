@@ -4,10 +4,10 @@ from __future__ import annotations
 
 import hashlib
 import re
-from typing import List, Optional, Sequence, Tuple, Union
+from collections.abc import Sequence
 
 
-def extract_page_and_chunk(doc_id: str) -> Tuple[Union[int, str], int]:
+def extract_page_and_chunk(doc_id: str) -> tuple[int | str, int]:
     """Sortable (page, chunk) tuple.
 
     - PDF / Word: (page_number, chunk_number)
@@ -34,15 +34,19 @@ def escape_odata_string(value: str) -> str:
     return value.replace("'", "''")
 
 
-def resolve_section_hint(chunk_text: str) -> Optional[str]:
+def resolve_section_hint(chunk_text: str) -> str | None:
     """First line of a chunk, if it looks like a numbered or all-caps heading."""
     section_hint = None
     first_line = chunk_text.splitlines()[0].strip() if chunk_text else ""
-    if first_line and len(first_line) <= 140:
-        if re.match(r"^(\d+(\.\d+)*)\s+.+", first_line):
-            section_hint = first_line
-        elif first_line.isupper() and len(first_line) <= 100:
-            section_hint = first_line
+    if (
+        first_line
+        and len(first_line) <= 140
+        and (
+            re.match(r"^(\d+(\.\d+)*)\s+.+", first_line)
+            or (first_line.isupper() and len(first_line) <= 100)
+        )
+    ):
+        section_hint = first_line
     return section_hint
 
 
@@ -52,14 +56,16 @@ def normalize_entity_name(name: str) -> str:
 
 def entity_key_from_name(name: str) -> str:
     """SHA-1("entity||" + normalized_name) -- the stable Entity node key."""
-    return hashlib.sha1(f"entity||{normalize_entity_name(name)}".encode("utf-8")).hexdigest()
+    return hashlib.sha1(f"entity||{normalize_entity_name(name)}".encode()).hexdigest()
 
 
-def normalize_keywords(kws: Optional[Sequence[str]], label: Optional[str] = None, cap: int = 6) -> List[str]:
+def normalize_keywords(
+    kws: Sequence[str] | None, label: str | None = None, cap: int = 6
+) -> list[str]:
     """Lowercase, snake_case, de-duplicated keyword list, capped at `cap`.
     Falls back to `[label]` if nothing survives normalization (e.g. so a
     relation always has at least one theme tag)."""
-    out: List[str] = []
+    out: list[str] = []
     for kw in kws or []:
         if not isinstance(kw, str):
             continue

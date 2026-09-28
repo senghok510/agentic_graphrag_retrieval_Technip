@@ -21,21 +21,44 @@ from __future__ import annotations
 import argparse
 import logging
 
-from . import checkpoint, config, entity_merge, extraction, neo4j_writer, relation_embeddings, relation_keywords, search_ingest
+from . import (
+    checkpoint,
+    config,
+    entity_merge,
+    extraction,
+    neo4j_writer,
+    relation_embeddings,
+    relation_keywords,
+    search_ingest,
+)
 from .clients import get_neo4j_driver, get_search_client
 
 logger = logging.getLogger("graph_construction.pipeline.run_pipeline")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--retry-failed", action="store_true",
-                        help="only re-run chunks recorded in state['failed_chunks'], instead of a full extraction pass")
-    parser.add_argument("--skip-neo4j-write", action="store_true", help="skip the Neo4j write stage entirely")
-    parser.add_argument("--skip-embeddings", action="store_true", help="skip relation embedding + vector index creation")
-    parser.add_argument("--backfill-keywords", action="store_true",
-                        help="run the post-hoc relationship_keywords backfill for relations missing them "
-                             "(normally unnecessary -- extraction now produces keywords directly)")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="only re-run chunks recorded in state['failed_chunks'], instead of a full extraction pass",
+    )
+    parser.add_argument(
+        "--skip-neo4j-write", action="store_true", help="skip the Neo4j write stage entirely"
+    )
+    parser.add_argument(
+        "--skip-embeddings",
+        action="store_true",
+        help="skip relation embedding + vector index creation",
+    )
+    parser.add_argument(
+        "--backfill-keywords",
+        action="store_true",
+        help="run the post-hoc relationship_keywords backfill for relations missing them "
+        "(normally unnecessary -- extraction now produces keywords directly)",
+    )
     parser.add_argument("--target-itb", default=config.TARGET_ITB_ID)
     return parser.parse_args()
 
@@ -46,8 +69,13 @@ def main() -> None:
 
     # ── Ingest: fetch chunks + resolve docURLs ────────────────────────────────
     search_client = get_search_client()
-    all_files_docs = search_ingest.fetch_all_files_docs(search_client)
-    file_name_url_map = search_ingest.build_file_name_url_map(get_neo4j_driver(), list(all_files_docs.keys()))
+    all_files_docs = search_ingest.fetch_all_files_docs(
+        search_client,
+        tender_id=args.target_itb,
+    )
+    file_name_url_map = search_ingest.build_file_name_url_map(
+        get_neo4j_driver(), list(all_files_docs.keys())
+    )
 
     # ── Extraction ─────────────────────────────────────────────────────────────
     state = checkpoint.load_state()
@@ -63,8 +91,12 @@ def main() -> None:
 
     logger.info(
         "Extraction state: entities=%d relations=%d chunks=%d mentions=%d assertions=%d failed=%d",
-        len(state["all_entity_nodes"]), len(state["all_relation_nodes"]), len(state["all_chunk_payloads"]),
-        len(state["all_mentions"]), len(state["all_assertions"]), len(state.get("failed_chunks", [])),
+        len(state["all_entity_nodes"]),
+        len(state["all_relation_nodes"]),
+        len(state["all_chunk_payloads"]),
+        len(state["all_mentions"]),
+        len(state["all_assertions"]),
+        len(state.get("failed_chunks", [])),
     )
 
     # ── Entity description merge ──────────────────────────────────────────────

@@ -6,7 +6,7 @@ chatbot/src/pipeline/graph_retrieval.py's _global_search can query them.
 from __future__ import annotations
 
 import logging
-from typing import Any, Dict, List
+from typing import Any
 
 from . import config
 from .clients import embed_texts_large_model
@@ -14,12 +14,12 @@ from .clients import embed_texts_large_model
 logger = logging.getLogger("graph_construction.pipeline.relation_embeddings")
 
 
-def build_relation_embed_text(row: Dict[str, Any]) -> str:
+def build_relation_embed_text(row: dict[str, Any]) -> str:
     kw = ", ".join(row.get("keywords") or [])
     return f"{kw}\t{row['subject']} {row['object']}\n{row['description']}"
 
 
-def fetch_relation_rows(driver) -> List[Dict[str, Any]]:
+def fetch_relation_rows(driver) -> list[dict[str, Any]]:
     with driver.session() as session:
         return session.run("""
             MATCH (s:Entity)-[:SUBJECT_OF]->(r:Relation)-[:OBJECT_OF]->(o:Entity)
@@ -28,25 +28,34 @@ def fetch_relation_rows(driver) -> List[Dict[str, Any]]:
         """).data()
 
 
-def embed_relations(rel_rows: List[Dict[str, Any]], batch_size: int = config.EMBED_BATCH) -> List[List[float]]:
+def embed_relations(
+    rel_rows: list[dict[str, Any]], batch_size: int = config.EMBED_BATCH
+) -> list[list[float]]:
     embed_texts = [build_relation_embed_text(r) for r in rel_rows]
-    embeddings: List[List[float]] = []
+    embeddings: list[list[float]] = []
     for i in range(0, len(embed_texts), batch_size):
-        embeddings.extend(embed_texts_large_model(embed_texts[i:i + batch_size]))
+        embeddings.extend(embed_texts_large_model(embed_texts[i : i + batch_size]))
         logger.info("embedded %d/%d", min(i + batch_size, len(embed_texts)), len(embed_texts))
     return embeddings
 
 
-def write_relation_embeddings(driver, rel_rows: List[Dict[str, Any]], embeddings: List[List[float]],
-                              batch_size: int = 1000) -> None:
-    embed_rows = [{"relation_id": r["relation_id"], "embedding": emb} for r, emb in zip(rel_rows, embeddings)]
+def write_relation_embeddings(
+    driver, rel_rows: list[dict[str, Any]], embeddings: list[list[float]], batch_size: int = 1000
+) -> None:
+    embed_rows = [
+        {"relation_id": relation["relation_id"], "embedding": embedding}
+        for relation, embedding in zip(rel_rows, embeddings, strict=True)
+    ]
     with driver.session() as session:
         for i in range(0, len(embed_rows), batch_size):
-            session.run("""
+            session.run(
+                """
                 UNWIND $rows AS row
                 MATCH (r:Relation {relationId: row.relation_id})
                 CALL db.create.setNodeVectorProperty(r, 'embedding', row.embedding)
-            """, {"rows": embed_rows[i:i + batch_size]})
+            """,
+                {"rows": embed_rows[i : i + batch_size]},
+            )
     logger.info("Wrote embeddings to %d relations", len(embed_rows))
 
 
@@ -63,7 +72,7 @@ def create_relation_vector_index(driver, dimensions: int) -> None:
     logger.info("relation_embedding_index ensured (dimensions=%d)", dimensions)
 
 
-def run_relation_embedding_pipeline(driver) -> Dict[str, int]:
+def run_relation_embedding_pipeline(driver) -> dict[str, int]:
     """Fetch -> embed -> write vectors -> create/ensure the vector index."""
     rel_rows = fetch_relation_rows(driver)
     logger.info("Relations to embed: %d", len(rel_rows))

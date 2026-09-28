@@ -8,14 +8,14 @@ import logging
 import pickle
 import time
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any
 
 from . import config
 
 logger = logging.getLogger("graph_construction.pipeline.checkpoint")
 
 
-def init_empty_state() -> Dict[str, Any]:
+def init_empty_state() -> dict[str, Any]:
     return {
         "all_entity_nodes": [],
         "all_relation_nodes": [],
@@ -42,7 +42,7 @@ def init_empty_state() -> Dict[str, Any]:
     }
 
 
-def load_state(path: Path = config.STATE_FILE) -> Dict[str, Any]:
+def load_state(path: Path = config.STATE_FILE) -> dict[str, Any]:
     if path.exists():
         with open(path, "rb") as f:
             state = pickle.load(f)
@@ -52,18 +52,27 @@ def load_state(path: Path = config.STATE_FILE) -> Dict[str, Any]:
     return init_empty_state()
 
 
-def save_state(state: Dict[str, Any], path: Path = config.STATE_FILE,
-               tmp_path: Path = config.STATE_TMP_FILE) -> None:
+def save_state(
+    state: dict[str, Any],
+    path: Path = config.STATE_FILE,
+    tmp_path: Path | None = None,
+) -> None:
     """Atomic write: dump to a tmp file, then rename over the real one."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = tmp_path or path.with_suffix(f"{path.suffix}.tmp")
     with open(tmp_path, "wb") as f:
         pickle.dump(state, f)
     tmp_path.replace(path)
 
 
-def maybe_save_checkpoint(state: Dict[str, Any], path: Path = config.STATE_FILE, *,
-                          force: bool = False,
-                          chunk_counter_since_save: int = 0,
-                          file_counter_since_save: int = 0) -> bool:
+def maybe_save_checkpoint(
+    state: dict[str, Any],
+    path: Path = config.STATE_FILE,
+    *,
+    force: bool = False,
+    chunk_counter_since_save: int = 0,
+    file_counter_since_save: int = 0,
+) -> bool:
     should_save = (
         force
         or chunk_counter_since_save >= config.CHECKPOINT_EVERY_N_CHUNKS

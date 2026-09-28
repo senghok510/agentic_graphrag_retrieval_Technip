@@ -20,7 +20,7 @@ from __future__ import annotations
 import json
 import logging
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from . import prompts
 from .clients import call_llm
@@ -31,7 +31,7 @@ logger = logging.getLogger("graph_construction.pipeline.relation_keywords")
 MAX_KEYWORD_WORKERS = 8
 
 
-def _fetch_relations_missing_keywords(driver, limit: Optional[int] = None) -> List[Dict[str, Any]]:
+def _fetch_relations_missing_keywords(driver, limit: int | None = None) -> list[dict[str, Any]]:
     query = """
         MATCH (r:Relation)
         WHERE r.relationshipKeywords IS NULL OR size(r.relationshipKeywords) = 0
@@ -48,7 +48,7 @@ def _fetch_relations_missing_keywords(driver, limit: Optional[int] = None) -> Li
         return [row.data() for row in session.run(query, {"limit": limit} if limit else {})]
 
 
-def _classify_one(rel: Dict[str, Any]) -> Dict[str, Any]:
+def _classify_one(rel: dict[str, Any]) -> dict[str, Any]:
     user_prompt = prompts.HIGH_LEVEL_PROMPT_USER.format(
         relationship_description=rel.get("relationship_description") or "",
         chunk=(rel.get("chunk_text") or "")[:2000],
@@ -56,7 +56,9 @@ def _classify_one(rel: Dict[str, Any]) -> Dict[str, Any]:
     try:
         resp = call_llm(prompts.HIGH_LEVEL_PROMPT_SYS, user_prompt)
         parsed = json.loads(resp.choices[0].message.content)
-        keywords = normalize_keywords(parsed.get("relationship_keywords"), label=rel.get("relationship_label"))
+        keywords = normalize_keywords(
+            parsed.get("relationship_keywords"), label=rel.get("relationship_label")
+        )
     except Exception as e:
         logger.warning("keyword backfill failed for %s: %s", rel["relation_id"], e)
         keywords = normalize_keywords(None, label=rel.get("relationship_label"))
@@ -64,14 +66,16 @@ def _classify_one(rel: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def run_high_level_keyword_backfill(
-    driver, limit: Optional[int] = None, max_workers: int = MAX_KEYWORD_WORKERS,
-) -> Dict[str, int]:
+    driver,
+    limit: int | None = None,
+    max_workers: int = MAX_KEYWORD_WORKERS,
+) -> dict[str, int]:
     relations = _fetch_relations_missing_keywords(driver, limit=limit)
     logger.info("Relations missing relationshipKeywords: %d", len(relations))
     if not relations:
         return {"processed": 0, "written": 0}
 
-    keywords_by_relation: Dict[str, List[str]] = {}
+    keywords_by_relation: dict[str, list[str]] = {}
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(_classify_one, rel): rel for rel in relations}
         for idx, future in enumerate(as_completed(futures), start=1):
@@ -82,11 +86,14 @@ def run_high_level_keyword_backfill(
 
     rows = [{"relationId": rid, "keywords": kws} for rid, kws in keywords_by_relation.items()]
     with driver.session() as session:
-        session.run("""
+        session.run(
+            """
             UNWIND $rows AS row
             MATCH (r:Relation {relationId: row.relationId})
             SET r.relationshipKeywords = row.keywords
-        """, {"rows": rows})
+        """,
+            {"rows": rows},
+        )
 
     logger.info("Keyword backfill wrote %d relations", len(rows))
     return {"processed": len(relations), "written": len(rows)}

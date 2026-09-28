@@ -67,3 +67,7 @@ ROC_INPEX/
 
 # Snyk-generated instructions
 .github/instructions/snyk_rules.instructions.md
+
+## Keep large raw recordings local; commit only the curated README demo.
+*.mp4
+!demo_gds_cut.mp4

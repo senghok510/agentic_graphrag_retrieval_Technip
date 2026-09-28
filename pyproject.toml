@@ -1,0 +1,50 @@
+[project]
+name = "tender-intelligence-rag"
+version = "0.1.0"
+description = "Adaptive Graph + Vector RAG for tender intelligence"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "azure-search-documents==11.6.0",
+    "fastapi==0.128.0",
+    "igraph",
+    "langchain",
+    "langchain-openai",
+    "langgraph>=1.0,<2.0",
+    "neo4j",
+    "openai",
+    "pydantic==2.12.5",
+    "pydantic-settings",
+    "ragas",
+    "sentence-transformers",
+    "uvicorn==0.40.0",
+]
+
+[dependency-groups]
+dev = [
+    "coverage",
+    "httpx",
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["chatbot", "."]
+testpaths = ["chatbot/tests", "graph_construction/tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+    "*.ipynb",
+    "chatbot/evaluation",
+    "data_synthetic_generation",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

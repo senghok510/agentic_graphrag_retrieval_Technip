@@ -10,22 +10,21 @@ from __future__ import annotations
 
 import json
 from functools import lru_cache
-from typing import Dict, List
 
 from . import config
 
 
 @lru_cache(maxsize=1)
-def load_entity_cards() -> Dict[str, dict]:
+def load_entity_cards() -> dict[str, dict]:
     return json.loads(config.ENTITY_CARDS_PATH.read_text(encoding="utf-8"))
 
 
 @lru_cache(maxsize=1)
-def canonical_entity_categories() -> List[str]:
+def canonical_entity_categories() -> list[str]:
     return list(load_entity_cards().keys())
 
 
-def render_entity_category_block(cards: Dict[str, dict]) -> str:
+def render_entity_category_block(cards: dict[str, dict]) -> str:
     blocks = []
     for name, c in cards.items():
         ex = ", ".join(c.get("examples", []))

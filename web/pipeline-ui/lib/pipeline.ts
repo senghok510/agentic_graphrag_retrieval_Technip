@@ -1,11 +1,38 @@
 // Client for the FastAPI pipeline's SSE stream (see chatbot/src/pipeline/streaming.py
 // and chatbot/src/pipeline/trace.py for the exact event shapes this mirrors).
 
+export interface ChunkItem {
+  file_name: string;
+  page_number: string;
+  source?: string;
+  score?: number;
+  text?: string;
+}
+
+export interface RelationItem {
+  subject: string;
+  label: string;
+  object: string;
+  description?: string;
+  score?: number;
+  channel?: string;
+}
+
+export interface EntityItem {
+  name: string;
+  category?: string;
+  score?: number;
+}
+
 export type PayloadBlock = {
-  kind: "chunks" | "relations" | "entities" | "text" | "json";
   title: string;
-  items: any;
-};
+} & (
+  | { kind: "chunks"; items: ChunkItem[] }
+  | { kind: "relations"; items: RelationItem[] }
+  | { kind: "entities"; items: EntityItem[] }
+  | { kind: "text"; items: string }
+  | { kind: "json"; items: unknown }
+);
 
 export type StageStatus = "start" | "done" | "error";
 
@@ -16,7 +43,7 @@ export interface StageEvent {
   method: string;
   group: string;
   status: StageStatus;
-  detail?: Record<string, any>;
+  detail?: Record<string, unknown>;
   payload?: PayloadBlock[];
   elapsed_s?: number;
 }
@@ -37,7 +64,7 @@ export interface FinalEvent {
   graph_domains?: string[] | null;
   // `elapsed_s` is the total pipeline wall-clock time (query in → answer out),
   // set in orchestrator.py's run_pipeline() and forwarded verbatim here.
-  debug?: Record<string, any> & { elapsed_s?: number };
+  debug?: Record<string, unknown> & { elapsed_s?: number };
 }
 
 export interface ErrorEvent {
@@ -94,7 +121,7 @@ export function stageIcon(stage: string, group: string): string {
 
 // Turn a stage's `detail` dict (set via Stage.set(**kwargs) server-side) into
 // compact "key: value" chips. `reasoning` is rendered as a plain hint chip.
-export function detailChips(detail: Record<string, any>): { label: string; hint?: boolean }[] {
+export function detailChips(detail: Record<string, unknown>): { label: string; hint?: boolean }[] {
   const chips: { label: string; hint?: boolean }[] = [];
   for (const [key, value] of Object.entries(detail || {})) {
     if (value === null || value === undefined || value === "") continue;
