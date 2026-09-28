@@ -7,10 +7,10 @@ The system is designed for questions that range from direct contractual fact loo
 ## Demo
 
 <div align="center">
-  <video src="./demo_gds_cut.mp4" controls width="900">
-    Your Markdown viewer does not support embedded video.
-  </video>
-  <p><a href="./demo_gds_cut.mp4"><strong>▶ Open the 24-second product demo</strong></a></p>
+  <a href="./demo_gds_cut.mp4">
+    <img src="./images/demo-preview.gif" alt="Tender Intelligence RAG product demo" width="900" />
+  </a>
+  <p><a href="./demo_gds_cut.mp4"><strong>▶ Watch the full-quality demo with audio</strong></a></p>
 </div>
 
 The interface streams each reasoning and retrieval stage as it executes, including route selection, graph scope, retrieved evidence, fusion, reranking, references, confidence, and total latency.
