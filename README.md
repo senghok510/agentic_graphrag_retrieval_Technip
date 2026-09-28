@@ -10,7 +10,6 @@ The system is designed for questions that range from direct contractual fact loo
   <a href="./demo_gds_cut.mp4">
     <img src="./images/demo-preview.gif" alt="Tender Intelligence RAG product demo" width="900" />
   </a>
-  <p><a href="./demo_gds_cut.mp4"><strong>▶ Watch the full-quality demo with audio</strong></a></p>
 </div>
 
 The interface streams each reasoning and retrieval stage as it executes, including route selection, graph scope, retrieved evidence, fusion, reranking, references, confidence, and total latency.
